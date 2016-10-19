@@ -1,4 +1,8 @@
-baseurl         = "http://replace-this-with-your-hugo-site.com/"
-title           = "Blokks documentation"
-languageCode    = "en-us"
-staticdir       = "static-compiled"
+baseurl             = "http://docs.blokks.dev:3000/"
+title               = "Blokks documentation"
+staticdir           = "static-compiled"
+languageCode        = "en-us"
+googleAnalytics     = "UA-123-45"
+
+[params]
+version             = "1.0.0"

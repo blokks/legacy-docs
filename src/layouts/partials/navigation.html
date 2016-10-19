@@ -1,0 +1,13 @@
+<nav>
+    {{ range .Site.Pages.ByWeight.GroupBy "Type" }}
+        <h1>{{ .Key }}</h1>
+
+        <ul>
+            {{ range .Pages }}
+                <li>
+                    <a href='{{ .Permalink }}'>{{ .Title }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    {{ end }}
+</nav>

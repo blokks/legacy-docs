@@ -17,7 +17,7 @@ gulp.task('copy', () => {
         '!src/static-source/images/**/*',
     ];
 
-    const destination = 'src/static';
+    const destination = 'src/static-compiled';
 
     return gulp.src(source)
         .pipe(plumber())

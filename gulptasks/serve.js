@@ -13,8 +13,7 @@ gulp.task('serve', (callback) => {
 
     const syncOptions = {
         host: 'docs.blokks.dev',
-        notify: false,
-        open: 'external',
+        open: false,
         proxy: 'docs.blokks.dev',
         reloadDebounce: 2500,
     };
@@ -28,6 +27,7 @@ gulp.task('serve', (callback) => {
             '!src/static-source/images/**/*',
         ];
 
+        const contentSources = ['src/content/**/*.md'];
         const htmlSources = ['src/layouts/**/*.html'];
         const scriptSources = ['src/static-source/scripts/**/*.js'];
         const stylesSources = ['src/static-source/styles/**/*.css'];
@@ -38,6 +38,7 @@ gulp.task('serve', (callback) => {
         const reload = () => browserSync.reload();
 
         gulp.watch(copySources, () => runSequence('copy', 'hugo', reload));
+        gulp.watch(contentSources, () => runSequence('hugo', reload));
         gulp.watch(htmlSources, () => runSequence('html', 'hugo', reload));
         gulp.watch(scriptSources, () => runSequence('scripts', 'hugo', reload));
         gulp.watch(stylesSources, () => runSequence('styles', 'hugo', inject));

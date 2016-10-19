@@ -4,6 +4,7 @@ npm-debug.log
 
 dist
 src/static-compiled
+src/static-compiled/.htaccess
 
 node_modules/*
 !node_modules/app

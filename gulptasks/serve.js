@@ -14,6 +14,7 @@ gulp.task('serve', (callback) => {
     const syncOptions = {
         host: 'docs.blokks.dev',
         notify: false,
+        open: 'external',
         proxy: 'docs.blokks.dev',
         reloadDebounce: 2500,
     };

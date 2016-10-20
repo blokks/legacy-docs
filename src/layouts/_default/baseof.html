@@ -10,7 +10,7 @@
         <title>{{ .Title }}</title>
 
 		<!-- Standard -->
-		<meta name='author' content='{{ .Params.author }}'>
+		<meta name='author' content='{{ $.Param "author" }}'>
 		<meta name='description' content='{{ .Description }}'>
 		<meta name='keywords' content='{{ delimit .Keywords ", " }}'>
 

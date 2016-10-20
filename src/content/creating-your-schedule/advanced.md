@@ -2,9 +2,9 @@
 date            = "2016-10-20T11:31:19+02:00"
 title           = "Advanced features"
 description     = "In this section, you’ll find information on how to create your first schedule."
-section         = "Creating your schedule"
-
 author          = "@patrickpietens"
+
+parent          = "Creating your schedule"
 weight          = 2
 keywords        = [
     "blokks",

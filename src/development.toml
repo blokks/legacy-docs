@@ -4,6 +4,6 @@ staticdir           = "static-compiled"
 languageCode        = "en-us"
 
 [params]
-version             = "1.0.0"
-author              = "@BlokksHQ"
 analytics           = "UA-123-45"
+author              = "@BlokksHQ"
+version             = "1.0.0"

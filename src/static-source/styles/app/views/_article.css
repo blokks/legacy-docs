@@ -1,0 +1,22 @@
+.article {
+    h1, h2, h3, h4 {
+        @mixin article-title;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        @mixin article-body-text;
+    }
+}

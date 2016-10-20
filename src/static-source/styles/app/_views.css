@@ -1,0 +1,40 @@
+@import 'views/article';
+@import 'views/header';
+@import 'views/toc';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    $backgroundImage: "images/background@2x.png";
+    background: var(--background-color) inline($backgroundImage) repeat-y;
+    background-size: size($backgroundImage, 2);
+    animation: animate-background-image 15s linear infinite;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1060px;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--selection-text-color);
+}
+
+::-moz-selection {
+  background: var(--blue);
+  color: var(--selection-text-color);
+}
+
+.docs__container {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,9 @@
+@keyframes animate-background-image {
+    from {
+        background-position: top left;
+    }
+
+    to {
+        background-position: bottom left;
+    }
+}

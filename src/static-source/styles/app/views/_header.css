@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 240px;
+
+    &__title {
+        @mixin text-replacement;
+        margin: 0;
+        size: 301px 51px;
+
+        $backgroundImage: "images/logo@2x.png";
+        background: inline($backgroundImage) no-repeat;
+        background-size: size($backgroundImage, 2);
+    }
+
+    &__subtitle {
+        @mixin header-subtitle;
+        margin: 20px 0 0 0;
+    }
+}

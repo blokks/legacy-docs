@@ -1,0 +1,53 @@
+.table-of-contents {
+    flex: none;
+    width: 360px;
+
+    &.fixed {
+        position: fixed 0 * * *;
+    }
+
+    &__section {
+        @mixin navigation-section;
+        margin: 0;
+    }
+
+    &__section:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    &__pages {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__page {
+        @mixin navigation-page;
+        margin: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &__link--selected {
+        position: relative;
+        cursor: default;
+    }
+
+    &__link--selected:before {
+        display: inline-block;
+        size: 20px 8px;
+        margin-right: 10px;
+        content: '';
+
+        $backgroundImage: "images/arrow@2x.png";
+        background: inline($backgroundImage) no-repeat;
+        background-size: size($backgroundImage, 2);
+    }
+
+    &__link:not(&__link--selected):hover {
+        color: var(--blue);
+    }
+}

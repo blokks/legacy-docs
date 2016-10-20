@@ -9,7 +9,6 @@
 
         <title>{{ .Title }}</title>
 
-		<!-- Standard -->
 		<meta name='author' content='{{ $.Param "author" }}'>
 		<meta name='description' content='{{ .Description }}'>
 		<meta name='keywords' content='{{ delimit .Keywords ", " }}'>
@@ -17,16 +16,28 @@
 		{{ partial "social.html" . }}
 
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
+
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css' media='screen'>
         <link rel='stylesheet' href='{{ .Site.BaseURL }}/styles/screen.css' media='screen'>
 		<link rel='shortcut icon' type='image/x-icon' href='{{ .Site.BaseURL }}/images/favicon.png'>
 	</head>
 
     <body>
 
-		{{ partial "header.html" . }}
-        {{ partial "navigation.html" . }}
-        {{ block "content" . }}{{ end }}
-		{{ partial "footer.html" . }}
+		<main class='docs'>
+			{{ partial "header.html" . }}
+
+			<div class='docs__container'>
+	        	{{ partial "navigation.html" . }}
+
+				<article class='docs__article article'>
+		        	{{ block "content" . }}
+					{{ end }}
+				</article>
+			</div>
+
+			{{ partial "footer.html" . }}
+		</main>
 
         <script src='{{ .Site.BaseURL }}/scripts/main.js' charset='utf-8' async></script>
 		<script>

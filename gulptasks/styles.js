@@ -18,7 +18,7 @@ gulp.task('styles', () => {
 
     const assetOptions = {
         loadPaths: [
-            'src/static-src/styles/**',
+            'src/static-source/',
         ],
     };
 

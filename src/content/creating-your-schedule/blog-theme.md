@@ -3,8 +3,6 @@ date            = "2016-10-20T11:31:19+02:00"
 title           = "Blog Theme"
 description     = "The Blog theme renders markdown, HTML and text files. Each file you include will appear on the homepage and be rendered as its own post."
 author          = "@patrickpietens"
-
-parent          = "Creating your schedule"
 weight          = 3
 keywords        = [
     "blokks",

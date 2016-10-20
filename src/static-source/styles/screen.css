@@ -1,9 +1,5 @@
 @charset 'UTF-8';
 
 @import 'app/support';
-
-body {
-    @mixin font var(--liberation), white;
-    @mixin antialiased;
-    background-color: purple;
-}
+@import 'app/styles';
+@import 'app/views';

@@ -1,4 +1,5 @@
+@import 'support/mixins';
 @import 'support/colors';
 @import 'support/fonts';
-@import 'support/mixins';
+@import 'support/animations';
 @import 'support/mq';

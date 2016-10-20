@@ -1,0 +1,15 @@
+:root {
+    --background-color: #18191b;
+    --default-title-color: #fff;
+    --default-text-color: #abb1bc;
+    --selection-text-color: #fff;
+}
+
+:root {
+    --blue: rgb(46, 140, 210);
+	--pink: rgb(200, 58, 111);
+	--yellow: rgb(246, 180, 17);
+	--green: rgb(52, 200, 104);
+	--purple: rgb(140, 93, 165);
+	grey: rgb(171, 177, 188);
+}

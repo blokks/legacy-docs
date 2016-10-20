@@ -34,10 +34,10 @@ gulp.task('serve', (callback) => {
             '!src/static-source/images/**/*',
         ];
 
-        const contentSources = ['src/content/**/*.md'];
-        const htmlSources = ['src/layouts/**/*.html'];
-        const scriptSources = ['src/static-source/scripts/**/*.js'];
-        const stylesSources = ['src/static-source/styles/**/*.css'];
+        const contentSources = ['src/content/**/*'];
+        const htmlSources = ['src/layouts/**/*'];
+        const scriptSources = ['src/static-source/scripts/**/*'];
+        const stylesSources = ['src/static-source/styles/**/*'];
         const imageSources = ['src/static-source/images/**/*.{gif,png,jpg,jpeg}'];
         const svgSources = ['src/static-source/images/**/*.svg'];
 

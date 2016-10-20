@@ -1,11 +1,12 @@
-<nav>
-    {{ range .Site.Pages.ByWeight.GroupByParam "Parent" }}
-        <h1>{{ .Key }}</h1>
+{{ $currentPage := .Permalink }}
 
-        <ul>
+<nav class='docs__table-of-contents table-of-contents'>
+    {{ range .Site.Pages.ByWeight.GroupBy "Section" }}
+        <h1 class='table-of-contents__section'>{{ humanize .Key }}</h1>
+        <ul class='table-of-contents__pages'>
             {{ range .Pages }}
-                <li>
-                    <a href='{{ .Permalink }}'>{{ .Title }}</a>
+                <li class='table-of-contents__page'>
+                    <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}{{ "table-of-contents__link--selected" }}{{ end }}'>{{ .Title }}</a>
                 </li>
             {{ end }}
         </ul>

@@ -1,0 +1,11 @@
+@define-mixin article-title {
+    @mixin font var(--proxima-nova), var(--default-title-color);
+    @mixin antialiased;
+    font-weight: 400;
+}
+
+@define-mixin article-body-text {
+    @mixin font var(--proxima-nova), var(--default-text-color), 1.8rem;
+    @mixin antialiased;
+    line-height: 1.5;
+}

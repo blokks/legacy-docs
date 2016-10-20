@@ -1,5 +1,5 @@
 <nav>
-    {{ range .Site.Pages.ByWeight.GroupBy "Type" }}
+    {{ range .Site.Pages.ByWeight.GroupByParam "Section" }}
         <h1>{{ .Key }}</h1>
 
         <ul>

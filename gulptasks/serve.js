@@ -11,11 +11,18 @@ gulp.task('serve', (callback) => {
         return callback();
     }
 
+    // const syncOptions = {
+    //     host: 'docs.blokks.dev',
+    //     open: false,
+    //     proxy: 'docs.blokks.dev',
+    //     reloadDebounce: 2500,
+    // };
+
     const syncOptions = {
-        host: 'docs.blokks.dev',
-        open: false,
-        proxy: 'docs.blokks.dev',
         reloadDebounce: 2500,
+        server: {
+            baseDir: './dist',
+        },
     };
 
     browserSync.init(syncOptions, () => {

@@ -9,9 +9,11 @@
   },
   "scripts": {
     "modernizr": "node_modules/modernizr/bin/modernizr -c modernizr.json -d src/scripts -u",
-    "development": "NODE_ENV=development gulp",
-    "staging": "npm run modernizr && npm update && NODE_ENV=staging gulp",
-    "production": "npm run modernizr && npm update && gulp"
+    "build:development": "NODE_ENV=development gulp",
+    "build:staging": "npm run modernizr && npm update && NODE_ENV=staging gulp",
+    "build:production": "npm run modernizr && npm update && gulp",
+    "publish:staging": "npm run staging",
+    "publish:production": "npm run staging"
   },
   "browser": {},
   "browserify": {

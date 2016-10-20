@@ -1,9 +1,17 @@
 +++
+date            = "2016-10-20T11:31:19+02:00"
 title           = "Advanced features"
 description     = "In this section, you’ll find information on how to create your first schedule."
-type         = "Creating your schedule"
-date            = "2016-10-19"
+section         = "Creating your schedule"
+
+author          = "@patrickpietens"
 weight          = 2
+keywords        = [
+    "blokks",
+    "documentation",
+    "basics",
+    "schedule",
+]
 +++
 
 # Advanced features

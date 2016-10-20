@@ -4,33 +4,30 @@
 
 <html>
 	<head>
-		<base href='{{ .Site.BaseURL }}'>
-
 		<meta charset="utf-8">
-		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-		<meta name='apple-mobile-web-app-capable' content='yes'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-		<!-- Standard -->
         <title>{{ .Title }}</title>
 
+		<!-- Standard -->
+		<meta name='author' content='{{ .Params.author }}'>
 		<meta name='description' content='{{ .Description }}'>
-		<meta name='keywords' content='{{ .Keywords }}'>
-		<meta name='author' content='BlokksHQ'>
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
+		<meta name='keywords' content='{{ delimit .Keywords ", " }}'>
 
 		{{ partial "social.html" . }}
 
-		<!-- Misc -->
-        <link rel='stylesheet' href='styles/screen.css' media='screen'>
-		<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png'>
+		<link rel="canonical" href="{{ .Site.BaseURL }}">
+        <link rel='stylesheet' href='{{ .Site.BaseURL }}/styles/screen.css' media='screen'>
+		<link rel='shortcut icon' type='image/x-icon' href='{{ .Site.BaseURL }}/images/favicon.png'>
 	</head>
 
     <body>
 
-        {{ block "content" . }}
-        {{ end }}
+		{{ partial "header.html" . }}
+        {{ partial "navigation.html" . }}
+        {{ block "content" . }}{{ end }}
+		{{ partial "footer.html" . }}
 
-        <script src='scripts/main.js' charset='utf-8' async></script>
+        <script src='{{ .Site.BaseURL }}/scripts/main.js' charset='utf-8' async></script>
     </body>
 </html>

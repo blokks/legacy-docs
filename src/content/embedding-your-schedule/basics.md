@@ -1,7 +1,7 @@
 +++
 title           = "Basics"
 description     = "In this section, you’ll find information on how to create your first schedule."
-type            = "Embedding your schedule"
+section         = "Embedding your schedule"
 date            = "2016-10-19"
 weight          = 1
 +++

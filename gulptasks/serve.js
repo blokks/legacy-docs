@@ -37,7 +37,7 @@ gulp.task('serve', (callback) => {
         const contentSources = ['src/content/**/*'];
         const htmlSources = ['src/layouts/**/*'];
         const scriptSources = ['src/static-source/scripts/**/*'];
-        const stylesSources = ['src/static-source/styles/**/*'];
+        const stylesSources = ['src/static-source/styles/**/*.css'];
         const imageSources = ['src/static-source/images/**/*.{gif,png,jpg,jpeg}'];
         const svgSources = ['src/static-source/images/**/*.svg'];
 

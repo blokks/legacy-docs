@@ -12,12 +12,13 @@
     }
 
     &__section:not(:first-of-type) {
-        margin-top: 30px;
+        margin-top: 45px;
     }
 
     &__pages {
-        list-style: none;
+        margin-top: 15px;
         padding: 0;
+        list-style: none;
     }
 
     &__page {
@@ -39,7 +40,7 @@
     &__link--selected:before {
         display: inline-block;
         size: 20px 8px;
-        margin-right: 10px;
+        margin-right: 12px;
         content: '';
 
         $backgroundImage: "images/arrow@2x.png";

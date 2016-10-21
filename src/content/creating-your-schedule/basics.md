@@ -16,6 +16,12 @@ keywords        = [
 In this section, you’ll find information on how to create your first schedule.
 
 ## Settings
-Your site’s settings are in a file called _sv_settings.txt. Anything you change here you can also change in your admin page.
+Your site’s settings are in a file called sv_settings.txt. Anything you change here you can also change in your admin page.
 
-Your _sv_settings.txt contains four things by default (some themes will have extra settings). Here is the settings file for this site:
+Your sv_settings.txt contains four things by default (some themes will have extra settings). Here is the settings file for this site:
+
+| Attribute               | Type    | Description                                                                       |
+|-------------------------|---------|-----------------------------------------------------------------------------------|
+| **totalCount**          | integer | The total count of recipients                                                     |
+| **totalSentCount**      | integer | The count of recipients that have the message pending and have status: *calling*  |
+| **totalDeliveredCount** | integer | The recipients array.                                                             |

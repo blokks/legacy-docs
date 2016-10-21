@@ -20,6 +20,6 @@
 }
 
 :root {
-    --liberation-mono: 'liberationmono', sans-serif;
     --proxima-nova: 'proximanova', sans-serif;
+    --liberation-mono: 'liberationmono', monospace;
 }

@@ -1,8 +1,14 @@
 :root {
     --background-color: #18191b;
+    --code-background-color: #25272b;
+
     --default-title-color: #fff;
     --default-text-color: #abb1bc;
     --selection-text-color: #fff;
+    --emphasized-text-color: #fff;
+
+    --default-stroke-color: #26282b;
+    --dark-stroke-color: #1f2023;
 }
 
 :root {

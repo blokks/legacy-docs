@@ -15,8 +15,77 @@
     h3 {
         font-size: 1.8rem;
     }
-    
+
     p {
         @mixin article-body-text;
+    }
+
+    em {
+        @mixin article-emphasized-text;
+        background-color: color(var(--blue) alpha(10%));
+        border-radius: 3px;
+        color: var(--blue);
+    }
+
+    strong {
+        @mixin article-emphasized-text;
+        background-color: color(var(--green) alpha(10%));
+        border-radius: 3px;
+        color: var(--green);
+    }
+
+    img {
+        size: 100% auto;
+        border-radius: 3px;
+    }
+
+    ul, ol {
+        @mixin article-list;
+        padding: 0;
+        white-space: pre;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        flex: auto;
+        background-color: color(var(--green) alpha(10%));
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    li:before {
+        display: inline-block;
+        size: 7px;
+        content: '';
+
+        $backgroundImage: "images/bullet@2x.png";
+        background: inline($backgroundImage) no-repeat;
+        background-size: size($backgroundImage, 2);
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: separate;
+    }
+
+    th {
+        @mixin article-thead;
+        border-bottom: 2px solid var(--default-stroke-color);
+    }
+
+    td {
+        @mixin article-tbody;
+        border-bottom: 1px solid var(--dark-stroke-color);
+    }
+
+    code {
+        @mixin article-code;
+        display: block;
+        padding: 10px;
+        background: var(--code-background-color);
+        border-radius: 3px;
+        overflow-x: auto;
     }
 }

@@ -3,4 +3,5 @@ description     = "In this section, you’ll find information on how to create y
 section         = "Creating your schedule"
 keywords        = ["blokks", "documentation"]
 weight          = 1
+new             = false
 +++

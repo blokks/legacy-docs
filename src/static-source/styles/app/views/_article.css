@@ -57,6 +57,7 @@
     }
 
     img {
+        margin: 6px 0;
         size: 100% auto;
         border-radius: 3px;
     }
@@ -140,7 +141,7 @@
     code[class*='language']:before {
         @mixin article-code-language-identifier;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     code.language-html:before {

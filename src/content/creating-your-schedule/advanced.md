@@ -12,8 +12,6 @@ keywords        = [
 ]
 +++
 
-# Advanced features
-
 In this section, you’ll find information on :
 
 1.  Customizing your site with CSS/JS

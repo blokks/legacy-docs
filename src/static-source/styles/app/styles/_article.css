@@ -7,7 +7,7 @@
 @define-mixin article-body-text {
     @mixin font var(--proxima-nova), var(--default-text-color), 1.8rem;
     @mixin antialiased;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 @define-mixin article-emphasized-text {

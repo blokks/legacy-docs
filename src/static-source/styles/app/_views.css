@@ -1,6 +1,7 @@
-@import 'views/article';
 @import 'views/header';
 @import 'views/toc';
+@import 'views/article';
+@import 'views/footer';
 
 html {
     font-size: 62.5%;
@@ -10,7 +11,8 @@ body {
     $backgroundImage: "images/background@2x.png";
     background: var(--background-color) inline($backgroundImage) repeat-y;
     background-size: size($backgroundImage, 2);
-    animation: animate-background-image 50s linear infinite;
+    animation: animate-background-image 60s linear infinite;
+    overflow-y: scroll;
 }
 
 main {

@@ -11,6 +11,10 @@
         margin: 0;
     }
 
+    &__section:first-of-type {
+        margin-top: 8px;
+    }
+
     &__section:not(:first-of-type) {
         margin-top: 45px;
     }

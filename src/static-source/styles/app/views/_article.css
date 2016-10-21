@@ -1,7 +1,11 @@
 .article {
+    & > :first-child {
+        margin: 0;
+    }
+
     h1, h2, h3, h4 {
         @mixin article-title;
-        margin: 0;
+        margin: 24px 0 0 0;
     }
 
     h1 {
@@ -18,6 +22,20 @@
 
     p {
         @mixin article-body-text;
+        margin: 24px 0 0 0;
+    }
+
+    p + p {
+        margin: 18px 0 0 0;
+    }
+
+    a {
+        color: var(--default-link-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--blue);
     }
 
     em {
@@ -40,22 +58,30 @@
     }
 
     ul, ol {
+        @mixin clearfix;
         @mixin article-list;
-        padding: 0;
-        white-space: pre;
+        margin: 24px 0 0 0;
+        padding: 0 0 0 58px;
         list-style: none;
     }
 
     li {
         display: inline-block;
-        flex: auto;
+        position: relative;
+        float: left;
+        clear: left;
+
         background-color: color(var(--green) alpha(10%));
         border-radius: 3px;
-        padding: 5px;
+        padding: 5px 10px;
+    }
+
+    li:not(:first-child) {
+        margin-top: 12px;
     }
 
     li:before {
-        display: inline-block;
+        position: absolute 9px * * -28px;
         size: 7px;
         content: '';
 
@@ -65,6 +91,7 @@
     }
 
     table {
+        margin: 24px 0 0 0;
         width: 100%;
         border-spacing: 0;
         border-collapse: separate;
@@ -83,7 +110,9 @@
     code {
         @mixin article-code;
         display: block;
+        margin: 24px 0 0 0;
         padding: 10px;
+
         background: var(--code-background-color);
         border-radius: 3px;
         overflow-x: auto;

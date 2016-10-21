@@ -10,6 +10,4 @@ keywords        = [
 ]
 +++
 
-# Campaign theme
-
-The campaign theme is perfect for launching a new company or product. It displays a MailChimp sign-up form, a full-size background image, your site title and description, and a link list. `Hoi niekie`
+The campaign theme is perfect for launching a new company or product. It displays a [MailChimp](http://www.mailchimp.com) sign-up form, a full-size background image, your site title and description, and a link list. `Hoi niekie`

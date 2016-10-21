@@ -10,7 +10,6 @@ keywords        = [
 ]
 +++
 
-# Basics
 In this section, you’ll find information on how to create your first schedule.
 
 ## Settings

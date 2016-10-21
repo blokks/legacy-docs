@@ -38,17 +38,19 @@
         color: var(--blue);
     }
 
-    em {
+    em, strong {
         @mixin article-emphasized-text;
-        background-color: color(var(--blue) alpha(10%));
+        padding: 5px 8px;
         border-radius: 3px;
+    }
+
+    em {
+        background-color: color(var(--blue) alpha(10%));
         color: var(--blue);
     }
 
     strong {
-        @mixin article-emphasized-text;
         background-color: color(var(--green) alpha(10%));
-        border-radius: 3px;
         color: var(--green);
     }
 
@@ -104,7 +106,21 @@
 
     td {
         @mixin article-tbody;
+        vertical-align: top;
         border-bottom: 1px solid var(--dark-stroke-color);
+    }
+
+    th:first-child, td:first-child {
+        padding: 13px 20px 13px 0;
+    }
+
+    th:last-child, td:last-child {
+        padding: 13px 0 13px 20px;
+    }
+
+    th:not(:first-child):not(:last-child),
+    td:not(:first-child):not(:last-child) {
+        padding: 13px 20px;
     }
 
     code {

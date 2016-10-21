@@ -1,4 +1,5 @@
 @define-mixin header-subtitle {
     @mixin font var(--liberation-mono), var(--default-title-color), 1.4rem;
     @mixin antialiased;
+    letter-spacing: 1px;
 }

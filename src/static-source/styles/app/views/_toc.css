@@ -1,6 +1,6 @@
 .table-of-contents {
-    flex: none;
-    width: 360px;
+    flex-grow: 1;
+    min-width: 260px;
 
     &.fixed {
         position: fixed 0 * * *;

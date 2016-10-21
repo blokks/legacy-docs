@@ -1,5 +1,11 @@
 .article {
+    flex-grow: 2;
+    width: 100%;
     max-width: 660px;
+
+    @media (--small) {
+        margin-top: 60px;
+    }
 
     & > :first-child {
         margin: 0;
@@ -134,8 +140,7 @@
 
         background: var(--code-background-color);
         border-radius: 3px;
-        overflow-x: auto;
-        overflow-y: visible;
+        white-space: pre-wrap;
     }
 
     code[class*='language']:before {

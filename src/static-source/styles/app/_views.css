@@ -38,5 +38,12 @@ main {
 
 .docs__container {
     display: flex;
-    flex-direction: row;
+
+    @media (--small) {
+        flex-direction: column;
+    }
+    
+    @media (--default) {
+        flex-direction: row;
+    }
 }

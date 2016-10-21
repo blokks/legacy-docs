@@ -28,9 +28,9 @@ In this section, you’ll find information on :
 ## Customizing your site
 
 ### Custom CSS
-When you create a new site, it automatically makes you a sv_custom.css file. You can write your own styles in here and Small Victories will automatically include this in your site.
+When you create a new site, it automatically makes you a *sv_custom.css* file. You can write your own styles in here and Small Victories will automatically include this in your site.
 
 ### Custom JavaScript
-When you create a new site, it automatically makes you a sv_custom.js file. You can write your own scripts in here and Small Victories will automatically include this in your site.
+When you create a new site, it automatically makes you a *sv_custom.js* file. You can write your own scripts in here and Small Victories will automatically include this in your site.
 
 Every Small Victories site includes jQuery and different themes include additional javascript plugins.

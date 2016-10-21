@@ -46,7 +46,7 @@
 }
 
 @define-mixin article-code-language-identifier {
-    @mixin font var(--liberation-mono), color(white alpha(20%)), 1.4rem;
+    @mixin font var(--proxima-nova), color(white alpha(20%)), 1.4rem;
     @mixin antialiased;
     font-weight: 500;
 }

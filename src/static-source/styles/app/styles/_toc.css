@@ -11,3 +11,9 @@
     @mixin antialiased;
     line-height: 2.3;
 }
+
+@define-mixin navigation-new-label {
+    @mixin font var(--proxima-nova), var(--blue), 1.4rem;
+    @mixin antialiased;
+    text-transform: uppercase;
+}

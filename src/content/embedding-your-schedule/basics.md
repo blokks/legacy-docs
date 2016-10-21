@@ -2,7 +2,9 @@
 date            = "2016-10-20T11:31:19+02:00"
 title           = "Basics"
 description     = "In this section, you’ll find information on how to create your first schedule."
+
 author          = "@patrickpietens"
+new             = true
 weight          = 1
 keywords        = [
     "blokks",

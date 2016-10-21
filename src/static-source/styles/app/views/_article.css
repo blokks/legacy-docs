@@ -141,7 +141,6 @@
     code[class*='language']:before {
         @mixin article-code-language-identifier;
         display: block;
-        margin-bottom: 15px;
     }
 
     code.language-html:before {
@@ -149,7 +148,7 @@
     }
 
     code.language-JavaScript:before {
-        content: 'Javascript:';
+        content: 'JavaScript:';
     }
 
     code.language-css:before {

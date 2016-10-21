@@ -32,13 +32,19 @@
 
     &__link {
         display: inline-block;
+        position: relative;
         color: inherit;
         text-decoration: none;
     }
 
     &__link--selected {
-        position: relative;
         cursor: default;
+    }
+
+    &__link--new:after {
+        @mixin navigation-new-label;
+        margin-left: 12px;
+        content: 'New!';
     }
 
     &__link--selected:before {

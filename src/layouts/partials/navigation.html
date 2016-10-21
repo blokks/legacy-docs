@@ -6,7 +6,7 @@
         <ul class='table-of-contents__pages'>
             {{ range .Pages }}
                 <li class='table-of-contents__page'>
-                    <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}{{ "table-of-contents__link--selected" }}{{ end }}'>{{ .Title }}</a>
+                    <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}table-of-contents__link--selected{{ end }} {{ if .Params.new }}table-of-contents__link--new{{ end }}'>{{ .Title }}</a>
                 </li>
             {{ end }}
         </ul>

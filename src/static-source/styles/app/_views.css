@@ -42,8 +42,25 @@ main {
     @media (--small) {
         flex-direction: column;
     }
-    
+
     @media (--default) {
         flex-direction: row;
+    }
+}
+
+.decoration {
+    position: absolute -100px * * 75%;
+    animation: rotate-decoration 300s linear infinite;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@keyframes rotate-decoration {
+    from {
+        transform: rotate(30deg);
+    }
+
+    to {
+        transform: rotate(410deg);
     }
 }

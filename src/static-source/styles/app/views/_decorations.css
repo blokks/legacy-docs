@@ -5,12 +5,12 @@
 
 .decoration:first-of-type {
     position: absolute -100px * * 75%;
-    animation: rotate-decoration-ccw 300s linear infinite;
+    animation: rotate-decoration-ccw 360s linear infinite;
 }
 
 .decoration:last-of-type {
     position: absolute 1400px * * 0;
-    animation: rotate-decoration-cw 300s linear infinite alternate;
+    animation: rotate-decoration-cw 260s linear infinite alternate;
 }
 
 @keyframes rotate-decoration-ccw {

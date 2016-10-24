@@ -9,11 +9,16 @@
   },
   "scripts": {
     "modernizr": "node_modules/modernizr/bin/modernizr -c modernizr.json -d src/scripts -u",
+    "development": "npm run modernizr && npm run build:development",
+    "staging": "npm update && npm run modernizr && npm run build:staging && npm run publish:staging && npm run open:staging",
+    "production": "npm update && npm run modernizr && npm run build:production && npm run publish:production && npm run open:production",
     "build:development": "NODE_ENV=development gulp",
-    "build:staging": "npm run modernizr && npm update && NODE_ENV=staging gulp",
-    "build:production": "npm run modernizr && npm update && gulp",
-    "publish:staging": "npm run staging",
-    "publish:production": "npm run staging"
+    "build:staging": "NODE_ENV=staging gulp",
+    "build:production": "NODE_ENV=production gulp",
+    "publish:staging": "rsync -avzq --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/staging_public/docs",
+    "publish:production": "rsync -avzq --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/blokks_public/docs",
+    "open:staging": "open https://staging.blokks.co/docs",
+    "open:production": "open https://blokks.co/docs"
   },
   "browser": {},
   "browserify": {

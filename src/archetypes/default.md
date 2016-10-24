@@ -4,4 +4,5 @@ section         = "Creating your schedule"
 keywords        = ["blokks", "documentation"]
 weight          = 1
 new             = false
+updated         = false
 +++

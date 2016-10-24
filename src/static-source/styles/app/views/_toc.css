@@ -47,6 +47,12 @@
         content: 'New!';
     }
 
+    &__link--updated:after {
+        @mixin navigation-new-label;
+        margin-left: 12px;
+        content: 'Updated!';
+    }
+
     &__link--selected:before {
         display: inline-block;
         size: 20px 8px;

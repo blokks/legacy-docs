@@ -1,25 +1,28 @@
-.decoration {
-    overflow: hidden;
+.decorations {
+    position: absolute 0 * * 0;
+    left: calc((100vw - 100%) * -0.5);
+    size: 100vw 100%;
     z-index: -1;
-}
+    overflow: hidden;
 
-.decoration:first-of-type {
-    position: absolute -100px * * 75%;
-    animation: rotate-decoration-ccw 360s linear infinite;
-}
+    &__rotating-square:first-of-type {
+        position: absolute -300px * * 75%;
+        animation: rotate-decoration-ccw 360s linear infinite;
+    }
 
-.decoration:last-of-type {
-    position: absolute 1400px * * 0;
-    animation: rotate-decoration-cw 260s linear infinite alternate;
+    &__rotating-square:last-of-type {
+        position: absolute 1300px * * -200px;
+        animation: rotate-decoration-cw 260s linear infinite alternate;
+    }
 }
 
 @keyframes rotate-decoration-ccw {
     from {
-        transform: rotate(-70deg);
+        transform: rotate(-170deg);
     }
 
     to {
-        transform: rotate(290deg);
+        transform: rotate(190deg);
     }
 }
 

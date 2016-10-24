@@ -12,12 +12,13 @@ body {
     $backgroundImage: "images/background@2x.png";
     background: var(--background-color) inline($backgroundImage) repeat-y;
     background-size: size($backgroundImage, 2);
-    animation: animate-background-image 60s linear infinite;
+    animation: animate-background-image 40s linear infinite;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 main {
+    position: relative;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -47,5 +48,15 @@ main {
 
     @media (--default) {
         flex-direction: row;
+    }
+}
+
+@keyframes animate-background-image {
+    from {
+        background-position: left 3000px;
+    }
+
+    to {
+        background-position: left 0;
     }
 }

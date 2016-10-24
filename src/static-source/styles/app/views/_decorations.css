@@ -1,0 +1,34 @@
+.decoration {
+    overflow: hidden;
+    z-index: -1;
+}
+
+.decoration:first-of-type {
+    position: absolute -100px * * 75%;
+    animation: rotate-decoration-ccw 300s linear infinite;
+}
+
+.decoration:last-of-type {
+    position: absolute 1400px * * 0;
+    animation: rotate-decoration-cw 300s linear infinite alternate;
+}
+
+@keyframes rotate-decoration-ccw {
+    from {
+        transform: rotate(-70deg);
+    }
+
+    to {
+        transform: rotate(290deg);
+    }
+}
+
+@keyframes rotate-decoration-cw {
+    from {
+        transform: rotate(30deg);
+    }
+
+    to {
+        transform: rotate(410deg);
+    }
+}

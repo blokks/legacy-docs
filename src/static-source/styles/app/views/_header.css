@@ -8,7 +8,7 @@
         margin: 0;
         size: 301px 51px;
 
-        $backgroundImage: "images/logo@2x.png";
+        $backgroundImage: "images/logo@2x.gif";
         background: inline($backgroundImage) no-repeat;
         background-size: size($backgroundImage, 2);
     }

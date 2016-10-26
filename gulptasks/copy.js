@@ -13,6 +13,7 @@ gulp.task('copy', () => {
         'src/static-source/**/*',
         'src/static-source/.htaccess',
         '!src/static-source/scripts/**/*',
+        'src/static-source/scripts/modernizr.js',
         '!src/static-source/styles/**/*',
         '!src/static-source/images/**/*',
     ];

@@ -12,5 +12,6 @@ gulp.task('default', (callback) => runSequence(
     'svg',
     'hugo',
     'serve',
+    'notify',
     callback
 ));

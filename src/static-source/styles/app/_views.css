@@ -9,10 +9,7 @@ html {
 }
 
 body {
-    $backgroundImage: "images/background@2x.png";
-    background: var(--background-color) inline($backgroundImage) repeat-y;
-    background-size: size($backgroundImage, 2);
-    animation: animate-background-image 80s linear infinite;
+    background: var(--background-color);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -48,15 +45,5 @@ main {
 
     @media (--default) {
         flex-direction: row;
-    }
-}
-
-@keyframes animate-background-image {
-    from {
-        background-position: left 3000px;
-    }
-
-    to {
-        background-position: left 0;
     }
 }

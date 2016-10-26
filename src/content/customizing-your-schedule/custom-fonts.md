@@ -13,7 +13,7 @@ keywords        = [
 ]
 +++
 
-In this section, you’ll find information on how to add custom fonts to your schedule.
+In this section, you’ll find information on how to add custom fonts to your schedule embed.
 
 ## Loading Custom Fonts
 Your site’s settings are in a file called sv_settings.txt. Anything you change here you can also change in your admin page.

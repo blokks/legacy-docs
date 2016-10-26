@@ -67,6 +67,7 @@
     "gulp-rename": "1.2.2",
     "gulp-run": "1.7.1",
     "gulp-size": "^2.1.0",
+    "gulp-slack": "^0.1.2",
     "gulp-sloc": "1.0.4",
     "gulp-sourcemaps": "2.1.1",
     "gulp-stylelint": "^3.4.0",

@@ -99,6 +99,7 @@
     "yamlify": "^0.1.3"
   },
   "dependencies": {
+    "clipboard": "^1.5.15",
     "highlight.js": "^9.7.0"
   }
 }

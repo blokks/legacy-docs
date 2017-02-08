@@ -8,8 +8,8 @@ const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 
 gulp.task('images', () => {
-    const source = ['src/static-source/images/*.{gif,png,jpg,jpeg}'];
-    const destination = 'src/static-compiled/images';
+    const source = ['src/static/images/*.{gif,png,jpg,jpeg}'];
+    const destination = 'src/.static/images';
 
     return gulp.src(source)
         .pipe(plumber())

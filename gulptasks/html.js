@@ -13,8 +13,8 @@ gulp.task('html', () => {
         collapseWhitespace: true,
     };
 
-    const source = 'src/templates/**/*.html';
-    const destination = 'dist/templates';
+    const source = 'src/layouts/**/*.html';
+    const destination = 'src/.layouts';
 
     return gulp.src(source)
         .pipe(plumber())

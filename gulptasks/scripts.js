@@ -14,8 +14,8 @@ const watchify = require('watchify');
 const errors = require('../gulperrors');
 
 gulp.task('scripts', () => {
-    const source = ['../src/static-source/scripts/index.js'];
-    const destination = 'src/static-compiled/scripts';
+    const source = ['../src/static/scripts/index.js'];
+    const destination = 'src/.static/scripts';
 
     const bundler = browserify({
         basedir: __dirname,

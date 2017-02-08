@@ -18,7 +18,7 @@ gulp.task('styles', () => {
 
     const assetOptions = {
         loadPaths: [
-            'src/static-source/',
+            'src/static/',
         ],
     };
 
@@ -61,8 +61,8 @@ gulp.task('styles', () => {
         require('cssnano')(CSSNanoOptions),
     ];
 
-    const source = ['src/static-source/styles/screen.css'];
-    const destination = 'src/static-compiled/styles';
+    const source = ['src/static/styles/screen.css'];
+    const destination = 'src/.static/styles';
 
     return gulp.src(source)
         .pipe(plumber())

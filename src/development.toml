@@ -1,6 +1,7 @@
 baseurl             = "http://localhost:3000/"
 title               = "Blokks documentation"
-staticdir           = "static-compiled"
+staticdir           = ".static"
+layoutdir           = ".layouts"
 languageCode        = "en-us"
 
 [params]

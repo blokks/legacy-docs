@@ -3,8 +3,8 @@
 npm-debug.log
 
 dist
-src/static-compiled
-src/static-compiled/.htaccess
+src/.static
+src/.layouts
 
 node_modules/*
 !node_modules/app

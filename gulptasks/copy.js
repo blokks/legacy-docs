@@ -10,15 +10,15 @@ const plumber = require('gulp-plumber');
 
 gulp.task('copy', () => {
     const source = [
-        'src/static-source/**/*',
-        'src/static-source/.htaccess',
-        '!src/static-source/scripts/**/*',
-        'src/static-source/scripts/modernizr.js',
-        '!src/static-source/styles/**/*',
-        '!src/static-source/images/**/*',
+        'src/static/**/*',
+        'src/static/.htaccess',
+        '!src/static/scripts/**/*',
+        'src/static/scripts/modernizr.js',
+        '!src/static/styles/**/*',
+        '!src/static/images/**/*',
     ];
 
-    const destination = 'src/static-compiled';
+    const destination = 'src/.static';
 
     return gulp.src(source)
         .pipe(plumber())

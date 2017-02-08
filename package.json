@@ -8,7 +8,7 @@
     "url": "https://github.com/patrickpietens/blokks-docs"
   },
   "scripts": {
-    "modernizr": "node_modules/modernizr/bin/modernizr -c modernizr.json -d src/static-source/scripts -u",
+    "modernizr": "node_modules/modernizr/bin/modernizr -c modernizr.json -d src/.static/scripts -u",
     "development": "npm run modernizr && npm run build:development",
     "staging": "npm update && npm run modernizr && npm run build:staging && npm run publish:staging && npm run open:staging",
     "production": "npm update && npm run modernizr && npm run build:production && npm run publish:production && npm run open:production",

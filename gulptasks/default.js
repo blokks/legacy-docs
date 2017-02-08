@@ -6,10 +6,11 @@ const runSequence = require('run-sequence');
 gulp.task('default', (callback) => runSequence(
     'clean',
     'copy',
-    'scripts',
-    'styles',
+    'html',
     'images',
     'svg',
+    'scripts',
+    'styles',
     'hugo',
     'serve',
     'notify',

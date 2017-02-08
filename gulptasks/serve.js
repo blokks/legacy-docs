@@ -27,19 +27,19 @@ gulp.task('serve', (callback) => {
 
     browserSync.init(syncOptions, () => {
         const copySources = [
-            'src/static-source/**/*',
-            'src/static-source/.htaccess',
-            '!src/static-source/scripts/**/*',
-            '!src/static-source/styles/**/*',
-            '!src/static-source/images/**/*',
+            'src/static/**/*',
+            'src/static/.htaccess',
+            '!src/static/scripts/**/*',
+            '!src/static/styles/**/*',
+            '!src/static/images/**/*',
         ];
 
         const contentSources = ['src/content/**/*'];
         const htmlSources = ['src/layouts/**/*'];
-        const scriptSources = ['src/static-source/scripts/**/*'];
-        const stylesSources = ['src/static-source/styles/**/*.css'];
-        const imageSources = ['src/static-source/images/**/*.{gif,png,jpg,jpeg}'];
-        const svgSources = ['src/static-source/images/**/*.svg'];
+        const scriptSources = ['src/static/scripts/**/*'];
+        const stylesSources = ['src/static/styles/**/*.css'];
+        const imageSources = ['src/static/images/**/*.{gif,png,jpg,jpeg}'];
+        const svgSources = ['src/static/images/**/*.svg'];
 
         const inject = () => gulp.src(stylesSources).pipe(browserSync.stream());
         const reload = () => browserSync.reload();

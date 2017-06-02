@@ -5,7 +5,6 @@ const isProduction = process.env.NODE_ENV !== 'development';
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const htmlmin = require('gulp-htmlmin');
-const plumber = require('gulp-plumber');
 const errors = require('../gulperrors');
 
 gulp.task('html', () => {
@@ -17,7 +16,6 @@ gulp.task('html', () => {
     const destination = 'src/.layouts';
 
     return gulp.src(source)
-        .pipe(plumber())
         .pipe(gulpif(isProduction, htmlmin(HTMLminOptions))).on('error', errors)
         .pipe(gulp.dest(destination))
 });

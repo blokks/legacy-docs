@@ -3,7 +3,6 @@
 const isProduction = process.env.NODE_ENV !== 'development';
 
 const gulp = require('gulp');
-const plumber = require('gulp-plumber');
 const svgmin = require('gulp-svgmin');
 const svgsprite = require('gulp-svg-sprite');
 const errors = require('../gulperrors');
@@ -37,7 +36,6 @@ gulp.task('svg', () => {
     const destination = './src/static-compiled/images';
 
     return gulp.src(source)
-        .pipe(plumber())
         .pipe(svgmin(minifyOptions)).on('error', errors)
         .pipe(svgsprite(spriteOptions)).on('error', errors)
         .pipe(gulp.dest(destination))

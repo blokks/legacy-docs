@@ -7,7 +7,6 @@ const buffer = require('vinyl-buffer');
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const envify = require('envify/custom');
-const plumber = require('gulp-plumber');
 const sourcestream = require('vinyl-source-stream');
 const uglify = require('gulp-uglify');
 const watchify = require('watchify');
@@ -33,7 +32,6 @@ gulp.task('scripts', () => {
     });
 
     const bundle = () => bundler.bundle().on('error', errors)
-        .pipe(plumber())
         .pipe(sourcestream('main.js'))
         .pipe(buffer())
         .pipe(gulpif(isProduction, uglify({ mangle: false })))

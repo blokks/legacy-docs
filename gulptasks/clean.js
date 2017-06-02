@@ -1,13 +1,14 @@
 'use strict';
 
-var gulp = require('gulp'),
-    del = require('del');
+const gulp = require('gulp');
+const del = require('del');
 
 gulp.task('clean', (callback) => {
     const source = [
-        'src/.static/**/*',
         'src/.layouts/**/*',
+        'src/.static/**/*',
         'dist/**/*'
     ];
+
     del(source).then((paths) => callback());
 });

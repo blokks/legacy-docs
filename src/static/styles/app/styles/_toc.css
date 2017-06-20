@@ -1,17 +1,16 @@
 @define-mixin navigation-section {
-    @mixin font var(--proxima-nova), var(--default-text-color), 1.4rem;
+    @mixin font var(--liberation-sans), var(--default-text-color), 1.5rem;
     @mixin antialiased;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 @define-mixin navigation-page {
-    @mixin font var(--liberation-mono), var(--default-title-color), 1.3rem;
+    @mixin font var(--liberation-mono), var(--default-title-color), 1.4rem;
     @mixin antialiased;
-    line-height: 2.35;
 }
 
 @define-mixin navigation-new-label {
-    @mixin font var(--proxima-nova), var(--green), 1.3rem;
+    @mixin font var(--liberation-sans), var(--green), 1.3rem;
     @mixin antialiased;
 }

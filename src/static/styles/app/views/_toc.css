@@ -1,15 +1,11 @@
 .table-of-contents {
-    flex-grow: 1;
-    position: sticky 0 * * *;
-    min-width: 260px;
-
-    &.fixed {
-        position: fixed 0 * * *;
-    }
+    position: fixed 218px * * *;
+    width: 260px;
+    vertical-align: top;
 
     &__section {
         @mixin navigation-section;
-        margin: 0;
+        margin: 0 0 22px 0;
     }
 
     &__section:not(:first-of-type) {
@@ -17,14 +13,14 @@
     }
 
     &__pages {
-        margin: 15px 0 0 0;
-        padding: 0 0 0 20px;
+        margin: 13px 0 0 0;
+        padding: 0 0 0 21px;
         list-style: none;
     }
 
     &__page {
         @mixin navigation-page;
-        margin: 0;
+        margin: 15px 0 0 0;
     }
 
     &__link {
@@ -36,7 +32,7 @@
 
     &__link--selected {
         color: var(--blue);
-        cursor: default;
+        border-bottom: 1px solid;
     }
 
     &__link:hover {

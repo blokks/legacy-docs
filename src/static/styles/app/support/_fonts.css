@@ -6,13 +6,13 @@
 }
 
 @font-face {
-    font-family: 'proximanova';
+    font-family: 'liberationsans';
     font-weight: 400;
     font-style: normal;
     src: url('https://static.blokks.co/liberation-sans-regular.woff') format('woff');
 }
 
 :root {
-    --proxima-nova: 'proximanova', sans-serif;
+    --liberation-sans: 'liberationsans', sans-serif;
     --liberation-mono: 'liberationmono', monospace;
 }

@@ -22,6 +22,8 @@ In this section, you’ll find information on :
 8.  Webfonts
 9.  Adding scripts like Google Analytics
 
+When you create a new site, it automatically makes you a *sv_custom.js* file. You can write your own scripts in here and Small Victories will automatically include this in your site.
+
 ## Customizing your site
 
 ### Custom CSS

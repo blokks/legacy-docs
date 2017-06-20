@@ -12,7 +12,7 @@ new             = true
 
 The campaign theme is perfect for launching a new company or product. It displays a [MailChimp](http://www.mailchimp.com) sign-up form, a full-size background image, your site title and description, and a link list. `Hoi niekie`
 
-~~~html
+~~~css
 <link rel='stylesheet' href='scripts/blokks.css' media='screen'>
 <style media='screen'>
     .dashboard,
@@ -41,3 +41,5 @@ The campaign theme is perfect for launching a new company or product. It display
 window.blokks = window.blokks || {};
 window.blokks.schedule = new Schedule(myId, myTarget, myOptions, myData); const schedule = myIdentifier;
 ~~~
+
+The campaign theme is perfect for launching a new company or product. It displays a [MailChimp](http://www.mailchimp.com) sign-up form, a full-size background image, your site title and description, and a link list.

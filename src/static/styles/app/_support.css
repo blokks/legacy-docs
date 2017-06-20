@@ -1,5 +1,5 @@
-@import 'support/mixins';
 @import 'support/colors';
 @import 'support/fonts';
 @import 'support/highlighter';
+@import 'support/mixins';
 @import 'support/mq';

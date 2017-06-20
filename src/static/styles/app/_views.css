@@ -16,8 +16,8 @@ body {
 
 main {
     display: flex;
-    position: relative;
-    margin: 140px auto 0;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 0 20px;
     width: 100%;
     max-width: 1060px;

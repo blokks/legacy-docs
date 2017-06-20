@@ -1,13 +1,12 @@
-$backgroundImage: "images/logo@2x.gif";
 
 .header {
-    display: flex;
-    align-items: center;
-    /*height: 238px;*/
+    position: fixed 0 * * 0;
 
     &__title {
         @mixin text-replacement;
         margin: 0;
+
+        $backgroundImage: "images/logo@2x.gif";
         width: width($backgroundImage, 2);
         height: height($backgroundImage, 2);
 

@@ -1,5 +1,5 @@
 .decorations {
-    position: absolute 0 * * 0;
+    position: fixed 0 * * 0;
     left: calc((100vw - 100%) * -0.5);
     size: 100vw 100%;
     z-index: -1;
@@ -7,7 +7,7 @@
 
     &__rotating-square:first-of-type {
         position: absolute -300px * * 75%;
-        animation: rotate-decoration-ccw 360s linear infinite;
+        animation: rotate-decoration-ccw 260s linear infinite;
     }
 
     &__rotating-square:last-of-type {

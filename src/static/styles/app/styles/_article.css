@@ -1,12 +1,12 @@
 @define-mixin article-title {
-    @mixin font var(--proxima-nova), var(--default-title-color);
+    @mixin font var(--liberation-sans), var(--default-title-color);
     @mixin antialiased;
     font-weight: 400;
     letter-spacing: 1px;
 }
 
 @define-mixin article-body-text {
-    @mixin font var(--proxima-nova), var(--default-text-color), 1.5rem;
+    @mixin font var(--liberation-sans), var(--default-text-color), 1.5rem;
     @mixin antialiased;
     letter-spacing: 0.5px;
     line-height: 1.6;
@@ -20,12 +20,14 @@
 }
 
 @define-mixin article-list {
-    @mixin font var(--liberation-mono), var(--green), 1.3rem;
+    @mixin font var(--liberation-sans), var(--emphasized-text-color), 1.5rem;
     @mixin antialiased;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
 }
 
 @define-mixin article-thead {
-    @mixin font var(--proxima-nova), var(--default-text-color), 1.4rem;
+    @mixin font var(--liberation-sans), var(--default-text-color), 1.5rem;
     @mixin antialiased;
     font-weight: 400;
     letter-spacing: 1px;
@@ -33,20 +35,20 @@
 }
 
 @define-mixin article-tbody {
-    @mixin font var(--liberation-mono), var(--emphasized-text-color), 1.3rem;
+    @mixin font var(--liberation-mono), var(--emphasized-text-color), 1.4rem;
     @mixin antialiased;
     text-align: left;
     line-height: 1.5;
 }
 
 @define-mixin article-code {
-    @mixin font var(--liberation-mono), white, 1.3rem;
+    @mixin font var(--liberation-mono), white, 1.4rem;
     @mixin antialiased;
     line-height: 1.6;
 }
 
 @define-mixin article-code-language-identifier {
-    @mixin font var(--proxima-nova), color(white alpha(20%)), 1.3rem;
+    @mixin font var(--liberation-mono), color(white alpha(20%)), 1.4rem;
     @mixin antialiased;
     font-weight: 400;
 }

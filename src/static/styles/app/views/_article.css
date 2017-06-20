@@ -1,7 +1,8 @@
 .article {
     align-self: flex-end;
     margin-top: 146px;
-    width: 660px;
+    width: 100%;
+    max-width: 660px;
 
     @media (--small) {
         margin-top: 60px;
@@ -116,27 +117,63 @@
     }
 
     th:first-child {
-        padding: 10px 20px 10px 0;
+        @media (--small) {
+            padding: 10px 10px 10px 0;
+        }
+
+        @media (--default) {
+            padding: 10px 20px 10px 0;
+        }
     }
 
     th:last-child {
-        padding: 10px 0 10px 20px;
+        @media (--small) {
+            padding: 10px 0 10px 10px;
+        }
+
+        @media (--default) {
+            padding: 10px 0 10px 20px;
+        }
     }
 
     th:not(:first-child):not(:last-child) {
-        padding: 10px 20px;
+        @media (--small) {
+            padding: 10px;
+        }
+
+        @media (--default) {
+            padding: 10px 20px;
+        }
     }
 
     td:first-child {
-        padding: 13px 20px 13px 0;
+        @media (--small) {
+            padding: 13px 10px 13px 0;
+        }
+
+        @media (--default) {
+            padding: 13px 20px 13px 0;
+        }
     }
 
     td:last-child {
-        padding: 13px 0 13px 20px;
+        @media (--small) {
+            padding: 13px 0 13px 10px;
+        }
+
+        @media (--default) {
+            padding: 13px 0 13px 20px;
+        }
     }
 
     td:not(:first-child):not(:last-child) {
-        padding: 13px 20px;
+        @media (--small) {
+            padding: 13px 10px;
+        }
+
+        @media (--default) {
+            padding: 13px 20px;
+        }
     }
 
     code {

@@ -1,7 +1,14 @@
 .table-of-contents {
-    position: fixed 218px * * *;
-    width: 260px;
-    vertical-align: top;
+    width: 100%;
+    max-width: 240px;
+
+    @media (--small) {
+        display: none;
+    }
+
+    @media (--default) {
+        position: fixed 218px * * *;
+    }
 
     &__section {
         @mixin navigation-section;

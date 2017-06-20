@@ -1,20 +1,17 @@
+$backgroundImage: "images/logo@2x.gif";
+
 .header {
     display: flex;
     align-items: center;
-    height: 238px;
+    /*height: 238px;*/
 
     &__title {
         @mixin text-replacement;
         margin: 0;
-        size: 301px 51px;
+        width: width($backgroundImage, 2);
+        height: height($backgroundImage, 2);
 
-        $backgroundImage: "images/logo@2x.gif";
         background: inline($backgroundImage) no-repeat;
         background-size: size($backgroundImage, 2);
-    }
-
-    &__subtitle {
-        @mixin header-subtitle;
-        margin: 18px 0 0 0;
     }
 }

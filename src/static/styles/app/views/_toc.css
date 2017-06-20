@@ -1,5 +1,6 @@
 .table-of-contents {
     flex-grow: 1;
+    position: sticky 0 * * *;
     min-width: 260px;
 
     &.fixed {
@@ -11,17 +12,13 @@
         margin: 0;
     }
 
-    &__section:first-of-type {
-        margin-top: 8px;
-    }
-
     &__section:not(:first-of-type) {
-        margin-top: 45px;
+        margin-top: 40px;
     }
 
     &__pages {
-        margin-top: 15px;
-        padding: 0;
+        margin: 15px 0 0 0;
+        padding: 0 0 0 20px;
         list-style: none;
     }
 
@@ -38,33 +35,11 @@
     }
 
     &__link--selected {
+        color: var(--blue);
         cursor: default;
     }
 
-    &__link--new:after {
-        @mixin navigation-new-label;
-        margin-left: 12px;
-        content: 'New!';
-    }
-
-    &__link--updated:after {
-        @mixin navigation-new-label;
-        margin-left: 12px;
-        content: 'Updated!';
-    }
-
-    &__link--selected:before {
-        display: inline-block;
-        size: 20px 8px;
-        margin-right: 12px;
-        content: '';
-
-        $backgroundImage: "images/arrow@2x.png";
-        background: inline($backgroundImage) no-repeat;
-        background-size: size($backgroundImage, 2);
-    }
-
-    &__link:not(&__link--selected):hover {
+    &__link:hover {
         color: var(--blue);
     }
 }

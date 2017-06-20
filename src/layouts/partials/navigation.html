@@ -1,14 +1,18 @@
 {{ $currentPage := .Permalink }}
 
 <nav class='docs__table-of-contents table-of-contents'>
-    {{ range .Site.Pages.ByWeight.GroupBy "Section" }}
-        <h1 class='table-of-contents__section'>{{ humanize .Key }}</h1>
-        <ul class='table-of-contents__pages'>
-            {{ range .Pages }}
-                <li class='table-of-contents__page'>
-                    <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}table-of-contents__link--selected{{ end }} {{ if .Params.new }}table-of-contents__link--new{{ end }} {{ if .Params.updated }}table-of-contents__link--updated{{ end }}'>{{ .Title }}</a>
-                </li>
-            {{ end }}
-        </ul>
+    {{ range .Site.Home.Sections }}
+        {{ if .Pages }}
+            <h1 class='table-of-contents__section'>{{ humanize .Title }}</h1>
+            <ul class='table-of-contents__pages'>
+                {{ range .Pages.ByWeight }}
+                    <li class='table-of-contents__page'>
+                        <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}table-of-contents__link--selected{{ end }} {{ if .Params.new }}table-of-contents__link--new{{ end }}'>
+                            {{ .Title }}
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+        {{ end }}
     {{ end }}
 </nav>

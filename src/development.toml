@@ -3,6 +3,7 @@ title               = "Blokks documentation"
 staticdir           = ".static"
 layoutdir           = ".layouts"
 languageCode        = "en-us"
+SectionPagesMenu    = "main"
 
 [params]
 analytics           = "UA-64372736-2"

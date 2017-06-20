@@ -24,21 +24,19 @@
 
     <body>
 
+		{{ partial "header.html" . }}
+
 		<main class='docs'>
-			{{ partial "header.html" . }}
+        	{{ partial "navigation.html" . }}
 
-			<div class='docs__container'>
-	        	{{ partial "navigation.html" . }}
-
-				<article class='docs__article article'>
-		        	{{ block "content" . }}
-					{{ end }}
-				</article>
-			</div>
-
-			{{ partial "footer.html" . }}
-			{{ partial "decorations.html" . }}
+			<article class='docs__article article'>
+	        	{{ block "content" . }}
+				{{ end }}
+			</article>
 		</main>
+
+		{{ partial "footer.html" . }}
+		{{ partial "decorations.html" . }}
 
         <script src='{{ .Site.BaseURL }}/scripts/main.js' charset='utf-8'></script>
 		<script>

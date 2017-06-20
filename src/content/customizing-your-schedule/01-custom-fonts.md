@@ -5,7 +5,6 @@ description     = "In this section, you’ll find information on how to add cust
 
 author          = "@niekdekker"
 new             = false
-weight          = 4
 keywords        = [
     "blokks",
     "documentation",

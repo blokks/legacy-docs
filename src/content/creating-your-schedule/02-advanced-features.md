@@ -1,16 +1,12 @@
 +++
 date            = "2016-10-20T11:31:19+02:00"
+author          = "@patrickpietens"
+
 title           = "Advanced features"
 description     = "In this section, you’ll find information on how to create your first schedule."
+keywords        = ["blokks", "documentation", "basics", "schedule"]
 
-author          = "@patrickpietens"
 weight          = 2
-keywords        = [
-    "blokks",
-    "documentation",
-    "basics",
-    "schedule",
-]
 +++
 
 In this section, you’ll find information on :

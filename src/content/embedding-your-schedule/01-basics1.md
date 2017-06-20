@@ -5,7 +5,6 @@ description     = "In this section, you’ll find information on how to create y
 
 author          = "@patrickpietens"
 new             = true
-weight          = 1
 keywords        = [
     "blokks",
     "documentation",

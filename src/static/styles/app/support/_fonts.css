@@ -2,21 +2,14 @@
     font-family: 'liberationmono';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/liberationmono-regular-webfont.woff') format('woff');
+    src: url('https://static.blokks.co/liberation-mono-regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'proximanova';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/proxima_nova_soft_regular-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'proximanova';
-    font-weight: 500;
-    font-style: normal;
-    src: url('../fonts/proxima_nova_soft_medium-webfont.woff') format('woff');
+    src: url('https://static.blokks.co/liberation-sans-regular.woff') format('woff');
 }
 
 :root {

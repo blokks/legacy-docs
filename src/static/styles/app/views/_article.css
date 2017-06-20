@@ -17,15 +17,15 @@
     }
 
     h1 {
-        font-size: 4.2rem;
+        font-size: 3.4rem;
     }
 
     h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     p {
@@ -110,13 +110,13 @@
 
     th {
         @mixin article-thead;
-        border-bottom: 2px solid var(--default-stroke-color);
+        border-bottom: 1px solid var(--default-stroke-color);
     }
 
     td {
         @mixin article-tbody;
         vertical-align: top;
-        border-bottom: 1px solid var(--dark-stroke-color);
+        border-bottom: 1px solid var(--default-stroke-color);
     }
 
     th:first-child, td:first-child {

@@ -15,8 +15,9 @@ body {
 }
 
 main {
+    display: flex;
     position: relative;
-    margin: 0 auto;
+    margin: 140px auto 0;
     padding: 0 20px;
     width: 100%;
     max-width: 1060px;
@@ -34,16 +35,4 @@ main {
 ::-moz-selection {
     background: var(--blue);
     color: var(--selection-text-color);
-}
-
-.docs__container {
-    display: flex;
-
-    @media (--small) {
-        flex-direction: column;
-    }
-
-    @media (--default) {
-        flex-direction: row;
-    }
 }

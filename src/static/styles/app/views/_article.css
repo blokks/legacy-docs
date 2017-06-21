@@ -69,6 +69,13 @@
         border-radius: 3px;
     }
 
+    hr {
+        margin: 45px 0;
+        size: 100% 1px;
+        border: none;
+        background-color: var(--default-stroke-color);
+    }
+
     ul, ol {
         @mixin clearfix;
         @mixin article-list;

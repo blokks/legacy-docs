@@ -10,10 +10,10 @@
         animation: rotate-decoration-ccw 260s linear infinite;
     }
 
-    &__rotating-square:last-of-type {
+    /*&__rotating-square:last-of-type {
         position: absolute 1300px * * -200px;
         animation: rotate-decoration-cw 260s linear infinite alternate;
-    }
+    }*/
 }
 
 @keyframes rotate-decoration-ccw {

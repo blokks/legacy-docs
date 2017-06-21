@@ -1,0 +1,5 @@
+@define-mixin footer-link {
+    @mixin font var(--liberation-mono), var(--default-link-color), 1.4rem;
+    @mixin antialiased;
+    text-decoration: none;
+}

@@ -1,10 +1,42 @@
 .footer {
     display: flex;
     align-self: flex-end;
+
+    border-top: 1px solid var(--default-stroke-color);
+    position: relative;
     size: 100% 146px;
+    margin-top: 75px;
+    padding-top: 20px;
     max-width: 660px;
+
+    &__link {
+        @mixin footer-link;
+    }
+
+    &__link:hover {
+        color: var(--blue);
+    }
+
+    &__link--previous:before,
+    &__link--next:after {
+        display: inline-block;
+        size: 20px 8px;
+        content: '';
+        position: relative;
+        top: -1px;
+    }
+
+    &__link--previous:before {
+        background-image: inline('images/arrow-previous.png');
+        background-size: size('images/arrow-previous.png', 2);
+    }
 
     &__link--next {
         margin-left: auto;
+    }
+
+    &__link--next:after {
+        background-image: inline('images/arrow-next.png');
+        background-size: size('images/arrow-next.png', 2);
     }
 }

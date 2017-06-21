@@ -5,8 +5,11 @@ author          = "@patrickpietens"
 title           = "Basics"
 description     = "In this section, you’ll find information on how to create your first schedule."
 keywords        = ["blokks", "documentation", "basics", "schedule"]
-
 weight          = 1
+
+[menu.main]
+menu            = "main"
+parent          = "manage-your-schedule"
 +++
 
 In this section, you’ll find information on how to create your first schedule.

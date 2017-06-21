@@ -1,15 +1,15 @@
 +++
 date            = "2016-10-20T11:31:19+02:00"
+author          = "@niekdekker"
+
 title           = "Using Custom Fonts"
 description     = "In this section, you’ll find information on how to add custom fonts to your schedule."
+keywords        = ["blokks", "documentation", "fonts"]
+weight          = 7
 
-author          = "@niekdekker"
-new             = false
-keywords        = [
-    "blokks",
-    "documentation",
-    "fonts"
-]
+[menu.main]
+menu            = "main"
+parent          = "design-your-schedule"
 +++
 
 In this section, you’ll find information on how to add custom fonts to your schedule embed.

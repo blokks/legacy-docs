@@ -5,9 +5,11 @@ author          = "@patrickpietens"
 title           = "Campaign Theme"
 description     = "The campaign theme is perfect for launching a new company or product. It displays a MailChimp sign-up form, a full-size background image, your site title and description, and a link list."
 keywords        = ["blokks", "documentation"]
-
 weight          = 4
-new             = true
+
+[menu.main]
+menu            = "main"
+parent          = "manage-your-schedule"
 +++
 
 The campaign theme is perfect for launching a new company or product. It displays a [MailChimp](http://www.mailchimp.com) sign-up form, a full-size background image, your site title and description, and a link list. `Hoi niekie`

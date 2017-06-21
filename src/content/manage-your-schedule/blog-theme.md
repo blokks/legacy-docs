@@ -5,8 +5,11 @@ author          = "@patrickpietens"
 title           = "Blog Theme"
 description     = "The Blog theme renders markdown, HTML and text files. Each file you include will appear on the homepage and be rendered as its own post."
 keywords        = ["blokks", "documentation"]
-
 weight          = 3
+
+[menu.main]
+menu            = "main"
+parent          = "manage-your-schedule"
 +++
 
 The Blog theme renders markdown, HTML and text files. Each file you include will appear on the homepage and be rendered as its own post.

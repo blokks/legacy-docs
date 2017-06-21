@@ -1,14 +1,14 @@
-{{ $currentPage := .Permalink }}
+{{ $currentPage := . }}
 
 <nav class='docs__table-of-contents table-of-contents'>
-    {{ range .Site.Home.Sections }}
-        {{ if .Pages }}
-            <h1 class='table-of-contents__section'>{{ humanize .Title }}</h1>
+    {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+            <h1 class='table-of-contents__section'>{{ .Name }}</h1>
             <ul class='table-of-contents__pages'>
-                {{ range .Pages.ByWeight }}
+                {{ range .Children }}
                     <li class='table-of-contents__page'>
-                        <a href='{{ .Permalink }}' class='table-of-contents__link {{ if eq .Permalink $currentPage }}table-of-contents__link--selected{{ end }} {{ if .Params.new }}table-of-contents__link--new{{ end }}'>
-                            {{ .Title }}
+                        <a href='{{ .URL }}' class='table-of-contents__link {{ if $currentPage.IsMenuCurrent "main" . }}table-of-contents__link--selected{{ end }}'>
+                            {{ .Name }}
                         </a>
                     </li>
                 {{ end }}

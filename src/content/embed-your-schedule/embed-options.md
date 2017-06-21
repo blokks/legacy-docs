@@ -1,14 +1,15 @@
 +++
 date            = "2016-10-20T11:31:19+02:00"
-title           = "Basics"
-description     = "In this section, you’ll find information on how to create your first schedule."
-
 author          = "@patrickpietens"
-new             = true
-keywords        = [
-    "blokks",
-    "documentation",
-]
+
+title           = "Embed options"
+description     = "In this section, you’ll find information on how to create your first schedule."
+keywords        = ["blokks", "documentation"]
+weight          = 6
+
+[menu.main]
+menu            = "main"
+parent          = "embed-your-schedule"
 +++
 
 In this section, you’ll find information on how to create your first schedule.

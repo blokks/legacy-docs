@@ -12,19 +12,14 @@ Install
 1. `$ git clone https://github.com/patrickpietens/blokks-docs.git`
 2. `$ npm install`
 
-Setup
------
-1. Duplicate `src/config-example.yml` to `src/config.yml`
-2. Edit `src/config.yml` to match your local settings
-
 Development
 -----------
 `$ npm run development`
 
-Staging (will automatically update staging.blokks.co/docs)
+Staging (This will automatically update staging.blokks.co/docs)
 ----------
 `$ npm run staging`
 
-Production (will automatically update blokks.co/docs)
+Production (This will automatically update blokks.co/docs)
 ----------
 `$ npm run production`

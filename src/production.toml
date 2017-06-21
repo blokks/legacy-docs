@@ -3,9 +3,23 @@ title               = "Blokks documentation"
 staticdir           = ".static"
 layoutdir           = ".layouts"
 languageCode        = "en-us"
-SectionPagesMenu    = "main"
 
 [params]
 analytics           = "UA-64372736-2"
 author              = "@BlokksHQ"
 version             = "1.0.0"
+
+[[menu.main]]
+identifier = "manage-your-schedule"
+name = "Manage your schedule"
+weight = 1
+
+[[menu.main]]
+identifier = "embed-your-schedule"
+name = "Embed your schedule"
+weight = 2
+
+[[menu.main]]
+identifier = "design-your-schedule"
+name = "Design your schedule"
+weight = 3

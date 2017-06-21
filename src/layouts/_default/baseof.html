@@ -23,19 +23,18 @@
 	</head>
 
     <body>
-
-		{{ partial "header.html" . }}
-
 		<main class='docs'>
+			{{ partial "header.html" . }}
         	{{ partial "navigation.html" . }}
 
 			<article class='docs__article article'>
 	        	{{ block "content" . }}
 				{{ end }}
 			</article>
+
+			{{ partial "footer.html" . }}
 		</main>
 
-		{{ partial "footer.html" . }}
 		{{ partial "decorations.html" . }}
 
         <script src='{{ .Site.BaseURL }}/scripts/main.js' charset='utf-8'></script>

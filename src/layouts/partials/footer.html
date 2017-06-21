@@ -1,2 +1,13 @@
 <footer class='docs__footer footer'>
+    {{ if .Prev }}
+        <a href='{{ .Prev.URL }}' class='footer__link footer__link--previous'>
+            {{ .Prev.Title }}
+        </a>
+    {{ end }}
+
+    {{ if .Next }}
+        <a href='{{ .Next.URL }}' class='footer__link footer__link--next'>
+            {{ .Next.Title }}
+        </a>
+    {{ end }}
 </footer>

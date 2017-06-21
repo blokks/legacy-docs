@@ -1,16 +1,20 @@
 
 .header {
-    position: fixed 0 * * 0;
+    size: 100% 40px;
+
+    @media (--default) {
+        position: fixed 0 * * 0;
+    }
 
     &__title {
         @mixin text-replacement;
         margin: 0;
 
-        $backgroundImage: "images/logo@2x.gif";
+        $backgroundImage: "../images/logo-animated.gif";
         width: width($backgroundImage, 2);
         height: height($backgroundImage, 2);
 
-        background: inline($backgroundImage) no-repeat;
+        background: url($backgroundImage) no-repeat;
         background-size: size($backgroundImage, 2);
     }
 }

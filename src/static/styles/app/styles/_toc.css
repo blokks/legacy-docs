@@ -1,3 +1,8 @@
+@define-mixin navigation-toggle-button {
+    @mixin font var(--liberation-mono), var(--blue), 1.4rem;
+    @mixin antialiased;
+}
+
 @define-mixin navigation-section {
     @mixin font var(--liberation-sans), var(--default-text-color), 1.5rem;
     @mixin antialiased;

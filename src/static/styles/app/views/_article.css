@@ -1,8 +1,15 @@
 .article {
     align-self: flex-end;
-    margin-top: 146px;
     width: 100%;
     max-width: 660px;
+
+    @media (--small) {
+        margin-top: 45px;        
+    }
+
+    @media (--default) {
+        margin-top: 146px;
+    }
 
     & > :first-child {
         margin-top: 0;

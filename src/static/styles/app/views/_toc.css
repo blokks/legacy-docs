@@ -3,11 +3,65 @@
     max-width: 240px;
 
     @media (--small) {
-        display: none;
+        margin-top: 90px;
     }
 
     @media (--default) {
         position: fixed 218px * * *;
+    }
+
+    &__toggler {
+        display: none;
+    }
+
+    &__toggler-label {
+        @mixin navigation-toggle-button;
+        position: relative;
+        cursor: pointer;
+
+        @media (--default) {
+            display: none;
+        }
+    }
+
+    &__toggler-label:before {
+        position: relative 2px * * *;
+        display: inline-block;
+        size: 14px;
+        margin-right: 10px;
+
+        background-image: inline('images/icon-open.png');
+        background-repeat: no-repeat;
+        background-size: 14px;
+        content: '';
+        transition: transform 400ms cubic-bezier(0.18,0.89,0.31,1.59);
+    }
+
+    &__content {
+        margin: 0;
+        overflow: hidden;
+        transition:
+            margin 300ms cubic-bezier(0.22, 0.61, 0.36, 1),
+            max-height 300ms cubic-bezier(0.22, 0.61, 0.36, 1),
+            opacity 200ms linear;
+
+        @media (--small) {
+            opacity: 0;
+            max-height: 0;
+        }
+    }
+
+    &__toggler:checked ~ &__toggler-label:before {
+        transform: rotate(45deg);
+    }
+
+    &__toggler:checked ~ &__content {
+        opacity: 1;
+
+        @media (--small) {
+            margin: 20px 0 0 0;
+            max-height: 500px;
+        }
     }
 
     &__section {
@@ -27,7 +81,7 @@
 
     &__page {
         @mixin navigation-page;
-        margin: 14px 0 0 0;
+        margin: 12px 0 0 0;
     }
 
     &__link {

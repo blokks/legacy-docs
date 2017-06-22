@@ -1,12 +1,11 @@
 .footer {
     display: flex;
+    align-items: flex-start;
     align-self: flex-end;
 
-    border-top: 1px solid var(--default-stroke-color);
     position: relative;
     size: 100% 146px;
-    margin-top: 75px;
-    padding-top: 20px;
+    margin-top: 60px;
     max-width: 660px;
 
     &__link {
@@ -20,15 +19,19 @@
     &__link--previous:before,
     &__link--next:after {
         display: inline-block;
+        position: relative -1px * * *;
         size: 20px 8px;
         content: '';
-        position: relative;
-        top: -1px;
+        transition: transform 100ms;
     }
 
     &__link--previous:before {
         background-image: inline('images/arrow-previous.png');
         background-size: size('images/arrow-previous.png', 2);
+    }
+
+    &__link--previous:hover:before {
+        transform: translateX(-5px);
     }
 
     &__link--next {
@@ -38,5 +41,9 @@
     &__link--next:after {
         background-image: inline('images/arrow-next.png');
         background-size: size('images/arrow-next.png', 2);
+    }
+
+    &__link--next:hover:after {
+        transform: translateX(5px);
     }
 }

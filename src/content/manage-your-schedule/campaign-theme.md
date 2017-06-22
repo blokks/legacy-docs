@@ -8,7 +8,6 @@ keywords        = ["blokks", "documentation"]
 weight          = 4
 
 [menu.main]
-menu            = "main"
 parent          = "manage-your-schedule"
 +++
 

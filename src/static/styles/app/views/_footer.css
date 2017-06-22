@@ -10,6 +10,7 @@
 
     &__link {
         @mixin footer-link;
+        flex: none;
     }
 
     &__link:hover {
@@ -26,6 +27,7 @@
     }
 
     &__link--previous:before {
+        margin-right: 5px;
         background-image: inline('images/arrow-previous.png');
         background-size: size('images/arrow-previous.png', 2);
     }
@@ -39,6 +41,7 @@
     }
 
     &__link--next:after {
+        margin-left: 5px;
         background-image: inline('images/arrow-next.png');
         background-size: size('images/arrow-next.png', 2);
     }

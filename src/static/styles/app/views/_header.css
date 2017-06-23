@@ -2,10 +2,10 @@
 .header {
     size: 100% 40px;
 
-    @media (--small) {
+    @media (--smallest), (--small) {
         position: absolute 0 * * 0;
     }
-    
+
     @media (--default) {
         position: fixed 0 * * 0;
     }

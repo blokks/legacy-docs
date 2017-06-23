@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 240px;
 
-    @media (--small) {
+    @media (--smallest), (--small) {
         margin-top: 90px;
     }
 
@@ -45,7 +45,7 @@
             max-height 300ms cubic-bezier(0.22, 0.61, 0.36, 1),
             opacity 200ms linear;
 
-        @media (--small) {
+        @media (--smallest), (--small) {
             opacity: 0;
             max-height: 0;
         }
@@ -58,7 +58,7 @@
     &__toggler:checked ~ &__content {
         opacity: 1;
 
-        @media (--small) {
+        @media (--smallest), (--small) {
             margin: 20px 0 0 0;
             max-height: 500px;
         }

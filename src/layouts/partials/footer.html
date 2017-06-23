@@ -1,13 +1,15 @@
 <footer class='docs__footer footer'>
     {{ if .Prev }}
         <a href='{{ .Prev.URL }}' class='footer__link footer__link--previous'>
-            {{ .Prev.Title }}
+            <span class='footer__link-label footer__link-label--mobile'>Previous</span>
+            <span class='footer__link-label footer__link-label--desktop'>{{ .Prev.Title }}</span>
         </a>
     {{ end }}
 
     {{ if .Next }}
         <a href='{{ .Next.URL }}' class='footer__link footer__link--next'>
-            {{ .Next.Title }}
+            <span class='footer__link-label footer__link-label--mobile'>Next</span>
+            <span class='footer__link-label footer__link-label--desktop'>{{ .Next.Title }}</span>
         </a>
     {{ end }}
 </footer>

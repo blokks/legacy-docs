@@ -4,9 +4,16 @@
     align-self: flex-end;
 
     position: relative;
-    size: 100% 146px;
     margin-top: 60px;
     max-width: 660px;
+
+    @media (--smallest), (--small) {
+        size: 100% 80px;        
+    }
+
+    @media (--default) {
+        size: 100% 146px;
+    }
 
     &__link {
         @mixin footer-link;
@@ -48,5 +55,17 @@
 
     &__link--next:hover:after {
         transform: translateX(5px);
+    }
+
+    @media (--smallest) {
+        &__link-label--desktop {
+            display: none;
+        }
+    }
+
+    @media (--small), (--default) {
+        &__link-label--mobile {
+            display: none;
+        }
     }
 }

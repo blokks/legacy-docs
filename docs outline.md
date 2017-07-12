@@ -1,8 +1,558 @@
-# Embed
+# Notes
 
-Ik denk dat we nog een hoofdstuk nodig hebben waarin we de embed beschrijven. Double clicks etc. De embedcode etc.
+*- Ik denk dat we nog een hoofdstuk nodig hebben waarin we de embed beschrijven. Double clicks etc. De embedcode etc. Dit is ook een goede brug van backend naar het volgende hoofdstuk*.
+*- Idee. Vraagtekentjes plaatsen bij ingewikkelde onderdelen in forms in de backend (act modal & embed tab). Die vraagtekentjes direct doorlinken naar het deel van de docs waar we dat uitleggen. We kunnen ook nog steeds on hover een korte beschrijving tonen, maar on click kunnen we naar de uitgebreidere uitleg in de docs.*
 
-Dit is ook een goede brug van backend naar het volgende hoofdstuk.
+---
+
+
+
+
+*Idee. Vraagtekentjes plaatsen bij ingewikkelde onderdelen in forms in de backend (act modal & embed tab). Die vraagtekentjes direct doorlinken naar het deel van de docs waar we dat uitleggen. We kunnen ook nog steeds on hover een korte beschrijving tonen, maar on click kunnen we naar de uitgebreidere uitleg in de docs.*
+
+
+
+
+# Introduction
+
+## Welcome friend!
+
+We’re glad you made it here. In this documentation, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
+
+Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks.
+
+![Blokks 101: Creating and updating your schedule](video)
+
+![Blokks for developers: How to embed and customize your schedule](video)
+
+If you have any questions for which you’re unable to find an answer here, don’t hesitate to let us know. Send us an [email](mailto:support@blokks.co), shoot us a message on [twitter](http://twitter.com/blokkshq) or use the little support bubble shown on the bottom right to speak to us directly.
+
+For now, let’s get started with our first chapter: [creating your account](#).
+
+
+
+
+# Creating your account
+
+Creating a Blokks account is quite simple, use the following link to sign up:
+
+→ [blokks.co/signup](https://blokks.co/signup)
+
+![Creating your account](https://blokks.co/docs/images/image.png)
+
+Add your full name and email address and click `Create account` to get started. After this, you will receive an email in your inbox with your login credentials. 
+
+![Your signup e-mail](https://blokks.co/docs/images/image.png)
+
+Your password is auto-generated to speed things up. You can change your initial password at any time by following this link:
+
+→ [blokks.co/manage/account](https://blokks.co/manage/account)
+
+Follow the link in your email to start [creating your first event](#)
+
+
+
+
+# Creating your first event
+
+Before you’re ready to start tinkering with your schedule, we need some initial info to set everything up correctly. 
+
+After following the link shown in your signup email, you’ll arrive here:
+
+![Setting things up](https://blokks.co/docs/images/image.png)
+
+During this process you’ll be taken through a series of pages where we ask you specific information about your event. 
+
+To get started, enter your event name. We also ask you what kind of event you’re organising. This can be either a music festival, conference or an event that doesn’t fit these categories. We ask this because our backend has been slightly customized for each category.
+
+## Dates & times
+
+![Adding your dates & times](https://blokks.co/docs/images/image.png)
+
+On this page, you can select your event date or multiple dates. Simply click dates to add or remove them. 
+
+You can also choose a start and end time for your event. This will determine the duration of your schedule. 
+
+If you’re not yet sure about the date and time for your event, no worries, you can easily change these later.
+
+## Adding stages
+
+![Adding stages](https://blokks.co/docs/images/image.png)
+
+Here you can add multiple stages or areas for your event. You can add more than three stages by clicking the `Add another stage` button. 
+
+Don’t worry if you’re not sure about which stages your event will have. You can remove and add as many stages as you’d like at a later date. 
+
+## Your team
+
+![Adding your team](https://blokks.co/docs/images/image.png)
+
+In many cases, more than one person will be responsible for updating your event timetable. Multiple members of your team might want to add acts to your schedule, or more than one developer might want to work on your timetable at the same time. 
+
+On this page, you can invite team members to Blokks. They will receive an email with their own login credentials and gain full access to your schedule. 
+
+Adding team members is optional and can also be done at a later time.
+
+## All done!
+
+And that’s it. Your schedule has now been set up and you’re ready to [dive in!](#)
+
+
+
+
+# Managing your days
+
+Your days can be found at the top of your schedule. You can switch between different days by clicking them.
+
+![GIF: Adding and adjusting days](https://blokks.co/docs/images/image.gif)
+
+## Adding days
+You can easily add another day by clicking the `+ Add day` button. Blokks will automatically select a date that follows the last date of your event. Note: Your current stages will also be copied to your added day.
+
+## Changing and removing days
+
+Right-clicking any day will show the date picker, allowing you to change the date for that specific day.
+
+Below the date picker you’ll also find a `remove` button, allowing you to delete that day. Deleting that day will also remove the acts you’ve added to that day. But don’t worry, you can always undo any action you take in Blokks by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
+
+## Adjusting your start and end time
+
+![GIF: Adjusting your start and end time](https://blokks.co/docs/images/image.gif)
+
+If you want to have your days start or end at an earlier or later time, you can do so by clicking the `•••` button shown above your schedule times. 
+
+Making your days longer will add space above or below your schedule, creating more space for your acts.
+
+When making your days shorter, make sure that you don’t have any active acts during the times you’re removing, as those acts will be removed from your schedule. If this does happen, you can always take a step back by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
+
+
+
+
+# Managing your stages
+
+The columns shown in your schedule represent the various stages or areas that will be used during your event. 
+
+![GIF: Adding and moving stages](https://blokks.co/docs/images/image.gif)
+
+## Adding stages
+
+You can add stages by simply clicking the `+ Add new stage` button. The new stage will appear on the right of your current stages. 
+
+Note: New stages are only added to your currently selected day.
+
+## Ordering stages
+
+You can change the order of your stages by dragging and dropping them to any position you prefer. Pick up a stage by hovering over the stage title and start dragging. When you release the stage, it will snap into place. 
+
+## Titles and subtitles
+
+![Your stage options](https://blokks.co/docs/images/image.png)
+
+Right-click a stage or press the `•••` button to bring up the various options for that stage. You can adjust the following fields:
+- Title
+- Subtitle
+- Categories
+- Delay
+
+The title field is, forgive us for being obvious, the main title of your stage. This title will also appear in your timetable embed and will be visible to your visitors. 
+
+The stage subtitle is an optional field and it will not automatically show in your timetable embed. This field can be used for events where you need to show a bit more context for each stage. For example, your stage name could be `The Red Stage` and its subtitle could be `Sponsored by Red Bull`. 
+
+More info on how to show your stage subtitles in your embed can be found in [this section](#).
+
+By the way, here’s a pro-tip: if you press `cmd` and click on a stage title, you can edit it directly. 
+
+## Categories
+
+You can add multiple categories to each stage. By itself, these categories have no direct impact on the design of your timetable. But: categories can be used for styling purposes during development, allowing you to adjust the look and feel of each individual stage. 
+
+More information on customizing the design of your stages can be found in [this section](#).
+
+## Delays
+
+Live events can be pretty hectic and can get messy at times. Speakers or artists can get delayed for various reasons, causing your schedule to get out of sync. 
+
+For this purpose, we’ve built in a delay function. By adding a delay of, for example, `15 minutes` to your stage, the times for all acts on that stage will be pushed by 15 minutes. Your visitors will then see the updates times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts. Important note: the times shown in the backend will still be the initially set times.
+
+*@patrick, klopt dit tekstje? Of mis ik nog iets. Moeten we nog iets zeggen over hoe we dat laten zien in de embed en hoe dat te customizen?*
+
+
+
+
+# Managing your acts
+
+Adding acts to your event is probably the most important part of building your schedule. Which is why Blokks allows you to add all the information your visitors will need.
+
+## Adding acts
+
+![GIF: Adding acts](https://blokks.co/docs/images/image.gif)
+
+To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add all your act info in one place. 
+
+## Moving and resizing acts
+
+![GIF: Moving and resizing acts](https://blokks.co/docs/images/image.gif)
+
+You can move acts to a different slot by dragging and dropping them. Pick up an act by hovering over the top section of that act and start dragging. When you release the act, it will snap into place. 
+
+One way to adjust an acts start and end time, is by hovering over the bottom right of an act and dragging it up or down. This will change the acts time by increments of 15 minutes. 
+
+If you need to make a more specific change in the acts time, you can do so by clicking the acts and adjusting the time there.
+
+## Titles and subtitles
+
+![The act modal](https://blokks.co/docs/images/image.png)
+
+After adding an act or clicking on an existing act, you can edit your acts content. First up is your acts title. This is the main title, that will be shown for each act in your timetable embed.
+
+If your event is a conference, you can additionally add a subtitle. Choosing to show the subtitle in your timetable embed can be done while [designing your schedule](#), more info on how to do that can be found in that section. 
+
+## Headliners  
+
+You can make your act a `headliner` which will allow you to highlight this act in your timetable embed. This enables you to have special acts really pop out on your schedule by adding custom styling.
+  
+Note: In our standard Blokks theme, headliners will not be highlighted. Custom highlight styling can easily be added by adjusting your code. More detailed info on how to do so can be found in [this section](#).
+
+## Categories
+
+Each act can have multiple categories. These categories can optionally be shown in your timetable, after a user clicks on an act. Additionally, you can use these categories to adjust the design of individual acts. 
+
+More information on using categories to customize your design can be found in [this section](#).
+
+## Description
+
+Each of your acts can have a description. This will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Your description can be as long as you prefer, but we recommend a maximum of 500 characters. Note: this is not a hard limit, you can go with as many characters as you need. 
+
+Here’s a pro-tip: it’s possible to add formatting to this text by using [markdown](#). Markdown is a super simple text-based method to add custom styles to plain text. Styles that can be added using this method:
+- Bold text
+- Italic text
+- Headers and subheaders
+- Quotes
+- Dividers
+- Links
+- Lists
+
+You can show these styles in your timetable embed by adjusting your code and customizing their design. Our guide on using markdown:
+→ [Markdown](#)
+
+## Images
+
+You can add a single image to each of your acts by dragging an image file on the drop area or add one by clicking that area. 
+
+This image will be your acts main visual and can be shown in the timetable embed. Choosing to hide or show this image can be done in your [embed settings](#). 
+
+The images that are added to your act cannot be larger than 2MB. 
+Our recommended file format is JPG (instead of PNG), since this helps your schedule load faster. 
+
+## Links
+
+You can add multiple links to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the `Add one more link` button.
+
+Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link. You can choose from the following labels:
+- Website
+- Youtube
+- Soundcloud
+- Spotify
+- Twitter
+- Facebook
+- Instagram
+- Other..
+
+When you select the `- Other..` label, you can manually add a custom text label.
+
+## Embeds
+
+In some cases, you might want to add a Youtube video, Spotify embed or other piece of media content to an act in your timetable embed. This is possible by copying and pasting its embed code. 
+
+You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.  
+
+We support many different embeds. But if you’re trying to add an embed code and are running into problems, send us an [email](mailto:support@blokks.co), tweet or use the support bubble on the bottom right. We’ll help you out.
+
+## Deleting acts
+
+You can delete an act by pressing the `Delete` button at the bottom while editing an act. Alternatively, you can right-click on any act in your schedule to find another `Delete` button. 
+
+## Disable user interaction
+
+In some cases it can be useful to show an act in your schedule without allowing your visitors to click on it. For example, when an act is still being teased to your adience, this feature would allow you to show the act in your schedule, but prevent visitors to view its info. 
+
+## Published, unpublished and canceled
+
+Initially, all acts are marked as `published`. When you change an act to `unpublished`, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your visitors. 
+
+Acts marked as `canceled` can have custom styling in your timetable embed, allowing you to show your visitors when acts are canceled. Visit [this section](#) to learn more on how to do this. 
+
+*@patrick, klopt dit? Of hebben we dit nu nog niet.*
+
+## Custom fields
+
+It’s possible to add custom for fields to your schedule. In order to do so.. 
+
+*@patrick, ik weet nog niet precies hoe dit in z’n werk gaat. Kan jij evt. aanvullen, of zullen we het weglaten voor nu.*
+
+
+
+
+# Your embed settings
+*Dit onderdeel was eerst “Design your schedule”. Misschien moeten we dit voor nu anders noemen, nu de embed tab nog geen ‘Design’ heet en je daar eigenlijk niet aan het ontwerpen bent, meer settings van je embed aanpassen *
+
+When you’re ready to start implementing your schedule on your website or mobile app, head over to the embed tab.
+
+![The embed tab](https://blokks.co/docs/images/image.png)
+
+Here you’ll find various settings that will allow you to customize both the design and functionality of your timetable embed. After adjusting the settings on the left, the embed code shown on the right will automatically update.
+
+Let’s dig in. 
+
+## Select your layout
+
+Your timetable embed can have different layouts. Here you can select the layout that best suits your event schedule. Currently, we offer two different layouts:
+
+1. Columns
+
+![Column layout](https://blokks.co/docs/images/image.png)
+
+In this layout, all your stages are placed on columns. This layout works best if you have a small number of stages. Also, it allows you to show a lot of info on your acts, since your acts will be larger.
+
+An example of this layout in use would be the schedule that [The Next Web](https://blokks.co/schedules/tnw2017) built. 
+
+2. Rows
+
+![Row layout](https://blokks.co/docs/images/image.png)
+
+In this layout, your stages will be placed on rows. This is a great layout for events that have a lot of stages, since you can have more stages visible at the same time. 
+
+A good example of this layout in use is the schedule that [De Correspondent](https://decorrespondent.nl/evenementen/7/festival-der-vooruitgang/programma) built.
+
+The above layouts are fully customizable. More information on how to do so can be found in [this section](#).
+
+After selecting a layout, the corresponding values will be adjusted in your embed code. For example, after selecting the Rows layout, your embed will load a different CSS file:
+```<link href='https://themes.blokks.co/rows-1.0.0.css' rel='stylesheet'>```
+
+And, the `data-layout` value will be adjusted accordingly:
+```data-layout='rows’```
+
+## Favorites
+
+Your visitors are able to save their favorite acts by connecting their Facebook, Twitter or LinkedIn accounts. This allows them to create a personal schedule, highlighting the acts they want to see during your event.
+
+Blokks currently supports the following social networks:
+- Facebook
+- Twitter
+- LinkedIn
+
+After selecting one of these options, the `data-social-provider` tag will be adjusted in your embed.
+
+---
+
+To give you some more insight on how saving favorites works for your visitors, here’s an overview:
+
+![GIF: Saving favorites](https://blokks.co/docs/images/image.gif)
+
+When users visit your schedule, they’ll find a `Save your favorites` button at the top of the schedule. 
+
+When clicked, they’ll see a modal that explains the functionality and allows them to connect to their social network. 
+
+When connected, users can add acts to their favorites by clicking the `Add to favorites` button in the act modals. Alternatively, they can double click acts to add favorites straight from the schedule.
+
+## Mobile dashboard
+
+![The mobile dashboard](https://blokks.co/docs/images/image.png)
+
+The mobile dashboard, or the ‘Now & Next’ section, is a way for your mobile visitors to quickly see what's currently playing and what's next up. This section is *only shown during your event*, and only visible on mobile. 
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-dashboard='true'```
+
+## Scroll buttons
+
+![GIF: Scroll buttons](https://blokks.co/docs/images/image.gif)
+
+Scroll buttons allow your desktop users to scroll through your timetable horizontally. 
+
+![GIF: Mobile scroll buttons](https://blokks.co/docs/images/image.gif)
+
+On mobile, the scroll buttons allow users to quickly switch between your stages.
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-controls='true'```
+
+## Add to calendar
+
+When enabled, an `Add to calendar` button will be shown at the top of your schedule. This button allows your visitors to download calendar entries for your event. 
+
+The download includes two types of calendar entries:
+1. Entries for each of your event days.
+2. Entries for each of your visitors favorite acts.
+
+The calendar entries for each of your visitors favorite acts can be used as reminders, as they will trigger a notification once their favorite acts start.
+
+On mobile, the `Add to calendar` button will automatically open your users calender app, allowing them to add the calendar entries there.
+
+*@patrick, klopt dit?*
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-export='true'```
+
+## Customize your acts
+
+![GIF: Customize your acts (showing various states)](https://blokks.co/docs/images/image.gif)
+
+You can customize the look of the acts shown in your schedule by adjusting the following settings.
+
+### Hide images
+Initially, each act will show the image you added to that act as a background image. 
+
+When disabled, the following value will be added to your embed code:
+```data-hide-images='true'```
+
+### Hide subtitles
+This setting allows you to hide the subtitle shown below the title in each act. 
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-subtitles='true'```
+
+Note: This setting will only affect the act shown in the schedule overview. When a user clicks on an act, the subtitle will still be visible in the act modal. 
+
+*@patrick, dit klopt, toch?*
+
+### Hide start & end times
+Initially, each act in your schedule will also show its start and end time. You can use this setting to hide these times.
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-times='true'```
+
+## Other options
+
+### Hide "Built with Blokks" link
+You can choose to hide the `Built with Blokks` link that is shown at the bottom of your schedule using this setting. 
+
+When disabled, the following value will be added to your embed code: 
+```data-hide-blokks-link='true'```
+
+
+
+
+# Embed your schedule
+
+*@patje, ik heb deze sectie nog niet geschreven omdat ik verwacht dat er veel overlap zal zijn met wat jij hebt geschreven. Het enige wat ik hierover kan schrijven is hoe je de embed code toevoegt aan je site, maar dat wordt al snel een technisch verhaal denk ik*
+
+
+
+
+# Account settings & teams
+
+Follow this link to visit your account settings:
+→ [blokks.co/manage/account](https://blokks.co/manage/account)
+
+Here, you can change your full name, email address and password. 
+
+## Change your password
+
+Changing your Blokks password is simple. Just add your new password to the password field and hit save!
+
+## Adding team members
+
+In the `Team` tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the `Invite member` button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
+
+## Removing team members
+
+To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
+
+
+
+
+# Upgrading & invoices 
+
+## Free accounts vs. upgraded accounts
+
+After first signing up to Blokks, you’ll be on a free account. 
+
+With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
+
+Once you’re ready to go live and share your schedule with your visitors, you can upgrade to a paid account using the following link:
+→ [blokks.co/manage/upgrades](https://blokks.co/manage/upgrades)
+ 
+Here you’ll find an overview of your events that have not been upgraded yet. Follow the `Upgrade` link to start the upgrade process.
+
+## Upgrading your account
+
+![Upgrading your account](https://blokks.co/docs/images/image.png)
+
+Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
+
+A few notes:
+- If you have a coupon code, please add it here to apply it. 
+- If you’re a business customer, please add your VAT information so we can add that to your invoice. 
+
+## Invoices
+
+On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 
+
+
+
+
+# Support
+
+We hope this documentation has been thorough and informative. If you have any other questions, don’t hesitate to let us know. We’re happy to help. You can reach us using the following channels:
+
+**Email**
+Shoot us a message at [support@blokkshq.com](mailto:support@blokkshq.com).
+
+**Twitter**
+Tweet us at [@blokkshq](http://twitter.com/blokkshq)
+
+**Support**
+You can also reach us by clicking on the little support bubble shown on the bottom right. This will allow you to speak to our team directly. This support feature is also available in our backend.
+
+
+
+
+
+---
+
+*@patrick, deze twee onderdelen wist ik niet zo goed te plaatsen, wat denk jij?*
+
+## Autosaving
+
+When using Blokks, you data will be automatically saved every 15 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
+
+*@patrick, klopt dit?*
+
+When you accidentally close Blokks before saving, Blokks will show you a popup reminding you to save your data before leaving. 
+
+## Exporting your data
+
+It’s possible to export all the data in your schedule to a single Excel file. You can download this file by clicking the `Export` button on the top right. 
+
+The Excel file consists of two different types of data, each shown on different sheets in your file.
+
+![Your lineup sheet](https://blokks.co/docs/images/image.png)
+
+### Lineup
+On this sheet you will find all the acts that have been added to your schedule, including all their relevant data:
+- Title
+- Subtitle
+- Description
+- Stage
+- Times
+- Categories
+- Image
+
+![Your day sheet](https://blokks.co/docs/images/image.png)
+
+### Days
+Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
+
+
+
+---
+
+*Toevoegen: Embedding your schedule*
+
+---
+
+
 
 
 # Design your schedule

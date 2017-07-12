@@ -66,7 +66,7 @@ The dashboard is …
 
 ## Change colors
 
-You can change any color of the embed 💅 The prefered and easiest way to apply your own styling is to use CSS custom properties, or CSS variables. [Custom properties are supported by all modern browsers](http://configure/browsersupport).
+You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use CSS custom properties, or CSS variables. [Custom properties are supported by all modern browsers](http://configure/browsersupport).
 
 The syntax for custom properties is straightforward:
 
@@ -106,12 +106,42 @@ Below you will find the complete list of colors which you can change with custom
 - [Working with CSS Variables in JavaScript](http://cssproperties)
 - [Browser support](http://browsersupport#customproperties)
 
+## Update row and column sizes
+
+Depending on [the chosen layout](http://design/layout), you can use `custom properties` to update the size of rows and columns of your schedule.  
+
+For `column` layouts these properties are:
+
+| Property | Description |
+|----------|-------------|
+| `--blokks-table-header-height` | Quisque eget erat ligula. Fusce blandit nisi id lobortis mollis. |
+| `--blokks-table-cell-height` | Fusce volutpat quam et lacus pharetra pellentesque at et orci. |
+| `--blokks-time-captions-width` | Duis ipsum tortor, interdum vel lorem eget. |
+| `--blokks-table-column-width` | Vivamus viverra erat id maximus blandit. |
+
+And for `row` layouts, they are:
+
+| Property | Description |
+|----------|-------------|
+| `--blokks-table-header-width` | Suspendisse tellus nulla, interdum bibendum ultricies eu. |
+| `--blokks-table-cell-width` | Pellentesque tincidunt mattis sagittis. |
+| `--blokks-table-cell-height` | Fusce volutpat quam et lacus pharetra pellentesque at et orci. |
+| `--blokks-time-captions-height` | Aliquam vulputate justo lorem, a pellentesque metus porttitor id. |
+| `--blokks-table-column-height` | Etiam dignissim ut lorem non vulputate. |
+
+Besides resizing it’s also possible to change the 
+
+**See also**
+- [Set the timescale of the embed](http://configure/timescale)
+- [Working with CSS Variables in JavaScript](http://cssproperties)
+- [Browser support](http://browsersupport#customproperties)
+
 
 ## Add own fonts
 
 ### Use system fonts
 
-You can add your own fonts 🖊 in the same way you [changed the colors of your schedule](http://design/colors). For example,  the following snippet will show `Helvetica Neue` instead of `Liberation Sans`, Blokks default font.
+You can add your own fonts 🖊 in the same way you [changed the colors](http://design/colors) and [sizes of your schedule](http://design/sizes). For example,  the following snippet will show `Helvetica Neue` instead of `Liberation Sans`, Blokks default font.
 
 ```
 <style media="screen">    
@@ -297,7 +327,7 @@ This command will use the default `SVGO` settings to compress and override all f
 - [SVGO Illustrator Plugin](https://github.com/davidderaedt/SVG-NOW)
 - [PostCSS](http://configure/postcss)
 
-### Create a spritesheet
+### Create spritesheets
   
 Spritesheets are a way of combining multiple images into a single file. A website using spritesheets loads faster because the browser only has to load just one, instead of multiple images.
   
@@ -351,29 +381,26 @@ For example, this will resize the close icon to `50px`:
 **See also**
 - [SVG and CSS](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
 
-## Other properties
+## All custom properties
 
-### Change row and column sizes
+Besides colors, fonts and sizes, there are more `custom properties` you can change. To get a list of all properties, right click anywhere on your page, select `Inspect element` and click the `<html>` tag.
 
-**See also**
-- [Set the timescale of the embed](http://configure/timescale)
-- [Working with CSS Variables in JavaScript](http://cssproperties)
-- [Browser support](http://browsersupport#customproperties)
+![Selecting the HTML tag](http://blokks.co/docs/images/allproperties)
 
-### Change cell border
+*Pro-tip: Browsers render updates to `custom properties` directly to screen. So changing properties via the `developers tools` are shown while editting. These changes are temporary and will be lost when refreshing or closing the window. So don’t forget to copy/paste them when you’re done.*
 
-shg
+!!!!! Filmpje over protip !!!!!
 
 
 ## Printable version
 
-You can print the schedule including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` (Windows) or `Command+P` (OSX).
-
-It’s not possible to style 💅 the printed version of the embed.
+You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` on Windows or `Command+P` on OSX. It’s not possible to style the printed schedule.
 
 **See also**
 - [Print options](http://configure/print)
 - [Structure](http://themes/structure#navigation)
+
+
 
 # Create own template
 

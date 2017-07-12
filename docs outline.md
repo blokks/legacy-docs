@@ -362,7 +362,18 @@ For example, this will resize the close icon to `50px`:
 
 ### Change cell border
 
+shg
 
+
+## Printable version
+
+You can print the schedule including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` (Windows) or `Command+P` (OSX).
+
+It’s not possible to style 💅 the printed version of the embed.
+
+**See also**
+- [Print options](http://configure/print)
+- [Structure](http://themes/structure#navigation)
 
 # Create own template
 
@@ -563,6 +574,7 @@ CSS `type selectors` match elements by node name. A `type selector` for a partic
 
 ## Blokks styling
 
+
 - BEM and Blokks
 - CSS modifiers
 - Pro-tip: Download CSS
@@ -571,12 +583,7 @@ CSS `type selectors` match elements by node name. A `type selector` for a partic
 **See also**
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
-
-
-## Printable version of your schedule
-	- Not styleable
-	- `>Configure > print options`
-
+- 
 
 ## Preloader
 
@@ -602,6 +609,7 @@ For example:
 - [Replace icons](http://design/iconset#spritesheets)
 - [Cache](http://configure/cache)
 - [Offline support](http://configure/offline)
+
 
 ## Pseudo-elements
 
@@ -646,6 +654,17 @@ Without the `content` property `pseudo-elements` won’t be rendered. To make th
 ## Showcase
 TNW2017
 Dutch Embassy
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Configure your schedule (Patje)

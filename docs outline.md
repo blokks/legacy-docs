@@ -6,10 +6,11 @@
 ---
 
 
+
+
 # Introduction
 
 ## Welcome friend!
-
 We’re glad you made it here. In this documentation, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
 
 Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks.
@@ -23,10 +24,7 @@ If you have any questions for which you’re unable to find an answer here, don�
 For now, let’s get started with our first chapter: [creating your account](#).
 
 
-
-
-# Creating your account
-
+## Creating your account
 Creating a Blokks account is quite simple, use the following link to sign up:
 
 → [blokks.co/signup](https://blokks.co/signup)
@@ -44,10 +42,7 @@ Your password is auto-generated to speed things up. You can change your initial 
 Follow the link in your email to start [creating your first event](#)
 
 
-
-
-# Creating your first event
-
+## Creating your first event
 Before you’re ready to start tinkering with your schedule, we need some initial info to set everything up correctly. 
 
 After following the link shown in your signup email, you’ll arrive here:
@@ -58,8 +53,8 @@ During this process you’ll be taken through a series of pages where we ask you
 
 To get started, enter your event name. We also ask you what kind of event you’re organising. This can be either a music festival, conference or an event that doesn’t fit these categories. We ask this because our backend has been slightly customized for each category.
 
-## Dates & times
 
+## Dates & times
 ![Adding your dates & times](https://blokks.co/docs/images/image.png)
 
 On this page, you can select your event date or multiple dates. Simply click dates to add or remove them. 
@@ -68,16 +63,16 @@ You can also choose a start and end time for your event. This will determine the
 
 If you’re not yet sure about the date and time for your event, no worries, you can easily change these later.
 
-## Adding stages
 
+## Adding stages
 ![Adding stages](https://blokks.co/docs/images/image.png)
 
 Here you can add multiple stages or areas for your event. You can add more than three stages by clicking the `Add another stage` button. 
 
 Don’t worry if you’re not sure about which stages your event will have. You can remove and add as many stages as you’d like at a later date. 
 
-## Your team
 
+## Your team
 ![Adding your team](https://blokks.co/docs/images/image.png)
 
 In many cases, more than one person will be responsible for updating your event timetable. Multiple members of your team might want to add acts to your schedule, or more than one developer might want to work on your timetable at the same time. 
@@ -86,30 +81,29 @@ On this page, you can invite team members to Blokks. They will receive an email 
 
 Adding team members is optional and can also be done at a later time.
 
-## All done!
 
+## All done!
 And that’s it. Your schedule has now been set up and you’re ready to [dive in!](#)
 
 
 
 
-# Managing your days
+# Manage your schedule
 
+## Managing your days
 Your days can be found at the top of your schedule. You can switch between different days by clicking them.
 
 ![GIF: Adding and adjusting days](https://blokks.co/docs/images/image.gif)
 
-## Adding days
+### Adding days
 You can easily add another day by clicking the `+ Add day` button. Blokks will automatically select a date that follows the last date of your event. Note: Your current stages will also be copied to your added day.
 
-## Changing and removing days
-
+### Changing and removing days
 Right-clicking any day will show the date picker, allowing you to change the date for that specific day.
 
 Below the date picker you’ll also find a `remove` button, allowing you to delete that day. Deleting that day will also remove the acts you’ve added to that day. But don’t worry, you can always undo any action you take in Blokks by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
 
-## Adjusting your start and end time
-
+### Adjusting your start and end time
 ![GIF: Adjusting your start and end time](https://blokks.co/docs/images/image.gif)
 
 If you want to have your days start or end at an earlier or later time, you can do so by clicking the `•••` button shown above your schedule times. 
@@ -119,26 +113,20 @@ Making your days longer will add space above or below your schedule, creating mo
 When making your days shorter, make sure that you don’t have any active acts during the times you’re removing, as those acts will be removed from your schedule. If this does happen, you can always take a step back by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
 
 
-
-
-# Managing your stages
-
+## Managing your stages
 The columns shown in your schedule represent the various stages or areas that will be used during your event. 
 
 ![GIF: Adding and moving stages](https://blokks.co/docs/images/image.gif)
 
-## Adding stages
-
+### Adding stages
 You can add stages by simply clicking the `+ Add new stage` button. The new stage will appear on the right of your current stages. 
 
 Note: New stages are only added to your currently selected day.
 
-## Ordering stages
-
+### Ordering stages
 You can change the order of your stages by dragging and dropping them to any position you prefer. Pick up a stage by hovering over the stage title and start dragging. When you release the stage, it will snap into place. 
 
-## Titles and subtitles
-
+### Titles and subtitles
 ![Your stage options](https://blokks.co/docs/images/image.png)
 
 Right-click a stage or press the `•••` button to bring up the various options for that stage. You can adjust the following fields:
@@ -155,14 +143,12 @@ More info on how to show your stage subtitles in your embed can be found in [thi
 
 By the way, here’s a pro-tip: if you press `cmd` and click on a stage title, you can edit it directly. 
 
-## Categories
-
+### Categories
 You can add multiple categories to each stage. By itself, these categories have no direct impact on the design of your timetable. But: categories can be used for styling purposes during development, allowing you to adjust the look and feel of each individual stage. 
 
 More information on customizing the design of your stages can be found in [this section](#).
 
-## Delays
-
+### Delays
 Live events can be pretty hectic and can get messy at times. Speakers or artists can get delayed for various reasons, causing your schedule to get out of sync. 
 
 For this purpose, we’ve built in a delay function. By adding a delay of, for example, `15 minutes` to your stage, the times for all acts on that stage will be pushed by 15 minutes. Your visitors will then see the updates times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts. Important note: the times shown in the backend will still be the initially set times.
@@ -170,20 +156,16 @@ For this purpose, we’ve built in a delay function. By adding a delay of, for e
 *@patrick, klopt dit tekstje? Of mis ik nog iets. Moeten we nog iets zeggen over hoe we dat laten zien in de embed en hoe dat te customizen?*
 
 
-
-
-# Managing your acts
+## Managing your acts
 
 Adding acts to your event is probably the most important part of building your schedule. Which is why Blokks allows you to add all the information your visitors will need.
 
-## Adding acts
-
+### Adding acts
 ![GIF: Adding acts](https://blokks.co/docs/images/image.gif)
 
 To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add all your act info in one place. 
 
-## Moving and resizing acts
-
+### Moving and resizing acts
 ![GIF: Moving and resizing acts](https://blokks.co/docs/images/image.gif)
 
 You can move acts to a different slot by dragging and dropping them. Pick up an act by hovering over the top section of that act and start dragging. When you release the act, it will snap into place. 
@@ -192,28 +174,24 @@ One way to adjust an acts start and end time, is by hovering over the bottom rig
 
 If you need to make a more specific change in the acts time, you can do so by clicking the acts and adjusting the time there.
 
-## Titles and subtitles
-
+### Titles and subtitles
 ![The act modal](https://blokks.co/docs/images/image.png)
 
 After adding an act or clicking on an existing act, you can edit your acts content. First up is your acts title. This is the main title, that will be shown for each act in your timetable embed.
 
 If your event is a conference, you can additionally add a subtitle. Choosing to show the subtitle in your timetable embed can be done while [designing your schedule](#), more info on how to do that can be found in that section. 
 
-## Headliners  
-
+### Headliners  
 You can make your act a `headliner` which will allow you to highlight this act in your timetable embed. This enables you to have special acts really pop out on your schedule by adding custom styling.
   
 Note: In our standard Blokks theme, headliners will not be highlighted. Custom highlight styling can easily be added by adjusting your code. More detailed info on how to do so can be found in [this section](#).
 
-## Categories
-
+### Categories
 Each act can have multiple categories. These categories can optionally be shown in your timetable, after a user clicks on an act. Additionally, you can use these categories to adjust the design of individual acts. 
 
 More information on using categories to customize your design can be found in [this section](#).
 
-## Description
-
+### Description
 Each of your acts can have a description. This will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Your description can be as long as you prefer, but we recommend a maximum of 500 characters. Note: this is not a hard limit, you can go with as many characters as you need. 
 
 Here’s a pro-tip: it’s possible to add formatting to this text by using [markdown](#). Markdown is a super simple text-based method to add custom styles to plain text. Styles that can be added using this method:
@@ -228,8 +206,7 @@ Here’s a pro-tip: it’s possible to add formatting to this text by using [mar
 You can show these styles in your timetable embed by adjusting your code and customizing their design. Our guide on using markdown:
 → [Markdown](#)
 
-## Images
-
+### Images
 You can add a single image to each of your acts by dragging an image file on the drop area or add one by clicking that area. 
 
 This image will be your acts main visual and can be shown in the timetable embed. Choosing to hide or show this image can be done in your [embed settings](#). 
@@ -237,8 +214,7 @@ This image will be your acts main visual and can be shown in the timetable embed
 The images that are added to your act cannot be larger than 2MB. 
 Our recommended file format is JPG (instead of PNG), since this helps your schedule load faster. 
 
-## Links
-
+### Links
 You can add multiple links to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the `Add one more link` button.
 
 Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link. You can choose from the following labels:
@@ -253,36 +229,60 @@ Instead of showing a full URL in your timetable embed for each link, you can sho
 
 When you select the `- Other..` label, you can manually add a custom text label.
 
-## Embeds
-
+### Embeds
 In some cases, you might want to add a Youtube video, Spotify embed or other piece of media content to an act in your timetable embed. This is possible by copying and pasting its embed code. 
 
 You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.  
 
 We support many different embeds. But if you’re trying to add an embed code and are running into problems, send us an [email](mailto:support@blokks.co), tweet or use the support bubble on the bottom right. We’ll help you out.
 
-## Deleting acts
-
+### Deleting acts
 You can delete an act by pressing the `Delete` button at the bottom while editing an act. Alternatively, you can right-click on any act in your schedule to find another `Delete` button. 
 
-## Disable user interaction
-
+### Disable user interaction
 In some cases it can be useful to show an act in your schedule without allowing your visitors to click on it. For example, when an act is still being teased to your adience, this feature would allow you to show the act in your schedule, but prevent visitors to view its info. 
 
-## Published, unpublished and canceled
-
+### Published, unpublished and canceled
 Initially, all acts are marked as `published`. When you change an act to `unpublished`, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your visitors. 
 
 Acts marked as `canceled` can have custom styling in your timetable embed, allowing you to show your visitors when acts are canceled. Visit [this section](#) to learn more on how to do this. 
 
 *@patrick, klopt dit? Of hebben we dit nu nog niet.*
 
-## Custom fields
-
+### Custom fields
 It’s possible to add custom for fields to your schedule. In order to do so.. 
 
 *@patrick, ik weet nog niet precies hoe dit in z’n werk gaat. Kan jij evt. aanvullen, of zullen we het weglaten voor nu.*
 
+
+## Autosaving
+When using Blokks, you data will be automatically saved every 15 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
+
+*@patrick, klopt dit?*
+
+When you accidentally close Blokks before saving, Blokks will show you a popup reminding you to save your data before leaving. 
+
+## Exporting your data
+It’s possible to export all the data in your schedule to a single Excel file. You can download this file by clicking the `Export` button on the top right. 
+
+The Excel file consists of two different types of data, each shown on different sheets in your file.
+
+![Your lineup sheet](https://blokks.co/docs/images/image.png)
+
+### Lineup
+On this sheet you will find all the acts that have been added to your schedule, including all their relevant data:
+- Title
+- Subtitle
+- Description
+- Stage
+- Times
+- Categories
+- Image
+
+![Your day sheet](https://blokks.co/docs/images/image.png)
+
+### Days
+Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
 
 
 
@@ -297,8 +297,8 @@ Here you’ll find various settings that will allow you to customize both the de
 
 Let’s dig in. 
 
-## Select your layout
 
+## Select your layout
 Your timetable embed can have different layouts. Here you can select the layout that best suits your event schedule. Currently, we offer two different layouts:
 
 1. Columns
@@ -325,8 +325,8 @@ After selecting a layout, the corresponding values will be adjusted in your embe
 And, the `data-layout` value will be adjusted accordingly:
 ```data-layout='rows’```
 
-## Favorites
 
+## Favorites
 Your visitors are able to save their favorite acts by connecting their Facebook, Twitter or LinkedIn accounts. This allows them to create a personal schedule, highlighting the acts they want to see during your event.
 
 Blokks currently supports the following social networks:
@@ -348,8 +348,8 @@ When clicked, they’ll see a modal that explains the functionality and allows t
 
 When connected, users can add acts to their favorites by clicking the `Add to favorites` button in the act modals. Alternatively, they can double click acts to add favorites straight from the schedule.
 
-## Mobile dashboard
 
+## Mobile dashboard
 ![The mobile dashboard](https://blokks.co/docs/images/image.png)
 
 The mobile dashboard, or the ‘Now & Next’ section, is a way for your mobile visitors to quickly see what's currently playing and what's next up. This section is *only shown during your event*, and only visible on mobile. 
@@ -357,8 +357,8 @@ The mobile dashboard, or the ‘Now & Next’ section, is a way for your mobile 
 When disabled, the following value will be added to your embed code: 
 ```data-hide-dashboard='true'```
 
-## Scroll buttons
 
+## Scroll buttons
 ![GIF: Scroll buttons](https://blokks.co/docs/images/image.gif)
 
 Scroll buttons allow your desktop users to scroll through your timetable horizontally. 
@@ -370,8 +370,8 @@ On mobile, the scroll buttons allow users to quickly switch between your stages.
 When disabled, the following value will be added to your embed code: 
 ```data-hide-controls='true'```
 
-## Add to calendar
 
+## Add to calendar
 When enabled, an `Add to calendar` button will be shown at the top of your schedule. This button allows your visitors to download calendar entries for your event. 
 
 The download includes two types of calendar entries:
@@ -387,8 +387,8 @@ On mobile, the `Add to calendar` button will automatically open your users calen
 When disabled, the following value will be added to your embed code: 
 ```data-hide-export='true'```
 
-## Customize your acts
 
+## Customize your acts
 ![GIF: Customize your acts (showing various states)](https://blokks.co/docs/images/image.gif)
 
 You can customize the look of the acts shown in your schedule by adjusting the following settings.
@@ -415,6 +415,7 @@ Initially, each act in your schedule will also show its start and end time. You 
 When disabled, the following value will be added to your embed code: 
 ```data-hide-times='true'```
 
+
 ## Other options
 
 ### Hide "Built with Blokks" link
@@ -434,22 +435,21 @@ When disabled, the following value will be added to your embed code:
 
 
 # Account settings & teams
-
 Follow this link to visit your account settings:
 → [blokks.co/manage/account](https://blokks.co/manage/account)
 
 Here, you can change your full name, email address and password. 
 
-## Change your password
 
+## Change your password
 Changing your Blokks password is simple. Just add your new password to the password field and hit save!
 
-## Adding team members
 
+## Adding team members
 In the `Team` tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the `Invite member` button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
 
-## Removing team members
 
+## Removing team members
 To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
 
 
@@ -458,7 +458,6 @@ To remove a member from your team, hover over their name and click the `x` butto
 # Upgrading & invoices 
 
 ## Free accounts vs. upgraded accounts
-
 After first signing up to Blokks, you’ll be on a free account. 
 
 With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
@@ -469,7 +468,6 @@ Once you’re ready to go live and share your schedule with your visitors, you c
 Here you’ll find an overview of your events that have not been upgraded yet. Follow the `Upgrade` link to start the upgrade process.
 
 ## Upgrading your account
-
 ![Upgrading your account](https://blokks.co/docs/images/image.png)
 
 Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
@@ -479,24 +477,7 @@ A few notes:
 - If you’re a business customer, please add your VAT information so we can add that to your invoice. 
 
 ## Invoices
-
 On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 
-
-
-
-
-# Support
-
-We hope this documentation has been thorough and informative. If you have any other questions, don’t hesitate to let us know. We’re happy to help. You can reach us using the following channels:
-
-**Email**
-Shoot us a message at [support@blokkshq.com](mailto:support@blokkshq.com).
-
-**Twitter**
-Tweet us at [@blokkshq](http://twitter.com/blokkshq)
-
-**Support**
-You can also reach us by clicking on the little support bubble shown on the bottom right. This will allow you to speak to our team directly. This support feature is also available in our backend.
 
 
 
@@ -506,36 +487,7 @@ You can also reach us by clicking on the little support bubble shown on the bott
 
 *@patrick, deze twee onderdelen wist ik niet zo goed te plaatsen, wat denk jij?*
 
-## Autosaving
 
-When using Blokks, you data will be automatically saved every 15 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
-
-*@patrick, klopt dit?*
-
-When you accidentally close Blokks before saving, Blokks will show you a popup reminding you to save your data before leaving. 
-
-## Exporting your data
-
-It’s possible to export all the data in your schedule to a single Excel file. You can download this file by clicking the `Export` button on the top right. 
-
-The Excel file consists of two different types of data, each shown on different sheets in your file.
-
-![Your lineup sheet](https://blokks.co/docs/images/image.png)
-
-### Lineup
-On this sheet you will find all the acts that have been added to your schedule, including all their relevant data:
-- Title
-- Subtitle
-- Description
-- Stage
-- Times
-- Categories
-- Image
-
-![Your day sheet](https://blokks.co/docs/images/image.png)
-
-### Days
-Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
 
 
 
@@ -546,12 +498,12 @@ Each of your days will have its own sheet in your Excel file. On those sheets, y
 ---
 
 
+————————————————————————————————————————————————————————————————
 
 
 # Design your schedule
 
 ## Introduction
-
 So you’ve added all days, stages and acts and embedded the schedule on your website ✌️. Now it’s time to style and configure your schedule so it matches your conference’s identity and it embeds perfectly within your existing website or mobile app.
 
 In the next chapters we explain how to [change the layout of your schedule](http://chooseyourlayout) , [set its colors](http://changecolors) or [add your own fonts](http://addownfonts) & [icons](http://addcustomicons). 
@@ -567,7 +519,6 @@ So, [no time to waste](http://chooseyourlayout).
 ## Choose your layout
 
 ### Desktop 
-
 On desktop 🖥 our embed has two layout directions: the first direction is `columns` where stages are arranged horizontally. This is also the default direction of the embed. The second one is `rows` where stages are stacked vertically.  
 
 ![Row vs. column layout](https://blokks.co/docs/images/rowsandcolumns.png)
@@ -587,7 +538,6 @@ You can change the layout direction at any time by selecting the layout in [the 
 - [Browser support](http://browsersupport)
 
 ### Mobile
-
 On mobile devices 📱 your schedule is automatically shown in a list view. However, visitors can switch back to the full schedule by rotating their device to landscape mode:
 
 ![Portrait vs. landscape mode](https://blokks.co/docs/images/animation.gif)
@@ -608,7 +558,6 @@ The dashboard is …
 
 
 ## Change colors
-
 You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use CSS custom properties, or CSS variables. [Custom properties are supported by all modern browsers](http://configure/browsersupport).
 
 The syntax for custom properties is straightforward:
@@ -649,8 +598,8 @@ Below you will find the complete list of colors which you can change with custom
 - [Working with CSS Variables in JavaScript](http://cssproperties)
 - [Browser support](http://browsersupport#customproperties)
 
-## Update row and column sizes
 
+## Update row and column sizes
 Depending on [the chosen layout](http://design/layout), you can use `custom properties` to update the size of rows and columns of your schedule.  
 
 For `column` layouts these properties are:
@@ -683,7 +632,6 @@ Besides resizing it’s also possible to change the
 ## Add own fonts
 
 ### Use system fonts
-
 You can add your own fonts 🖊 in the same way you [changed the colors](http://design/colors) and [sizes of your schedule](http://design/sizes). For example,  the following snippet will show `Helvetica Neue` instead of `Liberation Sans`, Blokks default font.
 
 ```
@@ -699,11 +647,9 @@ The embed will try to load `Helvetica Neue` first. If it wasn’t found it skips
 Using system fonts boosts performance because the browser doesn't have to download any font files. However, the number of available system fonts is limited. 
 
 ### Import external fonts
-
 Luckily we can use fonts from [Google Font](https://fonts.google.com/), [Adobe Typekit](https://typekit.com/) or otherr Type Foundries. Together they offer hundreds of great fonts to choose from. 
 
 #### Google Font
-
 When using [Google Font](https://fonts.google.com/), copy the following snippet into the `<head>` of your HTML page as described on their website:
 
 ```<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">```
@@ -717,7 +663,6 @@ But instead of setting the `font-family: "Roboto", sans-serif;` set the custom p
 ```
 
 #### Adobe Typekit
-
 Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from [Google Font](https://fonts.google.com/). Again, copy the embed code as described on their website:
 
 ```
@@ -734,7 +679,6 @@ And instead of setting `font-family: "liberation-sans",sans-serif;` use custom p
 ```
 
 ### Self-host fonts 
-
 Maybe you already purchased and downloaded a font which you are using in your website or app. In that case you are self-hosting your fonts. 
 
 To use self-hosted fonts with Blokks we need a little bit of information about those. The `@font-face` CSS rule specifies the name of your font, its location and its font-weight. It looks something like this:
@@ -771,7 +715,6 @@ You can see that the name of the font is set to `Liberation Sans`. This is the n
 
 
 ## Font properties
-
 By now your schedule should match the identity of your conference/festival a lot better. But you may have noticed that by changing `--blokks-default-font`, some of the `font-size` and `letter-spacing` properties are all messed up. Let’s fix this.🔧
 
 The bad news is, we cannot use custom properties to do this. We need to target the text with CSS selectors. The good news is, that it’s quite simple: `Right click` the text you want to change and select `Inspect element`. This will open `Developer Tools`:
@@ -810,7 +753,6 @@ Also, you should note that the order in which CSS rules are stated determines wh
 
 
 ## Replace icons
-
 All icons used in the schedule are SVGs. 
 
 SVG files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since SVGs are XML files, they’re highly compressible with tools like gzip. And last but not least, SVG files are styleable with CSS.
@@ -837,7 +779,6 @@ To replace the default icons we need to create our own icon set. An icon set con
 - [Inline SVG vs Icon Fonts](https://css-tricks.com/icon-fonts-vs-svg/)
 
 ### Optimizing SVGs
-
 SVG files, especially exported from tools like [Sketch](https://www.sketchapp.com/) or [Adobe Illustrator](http://www.adobe.com/nl/products/illustrator.html) contain a lot of data which can be safely removed or converted without affecting rendering result.
 
 Optimizing and compressing your SVG’s is simply done with a command-line tool called `SVGO`. `SVGO` requires `[Node.js](https://nodejs.org/en/)` installed on your computer.
@@ -871,7 +812,6 @@ This command will use the default `SVGO` settings to compress and override all f
 - [PostCSS](http://configure/postcss)
 
 ### Create spritesheets
-  
 Spritesheets are a way of combining multiple images into a single file. A website using spritesheets loads faster because the browser only has to load just one, instead of multiple images.
   
 To create a spritesheet we use another command-line tool named `svg-sprite`. Again, [Node.js](ttps://nodejs.org/en) is required for this.
@@ -907,7 +847,6 @@ And that’s all there is to it! 🤘
 - [PostCSS](http://configure/postcss)
 
 ### Styling SVG’s
-
 Replacing the icon set may cause the new icons to be too big or too small. Like [changing the fonts](http://design/fonts) we can fix this by selecting the icon in the `Developers Tools` and change its size. 
 
 For example, this will resize the close icon to `50px`:
@@ -924,8 +863,8 @@ For example, this will resize the close icon to `50px`:
 **See also**
 - [SVG and CSS](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
 
-## All custom properties
 
+## All properties
 Besides colors, fonts and sizes, there are more `custom properties` you can change. To get a list of all properties, right click anywhere on your page, select `Inspect element` and click the `<html>` tag.
 
 ![Selecting the HTML tag](http://blokks.co/docs/images/allproperties)
@@ -944,6 +883,8 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Structure](http://themes/structure#navigation)
 
 
+————————————————————————————————————————————————————————————————
+
 
 # Create own template
 
@@ -954,7 +895,6 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 
 
 ## Basic structure
-
 Our schedule is split into smaller, independent pieces called components. Each component has [a unique CSS class](http://theme/bem) which makes it easy to style them separately. 
 
 The schedule is built out of five main components (which in turn are split into smaller components as well):
@@ -973,11 +913,9 @@ The schedule is built out of five main components (which in turn are split into 
 - [Setting date selector](http://configure/dateselector)
 
 ### Navigation
-
 Visitors of your event use the `navigation` component [to switch between dates](http://themes/structures###navigation), sign in with their account and [add events to their calendar](http://addcal).
 
 #### Date selector
-
 The `dateselector` component is visible when your event has multiple dates. Use this component to switch between those 🤓 
 
 On desktop computers the `dateselector` is shown as a `buttonbar`. On mobile devices dates are shown in a `dropdown` menu. You can change this by setting the [`date-selector-type` option](http://configure/options) of the schedule.
@@ -988,19 +926,16 @@ On desktop computers the `dateselector` is shown as a `buttonbar`. On mobile dev
 - [Setting date selector](http://configure/dateselector)
 
 #### Options
-
 `Options` lets users sign in to [add favorites](http://favorites) and [see where friends are going](http://friends), [print their schedule](http://configure/print) or import it in their calendar.
 
 ![Controls on mobile and desktop](http://blokks.co/docs/images/controls)
 
 #### Controls
-
 Users can scroll through [stages](http://themes/structure/locations) with the control buttons. The `controls` are visible on desktop when the [layout is set to `column`](http://design/layouts) and always on mobile devices.
 
 ![Controls on mobile and desktop](http://blokks.co/docs/images/controls)
 
 ### Timetables
-
 A single day of a event is represented by the `timetable` component, which is made out of the [`dashboard`](http://themes/dashboard), [`locations`](http://themes/location), [`activities`](http://themes/activity) and a `time indicator` component.
 
 ![Timetable on desktop](https://blokks.co/docs/images/dashboard.png)
@@ -1011,7 +946,6 @@ If a `timetable` has today’s date it is automatically selected. The `time indi
 - [Setting testflight](http://configure/testflight)
 
 ### Dashboard
-
 On days of the event the `dashboard` component is shown on mobile devices. The component shows now playing speakers or bands and the ones coming up next.
 
 ![Blokks mobile dashboard](https://blokks.co/docs/images/dashboard.png)
@@ -1024,13 +958,11 @@ On days of the event the `dashboard` component is shown on mobile devices. The c
 - [Setting testflight](http://configure/testflight)
   
 ### Locations
-
 The `location` component represents a single stage of your event. Basically it’s a list of [`activities`](http://themes/activity) sorted by time.
 
 ![Blokks locations](https://blokks.co/docs/images/dashboard.png)
 
 ### Activities
-
 `Activities` like speakers, talks, bands and singers are represented by the `activity` component. Its position and its size describe the start and duration of the activity.
 
 ![Blokks activities](https://blokks.co/docs/images/dashboard.png)
@@ -1043,7 +975,6 @@ Selecting an activity will show the [`activity details`](http://themes/activityd
 - [Favorites](http://favorites)
 
 ### Activity details
-
 The `activity details` component is a modal presented when an [`activity`](http://themes/activity) is selected. 
 
 It shows all information about the selected speaker, talk, band or performance. This includes titles, subtitles, times, descriptions, photos, links and embeds.
@@ -1055,14 +986,12 @@ It shows all information about the selected speaker, talk, band or performance. 
 - [Favorites](http://favorites)
 
 ### Notifications & Alerts
-
 `Notifications` and `alerts` are shown when we need immediate attention. For example, showing instructions when a user wants to [sign in](http://embed/favorites). Or displaying and error when something went wrong (user failed to sign in).
 
 Like [`activity details`](http://themes/structure#activity-details), `notifications` and `alerts` are presented as a modal component.
 
 
 ## Block, Element, Modifier
-
 Now that you’re familiar with [the structure of the embedded schedule](https://themes/structure) we can have a look at the clasnames of its HTML elements. We use a simple naming convention thought up by the guys at [Yandex](https://tech.yandex.com/bem/) called `Block, Element, Modifier`, or simply `BEM`. 
 
 It provides a way to arrange your CSS classes into modules or components. Basically `BEM` follows this pattern:
@@ -1091,7 +1020,6 @@ Although `BEM` may look weird at first with its `__`, `--` and long classnames. 
 Visit [the official `BEM` website](http://getbem.com/naming/) if you want learn more.
 
 ### CSS Specificity
-
 If multiple CSS selectors are targeting the same HTML element and are trying to assign the same property, the selector with the highest CSS specificity value will “win”.
 
 In other words, the most specific selector gets to assign its property values to the target element: 
@@ -1120,7 +1048,6 @@ I guess that’s it ✌️
 So add your `<style>` or `<link>` tag after the BLOKKS import and you’re good to go. 
   
 ### CSS Scoping
-
 In addition to reducing specificity, `BEM` provides some sort of scope by using *unique* CSS classes per element. Together with prefixing our classes with `.blokks` it avoids conflicts with your existing classnames.
 
 Unfortunately there are two exceptions which still can cause conflicts with your website’s styling: the `!important` rule and `type selectors`.
@@ -1142,9 +1069,8 @@ CSS `type selectors` match elements by node name. A `type selector` for a partic
 - [Support for BEM Modules in Sass 3.3](http://mikefowler.me/journal/2013/10/17/support-for-bem-modules-sass-3.3)
 - [PostCSS plugin implementing BEM as at-rules](https://github.com/kezzbracey/postcss-bem)
 
+
 ## Blokks styling
-
-
 - BEM and Blokks
 - CSS modifiers
 - Pro-tip: Download CSS
@@ -1153,10 +1079,9 @@ CSS `type selectors` match elements by node name. A `type selector` for a partic
 **See also**
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
-- 
+
 
 ## Preloader
-
 One of our main priorities is to load your schedule as fast as possible on desktop and mobile devices. But it can happen, that during an event the internet connection is unreliable and slow. 
 
 We’ve all been there.
@@ -1182,7 +1107,6 @@ For example:
 
 
 ## Pseudo-elements
-
 With `pseudo-elements` you can extend the structure of the schedule with CSS. `Pseudo-elements` will add extra elements *before* and *after* the element’s content. These elements are visible to the user and are styleable with CSS. 
 
 Adding `:before` and `:after` is technically the same as:
@@ -1226,19 +1150,10 @@ TNW2017
 Dutch Embassy
 
 
-
-
-
-
-
-
-
-
-
+————————————————————————————————————————————————————————————————
 
 
 # Configure your schedule (Patje)
-
 - Preloader
 - Date selector
 - Disabling features
@@ -1311,3 +1226,21 @@ Dutch Embassy
     - 
   - CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
+
+
+————————————————————————————————————————————————————————————————
+
+
+# Support
+
+## Contact us
+We hope this documentation has been thorough and informative. If you have any other questions, don’t hesitate to let us know. We’re happy to help. You can reach us using the following channels:
+
+**Email**
+Shoot us a message at [support@blokkshq.com](mailto:support@blokkshq.com).
+
+**Twitter**
+Tweet us at [@blokkshq](http://twitter.com/blokkshq)
+
+**Support**
+You can also reach us by clicking on the little support bubble shown on the bottom right. This will allow you to speak to our team directly. This support feature is also available in our backend.

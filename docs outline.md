@@ -1,9 +1,8 @@
-# Notes
 
-*- Ik denk dat we nog een hoofdstuk nodig hebben waarin we de embed beschrijven. Double clicks etc. De embedcode etc. Dit is ook een goede brug van backend naar het volgende hoofdstuk*.
-*- Idee. Vraagtekentjes plaatsen bij ingewikkelde onderdelen in forms in de backend (act modal & embed tab). Die vraagtekentjes direct doorlinken naar het deel van de docs waar we dat uitleggen. We kunnen ook nog steeds on hover een korte beschrijving tonen, maar on click kunnen we naar de uitgebreidere uitleg in de docs.*
+- Ik denk dat we nog een hoofdstuk nodig hebben waarin we de embed beschrijven. Double clicks etc. De embedcode etc. Dit is ook een goede brug van backend naar het volgende hoofdstuk.
+- Idee. Vraagtekentjes plaatsen bij ingewikkelde onderdelen in forms in de backend (act modal & embed tab). Die vraagtekentjes direct doorlinken naar het deel van de docs waar we dat uitleggen. We kunnen ook nog steeds on hover een korte beschrijving tonen, maar on click kunnen we naar de uitgebreidere uitleg in de docs.
 
----
+——
 
 
 
@@ -519,7 +518,7 @@ So, [no time to waste](http://chooseyourlayout).
 ## Choose your layout
 
 ### Desktop 
-On desktop 🖥 our embed has two layout directions: the first direction is `columns` where stages are arranged horizontally. This is also the default direction of the embed. The second one is `rows` where stages are stacked vertically.  
+On desktop our embed has two layout directions: the first direction is `columns` where stages are arranged horizontally. This is also the default direction of the embed. The second one is `rows` where stages are stacked vertically.  
 
 ![Row vs. column layout](https://blokks.co/docs/images/rowsandcolumns.png)
 
@@ -538,16 +537,15 @@ You can change the layout direction at any time by selecting the layout in [the 
 - [Browser support](http://browsersupport)
 
 ### Mobile
-On mobile devices 📱 your schedule is automatically shown in a list view. However, visitors can switch back to the full schedule by rotating their device to landscape mode:
+On mobile devices your schedule is automatically shown in a list view. However, visitors can switch back to the full schedule by rotating their device to landscape mode:
 
 ![Portrait vs. landscape mode](https://blokks.co/docs/images/animation.gif)
 
 The default breakpoint for switching between mobile and desktop view is `480px` or `16em`. This works best for support on all devices. Of course you [change this value](http://configure/breakpoints) if you want.
 
-For events with a lot of stages or acts the list can become very long. Which can be quite annoying if you want to find out which speaker or band coming up next. On the day itself the mobile version of the embed will show our [dashboard](http://design/dashboard):
+For events with a lot of stages and acts the list can become long. Which can be quite annoying if you want to find out which speaker or band is coming up next. Therefor, on the day itself the mobile version of the embed will show our [dashboard](http://design/dashboard):
 
-The dashboard is … 
-*[TODO: Dashboard beschrijven]*
+The dashboard is a summary of acts which are playing now and coming up next. Read more about the dashboard in [create templates](http://themes/structure#dashboard). 
 
 **See also:**
 - [Dashboard](http://themes/dashboard)
@@ -558,9 +556,9 @@ The dashboard is …
 
 
 ## Change colors
-You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use CSS custom properties, or CSS variables. [Custom properties are supported by all modern browsers](http://configure/browsersupport).
+You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use *CSS custom properties*, or CSS variables. [*Custom properties* are supported by all modern browsers](http://configure/browsersupport).
 
-The syntax for custom properties is straightforward:
+The syntax for *custom properties* is straightforward:
 
 ```
 <style media="screen">
@@ -570,13 +568,13 @@ The syntax for custom properties is straightforward:
 </style>
 ```
 
-In the above example `--blokks-theme-color` is a Blokks defined property with a value of `palevioletred`. You should note that all Blokks defined properties are prefixed with `--blokks`. Adding the above code in the `<head>` of your page will change the main color of the embed to `palevioletred`.
+In the above example `--blokks-theme-color` is a Blokks defined property with a value of `palevioletred`. You should note that all *custom properties* are prefixed with `--blokks`. Adding the above code in the `<head>` of your page will change the main color of the embed to `palevioletred`.
 
 ![Theme color set to palevioletred](https://blokks.co/docs/images/palevioletred.png)
 
 *You should note that custom properties are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.*
 
-Below you will find the complete list of colors which you can change with custom properties:
+Below you will find the complete list of colors which you can change with *custom properties*:
 
 | Property | Description |
 |----------|-------------|
@@ -600,9 +598,9 @@ Below you will find the complete list of colors which you can change with custom
 
 
 ## Update row and column sizes
-Depending on [the chosen layout](http://design/layout), you can use `custom properties` to update the size of rows and columns of your schedule.  
+Depending on [the chosen layout](http://design/layout), you can use *custom properties* to update the size of rows and columns of your schedule.  
 
-For `column` layouts these properties are:
+For `columns` layout these properties are:
 
 | Property | Description |
 |----------|-------------|
@@ -611,7 +609,7 @@ For `column` layouts these properties are:
 | `--blokks-time-captions-width` | Duis ipsum tortor, interdum vel lorem eget. |
 | `--blokks-table-column-width` | Vivamus viverra erat id maximus blandit. |
 
-And for `row` layouts, they are:
+And for `rows` layout they are:
 
 | Property | Description |
 |----------|-------------|
@@ -621,7 +619,7 @@ And for `row` layouts, they are:
 | `--blokks-time-captions-height` | Aliquam vulputate justo lorem, a pellentesque metus porttitor id. |
 | `--blokks-table-column-height` | Etiam dignissim ut lorem non vulputate. |
 
-Besides resizing it’s also possible to change the 
+There is also a `data-timescale` option which lets you change the size of the schedule. Basically, this sets the duration of one timeslot. Read more about *timescale* and how to change it.
 
 **See also**
 - [Set the timescale of the embed](http://configure/timescale)
@@ -886,7 +884,7 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 ————————————————————————————————————————————————————————————————
 
 
-# Create own template
+# Create templates
 
 ## Getting started
 - Introduction

@@ -10,7 +10,7 @@
 # Introduction
 
 ## Welcome
-We’re glad you made it here. In this documentation, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
+We’re glad you made it here. We’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
 
 Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks.
 
@@ -18,73 +18,47 @@ Before you get started, we advise you to have a look at these two tutorial video
 
 ![Blokks for developers: How to embed and customize your schedule](video)
 
+
 ## Support
-If you have any questions for which you’re unable to find an answer here, don’t hesitate to let us know. Send us an [email](mailto:support@blokks.co), shoot us a message on [twitter](http://twitter.com/blokkshq) or use the little support bubble shown on the bottom right to speak to us directly.
+If you have any questions after reading the docs, don’t hesitate to let us know. Send us an [email](mailto:support@blokks.co), shoot us a message on [twitter](http://twitter.com/blokkshq) or use the little support bubble shown on the bottom right to speak to us directly.
 
-For now, let’s get started with our first chapter: [creating your account](#).
+For now, let’s get started by [creating your account](http://gettingstarted/signingup).
 
 
 
-## Creating your account
-Creating a Blokks account is quite simple, use the following link to sign up:
 
-→ [blokks.co/signup](https://blokks.co/signup)
+# Getting started
 
-![Creating your account](https://blokks.co/docs/images/image.png)
+## Signing up
+Creating a new Blokks account is easy. Simply go to [blokks.co/signup](https://blokks.co/signup) and send us your name and email address. You’ll receive your login info and instructions how to [create your first event](http://gettingstarted/createfirstevent)
 
-Add your full name and email address and click `Create account` to get started. After this, you will receive an email in your inbox with your login credentials. 
-
-![Your signup e-mail](https://blokks.co/docs/images/image.png)
-
-Your password is auto-generated to speed things up. You can change your initial password at any time by following this link:
-
-→ [blokks.co/manage/account](https://blokks.co/manage/account)
-
-Follow the link in your email to start [creating your first event](#)
+*Your password is auto-generated to speed things up. You can [change your password](http://gettingstarted/settings) at any time.*
 
 
 ## Creating your first event
-Before you’re ready to start tinkering with your schedule, we need some initial info to set everything up correctly. 
+Let’s create your first event. To do so, we need to know some basic info about your event. We’ll take you through a series of pages and ask things like your event’s name, what kind of event you’re organising, dates, times etc.
 
-After following the link shown in your signup email, you’ll arrive here:
+Again, super easy.
 
-![Setting things up](https://blokks.co/docs/images/image.png)
+### Dates & times
+Choose the date of your event by selecting them in the calendar. You can select multiple dates if necessary. You can also set a start and end time for your event. 
 
-During this process you’ll be taken through a series of pages where we ask you specific information about your event. 
+*If you’re not yet sure about the date or time for your event, no worries, you can easily [change them later](http://manageevent/datestimes).*
 
-To get started, enter your event name. We also ask you what kind of event you’re organising. This can be either a music festival, conference or an event that doesn’t fit these categories. We ask this because our backend has been slightly customized for each category.
+### Adding stages
+The next step is adding stages or areas for your event. If you need more stages simply click the `Add another stage` button. 
 
+*Don’t worry if you’re not sure about which stages your event will have. You can always [add new ones](http://manage/stages) at later moment.*
 
-## Dates & times
-![Adding your dates & times](https://blokks.co/docs/images/image.png)
+### Your team
+In many cases, more than one person will be responsible for updating your event timetable. Or more than one developer might want to work on your timetable. 
 
-On this page, you can select your event date or multiple dates. Simply click dates to add or remove them. 
+You can invite one or more persons to your team. They will receive an email with their own login information and gain full access to your schedule. 
 
-You can also choose a start and end time for your event. This will determine the duration of your schedule. 
+*You can [add and remove team members](http://settings/team) at a later moment. If you’re on a free plan only team members can see the embedded schedule. [Read more about plan](http://plans).*
 
-If you’re not yet sure about the date and time for your event, no worries, you can easily change these later.
-
-
-## Adding stages
-![Adding stages](https://blokks.co/docs/images/image.png)
-
-Here you can add multiple stages or areas for your event. You can add more than three stages by clicking the `Add another stage` button. 
-
-Don’t worry if you’re not sure about which stages your event will have. You can remove and add as many stages as you’d like at a later date. 
-
-
-## Your team
-![Adding your team](https://blokks.co/docs/images/image.png)
-
-In many cases, more than one person will be responsible for updating your event timetable. Multiple members of your team might want to add acts to your schedule, or more than one developer might want to work on your timetable at the same time. 
-
-On this page, you can invite team members to Blokks. They will receive an email with their own login credentials and gain full access to your schedule. 
-
-Adding team members is optional and can also be done at a later time.
-
-
-## All done!
-And that’s it. Your schedule has now been set up and you’re ready to [dive in!](#)
+### All done!
+And that’s it. Your schedule has now been set up and you’re ready to [dive in!](http://manage/days)
 
 
 
@@ -203,6 +177,8 @@ Here’s a pro-tip: it’s possible to add formatting to this text by using [mar
 - Dividers
 - Links
 - Lists
+
+*@Niek, Ik denk dat de we hier markdown uitgebreid moeten bescrhijven. Dat wil ik wel doen.*
 
 You can show these styles in your timetable embed by adjusting your code and customizing their design. Our guide on using markdown:
 → [Markdown](#)
@@ -1169,7 +1145,9 @@ Dutch Embassy
 
 
 # Configure your schedule (Patje)
-- Preloader
+- Accessibility
+- Auto scrolling
+- Auto update
 - Date selector
 - Disabling features
   - Hide the controls
@@ -1181,8 +1159,6 @@ Dutch Embassy
   - Hide print button
   - Note: More information about configuring your embed:
      `> Configure your schedule > Options`
-- Update the timescale
-- Accessibility
 - Favorites
   - Choose your social provider
     - Facebook
@@ -1190,33 +1166,32 @@ Dutch Embassy
     - LinkedIn
   - Enable friends
     - Note: Friends don’t work with LinkedIn
-- Auto scrolling
-- Auto update
+- Set date format
+- Add your own copy and translations
+- Update timescale
 - Local scroll
   - Note: Sticky headers won’t work with localscrolling enabled:
      `> Configure your schedule > Browser support`
-- Set date format
-- Add your own copy and translations
 - Print options
 	- Orientation
 	- disable print
-- Caching
-  - Why is caching enabled
-  - Override cache with `?preview` querystring
-  - Using CDN to deliver assets
 - Testflight your embed
   - Dashboard
     - Note: More information about the dashboard:
       `Design your schedule > dashboard`
   - Time indicator
   - Note: Don’t forget to disable testflight on production
+- Auto calculate size of acts
+  - Adds modifiers describing the size of the act
+  - Note: Disable this feature for faster rendering
+- Caching
+  - Why is caching enabled
+  - Override cache with `?preview` querystring
+  - Using CDN to deliver assets
 - Offline support with ServiceWorkers
   - Images are cached on the clientside
   - What do you need to enable offline support
   - Note: More information on ServiceWorkers: https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
-- Auto calculate size of acts
-  - Adds modifiers describing the size of the act
-  - Note: Disable this feature for faster rendering
 
 - Browser  support
   - Modern browsers

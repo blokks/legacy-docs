@@ -9,7 +9,7 @@
 
 # Introduction
 
-## Welcome friend!
+## Welcome
 We’re glad you made it here. In this documentation, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
 
 Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks.
@@ -18,9 +18,11 @@ Before you get started, we advise you to have a look at these two tutorial video
 
 ![Blokks for developers: How to embed and customize your schedule](video)
 
+## Support
 If you have any questions for which you’re unable to find an answer here, don’t hesitate to let us know. Send us an [email](mailto:support@blokks.co), shoot us a message on [twitter](http://twitter.com/blokkshq) or use the little support bubble shown on the bottom right to speak to us directly.
 
 For now, let’s get started with our first chapter: [creating your account](#).
+
 
 
 ## Creating your account
@@ -1239,21 +1241,3 @@ Dutch Embassy
     - 
   - CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
-
-
-————————————————————————————————————————————————————————————————
-
-
-# Support
-
-## Contact us
-We hope this documentation has been thorough and informative. If you have any other questions, don’t hesitate to let us know. We’re happy to help. You can reach us using the following channels:
-
-**Email**
-Shoot us a message at [support@blokkshq.com](mailto:support@blokkshq.com).
-
-**Twitter**
-Tweet us at [@blokkshq](http://twitter.com/blokkshq)
-
-**Support**
-You can also reach us by clicking on the little support bubble shown on the bottom right. This will allow you to speak to our team directly. This support feature is also available in our backend.

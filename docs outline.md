@@ -219,11 +219,6 @@ Acts marked as `canceled` can have custom styling in your timetable embed, allow
 
 *@patrick, klopt dit? Of hebben we dit nu nog niet.*
 
-### Custom fields
-It’s possible to add custom for fields to your schedule. In order to do so.. 
-
-*@patrick, ik weet nog niet precies hoe dit in z’n werk gaat. Kan jij evt. aanvullen, of zullen we het weglaten voor nu.*
-
 
 ## Autosaving
 When using Blokks, you data will be automatically saved every 15 minutes. You can always manually save your data by pressing the `Save` button in the top right. 

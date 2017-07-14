@@ -46,7 +46,7 @@ Choose the date of your event by selecting them in the calendar. You can select 
 *If you’re not yet sure about the date or time for your event, no worries, you can easily [change them later](http://manageevent/datestimes).*
 
 ### Adding stages
-The next step is adding stages or areas for your event. If you need more stages simply click the `Add another stage` button. 
+The next step is adding stages or areas for your event. If you need more stages simply click the `Add another stage` button.
 
 *Don’t worry if you’re not sure about which stages your event will have. You can always [add new ones](http://manage/stages) at later moment.*
 
@@ -66,26 +66,30 @@ And that’s it. Your schedule has now been set up and you’re ready to [dive i
 # Manage your schedule
 
 ## Managing your days
-Your days can be found at the top of your schedule. You can switch between different days by clicking them.
+Your conference or festival can be a single or multiple day event. The dates can be found at the top of your schedule. 
 
-![GIF: Adding and adjusting days](https://blokks.co/docs/images/image.gif)
+[FILMPJE OVER DAGEN]
 
 ### Adding days
-You can easily add another day by clicking the `+ Add day` button. Blokks will automatically select a date that follows the last date of your event. Note: Your current stages will also be copied to your added day.
+Adding extra days to your event is simple. Just hit the `+ Add day` button. Blokks will automatically pick the date that follows the last one. 
+
+*Note that your current stages will also be copied to your added days.*
 
 ### Changing and removing days
-Right-clicking any day will show the date picker, allowing you to change the date for that specific day.
+`Right-click` any date will show the datepicker, allowing you to change the selected date.
 
-Below the date picker you’ll also find a `remove` button, allowing you to delete that day. Deleting that day will also remove the acts you’ve added to that day. But don’t worry, you can always undo any action you take in Blokks by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
+Click the `Remove` button right below the datepicker to delete that specific day. Removing days will also delete the acts added to that day. 
+
+![Datepicker and remove button](https://blokks.co/docs/images/datepicker.png)
+
+*Pro-tip: You can always `undo` any action by clicking the Undo button in the top right or by using the shortcut `CTRL+~` / `CMD-Z`.*
 
 ### Adjusting your start and end time
-![GIF: Adjusting your start and end time](https://blokks.co/docs/images/image.gif)
+If you want your days to start earlier or end later, you can do so by clicking the `•••` button.
 
-If you want to have your days start or end at an earlier or later time, you can do so by clicking the `•••` button shown above your schedule times. 
+Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the times you’re removing.
 
-Making your days longer will add space above or below your schedule, creating more space for your acts.
-
-When making your days shorter, make sure that you don’t have any active acts during the times you’re removing, as those acts will be removed from your schedule. If this does happen, you can always take a step back by clicking the `Undo` button in the top right or by using the shortcut `cmd-z`. 
+*You can always take a step back by clicking the `Undo` button in the top right or by hitting `CTRL-Z` / `CMD-Z`.*
 
 
 ## Managing your stages
@@ -96,15 +100,15 @@ The columns shown in your schedule represent the various stages or areas that wi
 ### Adding stages
 You can add stages by simply clicking the `+ Add new stage` button. The new stage will appear on the right of your current stages. 
 
-Note: New stages are only added to your currently selected day.
+*You should note that new stages are only added to your currently selected date.*
 
 ### Ordering stages
-You can change the order of your stages by dragging and dropping them to any position you prefer. Pick up a stage by hovering over the stage title and start dragging. When you release the stage, it will snap into place. 
+The order of stages can be changed by drag ’n dropping them to the preferred position. Releasing the stage will make it snap into position.
 
 ### Titles and subtitles
 ![Your stage options](https://blokks.co/docs/images/image.png)
 
-Right-click a stage or press the `•••` button to bring up the various options for that stage. You can adjust the following fields:
+`Right-click` a stage or press the `•••` button to bring up the various options for that stage. You can adjust the following fields:
 - Title
 - Subtitle
 - Categories
@@ -1093,6 +1097,9 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 **See also**
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
+
+
+## Animations
 
 
 ## Pseudo-elements

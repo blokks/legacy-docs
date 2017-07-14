@@ -14,11 +14,6 @@ We’re glad you made it here. We’ll explain everything there is to know about
 
 Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks.
 
-![Blokks 101: Creating and updating your schedule](video)
-
-![Blokks for developers: How to embed and customize your schedule](video)
-
-
 ## Support
 If you have any questions after reading the docs, don’t hesitate to let us know. Send us an [email](mailto:support@blokks.co), shoot us a message on [twitter](http://twitter.com/blokkshq) or use the little support bubble shown on the bottom right to speak to us directly.
 
@@ -34,6 +29,7 @@ Creating a new Blokks account is easy. Simply go to [blokks.co/signup](https://b
 
 *Your password is auto-generated to speed things up. You can [change your password](http://gettingstarted/settings) at any time.*
 
+![Blokks 101: Creating and updating your schedule](video)
 
 ## Creating your first event
 Let’s create your first event. To do so, we need to know some basic info about your event. We’ll take you through a series of pages and ask things like your event’s name, what kind of event you’re organising, dates, times etc.
@@ -68,7 +64,7 @@ And that’s it. Your schedule has now been set up and you’re ready to [dive i
 ## Managing your days
 Your conference or festival can be a single or multiple day event. The dates can be found at the top of your schedule. 
 
-[FILMPJE OVER DAGEN]
+_**[FILMPJE OF GIF HOE JE DAGEN KUNT AANPASSEN]**_
 
 ### Adding days
 Adding extra days to your event is simple. Just hit the `+ Add day` button. Blokks will automatically pick the date that follows the last one. 
@@ -85,58 +81,51 @@ Click the `Remove` button right below the datepicker to delete that specific day
 *Pro-tip: You can always `undo` any action by clicking the Undo button in the top right or by using the shortcut `CTRL+~` / `CMD-Z`.*
 
 ### Adjusting your start and end time
-If you want your days to start earlier or end later, you can do so by clicking the `•••` button.
+If you want your days to start earlier or end later, you can do so by clicking the `•••` button. 
 
-Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the times you’re removing.
+Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the hours you’re about to remove.
 
 *You can always take a step back by clicking the `Undo` button in the top right or by hitting `CTRL-Z` / `CMD-Z`.*
 
 
 ## Managing your stages
-The columns shown in your schedule represent the various stages or areas that will be used during your event. 
+The columns shown in your schedule represent the stages or areas of your event. 
 
-![GIF: Adding and moving stages](https://blokks.co/docs/images/image.gif)
+_**[FILMPJE OF GIF HOE JE INFO KUNT AANPASSEN]**_
 
 ### Adding stages
-You can add stages by simply clicking the `+ Add new stage` button. The new stage will appear on the right of your current stages. 
+You can add stages by simply clicking the `+ Add new stage` button. New stages are added only to your current selected date.
 
-*You should note that new stages are only added to your currently selected date.*
+*[Adding an extra date](http://started/dates) will duplicate the stages of that day. To save you from extra work, make sure you’ve created all stages before adding new dates.*
 
 ### Ordering stages
-The order of stages can be changed by drag ’n dropping them to the preferred position. Releasing the stage will make it snap into position.
+Changing the order of your stages is done by clicking the stage title and drag ’n dropping them to the prefered position. Releasing it will make it snap into position.
 
-### Titles and subtitles
-![Your stage options](https://blokks.co/docs/images/image.png)
+### Updating stages
+`Right-click` a stage or press the `•••` button to bring up the various options for that stage. 
 
-`Right-click` a stage or press the `•••` button to bring up the various options for that stage. You can adjust the following fields:
-- Title
-- Subtitle
-- Categories
-- Delay
+#### Titles and subtitles
+The *title field* is required and will appear in the embedded schedule. The stage subtitle is an optional field. It’s used when more context is needed. For example, your stage name could be `The Red Stage` and its subtitle could be `Sponsored by Red Bull`. 
 
-The title field is, forgive us for being obvious, the main title of your stage. This title will also appear in your timetable embed and will be visible to your visitors. 
+*Pro-tip: Edit stage titles without opening the popup by `CTRL` or `CMD` clicking its title.*
 
-The stage subtitle is an optional field and it will not automatically show in your timetable embed. This field can be used for events where you need to show a bit more context for each stage. For example, your stage name could be `The Red Stage` and its subtitle could be `Sponsored by Red Bull`. 
+#### Categories
+You can add one or more *categories* to stages. By itself, these categories have no direct impact on the design of your timetable. But: *categories* can be used to [style the look and feel of each individual stage](http://design/styling). 
 
-More info on how to show your stage subtitles in your embed can be found in [this section](#).
+**See also**
+- [Create templates](http://templates/)
 
-By the way, here’s a pro-tip: if you press `cmd` and click on a stage title, you can edit it directly. 
+#### Delays
+Live events can be pretty hectic and get messy at times. Speakers or artists can be delayed for various reasons, causing your schedule to get out of sync. 
 
-### Categories
-You can add multiple categories to each stage. By itself, these categories have no direct impact on the design of your timetable. But: categories can be used for styling purposes during development, allowing you to adjust the look and feel of each individual stage. 
+Therefor it’s possible to add `delays` to stages. `Delays` are automatically added to all acts of the delayed stage. For example, adding a delay of `15 minutes` pushes the start end times of all acts by 15 minutes. 
 
-More information on customizing the design of your stages can be found in [this section](#).
+Your visitors will see the updated times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts. 
 
-### Delays
-Live events can be pretty hectic and can get messy at times. Speakers or artists can get delayed for various reasons, causing your schedule to get out of sync. 
-
-For this purpose, we’ve built in a delay function. By adding a delay of, for example, `15 minutes` to your stage, the times for all acts on that stage will be pushed by 15 minutes. Your visitors will then see the updates times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts. Important note: the times shown in the backend will still be the initially set times.
-
-*@patrick, klopt dit tekstje? Of mis ik nog iets. Moeten we nog iets zeggen over hoe we dat laten zien in de embed en hoe dat te customizen?*
+*You should note that the times shown in the backend will still be the initially set times.*
 
 
 ## Managing your acts
-
 Adding acts to your event is probably the most important part of building your schedule. Which is why Blokks allows you to add all the information your visitors will need.
 
 ### Adding acts
@@ -1152,6 +1141,11 @@ Dutch Embassy
 
 
 # Configure your schedule (Patje)
+
+
+![Blokks for developers: How to embed and customize your schedule](video)
+
+
 - Accessibility
 - Auto scrolling
 - Auto update

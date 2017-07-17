@@ -927,6 +927,7 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 
 
 ## Animations
+## Animations
 The CSS *animation* property can be used to animate CSS properties such as `color`, `background-color`, `width`, or `height`. 
 
 Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
@@ -944,9 +945,12 @@ Each animation needs to be defined with the `@keyframes` at-rule which is then c
 }
 ```
 
-In the above example `.element` slides into screen. The [*activity details* component](http://themes/structure#activity-details) uses this technique to present itself. 
+In the above example `.element` slides into screen. 
 
-To change its animation you only need to update the start value of the `transform` property. For example, to make it bounce into screen the only thing you have to do is:
+### Animating modals & alerts
+The [*activity details* component](http://themes/structure#activity-details) uses this technique to present itself. 
+
+To add another animation you only need to update the start value of the `transform` property. For example, to make it bounce into screen, just do this:
 
 ```
 .element {
@@ -956,7 +960,12 @@ To change its animation you only need to update the start value of the `transfor
 
 **!!!!!!!!!!! FILPMJE OVER ANIMATIES AANPASSEN!!!!!!**
 
-As simple as that!
+### Animating other elements
+Modals and alerts are the only components which are presented with an animation. But this doesn’t mean that you are limited to those.
+
+Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule all kinds of animations. 
+
+So let oneself go.
 
 **See also**
 - [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)

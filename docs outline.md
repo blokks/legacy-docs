@@ -227,19 +227,16 @@ Acts marked as `canceled` are still visible but can have custom styling in your 
 
 
 ## Saving
-When saving your schedule we only update the data that actually changed. So you can work with several people simultaneously on your schedule without overwriting each others data.
+When saving your schedule we only update the data that actually changed. So you can work simultaneously with other people on your schedule, without overwriting each others changes.
 
 When using Blokks, your schedule will be automatically saved 
-in the background every 3 minutes. 
+in the background every 3 minutes.  
+
 When you accidentally close Blokks before your changes are saved, Blokks will show a popup reminding you to save your data before leaving. 
 
+
 ## Exporting your data
-It’s possible to export all the data in your schedule to a XLS file. You can download this file by clicking the `Export` button on the top right. 
-
-The Excel file consists of two different types of data, each shown on different sheets in your file.
-
-
-Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
+It’s possible to export all the schedule data to a XLS file. You can download this file by clicking the `Export` button on the top right. 
 
 
 ———
@@ -247,26 +244,21 @@ Each of your days will have its own sheet in your Excel file. On those sheets, y
 
 # Embed your schedule
 
-## Your embed settings
+## Embed settings
 When you’re ready to start implementing your schedule on your website or mobile app, head over to the embed tab.
 
 Here you’ll find various settings that will allow you to customize both the design and functionality of your timetable embed. After adjusting the settings on the left, the embed code shown on the right will automatically update.
 
-Let’s dig in. 
+_**[FILMPJE OF GIF EMBEDDEN]**_
 
-Your timetable embed can have different layouts. Here you can select the layout that best suits your event schedule. 
+**See also**
+- [Choose your layout](http://design/layout)
+- [Structure](http://theme/structure)
+- [Options](http://configure/options)
 
-shortcut
 
 ## Favorites
-Your visitors are able to save their favorite acts by connecting their Facebook, Twitter or LinkedIn accounts. This allows them to create a personal schedule, highlighting the acts they want to see during your event.
-
-Blokks currently supports the following social networks:
-- Facebook
-- Twitter
-- LinkedIn
-
-After selecting one of these options, the `data-social-provider` tag will be adjusted in your embed.
+Your visitors are able to save their favorite acts by connecting their *Facebook*, *Twitter* or *LinkedIn* account. Once connected they can create their personal schedule, highlighting the acts they want to see during your event and see where friends are going.
 
 ---
 
@@ -280,14 +272,12 @@ When clicked, they’ll see a modal that explains the functionality and allows t
 
 When connected, users can add acts to their favorites by clicking the `Add to favorites` button in the act modals. Alternatively, they can double click acts to add favorites straight from the schedule.
 
-
 **See also**
-- [Choose your layout](http://design/layout)
-- [Structure](http://theme/structure)
 - [Options](http://configure/options)
+- [Structure](http://theme/structure)
 
 
-## Add to calendar
+## Add to iCal
 When enabled, an `Add to calendar` button will be shown at the top of your schedule. This button allows your visitors to download calendar entries for your event. 
 
 The download includes two types of calendar entries:
@@ -302,6 +292,14 @@ On mobile, the `Add to calendar` button will automatically open your users calen
 
 When disabled, the following value will be added to your embed code: 
 ```data-hide-export='true'```
+
+
+## Print schedule
+You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` on Windows or `Command+P` on OSX.
+
+**See also**
+- [Print version](http://themes/print)
+- [Print options](http://configure/print)
 
 
 ———
@@ -487,7 +485,7 @@ And instead of setting `font-family: "liberation-sans",sans-serif;` use our *cus
 }
 ```
 
-### Self-host fonts 
+### Self-hosted fonts 
 Sometimes you already purchased and downloaded a font which you are using in your website or app. In that case you are self-hosting your fonts. 
 
 To use self-hosted fonts with Blokks we need a little bit of information about them. The `@font-face` CSS rule specifies the name of your font, its location and its font-weight. And looks something like this:
@@ -687,6 +685,7 @@ Besides colors, fonts and sizes, there are more *custom properties* for you to c
 You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` on Windows or `Command+P` on OSX. Unfortunately, it’s not possible to style the printed schedule.
 
 **See also**
+- [Print](http://embed/print)
 - [Print options](http://configure/print)
 - [Structure](http://themes/structure#navigation)
 
@@ -927,8 +926,7 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 
 
 ## Animations
-## Animations
-The CSS *animation* property can be used to animate CSS properties such as `color`, `background-color`, `width`, or `height`. 
+The *animation* property can be used to animate any CSS properties such as `color`, `background-color`, `width`, `height`, etc.
 
 Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
 
@@ -948,9 +946,9 @@ Each animation needs to be defined with the `@keyframes` at-rule which is then c
 In the above example `.element` slides into screen. 
 
 ### Animating modals & alerts
-The [*activity details* component](http://themes/structure#activity-details) uses this technique to present itself. 
+The [*activity details* component](http://themes/structure#activity-details) and all alerts use this technique to present themselves. 
 
-To add another animation you only need to update the start value of the `transform` property. For example, to make it bounce into screen, just do this:
+To replace the animation with another one you only need to update the start value of the `transform` property. For example, make it bounce into screen:
 
 ```
 .element {
@@ -958,14 +956,16 @@ To add another animation you only need to update the start value of the `transfo
 }
 ```
 
+You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. [Read more about animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
+
 **!!!!!!!!!!! FILPMJE OVER ANIMATIES AANPASSEN!!!!!!**
 
 ### Animating other elements
-Modals and alerts are the only components which are presented with an animation. But this doesn’t mean that you are limited to those.
+Modals and alerts are currently the only components which are presented with an animation. But this doesn’t mean that you are limited to those components.
 
-Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule all kinds of animations. 
+Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule with all kinds of animations. 
 
-So let oneself go.
+So let yourself go.
 
 **See also**
 - [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)

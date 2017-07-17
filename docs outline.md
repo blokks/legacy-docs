@@ -1,12 +1,4 @@
 
-- Ik denk dat we nog een hoofdstuk nodig hebben waarin we de embed beschrijven. Double clicks etc. De embedcode etc. Dit is ook een goede brug van backend naar het volgende hoofdstuk.
-- Idee. Vraagtekentjes plaatsen bij ingewikkelde onderdelen in forms in de backend (act modal & embed tab). Die vraagtekentjes direct doorlinken naar het deel van de docs waar we dat uitleggen. We kunnen ook nog steeds on hover een korte beschrijving tonen, maar on click kunnen we naar de uitgebreidere uitleg in de docs.
-
-——
-
-
-
-
 # Introduction
 
 ## Welcome
@@ -20,6 +12,7 @@ If you have any questions after reading the docs, don’t hesitate to let us kno
 For now, let’s get started by [creating your account](http://gettingstarted/signingup).
 
 
+————————————————————————————————————————————————————————————————
 
 
 # Getting started
@@ -57,6 +50,7 @@ You can invite one or more persons to your team. They will receive an email with
 And that’s it. Your schedule has now been set up and you’re ready to [dive in!](http://manage/days)
 
 
+————————————————————————————————————————————————————————————————
 
 
 # Manage your schedule
@@ -249,45 +243,21 @@ The Excel file consists of two different types of data, each shown on different 
 Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
 
 
-# Your embed settings
-*Dit onderdeel was eerst “Design your schedule”. Misschien moeten we dit voor nu anders noemen, nu de embed tab nog geen ‘Design’ heet en je daar eigenlijk niet aan het ontwerpen bent, meer settings van je embed aanpassen *
+————————————————————————————————————————————————————————————————
 
+
+# Embed your schedule
+
+## Your embed settings
 When you’re ready to start implementing your schedule on your website or mobile app, head over to the embed tab.
-
-![The embed tab](https://blokks.co/docs/images/image.png)
 
 Here you’ll find various settings that will allow you to customize both the design and functionality of your timetable embed. After adjusting the settings on the left, the embed code shown on the right will automatically update.
 
 Let’s dig in. 
 
+Your timetable embed can have different layouts. Here you can select the layout that best suits your event schedule. 
 
-## Select your layout
-Your timetable embed can have different layouts. Here you can select the layout that best suits your event schedule. Currently, we offer two different layouts:
-
-1. Columns
-
-![Column layout](https://blokks.co/docs/images/image.png)
-
-In this layout, all your stages are placed on columns. This layout works best if you have a small number of stages. Also, it allows you to show a lot of info on your acts, since your acts will be larger.
-
-An example of this layout in use would be the schedule that [The Next Web](https://blokks.co/schedules/tnw2017) built. 
-
-2. Rows
-
-![Row layout](https://blokks.co/docs/images/image.png)
-
-In this layout, your stages will be placed on rows. This is a great layout for events that have a lot of stages, since you can have more stages visible at the same time. 
-
-A good example of this layout in use is the schedule that [De Correspondent](https://decorrespondent.nl/evenementen/7/festival-der-vooruitgang/programma) built.
-
-The above layouts are fully customizable. More information on how to do so can be found in [this section](#).
-
-After selecting a layout, the corresponding values will be adjusted in your embed code. For example, after selecting the Rows layout, your embed will load a different CSS file:
-```<link href='https://themes.blokks.co/rows-1.0.0.css' rel='stylesheet'>```
-
-And, the `data-layout` value will be adjusted accordingly:
-```data-layout='rows’```
-
+shortcut
 
 ## Favorites
 Your visitors are able to save their favorite acts by connecting their Facebook, Twitter or LinkedIn accounts. This allows them to create a personal schedule, highlighting the acts they want to see during your event.
@@ -312,26 +282,10 @@ When clicked, they’ll see a modal that explains the functionality and allows t
 When connected, users can add acts to their favorites by clicking the `Add to favorites` button in the act modals. Alternatively, they can double click acts to add favorites straight from the schedule.
 
 
-## Mobile dashboard
-![The mobile dashboard](https://blokks.co/docs/images/image.png)
-
-The mobile dashboard, or the ‘Now & Next’ section, is a way for your mobile visitors to quickly see what's currently playing and what's next up. This section is *only shown during your event*, and only visible on mobile. 
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-dashboard='true'```
-
-
-## Scroll buttons
-![GIF: Scroll buttons](https://blokks.co/docs/images/image.gif)
-
-Scroll buttons allow your desktop users to scroll through your timetable horizontally. 
-
-![GIF: Mobile scroll buttons](https://blokks.co/docs/images/image.gif)
-
-On mobile, the scroll buttons allow users to quickly switch between your stages.
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-controls='true'```
+**See also**
+- [Choose your layout](http://design/layout)
+- [Structure](http://theme/structure)
+- [Options](http://configure/options)
 
 
 ## Add to calendar
@@ -351,50 +305,7 @@ When disabled, the following value will be added to your embed code:
 ```data-hide-export='true'```
 
 
-## Customize your acts
-![GIF: Customize your acts (showing various states)](https://blokks.co/docs/images/image.gif)
-
-You can customize the look of the acts shown in your schedule by adjusting the following settings.
-
-### Hide images
-Initially, each act will show the image you added to that act as a background image. 
-
-When disabled, the following value will be added to your embed code:
-```data-hide-images='true'```
-
-### Hide subtitles
-This setting allows you to hide the subtitle shown below the title in each act. 
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-subtitles='true'```
-
-Note: This setting will only affect the act shown in the schedule overview. When a user clicks on an act, the subtitle will still be visible in the act modal. 
-
-*@patrick, dit klopt, toch?*
-
-### Hide start & end times
-Initially, each act in your schedule will also show its start and end time. You can use this setting to hide these times.
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-times='true'```
-
-
-## Other options
-
-### Hide "Built with Blokks" link
-You can choose to hide the `Built with Blokks` link that is shown at the bottom of your schedule using this setting. 
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-blokks-link='true'```
-
-
-
-
-# Embed your schedule
-
-*@patje, ik heb deze sectie nog niet geschreven omdat ik verwacht dat er veel overlap zal zijn met wat jij hebt geschreven. Het enige wat ik hierover kan schrijven is hoe je de embed code toevoegt aan je site, maar dat wordt al snel een technisch verhaal denk ik*
-
-
+————————————————————————————————————————————————————————————————
 
 
 # Account settings & teams
@@ -443,24 +354,6 @@ A few notes:
 On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 
 
 
-
-
-
----
-
-*@patrick, deze twee onderdelen wist ik niet zo goed te plaatsen, wat denk jij?*
-
-
-
-
-
----
-
-*Toevoegen: Embedding your schedule*
-
----
-
-
 ————————————————————————————————————————————————————————————————
 
 
@@ -494,6 +387,8 @@ You can change the layout direction at any time by selecting the layout in [the 
 	data-layout=“rows"
 ></script>
 ```
+
+A good example of the `columns` layout is the schedule that [The Next Web](https://blokks.co/schedules/tnw2017) built. The `rows` layout is implemented by [De Correspondent](https://decorrespondent.nl/evenementen/7/festival-der-vooruitgang/programma) built.
 
 **See also:**
 - [More configuration options](http://configure)
@@ -839,7 +734,6 @@ Besides colors, fonts and sizes, there are more *custom properties* for you to c
 
 
 ## Printable version
-
 You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` on Windows or `Command+P` on OSX. Unfortunately, it’s not possible to style the printed schedule.
 
 **See also**

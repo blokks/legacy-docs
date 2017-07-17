@@ -51,7 +51,7 @@ In many cases, more than one person will be responsible for updating your event 
 
 You can invite one or more persons to your team. They will receive an email with their own login information and gain full access to your schedule. 
 
-*You can [add and remove team members](http://settings/team) at a later moment. If you’re on a free plan only team members can see the embedded schedule. [Read more about plan](http://plans).*
+*You can [add and remove team members](http://settings/team) at a later moment. If you’re on a free plan only team members can see the embedded schedule. [Read more about plans](http://plans).*
 
 ### All done!
 And that’s it. Your schedule has now been set up and you’re ready to [dive in!](http://manage/days)
@@ -126,106 +126,120 @@ Your visitors will see the updated times in their schedule, making sure they won
 
 
 ## Managing your acts
-Adding acts to your event is probably the most important part of building your schedule. Which is why Blokks allows you to add all the information your visitors will need.
+Adding acts to your event is probably the most important part of building your schedule.
+
+_**[FILMPJE OF GIF HOE JE INFO KUNT AANPASSEN]**_
 
 ### Adding acts
-![GIF: Adding acts](https://blokks.co/docs/images/image.gif)
-
-To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add all your act info in one place. 
+To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add and [edit all your info in one place](http://manageschedule/managingacts#titlesandsubtitles). 
 
 ### Moving and resizing acts
-![GIF: Moving and resizing acts](https://blokks.co/docs/images/image.gif)
+You can change the start time of an act by moving it to a different slot. Just pick it up by clicking the top area of the act and drag it anywhere you want. It will snap into place when you drop it.
 
-You can move acts to a different slot by dragging and dropping them. Pick up an act by hovering over the top section of that act and start dragging. When you release the act, it will snap into place. 
+Updating the end time of an act is done in a similar fashion. Just click the bottom area and start resizing the act. This will change the end time by increments of 15 minutes. 
 
-One way to adjust an acts start and end time, is by hovering over the bottom right of an act and dragging it up or down. This will change the acts time by increments of 15 minutes. 
+If you need to be more specific, you can do so by [selecting the act](http://manageschedule/managingacts#titlesandsubtitles) and change one of the times there.
 
-If you need to make a more specific change in the acts time, you can do so by clicking the acts and adjusting the time there.
-
-### Titles and subtitles
-![The act modal](https://blokks.co/docs/images/image.png)
-
-After adding an act or clicking on an existing act, you can edit your acts content. First up is your acts title. This is the main title, that will be shown for each act in your timetable embed.
-
-If your event is a conference, you can additionally add a subtitle. Choosing to show the subtitle in your timetable embed can be done while [designing your schedule](#), more info on how to do that can be found in that section. 
-
-### Headliners  
-You can make your act a `headliner` which will allow you to highlight this act in your timetable embed. This enables you to have special acts really pop out on your schedule by adding custom styling.
-  
-Note: In our standard Blokks theme, headliners will not be highlighted. Custom highlight styling can easily be added by adjusting your code. More detailed info on how to do so can be found in [this section](#).
-
-### Categories
-Each act can have multiple categories. These categories can optionally be shown in your timetable, after a user clicks on an act. Additionally, you can use these categories to adjust the design of individual acts. 
-
-More information on using categories to customize your design can be found in [this section](#).
-
-### Description
-Each of your acts can have a description. This will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Your description can be as long as you prefer, but we recommend a maximum of 500 characters. Note: this is not a hard limit, you can go with as many characters as you need. 
-
-Here’s a pro-tip: it’s possible to add formatting to this text by using [markdown](#). Markdown is a super simple text-based method to add custom styles to plain text. Styles that can be added using this method:
-- Bold text
-- Italic text
-- Headers and subheaders
-- Quotes
-- Dividers
-- Links
-- Lists
-
-*@Niek, Ik denk dat de we hier markdown uitgebreid moeten bescrhijven. Dat wil ik wel doen.*
-
-You can show these styles in your timetable embed by adjusting your code and customizing their design. Our guide on using markdown:
-→ [Markdown](#)
-
-### Images
-You can add a single image to each of your acts by dragging an image file on the drop area or add one by clicking that area. 
-
-This image will be your acts main visual and can be shown in the timetable embed. Choosing to hide or show this image can be done in your [embed settings](#). 
-
-The images that are added to your act cannot be larger than 2MB. 
-Our recommended file format is JPG (instead of PNG), since this helps your schedule load faster. 
-
-### Links
-You can add multiple links to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the `Add one more link` button.
-
-Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link. You can choose from the following labels:
-- Website
-- Youtube
-- Soundcloud
-- Spotify
-- Twitter
-- Facebook
-- Instagram
-- Other..
-
-When you select the `- Other..` label, you can manually add a custom text label.
-
-### Embeds
-In some cases, you might want to add a Youtube video, Spotify embed or other piece of media content to an act in your timetable embed. This is possible by copying and pasting its embed code. 
-
-You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.  
-
-We support many different embeds. But if you’re trying to add an embed code and are running into problems, send us an [email](mailto:support@blokks.co), tweet or use the support bubble on the bottom right. We’ll help you out.
+*You should note that by dragging and resizing you may change other acts. And possibly remove them. Don’t worry though, you can always undo a previous action by hitting `CTRL+Z` or `CMD+Z`*
 
 ### Deleting acts
 You can delete an act by pressing the `Delete` button at the bottom while editing an act. Alternatively, you can right-click on any act in your schedule to find another `Delete` button. 
 
+
+## Editing acts
+After [adding an act](http://manageschedule/manageacts#addingsacts) or selecting an existing one, a modal window is shown where you can add or edit its information.
+
+![The act modal](https://blokks.co/docs/images/image.png)
+
+### Titles and subtitles
+The *title* of an act is required and can be anything you want. Most common titles are speakers names, title of their talks etc.
+
+If your event is a conference, you can additionally add a *subtitle*. Again, this can be anything. Or just leave it blank if you don’t need it.
+
+### Headliners  
+Sometimes you want to highlight a band or speaker. By marking it as a *headliner* you can do so. This enables you to have special acts really pop out on your schedule.
+
+### Categories
+Each act can have one or multiple *categories*. These *categories* can optionally be shown in your timetable. Additionally, you can use these categories to [customize the design of your timetable](http://themes/modififers). 
+
+### Description
+The *description* will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Usually this is short biography of the artist or speaker. Or a summary his talk.
+
+A *description* can be as long as you prefer, but we recommend a maximum of 500 characters. *Note: this is not a hard limit, you can go with as many characters as you need.*
+
+*Descriptions* support basic [Markdown](https://daringfireball.net/projects/markdown/). Markdown is a way to style text on the web. Markdown is just regular text with a few non-alphabetic characters thrown in, like `#` or `*`. Formatting words as **bold** or _italic_, adding images, and creating lists are just a few of the things we can do with Markdown. 
+
+Here’s a quick overview of Markdown syntax that you can use in the *descriptions*:
+
+#### Headers
+```
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+```
+
+#### Emphasis
+```
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
+```
+
+#### Links
+```
+[Blokks](https://blokks.co)
+Format: [Text](url)
+```
+
+#### Images
+```
+![Blokks](https://blokks.co/images/logo.png)
+Format: ![Alt Text](url)
+```
+
+### Images
+You can add a single *image* to each of your acts by dropping an image file on the drop area or add one by clicking that same area. This *image* will be your acts main visual and will be shown in the timetable embed. 
+
+*Images that are added to your act cannot be larger than 2MB. Images are resized and saved as JPG files by Blokks to optimize loading times.*
+
+### Links
+You can add multiple *links* to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the `Add one more link` button.
+
+Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link or manually a custom label by selecting `Other…`.
+
+### Embeds
+In some cases, you might want to add a Youtube video, a Spotify track or aoother piece of media content to an act. Just copy and paste its embed code.
+
+We support many different embeds. If you’re trying to add an embed code and are running into problems, [we’ll help you out](http://introduction/support).
+
+*You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.*
+
 ### Disable user interaction
-In some cases it can be useful to show an act in your schedule without allowing your visitors to click on it. For example, when an act is still being teased to your adience, this feature would allow you to show the act in your schedule, but prevent visitors to view its info. 
+In some cases it can be useful to show an act in your schedule without allowing your visitors to select it. For example, when an act is still being teased to your visitors.
 
 ### Published, unpublished and canceled
-Initially, all acts are marked as `published`. When you change an act to `unpublished`, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your visitors. 
+Initially, all acts are marked as `published`. When you change an act to `unpublished`, it won’t be visible in your timetable embed at all. This is useful when your schedule is live and you want to add new acts without showing them to your visitors. 
 
-Acts marked as `canceled` can have custom styling in your timetable embed, allowing you to show your visitors when acts are canceled. Visit [this section](#) to learn more on how to do this. 
+Acts marked as `canceled` are still visible but can have custom styling in your timetable embed.
 
-*@patrick, klopt dit? Of hebben we dit nu nog niet.*
+**See also**
+- [Blokks modifiers](http://themes/modifiers)
+- [Hiding stuff](http://configure/options)
+- [Markdown](https://daringfireball.net/projects/markdown/)
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
 ## Autosaving
-When using Blokks, you data will be automatically saved every 15 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
+When using Blokks, you data will be automatically saved every 5 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
 
 *@patrick, klopt dit?*
 
 When you accidentally close Blokks before saving, Blokks will show you a popup reminding you to save your data before leaving. 
+
 
 ## Exporting your data
 It’s possible to export all the data in your schedule to a single Excel file. You can download this file by clicking the `Export` button on the top right. 
@@ -248,6 +262,11 @@ On this sheet you will find all the acts that have been added to your schedule, 
 
 ### Days
 Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
+
+
+
+
+
 
 
 

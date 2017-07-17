@@ -828,7 +828,7 @@ For example:
 
 
 ## Block, Element, Modifier
-Now that you’re familiar with [the structure of the schedule](https://themes/structure) we can have a look at the clasnames of its elements. We use a simple naming convention thought up by the guys at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
+Now that you’re familiar with [the structure of the schedule](https://themes/structure) we can have a look at the clasnames of its elements. Blokks uses a simple naming convention thought up by the guys at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
 
 *BEM* provides a way to arrange your CSS classes into modules or components. Basically it follows this pattern:
 
@@ -915,14 +915,17 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 
 
 ## Blokks styling
-- BEM and Blokks
-- CSS modifiers
-- Pro-tip: Download CSS
-- Note: `margin-top: -1px;` voor timeslots
+Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring them together:
+
+We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing all components with their elements and modifiers. All well documented with inline comments. You can use both SASS and [PostCSS](htp://configure/postcss) to compile them.
+
+<button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
 **See also**
+- [Structure](http://themes/structures) 
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
+- [PostCSS](htp://configure/postcss)
 
 
 ## Animations
@@ -1014,11 +1017,6 @@ Once visible you can change its colors, adding background images, setting font p
 **See also**
 - [A Whole Bunch of Amazing Stuff Pseudo Elements Can Do](https://css-tricks.com/pseudo-element-roundup/)
 - [Browser support](http://configure/browsersupport)
-
-
-## Showcase
-TNW2017
-Dutch Embassy
 
 
 ———

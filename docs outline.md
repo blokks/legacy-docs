@@ -12,7 +12,7 @@ If you have any questions after reading the docs, don’t hesitate to let us kno
 For now, let’s get started by [creating your account](http://gettingstarted/signingup).
 
 
-————————————————————————————————————————————————————————————————
+———
 
 
 # Getting started
@@ -50,7 +50,7 @@ You can invite one or more persons to your team. They will receive an email with
 And that’s it. Your schedule has now been set up and you’re ready to [dive in!](http://manage/days)
 
 
-————————————————————————————————————————————————————————————————
+———
 
 
 # Manage your schedule
@@ -243,7 +243,7 @@ The Excel file consists of two different types of data, each shown on different 
 Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
 
 
-————————————————————————————————————————————————————————————————
+———
 
 
 # Embed your schedule
@@ -305,51 +305,7 @@ When disabled, the following value will be added to your embed code:
 ```data-hide-export='true'```
 
 
-————————————————————————————————————————————————————————————————
-
-
-
-# Settings
-
-## Your acount
-→ [blokks.co/manage/account](https://blokks.co/manage/account)
-
-Here, you can change your full name, email address and password. 
-
-Changing your Blokks password is simple. Just add your new password to the password field and hit save!
-
-
-## Team members
-In the `Team` tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the `Invite member` button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
-
-To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
-
-
-## Upgrading
-After first signing up to Blokks, you’ll be on a free account. 
-
-With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
-
-Once you’re ready to go live and share your schedule with your visitors, you can upgrade to a paid account using the following link:
-→ [blokks.co/manage/upgrades](https://blokks.co/manage/upgrades)
- 
-Here you’ll find an overview of your events that have not been upgraded yet. Follow the `Upgrade` link to start the upgrade process.
-
-
-![Upgrading your account](https://blokks.co/docs/images/image.png)
-
-Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
-
-A few notes:
-- If you have a coupon code, please add it here to apply it. 
-- If you’re a business customer, please add your VAT information so we can add that to your invoice. 
-
-
-## Invoices
-On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 
-
-
-————————————————————————————————————————————————————————————————
+———
 
 
 # Design your schedule
@@ -700,7 +656,7 @@ And that’s all there is to it! 🤘
 - [IcoMoon](https://icomoon.io/app)
 - [PostCSS](http://configure/postcss)
 
-### Styling SVG’s
+### Styling SVGs
 Replacing icons may cause them to be too big or too small. Like [changing the fonts](http://design/fonts) we can fix this by selecting the icon in the *Developers Tools* and change its size. 
 
 For example, this will resize the close icon to `50px` of the [*Activity details* component](http://themes/structure#activity-details):
@@ -736,7 +692,7 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Structure](http://themes/structure#navigation)
 
 
-————————————————————————————————————————————————————————————————
+———
 
 
 # Create templates
@@ -839,6 +795,7 @@ It shows all information about the selected speaker, talk, artist or performance
 
 **See also**
 - [Activity popup](http://gettingstarted/activity)
+- [Animations](http://themes/animations)
 - [Favorites](http://favorites)
 
 ### Notifications & Alerts
@@ -867,7 +824,7 @@ For example:
 
 **See also**
 - [Embedding your schedule](http://embed/code)
-- [Replace icons](http://design/iconset#spritesheets)
+- [Animations](http://configure/animations)
 - [Cache](http://configure/cache)
 - [Offline support](http://configure/offline)
 
@@ -971,7 +928,44 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 
 
 ## Animations
+The CSS *animation* property can be used to animate CSS properties such as `color`, `background-color`, `width`, or `height`. 
 
+Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
+
+```
+.element {
+	animation: present-element 300ms ease-out-back;
+	transform: translate3d(0, 100px, 0);
+}
+
+@keyframes present-element {
+	to {
+		transform: none;
+	}
+}
+```
+
+In the above example `.element` slides into screen. The [*activity details* component](http://themes/structure#activity-details) uses this technique to present itself. 
+
+To change its animation you only need to update the start value of the `transform` property. For example, to make it bounce into screen the only thing you have to do is:
+
+```
+.element {
+	transform: scale3d(0.9, 0.9, 1);
+}
+```
+
+**!!!!!!!!!!! FILPMJE OVER ANIMATIES AANPASSEN!!!!!!**
+
+As simple as that!
+
+**See also**
+- [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+- [Easing functions](http://easings.net/)
+- [Chrome: Easing editor](https://developers.google.com/web/updates/2015/05/the-easing-editor)
+- [Chrome: Inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
+- [Activity details](http://themes/structure/#activity-details)
+- [PostCSS](http://configure/postcss)
 
 ## Pseudo-elements
 With *pseudo-elements* you can extend the structure of the schedule with CSS. *Pseudo-elements* will add extra elements *before* and *after* the element’s content. These elements are visible to the user and are styleable with CSS. 
@@ -1019,7 +1013,7 @@ TNW2017
 Dutch Embassy
 
 
-————————————————————————————————————————————————————————————————
+———
 
 
 # Configure your schedule (Patje)
@@ -1099,3 +1093,46 @@ Dutch Embassy
     - 
   - CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
+
+
+———
+
+
+# Settings
+
+## Your acount
+→ [blokks.co/manage/account](https://blokks.co/manage/account)
+
+Here, you can change your full name, email address and password. 
+
+Changing your Blokks password is simple. Just add your new password to the password field and hit save!
+
+
+## Team members
+In the `Team` tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the `Invite member` button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
+
+To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
+
+
+## Upgrading
+After first signing up to Blokks, you’ll be on a free account. 
+
+With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
+
+Once you’re ready to go live and share your schedule with your visitors, you can upgrade to a paid account using the following link:
+→ [blokks.co/manage/upgrades](https://blokks.co/manage/upgrades)
+ 
+Here you’ll find an overview of your events that have not been upgraded yet. Follow the `Upgrade` link to start the upgrade process.
+
+
+![Upgrading your account](https://blokks.co/docs/images/image.png)
+
+Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
+
+A few notes:
+- If you have a coupon code, please add it here to apply it. 
+- If you’re a business customer, please add your VAT information so we can add that to your invoice. 
+
+
+## Invoices
+On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 

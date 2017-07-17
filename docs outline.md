@@ -25,9 +25,8 @@ Creating a new Blokks account is easy. Simply go to [blokks.co/signup](https://b
 ![Blokks 101: Creating and updating your schedule](video)
 
 ## Creating your first event
-Let’s create your first event. To do so, we need to know some basic info about your event. We’ll take you through a series of pages and ask things like your event’s name, what kind of event you’re organising, dates, times etc.
 
-Again, super easy.
+Follow the link in your email to start working on your first event. To set everything up, we need to know some basic info. We’ll take you through a series of pages and ask things like your event name, what kind of event you’re organising, dates, times etc.
 
 ### Dates & times
 Choose the date of your event by selecting them in the calendar. You can select multiple dates if necessary. You can also set a start and end time for your event. 
@@ -42,12 +41,12 @@ The next step is adding stages or areas for your event. If you need more stages 
 ### Your team
 In many cases, more than one person will be responsible for updating your event timetable. Or more than one developer might want to work on your timetable. 
 
-You can invite one or more persons to your team. They will receive an email with their own login information and gain full access to your schedule. 
+You can invite multiple people to your team. They will receive an email with their own login information and gain full access to your schedule. 
 
-*You can [add and remove team members](http://settings/team) at a later moment. If you’re on a free plan only team members can see the embedded schedule. [Read more about plans](http://plans).*
+*You can [add and remove team members](http://settings/team) at a later time. If you’re on a free plan, only team members can see your embedded schedule. [Read more about plans](http://plans).*
 
 ### All done!
-And that’s it. Your schedule has now been set up and you’re ready to [dive in!](http://manage/days)
+After adding this information, your schedule has been set up and you’re ready to [dive in!](http://manage/days)
 
 
 ———
@@ -206,7 +205,7 @@ You can add multiple *links* to each of your acts. This will allow visitors to d
 Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link or manually a custom label by selecting `Other…`.
 
 ### Embeds
-In some cases, you might want to add a Youtube video, a Spotify track or aoother piece of media content to an act. Just copy and paste its embed code.
+In some cases, you might want to add a Youtube video, a Spotify track or another piece of media content to an act. Just copy and paste its embed code.
 
 We support many different embeds. If you’re trying to add an embed code and are running into problems, [we’ll help you out](http://introduction/support).
 

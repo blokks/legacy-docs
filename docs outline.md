@@ -233,41 +233,20 @@ Acts marked as `canceled` are still visible but can have custom styling in your 
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
-## Autosaving
-When using Blokks, you data will be automatically saved every 5 minutes. You can always manually save your data by pressing the `Save` button in the top right. 
+## Saving
+When saving your schedule we only update the data that actually changed. So you can work with several people simultaneously on your schedule without overwriting each others data.
 
-*@patrick, klopt dit?*
-
-When you accidentally close Blokks before saving, Blokks will show you a popup reminding you to save your data before leaving. 
-
+When using Blokks, your schedule will be automatically saved 
+in the background every 3 minutes. 
+When you accidentally close Blokks before your changes are saved, Blokks will show a popup reminding you to save your data before leaving. 
 
 ## Exporting your data
-It’s possible to export all the data in your schedule to a single Excel file. You can download this file by clicking the `Export` button on the top right. 
+It’s possible to export all the data in your schedule to a XLS file. You can download this file by clicking the `Export` button on the top right. 
 
 The Excel file consists of two different types of data, each shown on different sheets in your file.
 
-![Your lineup sheet](https://blokks.co/docs/images/image.png)
 
-### Lineup
-On this sheet you will find all the acts that have been added to your schedule, including all their relevant data:
-- Title
-- Subtitle
-- Description
-- Stage
-- Times
-- Categories
-- Image
-
-![Your day sheet](https://blokks.co/docs/images/image.png)
-
-### Days
 Each of your days will have its own sheet in your Excel file. On those sheets, you will find a full schedule divided in different cells. 
-
-
-
-
-
-
 
 
 # Your embed settings

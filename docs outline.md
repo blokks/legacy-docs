@@ -1,3 +1,8 @@
+# Todo’s
+- Acts vervangen voor talks/bands/speakers
+- Zinnen beginnend met “you can” vermijden
+- Schedule, timetable, embed consistent gebruiken
+
 
 # Introduction
 
@@ -244,10 +249,12 @@ It’s possible to export all the schedule data to a XLS file. You can download 
 
 # Embed your schedule
 
-## Embed settings
-When you’re ready to start implementing your schedule on your website or mobile app, head over to the embed tab.
+## Configure your embed
+Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app.
 
-Here you’ll find various settings that will allow you to customize both the design and functionality of your timetable embed. After adjusting the settings on the left, the embed code shown on the right will automatically update.
+Here you’ll find various settings that will allow you to customize both the design and functionality of your embed. All options are documented in [the configure section](http://configure/options). 
+
+After adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy-paste the updated code if you change any of your settings.
 
 _**[FILMPJE OF GIF EMBEDDEN]**_
 
@@ -258,19 +265,11 @@ _**[FILMPJE OF GIF EMBEDDEN]**_
 
 
 ## Favorites
-Your visitors are able to save their favorite acts by connecting their *Facebook*, *Twitter* or *LinkedIn* account. Once connected they can create their personal schedule, highlighting the acts they want to see during your event and see where friends are going.
+Your visitors are able to save their favorite acts and see where friends are going by connecting with their *Facebook*, *Twitter* or *LinkedIn* account. You can use the social provider of your choice by choosing one in the embed tab or by [setting it manually](http://configure/socialprovider).
 
----
-
-To give you some more insight on how saving favorites works for your visitors, here’s an overview:
+Once connected click the `Add to favorites` button to favorite that act. Alternatively, you can double click acts to add favorites straight from the schedule (Pro-tip!)
 
 ![GIF: Saving favorites](https://blokks.co/docs/images/image.gif)
-
-When users visit your schedule, they’ll find a `Save your favorites` button at the top of the schedule. 
-
-When clicked, they’ll see a modal that explains the functionality and allows them to connect to their social network. 
-
-When connected, users can add acts to their favorites by clicking the `Add to favorites` button in the act modals. Alternatively, they can double click acts to add favorites straight from the schedule.
 
 **See also**
 - [Options](http://configure/options)
@@ -278,20 +277,11 @@ When connected, users can add acts to their favorites by clicking the `Add to fa
 
 
 ## Add to iCal
-When enabled, an `Add to calendar` button will be shown at the top of your schedule. This button allows your visitors to download calendar entries for your event. 
+[When enabled](http://configure/options), an [`Add to calendar` button](http://themes/structure#navigation) will be visible at the top of your schedule. This button allows your visitors to download and add the event to their iCal. This includes their favorites.
 
-The download includes two types of calendar entries:
-1. Entries for each of your event days.
-2. Entries for each of your visitors favorite acts.
-
-The calendar entries for each of your visitors favorite acts can be used as reminders, as they will trigger a notification once their favorite acts start.
+The calendar entries for each favorite act can be used as reminders, as they will trigger a notification 15 minutes before the band or talk starts.
 
 On mobile, the `Add to calendar` button will automatically open your users calender app, allowing them to add the calendar entries there.
-
-*@patrick, klopt dit?*
-
-When disabled, the following value will be added to your embed code: 
-```data-hide-export='true'```
 
 
 ## Print schedule
@@ -301,6 +291,8 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Print version](http://themes/print)
 - [Print options](http://configure/print)
 
+
+## Trial version
 
 ———
 

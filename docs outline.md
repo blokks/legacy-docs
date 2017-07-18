@@ -345,8 +345,10 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Print options](http://configure/print)
 
 
-## Trial version
+## Free account
 _**NIEK WIL JIJ HIER NAAR KIJKEN!**_
+
+kort verhaaltje over die blauwe balk
 
 **See also**
 - [Upgrade your plan](http://settings/upgrade)
@@ -402,6 +404,8 @@ The default breakpoint for switching between mobile and desktop view is `480px` 
 For events with a lot of stages and acts the list can become long. Which can be quite annoying if you want to find out which speaker or band is coming up next. Therefor, on the day itself the mobile version of the embed will show our [dashboard](http://design/dashboard):
 
 The dashboard is a summary of acts which are playing now and coming up next. Read more about the dashboard in [create templates](http://themes/structure#dashboard). 
+
+*If you are [creating your own template](http://themes/intro) and don’t want to use the `columns` or `rows` layout, just set the [`data-layout` property](http://configure/options) to `custom`.*
 
 **See also:**
 - [Dashboard](http://themes/dashboard)

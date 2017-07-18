@@ -252,28 +252,77 @@ It’s possible to export all the schedule data to a XLS file. You can download 
 ## Configure your embed
 Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app.
 
-Here you’ll find various settings that will allow you to customize both the design and functionality of your embed. All options are documented in [the configure section](http://configure/options). 
+Here you’ll find various settings that will allow you to customize both the design and functionality of your embed. All options are described in [the configure section](http://configure/options). 
 
-After adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy-paste the updated code if you change any of your settings.
+After adjusting the settings on the left, the embed code shown on the right will automatically update. *So don’t forget to copy-paste the updated code if you change any of your settings.*
 
 _**[FILMPJE OF GIF EMBEDDEN]**_
 
 **See also**
-- [Choose your layout](http://design/layout)
-- [Structure](http://theme/structure)
+- [Design](http://design/)
 - [Options](http://configure/options)
+
+
+## Embed code
+Embedding your schedule requires you to insert three small snippets. 
+
+### CSS
+The first one is a `<link>` to a template file and it’s placed in the `<head>` of your page:
+
+```
+<link href='https://blokks.co/templates/columns-1.0.0.css' rel='stylesheet'>
+```
+
+If you [created your own template](http://themes/intro) just replace `href` value with a link to your own CSS file.
+
+### Container
+The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body>` and `</body>`:
+
+```
+<div id='blokks'></div>
+```
+
+### JavaScript
+Finally, add the following `<script>` just above the `</body>` of the page:
+
+```
+<script defer
+	src='https://static.blokks.co/schedule-1.0.0.js'
+	data-blokks-id=‘a34e542f’
+	data-layout='columns'>
+</script>
+```
+
+The `src`, `data-blokks-id`, `data-layout` attributes are required. All other attributes are optional. You can [configure your schedule](http://configure/options) any way you want setting its options.
+
+All files are hosted on our servers and [delivered to your visitors using our CDN](http://configure/Caching). However it’s possible to download and host all files yourself:
+
+[<button>Download files</button>](http://downloadlink)
+
+**See also**
+- [Create your own template](http://themes/intro)
+- [Adding preloader](http://themes/structure#preloader)
+- [Schedule options](http://configure/options)
+- [Caching](http://configure/Caching)
 
 
 ## Favorites
 Your visitors are able to save their favorite acts and see where friends are going by connecting with their *Facebook*, *Twitter* or *LinkedIn* account. You can use the social provider of your choice by choosing one in the embed tab or by [setting it manually](http://configure/socialprovider).
 
-Once connected click the `Add to favorites` button to favorite that act. Alternatively, you can double click acts to add favorites straight from the schedule (Pro-tip!)
+### Adding favorites
+Once connected click the `Add to favorites` button to favorite that act. Alternatively, you can double click acts to add favorites straight from the schedule *(Pro-tip!)*.
 
 ![GIF: Saving favorites](https://blokks.co/docs/images/image.gif)
 
+### Friends activity
+If some of your friends or colleagues are attending the same event, they will popup in several places. Telling you which speaker, band or performance they will see.
+
+Unfortunately *LinkedIn* doesn’t allow us to see user connections. Therefor it’s impossible for us to show your friends’ activity when using *LinkedIn* as your social provider. 🙁
+
 **See also**
-- [Options](http://configure/options)
-- [Structure](http://theme/structure)
+- [Social Provider](http://configure/socialprovider)
+- [Schedule options](http://configure/options)
+- [Embed structure](http://theme/structure)
 
 
 ## Add to iCal
@@ -282,6 +331,10 @@ Once connected click the `Add to favorites` button to favorite that act. Alterna
 The calendar entries for each favorite act can be used as reminders, as they will trigger a notification 15 minutes before the band or talk starts.
 
 On mobile, the `Add to calendar` button will automatically open your users calender app, allowing them to add the calendar entries there.
+
+**See also**
+- [Schedule options](http://configure/options)
+- [Embed structure](http://theme/structure#navigation)
 
 
 ## Print schedule
@@ -293,6 +346,10 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 
 
 ## Trial version
+_**NIEK WIL JIJ HIER NAAR KIJKEN!**_
+
+**See also**
+- [Upgrade your plan](http://settings/upgrade)
 
 ———
 

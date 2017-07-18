@@ -1077,15 +1077,15 @@ Once visible you can change its colors, adding background images, setting font p
 
 # Configure your schedule (Patje)
 
+## Accessibility
 
-![Blokks for developers: How to embed and customize your schedule](video)
+## Auto scrolling
 
+## Auto update
 
-- Accessibility
-- Auto scrolling
-- Auto update
-- Date selector
-- Disabling features
+## Date selector
+
+## Hiding elements
   - Hide the controls
   - Hide the dashboard
     - Note: More information about the dashboard: 
@@ -1095,41 +1095,51 @@ Once visible you can change its colors, adding background images, setting font p
   - Hide print button
   - Note: More information about configuring your embed:
      `> Configure your schedule > Options`
-- Favorites
+
+## Favorites
   - Choose your social provider
     - Facebook
     - Twitter
     - LinkedIn
   - Enable friends
     - Note: Friends don’t work with LinkedIn
-- Set date format
-- Add your own copy and translations
-- Update timescale
-- Local scroll
+
+## Add your own copy and translations
+
+## Set date format
+
+## Update timescale
+
+## Local scroll
   - Note: Sticky headers won’t work with localscrolling enabled:
      `> Configure your schedule > Browser support`
-- Print options
+
+## Print options
 	- Orientation
 	- disable print
-- Testflight your embed
+
+## Testflight your embed
   - Dashboard
     - Note: More information about the dashboard:
       `Design your schedule > dashboard`
   - Time indicator
   - Note: Don’t forget to disable testflight on production
-- Auto calculate size of acts
+
+## Auto calculate size of acts
   - Adds modifiers describing the size of the act
   - Note: Disable this feature for faster rendering
-- Caching
+
+## Caching
   - Why is caching enabled
   - Override cache with `?preview` querystring
   - Using CDN to deliver assets
-- Offline support with ServiceWorkers
+
+## Offline support with ServiceWorkers
   - Images are cached on the clientside
   - What do you need to enable offline support
   - Note: More information on ServiceWorkers: https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
 
-- Browser  support
+## Browser  support
   - Modern browsers
   - Flexbox
     - http://caniuse.com/#feat=flexbox
@@ -1149,8 +1159,8 @@ Once visible you can change its colors, adding background images, setting font p
     - https://github.com/stefanpenner/es6-promise
     - https://github.com/paulirish/matchMedia.js/
     - https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill
-    - 
-  - CORS problemen in browser uitleggen
+
+## CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
 
 

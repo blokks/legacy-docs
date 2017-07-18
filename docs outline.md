@@ -1155,39 +1155,41 @@ Once visible you can change its colors, adding background images, setting font p
 
 # Settings
 
-## Your acount
-→ [blokks.co/manage/account](https://blokks.co/manage/account)
+## [Your acount](https://blokks.co/manage/account)
+Not much to say. Change your name, email address and password here. 🤔
 
-Here, you can change your full name, email address and password. 
-
-Changing your Blokks password is simple. Just add your new password to the password field and hit save!
-
-
-## Team members
+## [Team members](https://blokks.co/manage/team)
 In the `Team` tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the `Invite member` button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
 
 To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
 
+*Note: While on a free account your schedule is only visible to the members of your team. You can add as many members as you wish: editors, developers, promoters, volunteers, pets, you name it.*
 
-## Upgrading
+**See also**
+- [Upgrade your account](http://settings/upgrade)
+- [Trial bar](http://embed/trial)
+- [CORS](http://configure/cors)
+
+
+## [Upgrade your account](https://blokks.co/manage/upgrades)
 After first signing up to Blokks, you’ll be on a free account. 
 
 With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
 
-Once you’re ready to go live and share your schedule with your visitors, you can upgrade to a paid account using the following link:
-→ [blokks.co/manage/upgrades](https://blokks.co/manage/upgrades)
- 
-Here you’ll find an overview of your events that have not been upgraded yet. Follow the `Upgrade` link to start the upgrade process.
-
+[Upgrade your account]((https://blokks.co/manage/upgrades) once you’re ready to go live and share your schedule with your visitors.
 
 ![Upgrading your account](https://blokks.co/docs/images/image.png)
 
 Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
 
-A few notes:
-- If you have a coupon code, please add it here to apply it. 
-- If you’re a business customer, please add your VAT information so we can add that to your invoice. 
+*Please note it may take some time before your update is visible because of [caching on our side](http://configure/cache)*
+
+**See also**
+- [Team members](http://settings/team)
+- [Cache](http://configure/cache)
+- [Trial bar](http://embed/trial)
+- [CORS](http://configure/cors)
 
 
-## Invoices
-On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download a copy of your invoice. 
+## [Invoices](https://blokks.co/manage/invoices)
+On the `Invoices` tab, you’ll find your invoice after upgrading your schedule. Click `View invoice` to download or print a copy.

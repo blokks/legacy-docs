@@ -1097,9 +1097,12 @@ Because these chapters are developer oriented - don’t be afraid if you are a d
 Without further ado… 
 
 
-## Configure your layout
+## Layout
 We talked [about layouts](http://themes/layout) before. Out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
+Default value is `columns`.
+
+### Example:
 To set your desired layout simply add the `data-layout` property to your embed code:
 
 ```
@@ -1114,7 +1117,6 @@ To set your desired layout simply add the `data-layout` property to your embed c
 **property:** `data-layout`
 **values:** `columns`, `rows`, `custom`
 **default value**: `columns`
-**required**
 
 *Some options, like `data-layout` adds CSS to the `<head>` of your document. The styling is minimal and won’t conflict with your website and Blokks styles. It’s added after the schedule is loaded so you probably won’t even notice it’s there.*
 
@@ -1123,8 +1125,28 @@ To set your desired layout simply add the `data-layout` property to your embed c
 
 
 ## Accessibility
+Enables keyboard navigation. Users can press `left` and `right` to switch *locations*, `TAB` through the activities and hit `SPACE` to select one. Pressing `L`  will favorite the selected activity. 
+
+Enabled by default.
+
+### Example
+To disable accessibility set the `data-accessibility` property to `false`:
+
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-accessibility=‘false’>
+</script>
+```
+
+### Property details
+**property:** `data-accessibility`
+**values:** `true`, `false`
+**default value**: `true`
 
 ## Auto scrolling
+
 
 ## Auto update
 

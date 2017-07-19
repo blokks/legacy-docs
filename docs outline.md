@@ -1107,12 +1107,12 @@ Without further ado…
 
 
 ## Layout
-We talked [about layouts](http://themes/layout) before. Out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
+We talked [about layouts](http://themes/layout) before - out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
 Default value is `columns`.
 
 ### Example:
-To set your desired layout simply add the `data-layout` property to your embed code:
+To set your desired *layout* simply add the `data-layout` property to your embed code:
 
 ```
 <script defer
@@ -1136,7 +1136,7 @@ To set your desired layout simply add the `data-layout` property to your embed c
 ## Accessibility
 Enables keyboard navigation. Users can press `left` and `right` to switch *locations*, `TAB` through the activities and hit `SPACE` to select one. Pressing `L`  will favorite the selected activity. 
 
-Enabled by default.
+*Enabled* by default.
 
 ### Example
 To disable *accessibility* set the `data-accessibility` property to `false`:
@@ -1158,7 +1158,9 @@ To disable *accessibility* set the `data-accessibility` property to `false`:
 ## Auto scrolling
 When enabled, the [time indicator](http://themes/structure#time-indicator) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
 
-Disabling the auto scrolling can be useful when your schedule is embedded on, for example, a one-page website.
+Disabling the *auto scrolling* can be useful when your schedule is embedded on, for example, a one-page website.
+
+*Enabled* by default.
 
 ### Example
 To disable auto scrolling set the `data-auto-scroll` property to `false`:
@@ -1172,7 +1174,7 @@ To disable auto scrolling set the `data-auto-scroll` property to `false`:
 ```
 
 ### Property details
-**property:** `data-accessibility`
+**property:** `data-auto-scroll`
 **values:** `true`, `false`
 **default value**: `true`
 
@@ -1183,6 +1185,33 @@ To disable auto scrolling set the `data-auto-scroll` property to `false`:
 
 
 ## Auto update
+If `data-auto-update` is set to `true`, the schedule updates after the user returns to your page and every 5 minutes of inactivity.
+
+*Auto updating* makes sure that the schedule is always in sync, whether it’s shown on desktop, mobile or on a big screen.
+
+*Enabled* by default.
+
+### Example
+To disable auto updating set the `data-auto-update` property to `false`:
+
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-auto-update=‘false’>
+</script>
+```
+
+### Property details
+**property:** `data-auto-update`
+**values:** `true`, `false`
+**default value**: `true`
+
+**See also**
+- [Testflight option](http://configure/testflight)
+- [Local scrolling option](http://configure/local-scroll)
+- [Hide time indicator](http://configure/hiding#time-indicator)
+
 
 ## Date selector
 

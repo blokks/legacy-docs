@@ -929,8 +929,8 @@ In other words, the most specific selector gets to assign its property values to
 ```
 
 In this case `#main .header > h1` is more specific than `.header h1.title`. So the text in `<h1 class=“title”>` is shown in `Helvetica` and `palevioletred`. 
-
-Although the example is easy to understand, you can imagine that specific selectors like this adds complexity which can lead to conflicts and unwanted styling. 
+ 
+Although the example is easy to understand, you can imagine that specific selectors like this adds complexity which can lead to conflicts and unwanted styling. It gets complex very fast.
 
 *BEM* reduces style conflicts by keeping specificity to a minimum. With *BEM*, specificity is determined only by the order of the CSS rules. Rules which are defined later have higher precedence over those defined earlier. 
 
@@ -1090,17 +1090,36 @@ Once visible you can change its colors, adding background images, setting font p
 # Configure your schedule
 
 ## Let’s get started
-Until now we only talked about [styling templates](http://design/introduction) or [creating one from scratch](http://themes/introduction). But there is so much more we can do. For example, by simply adding options to the embed code you can [disable features](http://configure/hiding), [add your own copy](http://configure/copy) or [enable offline support](http://configure/offline).
+Until now we only talked about [styling templates](http://design/introduction) and [designing new ones](http://themes/introduction). But there is so much more we can do. For example, by simply adding options to the embed code we can [enable extra features](http://configure/hiding), [change copy](http://configure/copy) and [enable offline support](http://configure/offline).
 
-Because these chapters are mostly dev oriented (don’t be afraid designers, there’s useful info in here for you too!), we will talk about things like [browser support](http://configure/support) and caching as well.
+Because these chapters are developer oriented - don’t be afraid if you are a designer though, there’s useful info in here for you too - we will talk about nerd things like [browser support](http://configure/support), [service workers](http://configure/offline) and [caching](http://configure/caching) too.
 
 Without further ado… 
 
 
 ## Configure your layout
-injected styles
+We talked [about layouts](http://themes/layout) before. Out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
-*Setting the `data-layout` property to a valid layout will add extra styles.*
+To set your desired layout simply add the `data-layout` property to your embed code:
+
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-layout='columns'>
+</script>
+```
+
+### Property details
+**property:** `data-layout`
+**values:** `columns`, `rows`, `custom`
+**default value**: `columns`
+**required**
+
+*Some options, like `data-layout` adds CSS to the `<head>` of your document. The styling is minimal and won’t conflict with your website and Blokks styles. It’s added after the schedule is loaded so you probably won’t even notice it’s there.*
+
+**See also**
+- [Choose your layout](http://design/layouts)
 
 
 ## Accessibility
@@ -1242,7 +1261,7 @@ In the `Team` tab, you’ll find all the teams you’re currently a part of. You
 
 To remove a member from your team, hover over their name and click the `x` button that appears on the right. 
 
-*Note: While on a free account your schedule is only visible to the members of your team. You can add as many members as you wish: editors, developers, promoters, volunteers, pets, you name it.*
+*Note: While on a free account your schedule is only visible to the members of your team. However, you can add as many members as you wish: editors, developers, promoters, volunteers, pets, you name it.*
 
 **See also**
 - [Upgrade your account](http://settings/upgrade)

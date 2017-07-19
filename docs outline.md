@@ -804,16 +804,25 @@ A single day of your event is represented by the *timetable* component, which co
 
 If a *timetable* has today’s date it is automatically selected. The *time indicator* is visible and scrolled into view so that current speakers are shown. You can disable this by setting the [`data-autoscroll` option](http://configure/options) of the schedule.
 
-*Some components (for example, the dashboard and time indicator) are only visible during the event and therefor difficult to test or style. However you can enable them anytime by setting the [`data-testflight` option of the schedule](http://configure/options)*
+*Some components (for example, the [dashboard](http://themes/dashboard) and [time indicator](http://themes/time-indicator) are only visible during the event and therefor difficult to test or style. However you can enable them anytime by setting the [`data-testflight` option of the schedule](http://configure/options)*
 
 **See also**
 - [Embed options](http://configure/options)
 - [Setting testflight](http://configure/testflight)
 
+### Time indicator
+The *time indicator* is only visible during the event and shows, as the name suggest, the current time. 
+
+*You can show the time indicator by setting the [`data-testflight` option](http://configure/options#testflight)
+
+**See also**
+- [Testflight](http://configure/options)
+- [Auto scrolling](http://configure/auto-scroll)
+
 ### Dashboard
 On days of the event the *dashboard* component is shown on mobile devices. The component shows speakers or bands now playing and the ones coming up next.
 
-*Make the dashboard visible anytime by setting the [`data-testflight` options](http://configure/options#testflight)
+*Make the dashboard visible anytime by setting the [`data-testflight` option](http://configure/options#testflight)
 
 ![Blokks mobile dashboard](https://blokks.co/docs/images/dashboard.png)
 
@@ -1118,7 +1127,7 @@ To set your desired layout simply add the `data-layout` property to your embed c
 **values:** `columns`, `rows`, `custom`
 **default value**: `columns`
 
-*Some options, like `data-layout` adds CSS to the `<head>` of your document. The styling is minimal and won’t conflict with your website and Blokks styles. It’s added after the schedule is loaded so you probably won’t even notice it’s there.*
+*Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.*
 
 **See also**
 - [Choose your layout](http://design/layouts)
@@ -1130,7 +1139,7 @@ Enables keyboard navigation. Users can press `left` and `right` to switch *locat
 Enabled by default.
 
 ### Example
-To disable accessibility set the `data-accessibility` property to `false`:
+To disable *accessibility* set the `data-accessibility` property to `false`:
 
 ```
 <script defer
@@ -1141,11 +1150,34 @@ To disable accessibility set the `data-accessibility` property to `false`:
 ```
 
 ### Property details
+**property:** `data-auto-scroll`
+**values:** `true`, `false`
+**default value**: `true`
+
+
+## Auto scrolling
+When enabled, the *auto scroll* option scrolls the page to the current time, making the time indicator visible.
+
+### Example
+To disable auto scrolling set the `data-auto-scroll` property to `false`:
+
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-auto-scroll=‘false’>
+</script>
+```
+
+### Property details
 **property:** `data-accessibility`
 **values:** `true`, `false`
 **default value**: `true`
 
-## Auto scrolling
+**See also**
+- [Testflight option](http://configure/testflight)
+- [Auto update option](http://configure/autoupdate)
+- [Hide time indicator](http://configure/autoupdate)
 
 
 ## Auto update
@@ -1200,6 +1232,8 @@ To disable accessibility set the `data-accessibility` property to `false`:
   - Why is caching enabled
   - Override cache with `?preview` querystring
   - Using CDN to deliver assets
+
+## Events
 
 ## Offline support
 As you probably know internet connections can be flaky during events. Too many people try to access the internet at one place/

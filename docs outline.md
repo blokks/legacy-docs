@@ -1,8 +1,8 @@
-# Todo’s
+# Vragen en todo’s
 - Acts vervangen voor talks/bands/speakers
 - Zinnen beginnend met “you can” vermijden
 - Schedule, timetable, embed consistent gebruiken
-
+- Hoe spreken we mensen aan. Als in wij helpen jullie, of we gaan het samen ontdekken.
 
 # Introduction
 
@@ -405,7 +405,7 @@ For events with a lot of stages and acts the list can become long. Which can be 
 
 The dashboard is a summary of acts which are playing now and coming up next. Read more about the dashboard in [create templates](http://themes/structure#dashboard). 
 
-*If you are [creating your own template](http://themes/intro) and don’t want to use the `columns` or `rows` layout, just set the [`data-layout` property](http://configure/options) to `custom`.*
+*If you are [creating your own template](http://themes/intro) and don’t want to use the `columns` or `rows` layout, set the [`data-layout` property](http://configure/options) to `custom`.*
 
 **See also:**
 - [Dashboard](http://themes/dashboard)
@@ -749,9 +749,11 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 # Create templates
 
 ## Getting started
-- Introduction
-	- So you want more styling blablaabla
-	- set layout to custom
+Until now we only [styled existing templates](http://design/gettingstarted), which will do for most events. But sometimes you want to go a bit futher. Therefor, it’s totally possible to create your own template from scratch.
+
+To do so, we need to know one or two things about [the structure of the schedule](http://themes/structure). And get familiar with Blokks’ used [naming conventions](http://themes/bem).
+
+So, let’s go!
 
 
 ## Basic structure
@@ -968,9 +970,11 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 
 
 ## Blokks styling
-Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring them together:
+Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
-We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing all components with their elements and modifiers. All well documented with inline comments. You can use both SASS and [PostCSS](htp://configure/postcss) to compile them.
+We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
+
+All components and modifiers are well documented with inline comments. You can use both SASS and [PostCSS](htp://configure/postcss) to compile them.
 
 <button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
@@ -979,6 +983,14 @@ We created a [CSS template](http://github.com/patrickpietens/blokks-template) co
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
 - [PostCSS](htp://configure/postcss)
+
+
+## Create your own layout
+When starting a new template you can choose to [use on of our existing layouts](http://design/layouts). However, you can choose to implement your own. In that case set [the `data-layout` option](http://configure/layouts) in your embed code to `custom`.
+
+**See also**
+- [Choose your layout](http://design/layouts)
+- [Configure your layout](http://configure/layouts)
 
 
 ## Animations
@@ -1077,6 +1089,15 @@ Once visible you can change its colors, adding background images, setting font p
 
 # Configure your schedule (Patje)
 
+## Introduction
+Until now we only d
+
+## Configure your layout
+injected styles
+
+*Setting the `data-layout` property to a valid layout will add extra styles.*
+
+
 ## Accessibility
 
 ## Auto scrolling
@@ -1135,9 +1156,34 @@ Once visible you can change its colors, adding background images, setting font p
   - Using CDN to deliver assets
 
 ## Offline support with ServiceWorkers
+A service worker is a script that stands between your website and the network, giving you, among other things, the ability to intercept network requests and respond to them in different ways.
+
+Service Workers give you the control of a web page where you can programmatically select the components you want to cache. Keep in mind that it’ll run offline only on second or subsequent visits.
+
+Blokks does all the heavy lifting. Registering, Installing And Activating A Service Worker. The only thing you need to do is download the serviceworker.js, upload it to your server and provide a secure connection.
+
+
+One common problem that Service Workers have is that they only work in “secure origins” (HTTPS sites, basically) in line with a policy which prefers secure origins for powerful new features. However, even localhost is considered a secure origin, so developing on it is an easy way to avoid this error. If you prefer, you could also use GitHub Pages (as I did) since they’re served over HTTPs.
+
+In the above code ./service-worker.js is the path of the Service Worker. The scope is the path on which the Service Worker will act. In this example the Service Worker will control the page having the path /about/. The scope is optional and has ./ by default. 
+
+Stale and revalidate
+
+
+Also, note that service workers require HTTPS to work. There is an important and useful exception to this rule: Service workers work for localhost on insecure http, which is a relief because setting up local SSL is sometimes a slog.
+
+Fun fact: This project forced me to do something I’d been putting off for a while: getting and configuring SSL for the www subdomain of my website. This is something I urge folks to consider doing because pretty much all of the fun new stuff hitting the browser in the future will require SSL to be used.
+
+Disabling caching by not uploading the serviceworker.js
+
+
   - Images are cached on the clientside
   - What do you need to enable offline support
   - Note: More information on ServiceWorkers: https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
+
+**See also**
+- [Letsencrypt]
+- [Browser support]
 
 ## Browser  support
   - Modern browsers

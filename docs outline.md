@@ -1156,7 +1156,9 @@ To disable *accessibility* set the `data-accessibility` property to `false`:
 
 
 ## Auto scrolling
-When enabled, the *auto scroll* option scrolls the page to the current time, making the time indicator visible.
+When enabled, the [time indicator](http://themes/structure#time-indicator) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
+
+Disabling the auto scrolling can be useful when your schedule is embedded on, for example, a one-page website.
 
 ### Example
 To disable auto scrolling set the `data-auto-scroll` property to `false`:
@@ -1176,8 +1178,8 @@ To disable auto scrolling set the `data-auto-scroll` property to `false`:
 
 **See also**
 - [Testflight option](http://configure/testflight)
-- [Auto update option](http://configure/autoupdate)
-- [Hide time indicator](http://configure/autoupdate)
+- [Local scrolling option](http://configure/local-scroll)
+- [Hide time indicator](http://configure/hiding#time-indicator)
 
 
 ## Auto update

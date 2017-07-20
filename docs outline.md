@@ -1093,6 +1093,12 @@ Once visible you can change its colors, adding background images, setting font p
 - [Browser support](http://configure/browsersupport)
 
 
+## Media queries
+
+
+**See also**
+- []()
+
 ———
 
 
@@ -1109,11 +1115,12 @@ Without further ado…
 ## Layout
 We talked [about layouts](http://themes/layout) before - out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
-Default value is `columns`.
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-layout` | `columns` `rows` `custom` | `columns`|
 
 ### Example:
-To set your desired *layout* simply add the `data-layout` property to your embed code:
-
 ```
 <script defer
 	src=‘…’
@@ -1121,11 +1128,6 @@ To set your desired *layout* simply add the `data-layout` property to your embed
 	data-layout='columns'>
 </script>
 ```
-
-### Property details
-**property:** `data-layout`
-**values:** `columns`, `rows`, `custom`
-**default value**: `columns`
 
 *Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.*
 
@@ -1136,11 +1138,12 @@ To set your desired *layout* simply add the `data-layout` property to your embed
 ## Accessibility
 Enables keyboard navigation. Users can press `left` and `right` to switch *locations*, `TAB` through the activities and hit `SPACE` to select one. Pressing `L`  will favorite the selected activity. 
 
-*Enabled* by default.
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-accessibility` | `true` `false` | `true` |
 
 ### Example
-To disable *accessibility* set the `data-accessibility` property to `false`:
-
 ```
 <script defer
 	src=‘…’
@@ -1149,22 +1152,18 @@ To disable *accessibility* set the `data-accessibility` property to `false`:
 </script>
 ```
 
-### Property details
-**property:** `data-auto-scroll`
-**values:** `true`, `false`
-**default value**: `true`
-
 
 ## Auto scrolling
 When enabled, the [time indicator](http://themes/structure#time-indicator) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
 
 Disabling the *auto scrolling* can be useful when your schedule is embedded on, for example, a one-page website.
 
-*Enabled* by default.
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-auto-scroll` | `true` `false` | `true`|
 
 ### Example
-To disable auto scrolling set the `data-auto-scroll` property to `false`:
-
 ```
 <script defer
 	src=‘…’
@@ -1172,11 +1171,6 @@ To disable auto scrolling set the `data-auto-scroll` property to `false`:
 	data-auto-scroll=‘false’>
 </script>
 ```
-
-### Property details
-**property:** `data-auto-scroll`
-**values:** `true`, `false`
-**default value**: `true`
 
 **See also**
 - [Testflight option](http://configure/testflight)
@@ -1189,11 +1183,12 @@ If `data-auto-update` is set to `true`, the schedule updates after the user retu
 
 *Auto updating* makes sure that the schedule is always in sync, whether it’s shown on desktop, mobile or on a big screen.
 
-*Enabled* by default.
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-auto-update` | `true` `false` | `true`|
 
 ### Example
-To disable auto updating set the `data-auto-update` property to `false`:
-
 ```
 <script defer
 	src=‘…’
@@ -1202,21 +1197,56 @@ To disable auto updating set the `data-auto-update` property to `false`:
 </script>
 ```
 
-### Property details
-**property:** `data-auto-update`
-**values:** `true`, `false`
-**default value**: `true`
-
 **See also**
 - [Testflight option](http://configure/testflight)
 - [Local scrolling option](http://configure/local-scroll)
 - [Hide time indicator](http://configure/hiding#time-indicator)
 
 
-## Date selector
+## Date Selector
+By default the [*Date Selector*](http://themes/date-selector) is shown on as a *buttonbar* on desktop computers, and as a *dropdown* menu on mobile devices. Set the `data-date-selector` option to override the default behaviour.
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-date-selector` | `auto` `buttons` `dropdown` | `auto` |
+
+### Example
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-date-selector=‘dropdown’>
+</script>
+```
+
+**See also**
+- [Date Selector component](http://theme/structure#dashboard)
+
 
 ## Hiding elements
-  - Hide the controls
+
+### Property details
+**property:** `data-auto-update`
+**values:** `auto`, `buttons`, `dropdown`
+**default value**: `auto`
+
+### Example
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-hide-controls=‘true’
+	data-hide-dashboard=‘true’
+	data-hide-export=‘true’
+	data-hide-favorites=‘true’
+	data-hide-filter=‘true’
+	data-hide-images=‘true’
+	data-hide-print=‘true’>
+</script>
+```
+
+- Hide the controls
   - Hide the dashboard
     - Note: More information about the dashboard: 
       `> Design your schedule > Testflight`
@@ -1374,6 +1404,9 @@ Upgrading is quite simple. Just add your payment information, optionally add a c
 - [Cache](http://configure/cache)
 - [Trial bar](http://embed/trial)
 - [CORS](http://configure/cors)
+
+
+## Creditcards / Stripe
 
 
 ## [Invoices](https://blokks.co/manage/invoices)

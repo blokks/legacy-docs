@@ -755,6 +755,30 @@ To do so, we need to know one or two things about [the structure of the schedule
 
 So, let’s go!
 
+## Preloader
+One of our main priorities is to load your schedule as fast as possible on desktop computers and mobile devices. But it can happen, that during an event the internet connection is unreliable and slow. 
+
+We’ve all been there.
+
+In those cases, you want to show a `preloader` to let your users know that it may take longer than expected. This is really simple. Just add your markup to the `<div id=“blokks”>` container. 
+
+For example: 
+
+```
+<div id=‘blokks’>
+	<span>Loading…</span>
+	<svg><use xlink:href=“assets.svg#preloader”></use></svg>
+</div>
+```
+
+*Please note that the `preloader` isn’t part of the [structure of the embed](http://theme/structure), and is replaced with the embed when all data is loaded.*
+
+**See also**
+- [Embedding your schedule](http://embed/code)
+- [Animations](http://configure/animations)
+- [Cache](http://configure/cache)
+- [Offline support](http://configure/offline)
+
 
 ## Basic structure
 The schedule is split into smaller, independent pieces called components. Each component has [a unique CSS class](http://theme/bem) which makes them easy to style separately. 
@@ -786,6 +810,7 @@ On desktop computers the *date selector* is shown as a *button bar*. On mobile d
 
 **See also**
 - [Setting date selector](http://configure/dateselector)
+- [Hiding components](http://configure/hiding-components)
 
 #### Options
 *Options* lets users sign in to [add favorites](http://favorites) and [see where friends are going](http://friends), [print their schedule](http://configure/print) or import the schedule to their calendar.
@@ -795,7 +820,15 @@ On desktop computers the *date selector* is shown as a *button bar*. On mobile d
 #### Controls
 Users can scroll through [stages](http://themes/structure/locations) with the control buttons. The *controls* are visible on desktop when the [`data-layout` option is set to `columns`](http://design/layouts) and are always visible on mobile devices.
 
-![Controls on mobile and desktop](http://blokks.co/docs/images/controls)
+![Controls on mobile and desktop](handheldttp://blokks.co/docs/images/controls)
+
+*Sometimes it’s unnecessary to show the controls. For example, when your event has only one or two stages. Then, you can easily  hide them by setting the [`data-hide-controls` options](http://configure/hidding-elements).*
+
+*It can happen that someone visits your schedule on a large display. So big, that your whole schedule fits his screen easily. In those cases hide controls with media queries and CSS instead of the `data-hide-controls` options.*
+
+**See also**
+- [Hiding components](http://configure/hiding-components)
+- [Media queries](http://configure/mq)
 
 ### Timetables
 A single day of your event is represented by the *timetable* component, which consist out of a [*dashboard*](http://themes/dashboard), [*locations*](http://themes/location), [*activities*](http://themes/activity) and a *time indicator* component.
@@ -826,9 +859,11 @@ On days of the event the *dashboard* component is shown on mobile devices. The c
 
 ![Blokks mobile dashboard](https://blokks.co/docs/images/dashboard.png)
 
+*You can disable the Dashboard component by setting the [`data-hide-dashboard=‘true’`](http://configure/hide-elements)`*
+
 **See also**
 - [Block, Element, Modifier](http://themes/bem)
-- [Favorites](http://favorites)
+- [Embed options](http://configure/options)
 - [Setting testflight](http://configure/testflight)
   
 ### Locations
@@ -864,31 +899,6 @@ It shows all information about the selected speaker, talk, artist or performance
 *Notifications* and *alerts* are shown when we need your immediate attention. For example, showing instructions when a user wants to [sign in](http://embed/favorites). Or displaying an error when something went wrong.
 
 Like [*activity details*](http://themes/structure#activity-details), *notifications* and *alerts* are presented as a modals.
-
-
-## Preloader
-One of our main priorities is to load your schedule as fast as possible on desktop and mobile devices. But it can happen, that during an event the internet connection is unreliable and slow. 
-
-We’ve all been there.
-
-In that case, you want to show a `preloader` to let your users know that it may take longer than expected. Just add your own `preloader` markup to the `<div id=“blokks”>` container. 
-
-For example: 
-
-```
-<div id=‘blokks’>
-	<span>Loading…</span>
-	<svg><use xlink:href=“assets.svg#preloader”></use></svg>
-</div>
-```
-
-*Please note that the `preloader` isn’t part of the [structure of the embed](http://theme/structure), and is replaced with the embed when all data is loaded.*
-
-**See also**
-- [Embedding your schedule](http://embed/code)
-- [Animations](http://configure/animations)
-- [Cache](http://configure/cache)
-- [Offline support](http://configure/offline)
 
 
 ## Block, Element, Modifier
@@ -1115,6 +1125,8 @@ Without further ado…
 ## Layout
 We talked [about layouts](http://themes/layout) before - out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
+*Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.*
+
 ### Property details
 | Options | Values | Default |
 |---------|--------|---------|
@@ -1128,8 +1140,6 @@ We talked [about layouts](http://themes/layout) before - out of the box *Blokks*
 	data-layout='columns'>
 </script>
 ```
-
-*Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.*
 
 **See also**
 - [Choose your layout](http://design/layouts)
@@ -1220,16 +1230,21 @@ By default the [*Date Selector*](http://themes/date-selector) is shown on as a *
 </script>
 ```
 
+
 **See also**
 - [Date Selector component](http://theme/structure#dashboard)
 
 
 ## Hiding elements
+Blokks has a lot of features, really a lot. Sometimes even too many. Therefor you can hide feature you don’t want to use in your schedule. For example disabling favorites
+
+*Although you can hide elements by setting the CSS `display: none` property, it’s better not to render them at all by using one of the `hide` options.*
 
 ### Property details
-**property:** `data-auto-update`
-**values:** `auto`, `buttons`, `dropdown`
-**default value**: `auto`
+| Options | Descriptions |
+|---------|--------------|
+| `data-hide-controls` |  |
+
 
 ### Example
 ```

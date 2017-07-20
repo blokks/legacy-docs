@@ -1115,9 +1115,9 @@ Once visible you can change its colors, adding background images, setting font p
 # Configure your schedule
 
 ## Let’s get started
-Until now we only talked about [styling templates](http://design/introduction) and [designing new ones](http://themes/introduction). But there is so much more we can do. For example, by simply adding options to the embed code we can [enable extra features](http://configure/hiding), [change copy](http://configure/copy) and [enable offline support](http://configure/offline).
+Until now we only talked about [styling templates](http://design/introduction) and [designing new ones](http://themes/introduction). But there is so much more we can do. For example, by simply adding options to the embed code we can [change copy](http://configure/copy), [enable offline support](http://configure/offline) and [disable certain features](http://configure/hiding).
 
-Because these chapters are developer oriented - don’t be afraid if you are a designer though, there’s useful info in here for you too - we will talk about nerd things like [browser support](http://configure/support), [service workers](http://configure/offline) and [caching](http://configure/caching) too.
+Because these chapters are developer oriented, we will talk about nerd things like [browser support](http://configure/support), [service workers](http://configure/offline) and [caching](http://configure/caching). Don’t be afraid though, there’s useful info in here for designers too!
 
 Without further ado… 
 
@@ -1166,7 +1166,7 @@ Enables keyboard navigation. Users can press `left` and `right` to switch *locat
 ## Auto scrolling
 When enabled, the [time indicator](http://themes/structure#time-indicator) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
 
-Disabling the *auto scrolling* can be useful when your schedule is embedded on, for example, a one-page website.
+*Sometimes this feature can be cumbersome though. For example, when your schedule is embedded on a one-page website. In that case you simply don’t want to auto scroll the page.*
 
 ### Property details
 | Options | Values | Default |
@@ -1189,9 +1189,9 @@ Disabling the *auto scrolling* can be useful when your schedule is embedded on, 
 
 
 ## Auto update
-If `data-auto-update` is set to `true`, the schedule updates after the user returns to your page and every 5 minutes of inactivity.
+If `data-auto-update` is enabled, the schedule updates after the user returns to your page and every 5 minutes of inactivity.
 
-*Auto updating* makes sure that the schedule is always in sync, whether it’s shown on desktop, mobile or on a big screen.
+_Auto updating_ makes sure that the schedule is always in sync, whether it’s shown on desktop, mobile or on a big screen.
 
 ### Property details
 | Options | Values | Default |
@@ -1207,14 +1207,9 @@ If `data-auto-update` is set to `true`, the schedule updates after the user retu
 </script>
 ```
 
-**See also**
-- [Testflight option](http://configure/testflight)
-- [Local scrolling option](http://configure/local-scroll)
-- [Hide time indicator](http://configure/hiding#time-indicator)
-
 
 ## Date Selector
-By default the [*Date Selector*](http://themes/date-selector) is shown on as a *buttonbar* on desktop computers, and as a *dropdown* menu on mobile devices. Set the `data-date-selector` option to override the default behaviour.
+By default the [__Date Selector__](http://themes/date-selector) is shown on as a __buttonbar__ on desktop computers, and as a __dropdown__ menu on mobile devices. Set the `data-date-selector` option to override this behavior.
 
 ### Property details
 | Options | Values | Default |
@@ -1230,21 +1225,25 @@ By default the [*Date Selector*](http://themes/date-selector) is shown on as a *
 </script>
 ```
 
-
 **See also**
 - [Date Selector component](http://theme/structure#dashboard)
 
 
 ## Hiding elements
-Blokks has a lot of features, really a lot. Sometimes even too many. Therefor you can hide feature you don’t want to use in your schedule. For example disabling favorites
+You can hide elements and disable features by setting its `data-hide-…` option.
 
-*Although you can hide elements by setting the CSS `display: none` property, it’s better not to render them at all by using one of the `hide` options.*
+*Although you can hide elements by setting the CSS `display: none` property, it’s better not to render them at all by using one of the `data-hide-…` options.*
 
-### Property details
+### List of options
 | Options | Descriptions |
 |---------|--------------|
 | `data-hide-controls` |  |
-
+| `data-hide-dashboard` |  |
+| `data-hide-export` |  |
+| `data-hide-favorites` |  |
+| `data-hide-filter` |  |
+| `data-hide-images` |  |
+| `data-hide-print` |  |
 
 ### Example
 ```
@@ -1256,42 +1255,85 @@ Blokks has a lot of features, really a lot. Sometimes even too many. Therefor yo
 	data-hide-export=‘true’
 	data-hide-favorites=‘true’
 	data-hide-filter=‘true’
+	data-hide-friends=‘true’
 	data-hide-images=‘true’
 	data-hide-print=‘true’>
 </script>
 ```
 
-- Hide the controls
-  - Hide the dashboard
-    - Note: More information about the dashboard: 
-      `> Design your schedule > Testflight`
-  - Hide “export to ical” button
-  - Hide images in acts
-  - Hide print button
-  - Note: More information about configuring your embed:
-     `> Configure your schedule > Options`
-
+**See also**
+- [Controls](http://themes/structure#controls)
+- [Dashboard](http://themes/structure#dashboard)
+- [Export to iCal](http://themes/structure#options)
+- [Activities](http://themes/structure#activities)
+- [Print](http://design/print)
+  
+  
 ## Favorites
-  - Choose your social provider
-    - Facebook
-    - Twitter
-    - LinkedIn
-  - Enable friends
-    - Note: Friends don’t work with LinkedIn
+To enable favorites, you have to choose a social provider. This is the network used for signing in. Set the `data-social-provier` to either `facebook`, `twitter` or `linkedin`.
 
-## Update timescale
+By default, users see what their friends and colleagues have favorited. To disable this feature set the `data-friends` option to `false`.
+
+*LinkedIn doesn’t allow us to see your connections. Therefor friends are disabled when setting __`data-social-provider`__ to `linkedin`. Even when __`data-friends`__ is enabled.* 
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-hide-favorites` | `true` `false` | `false` |
+| `data-hide-friends` | `true` `false` | `false` |
+| `data-social-provider` | `facebook` `twitter` `linkedin` | `facebook` |
+
+### Example
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-hide-favorites=‘false’
+	data-social-provider=‘linkedin’>
+</script>
+```
+
+**See also**
+- [Favorites](http://embeds/favorites)
+- [Options](http://themes/structure#options)
+
+
+## Timescale
+
 
 ## Local scroll
-  - Note: Sticky headers won’t work with localscrolling enabled:
-     `> Configure your schedule > Browser support`
+
+*Please note that by specification, sticky headers will not work inside element with `overflow: hidden or auto`. And thus fail, when `data-local-scrolling` is enabled*
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-local-scroll` | `true` `false` | `false` |
+
+### Example
+```
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-local-scroll=‘true’>
+</script>
+```
+
+**See also**
+- [MDN: Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+- [Browser support](http://configure/browser-support)
+
 
 ## Print options
 	- Orientation
 	- disable print
+	- preventDefaultPrint
+
+## Set date format
+
 
 ## Add your own copy
 
-## Set date format
 
 ## Testflight your embed
   - Dashboard

@@ -345,14 +345,6 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Print options](http://configure/print)
 
 
-## Free account
-_**NIEK WIL JIJ HIER NAAR KIJKEN!**_
-
-kort verhaaltje over die blauwe balk
-
-**See also**
-- [Upgrade your plan](http://settings/upgrade)
-
 ———
 
 
@@ -1109,6 +1101,7 @@ Once visible you can change its colors, adding background images, setting font p
 **See also**
 - []()
 
+
 ———
 
 
@@ -1270,11 +1263,11 @@ You can hide elements and disable features by setting its `data-hide-…` option
   
   
 ## Favorites
-To enable favorites, you have to choose a social provider. This is the network used for signing in. Set the `data-social-provier` to either `facebook`, `twitter` or `linkedin`.
+To enable *favorites*, you have to choose a social provider first. This is the social network visitors use to sign in. Set the `data-social-provider` to either `facebook`, `twitter` or `linkedin`.
 
 By default, users see what their friends and colleagues have favorited. To disable this feature set the `data-friends` option to `false`.
 
-*LinkedIn doesn’t allow us to see your connections. Therefor friends are disabled when setting __`data-social-provider`__ to `linkedin`. Even when __`data-friends`__ is enabled.* 
+*Note that LinkedIn doesn’t allow us to see your connections. Therefor friends are disabled when setting `data-social-provider` to `linkedin`. Even when `data-friends` is enabled.* 
 
 ### Property details
 | Options | Values | Default |
@@ -1298,12 +1291,16 @@ By default, users see what their friends and colleagues have favorited. To disab
 - [Options](http://themes/structure#options)
 
 
-## Timescale
+## Time scaling
+The `data-time-scale` option sets the duration of one table cell.
 
 
 ## Local scroll
+By default Blokks uses page scrolling iftars it doesn’t fit your screen. In most cases this is desired. But, can be annoying if it’s, for example embedded on a one-page website.
 
-*Please note that by specification, sticky headers will not work inside element with `overflow: hidden or auto`. And thus fail, when `data-local-scrolling` is enabled*
+By setting `data-local-scroll` to `true` scrolling is done within the embed, without conflicting with the page.
+
+*Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. This is the case when `data-local-scroll` is enabled*
 
 ### Property details
 | Options | Values | Default |
@@ -1330,6 +1327,9 @@ By default, users see what their friends and colleagues have favorited. To disab
 	- preventDefaultPrint
 
 ## Set date format
+
+
+- https://momentjs.com/docs/#/displaying/
 
 
 ## Add your own copy
@@ -1397,28 +1397,91 @@ Disabling caching by not uploading the serviceworker.js
 - [Browser support](http://configure/browsersupport)
 
 
-## Browser  support
-  - Modern browsers
-  - Flexbox
-    - http://caniuse.com/#feat=flexbox
-	- Pseudo elements
-  - CSS Variables
-    - http://caniuse.com/#search=CSS%20Variables
-    - Fallback: Use CSS classes to style the embed. For more information about styling using classes: `> Create your theme > Block Element Modifier`
-    - Use PostCSS > PostCSS custom properties
-	    - https://github.com/postcss/postcss-custom-properties
-  - Sticky headers
-    - Why doesn’t my headers stick
-    - Sticky headers won’t work with local scrolling enabled
-    - http://caniuse.com/#search=sticky
-  - Fallback options 
-  - Polyfills
-    - https://github.com/mzabriskie/axios/blob/master/UPGRADE_GUIDE.md#es6-promise-polyfill
-    - https://github.com/stefanpenner/es6-promise
-    - https://github.com/paulirish/matchMedia.js/
-    - https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill
+## Summary
 
-## CORS problemen in browser uitleggen
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-local-scroll` | `true` `false` | `false` |
+
+
+———
+
+
+# Browser  support
+
+## Which browsers are supported?
+You can use Blokks with popular browsers like Chrome, Firefox, Edge, and Safari. We support the two most recent versions of these browsers - the so called Evergreen browsers. This does not include beta/dev releases.
+
+If you use Blokks on an older or unsupported browser, some features might not work. For example, on an unsupported browser:
+
+- You may be able to view, but not update, your calendars.
+- You may be redirected to the basic Gmail interface.
+- Drawings and presentations in Docs editors may not display properly.
+
+*Note: JavaScript and cookies must be enabled.*
+
+*Tip: For the best experience on your mobile device, use the latest versions of Mobile Safari and Chrome for Android.*
+
+*Tip: Don’t forget to keep your app or browser up to date. It’ll help Blokks work better for you:*
+
+- [Download Google Chrome for computers](https://www.google.com/chrome/browser/desktop/index.html)
+- [Download Internet Explorer for computers](https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads)
+- [Download Firefox for computers](https://www.mozilla.org/en-US/firefox/new/)
+- [Download Safari for computers](https://www.apple.com/safari/)
+
+
+## What does this mean?
+We test Blokks in supported browsers, and we'll fix bugs that affect supported browsers.
+
+If a browser is not supported, it doesn't necessarily mean that Blokks won't work, but if it does, there may be noticeable issues.
+
+It does **not** mean that Blokks will suddenly stop working in unsupported browsers. But it does mean that over time people using those browsers may see issues.
+
+
+## Why we only support modern browsers?
+Because older versions of browsers don't support the new tools, it is harder—sometimes even impossible—to build new features that rely on those tools. When it is possible to work around, it might mean it takes longer to develop a feature, or a slower or less-secure experience for everyone, even those on newer browsers.
+
+Browser vendors usually stop providing support for older versions of their browsers. Those browsers may have known security vulnerabilities, and using them can put you at risk. While we want Blokks to work on as many devices as possible, we also want to encourage our users to keep themselves safe by using up-to-date browsers.
+
+And of course, every browser we test takes time, so we don't want to bother testing in browsers that aren't important to you, TodaysMeet's users.
+
+
+## Known issues
+
+### Flexbox
+Supported by IE10+, Firefox31+, Chrome49+, Safari9.1+
+Note: Android Stockbrowser < 4.4 not supported
+http://caniuse.com/#feat=flexbox
+
+### CSS Variables
+Supported by Edge15+, Firefox31+, Chrome49+, Safari9.1+
+http://caniuse.com/#search=CSS%20Variables
+
+- Fallback: Use CSS classes to style the embed. For more information about styling using classes: `> Create your theme > Block Element Modifier`
+
+### Sticky headers
+Supported by Edge16+, Firefox32+, Chrome58+, Safari7+
+http://caniuse.com/#search=sticky
+
+- Sticky headers won’t work with local scrolling enabled
+- Use PostCSS > PostCSS custom properties
+	- https://github.com/postcss/postcss-custom-properties
+
+### Promises
+Supported by Edge12+, Firefox, Chrome, Safari
+https://github.com/stefanpenner/es6-promise
+  
+### SVGs
+Supported by Edge13+, Firefox, Chrome, Safari
+http://caniuse.com/#search=svg
+https://github.com/jonathantneal/svg4everybody
+
+### MatchMedia
+Supported by IE10+, Firefox, Chrome, Safari
+http://caniuse.com/#search=matchmedia
+https://github.com/paulirish/matchMedia.js/
+    
+### CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
 
 
@@ -1452,7 +1515,7 @@ With a free account, you’ll have access to all of Blokks’ features: you can 
 
 ![Upgrading your account](https://blokks.co/docs/images/image.png)
 
-Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public!
+Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public.
 
 *Please note it may take some time before your update is visible because of [caching on our side](http://configure/cache)*
 
@@ -1461,9 +1524,6 @@ Upgrading is quite simple. Just add your payment information, optionally add a c
 - [Cache](http://configure/cache)
 - [Trial bar](http://embed/trial)
 - [CORS](http://configure/cors)
-
-
-## Creditcards / Stripe
 
 
 ## [Invoices](https://blokks.co/manage/invoices)

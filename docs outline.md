@@ -1413,7 +1413,7 @@ Disabling caching by not uploading the serviceworker.js
 # Supported browsers
 
 ## Which browsers are supported?
-You can use Blokks with most modern browsers like Chrome, Edge, Internet Explorer, Firefox, and Safari. We support the two most recent versions of these browsers.
+You can use Blokks with most modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers.
 
 We test Blokks in all supported browsers, and we'll fix bugs that affect those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but if it does, there may be [noticeable issues](http://browsers/known-issues).
 
@@ -1428,16 +1428,14 @@ We test Blokks in all supported browsers, and we'll fix bugs that affect those. 
 - [Download Safari](https://www.apple.com/safari/)
 
 
-### Why only modern browsers?
-Older browser versions don't support new tools. Therefor it’s harder - sometimes even impossible - to build new features that rely on those tools. 
-
-While we want Blokks to work on as many devices as possible, we also want to encourage our users using up-to-date browsers.
-
-
 ## Known issues
 
 ### Flexbox
-Blokks uses CSS Flexbox to layout its timetables.
+[CSS *Flexbox*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) is a layout mode which offers an alternative to, for example `floats`. It provides a more efficient way to lay out, align and distribute items in a container.
+
+Blokks uses *Flexbox* to define the overall appearance of the embedded timetable. 
+
+*Flexbox* is supported by all modern browsers. Only older Android Browsers and Internet Explorer 8-9 lack support. We recommend those people to update their browser as soon as possible.
 
 *Supported by: Chrome 49+, Edge 12+, Internet Explorer 10+, Firefox 31+ and Safari 6.1+*
 
@@ -1447,9 +1445,9 @@ Blokks uses CSS Flexbox to layout its timetables.
 - [Caniuse: CSS Flexible Box Layout Module](http://caniuse.com/#feat=flexbox)
 
 ### Sticky headers
-`Position: sticky` is a CSS property which allow elements to stick to the viewport edge as you scroll by.
+`Position: sticky` is a CSS property which allow elements to stick to the viewport edge as you scroll past them.
 
-Blokks implements *sticky headers* as a progressive enhancement. If you don't see *sticky headers*, it's no big deal. No polyfill or fallback is required.
+Blokks implements [*sticky headers*](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning) as a progressive enhancement. Meaning that if your browser doesn’t support *sticky headers*, they simply won’t stick. No polyfill or fallback is required.
 
 *Please note that there are limitations to sticky headers. For example, they will not work inside elements with `overflow: scroll` or `auto`. Therefor, headers will not stick if [`data-local-scroll`](http://configure/local-scroll) is enabled.*
 
@@ -1473,9 +1471,9 @@ Blokks implements *sticky headers* as a progressive enhancement. If you don't se
 - [PostCSS plugin for Custom Properties](https://github.com/postcss/postcss-custom-properties)
 
 ### Promises
-*Promises* are extensively used by Blokks to handle so called async operations. But what they are and what they exactly do is beyond the scope of this page. If you want to know more, I recommend reading this [article about *Promises*](https://developers.google.com/web/fundamentals/getting-started/primers/promises).
+Blokks uses [*Promises*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) extensively to handle so called async operations. What they are and what they do is beyond the scope of this page. If you want to know more, I recommend reading this [article about *Promises*](https://developers.google.com/web/fundamentals/getting-started/primers/promises).
 
-What you should know about *Promises*, is that they aren’t supported by Internet Explorer. Fortunately, adding the [Promise polyfill](http://supported-browsers/polyfills) will fix this.
+What you should know is that they aren’t supported by Internet Explorer. Luckily, adding the [Promise polyfill](http://supported-browsers/polyfills) will fix this 🤘.
 
 *Supported by: Chrome 33+, Edge 12+, Firefox 29+, Safari 7.1+*
 
@@ -1489,7 +1487,7 @@ What you should know about *Promises*, is that they aren’t supported by Intern
 ### SVGs
 Blokks use [external SVGs](http://design/icons) for displaying icons. Although all modern browsers have basic SVG support, Internet Explorer 9 - Edge 12 don’t support referencing external files.
 
-Luckily, [polyfills are available 🤘](http://browser-support/polyfills)
+Again, there is [polyfill available 💪](http://browser-support/polyfills)
 
 *Supported by Chrome 4+, Edge13+, Firefox 3+, Safari 6+*
 
@@ -1501,9 +1499,9 @@ Luckily, [polyfills are available 🤘](http://browser-support/polyfills)
 - [Using polyfills](http://supported-browsers/polyfills)
 
 ### MatchMedia
-`matchMedia()` is an API for finding out whether or not a media query applies to the document. Blokks uses `matchMedia()` to change its layout when switching between mobile and desktop. 
+[*MatchMedia*](https://developer.mozilla.org/nl/docs/Web/API/Window/matchMedia) is an API for finding out whether or not a media query applies to the document. Blokks uses *MatchMedia* to change layout when switching between mobile and desktop. 
 
-There is a [polyfill available](http://browser-support/polyfills) if you need to support Internet Explorer 9 or lower.
+There is a [polyfill available](http://browser-support/polyfills) if you need to support Internet Explorer 9 and lower.
 
 *Supported by: by Chrome 9+, Edge 12+, IE10+, Firefox 6+, Safari 5.1+*
 
@@ -1518,15 +1516,24 @@ There is a [polyfill available](http://browser-support/polyfills) if you need to
 
 
 ## Using polyfills
-A polyfill is a piece of code used to provide modern functionality on older browsers that do not natively support it. 
+A polyfill is a piece of code used to provide modern functionality to older browsers that do not natively support it. 
 
-We decided not to bundle polyfills with our embed code. Because this penalizes everyone, forever, by forcing them to download the polyfill regardless of whether it’s used. 
+Polyfills are not bundled with the Blokks embed. Because it penalizes everyone, forever, by forcing them to download the polyfills regardless of whether they are necessary. 
 
-We decided on a different solution:
+Instead, you have to add them manually:
 
-Applying polyfills for Blokks is simple:
+```
+<script src=“https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js”></script>
 
+<script defer
+	src='https://static.blokks.co/schedule-1.0.0.js'
+	data-blokks-id=‘a34e542f’
+</script>
+```
 
+*Important: When you use polyfills, make sure they are loaded before you initialize the Blokks embed! You can add one or more polyfills depending on your browser coverage.*
+
+### List of polyfills:
 - [es6-promise](https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js)
 - [svg4everybody](https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js)
 - [matchMedia](https://raw.githubusercontent.com/paulirish/matchMedia.js/master/matchMedia.js)

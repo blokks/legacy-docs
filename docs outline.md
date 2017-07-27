@@ -1473,11 +1473,15 @@ Blokks implements *sticky headers* as a progressive enhancement. If you don't se
 - [PostCSS plugin for Custom Properties](https://github.com/postcss/postcss-custom-properties)
 
 ### Promises
+*Promises* are extensively used by Blokks to handle so called async operations. But what they are and what they exactly do is beyond the scope of this page. If you want to know more, I recommend reading this [article about *Promises*](https://developers.google.com/web/fundamentals/getting-started/primers/promises).
 
+What you should know about *Promises*, is that they aren’t supported by Internet Explorer. Fortunately, adding the [Promise polyfill](http://supported-browsers/polyfills) will fix this.
 
 *Supported by: Chrome 33+, Edge 12+, Firefox 29+, Safari 7.1+*
 
 **See also**
+- [JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
+- [MDN: Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [Caniuse: Promises](http://caniuse.com/#search=promises)
 - [Polyfill: ES6-style Promises](https://github.com/stefanpenner/es6-promise)
 - [Using polyfills](http://supported-browsers/polyfills)

@@ -1300,7 +1300,10 @@ By default Blokks uses page scrolling iftars it doesn’t fit your screen. In mo
 
 By setting `data-local-scroll` to `true` scrolling is done within the embed, without conflicting with the page.
 
-*Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. This is the case when `data-local-scroll` is enabled*
+*Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. This is the case when `data-local-scroll` is enabled.*
+
+**See also**
+- [Supported browsers](http://supported-browsers/known-issues#sticky)
 
 ### Property details
 | Options | Values | Default |
@@ -1407,82 +1410,122 @@ Disabling caching by not uploading the serviceworker.js
 ———
 
 
-# Browser  support
+# Supported browsers
 
 ## Which browsers are supported?
-You can use Blokks with popular browsers like Chrome, Firefox, Edge, and Safari. We support the two most recent versions of these browsers - the so called Evergreen browsers. This does not include beta/dev releases.
+You can use Blokks with most modern browsers like Chrome, Edge, Internet Explorer, Firefox, and Safari. We support the two most recent versions of these browsers.
 
-If you use Blokks on an older or unsupported browser, some features might not work. For example, on an unsupported browser:
+We test Blokks in all supported browsers, and we'll fix bugs that affect those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but if it does, there may be [noticeable issues](http://browsers/known-issues).
 
-- You may be able to view, but not update, your calendars.
-- You may be redirected to the basic Gmail interface.
-- Drawings and presentations in Docs editors may not display properly.
+*Please note that Blokks requires JavaScript and cookies to be enabled.*
 
-*Note: JavaScript and cookies must be enabled.*
+*Tip: Although browsers are automatically upgraded to future versions, you can download the most recent ones:*
 
-*Tip: For the best experience on your mobile device, use the latest versions of Mobile Safari and Chrome for Android.*
-
-*Tip: Don’t forget to keep your app or browser up to date. It’ll help Blokks work better for you:*
-
-- [Download Google Chrome for computers](https://www.google.com/chrome/browser/desktop/index.html)
-- [Download Internet Explorer for computers](https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads)
-- [Download Firefox for computers](https://www.mozilla.org/en-US/firefox/new/)
-- [Download Safari for computers](https://www.apple.com/safari/)
+- [Download Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+- [Download Edge](https://www.microsoft.com/nl-nl/windows/microsoft-edge)
+- [Download Internet Explorer](https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads)
+- [Download Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- [Download Safari](https://www.apple.com/safari/)
 
 
-## What does this mean?
-We test Blokks in supported browsers, and we'll fix bugs that affect supported browsers.
+### Why only modern browsers?
+Older browser versions don't support new tools. Therefor it’s harder - sometimes even impossible - to build new features that rely on those tools. 
 
-If a browser is not supported, it doesn't necessarily mean that Blokks won't work, but if it does, there may be noticeable issues.
-
-It does **not** mean that Blokks will suddenly stop working in unsupported browsers. But it does mean that over time people using those browsers may see issues.
-
-
-## Why we only support modern browsers?
-Because older versions of browsers don't support the new tools, it is harder—sometimes even impossible—to build new features that rely on those tools. When it is possible to work around, it might mean it takes longer to develop a feature, or a slower or less-secure experience for everyone, even those on newer browsers.
-
-Browser vendors usually stop providing support for older versions of their browsers. Those browsers may have known security vulnerabilities, and using them can put you at risk. While we want Blokks to work on as many devices as possible, we also want to encourage our users to keep themselves safe by using up-to-date browsers.
-
-And of course, every browser we test takes time, so we don't want to bother testing in browsers that aren't important to you, TodaysMeet's users.
+While we want Blokks to work on as many devices as possible, we also want to encourage our users using up-to-date browsers.
 
 
 ## Known issues
 
 ### Flexbox
-Supported by IE10+, Firefox31+, Chrome49+, Safari9.1+
-Note: Android Stockbrowser < 4.4 not supported
-http://caniuse.com/#feat=flexbox
+Blokks uses CSS Flexbox to layout its timetables.
 
-### CSS Variables
-Supported by Edge15+, Firefox31+, Chrome49+, Safari9.1+
-http://caniuse.com/#search=CSS%20Variables
+*Supported by: Chrome 49+, Edge 12+, Internet Explorer 10+, Firefox 31+ and Safari 6.1+*
 
-- Fallback: Use CSS classes to style the embed. For more information about styling using classes: `> Create your theme > Block Element Modifier`
+**See also**
+- [Choose your layout](http://design/choose-your-layout)
+- [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+- [Caniuse: CSS Flexible Box Layout Module](http://caniuse.com/#feat=flexbox)
 
 ### Sticky headers
-Supported by Edge16+, Firefox32+, Chrome58+, Safari7+
-http://caniuse.com/#search=sticky
+`Position: sticky` is a CSS property which allow elements to stick to the viewport edge as you scroll by.
 
-- Sticky headers won’t work with local scrolling enabled
+Blokks implements *sticky headers* as a progressive enhancement. If you don't see *sticky headers*, it's no big deal. No polyfill or fallback is required.
+
+*Please note that there are limitations to sticky headers. For example, they will not work inside elements with `overflow: scroll` or `auto`. Therefor, headers will not stick if [`data-local-scroll`](http://configure/local-scroll) is enabled.*
+
+*Supported by: Chrome 58+, Edge 16+, Firefox32+ and Safari7+*
+
+**See also**
+- [Local scrolling](http://configure/local-scroll)
+- [MDN: Sticky positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning)
+- [Caniuse: CSS position: sticky](http://caniuse.com/#search=sticky)
+
+### CSS Variables
+- Fallback: Use CSS classes to style the embed. For more information about styling using classes: `> Create your theme > Block Element Modifier`
 - Use PostCSS > PostCSS custom properties
 	- https://github.com/postcss/postcss-custom-properties
 
+*Supported by: Chrome 49+, Edge 15+, Firefox 31+, Safari 9.1+*
+
+**See also**
+- [Design your schedule](http://design)
+- [Caniuse: CSS Variables (Custom Properties)](http://caniuse.com/#search=custom%20properties)
+- [PostCSS plugin for Custom Properties](https://github.com/postcss/postcss-custom-properties)
+
 ### Promises
-Supported by Edge12+, Firefox, Chrome, Safari
-https://github.com/stefanpenner/es6-promise
+
+
+*Supported by: Chrome 33+, Edge 12+, Firefox 29+, Safari 7.1+*
+
+**See also**
+- [Caniuse: Promises](http://caniuse.com/#search=promises)
+- [Polyfill: ES6-style Promises](https://github.com/stefanpenner/es6-promise)
+- [Using polyfills](http://supported-browsers/polyfills)
   
 ### SVGs
-Supported by Edge13+, Firefox, Chrome, Safari
-http://caniuse.com/#search=svg
-https://github.com/jonathantneal/svg4everybody
+Blokks use [external SVGs](http://design/icons) for displaying icons. Although all modern browsers have basic SVG support, Internet Explorer 9 - Edge 12 don’t support referencing external files.
+
+Luckily, [polyfills are available 🤘](http://browser-support/polyfills)
+
+*Supported by Chrome 4+, Edge13+, Firefox 3+, Safari 6+*
+
+**See also**
+- [Replace icons](http://design/icons)
+- [Caniuse: SVG (basic support)](http://caniuse.com/#search=svg)
+- [SVG `use` with External Reference, Take 2](https://css-tricks.com/svg-use-with-external-reference-take-2/)
+- [Polyfill: SVG for Everybody](https://github.com/jonathantneal/svg4everybody)
+- [Using polyfills](http://supported-browsers/polyfills)
 
 ### MatchMedia
-Supported by IE10+, Firefox, Chrome, Safari
-http://caniuse.com/#search=matchmedia
-https://github.com/paulirish/matchMedia.js/
+`matchMedia()` is an API for finding out whether or not a media query applies to the document. Blokks uses `matchMedia()` to change its layout when switching between mobile and desktop. 
+
+There is a [polyfill available](http://browser-support/polyfills) if you need to support Internet Explorer 9 or lower.
+
+*Supported by: by Chrome 9+, Edge 12+, IE10+, Firefox 6+, Safari 5.1+*
+
+**See also**
+- [Window.matchMedia()](https://developer.mozilla.org/nl/docs/Web/API/Window/matchMedia)
+- [Caniuse: matchMedia](http://caniuse.com/#search=matchmedia)
+- [Polyfill: matchMedia](https://github.com/paulirish/matchMedia.js/)
+- [Using polyfills](http://supported-browsers/polyfills)
     
 ### CORS problemen in browser uitleggen
     - Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings` 
+
+
+## Using polyfills
+A polyfill is a piece of code used to provide modern functionality on older browsers that do not natively support it. 
+
+We decided not to bundle polyfills with our embed code. Because this penalizes everyone, forever, by forcing them to download the polyfill regardless of whether it’s used. 
+
+We decided on a different solution:
+
+Applying polyfills for Blokks is simple:
+
+
+- [es6-promise](https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js)
+- [svg4everybody](https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js)
+- [matchMedia](https://raw.githubusercontent.com/paulirish/matchMedia.js/master/matchMedia.js)
 
 
 ———

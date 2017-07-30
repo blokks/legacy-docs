@@ -76,14 +76,14 @@ Click the `Remove` button right below the datepicker to delete that specific day
 
 ![Datepicker and remove button](https://blokks.co/docs/images/datepicker.png)
 
-*Pro-tip: You can always `undo` any action by clicking the Undo button in the top right or by using the shortcut `CTRL+~` / `CMD-Z`.*
+*Pro-tip: You can always `undo` any action by clicking the Undo button in the top right or by using the shortcut <kbd>CTRL+~</kbd> or <kbd>CMD-Z</kbd>.*
 
 ### Adjusting your start and end time
 If you want your days to start earlier or end later, you can do so by clicking the `•••` button. 
 
 Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the hours you’re about to remove.
 
-*You can always take a step back by clicking the `Undo` button in the top right or by hitting `CTRL-Z` / `CMD-Z`.*
+*You can always take a step back by clicking the `Undo` button in the top right or by hitting <kbd>CTRL-Z</kbd> or <kbd>CMD-Z</kbd>.*
 
 
 ## Managing your stages
@@ -105,7 +105,7 @@ Changing the order of your stages is done by clicking the stage title and drag �
 #### Titles and subtitles
 The *title field* is required and will appear in the embedded schedule. The stage subtitle is an optional field. It’s used when more context is needed. For example, your stage name could be `The Red Stage` and its subtitle could be `Sponsored by Red Bull`. 
 
-*Pro-tip: Edit stage titles without opening the popup by `CTRL` or `CMD` clicking its title.*
+*Pro-tip: Edit stage titles without opening the popup by <kbd>CTRL</kbd> or <kbd>CMD</kbd> clicking its title.*
 
 #### Categories
 You can add one or more *categories* to stages. By itself, these categories have no direct impact on the design of your timetable. But: *categories* can be used to [style the look and feel of each individual stage](http://design/styling). 
@@ -138,7 +138,7 @@ Updating the end time of an act is done in a similar fashion. Just click the bot
 
 If you need to be more specific, you can do so by [selecting the act](http://manageschedule/managingacts#titlesandsubtitles) and change one of the times there.
 
-*You should note that by dragging and resizing you may change other acts. And possibly remove them. Don’t worry though, you can always undo a previous action by hitting `CTRL+Z` or `CMD+Z`*
+*You should note that by dragging and resizing you may change other acts. And possibly remove them. Don’t worry though, you can always undo a previous action by hitting <kbd>CTRL+Z</kbd> or <kbd>CMD+Z</kbd>*
 
 ### Deleting acts
 You can delete an act by pressing the `Delete` button at the bottom while editing an act. Alternatively, you can right-click on any act in your schedule to find another `Delete` button. 
@@ -479,6 +479,14 @@ Read more about *timescale* and how to use it.
 - [Set the timescale of the embed](http://configure/timescale)
 - [Working with CSS Variables in JavaScript](http://cssproperties)
 - [Browser support](http://browsersupport#customproperties)
+
+
+## Falling back
+Custom properties are great! However, Internet Explorer doesn’t understand them 🙁. So we need a fallback, if you want to support Internet Explorer (which btw. has less than a 3.5% market share, just saying 🙄).
+
+
+## data-attributes
+Using data attributes to style your embed.
 
 
 ## Add own fonts
@@ -1095,13 +1103,6 @@ Once visible you can change its colors, adding background images, setting font p
 - [Browser support](http://configure/browsersupport)
 
 
-## Media queries
-
-
-**See also**
-- []()
-
-
 ———
 
 
@@ -1458,10 +1459,14 @@ Blokks implements [*sticky headers*](https://developer.mozilla.org/en-US/docs/We
 - [MDN: Sticky positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning)
 - [Caniuse: CSS position: sticky](http://caniuse.com/#search=sticky)
 
-### CSS Variables
+### CSS Custom Properties
+Blokks is highly customizable through *CSS Custom Properties*. It doesn’t require Less, Sass, or any preprocessing at all. With custom properties it’s quite easy to, for example, [change colors](http://design/colors) and [add own fonts](http://design/fonts).
+
+*CSS Custom Properties* are supported by all major browsers, including Microsoft Edge. However, Internet Explorer has no support.
+
+
+ 
 - Fallback: Use CSS classes to style the embed. For more information about styling using classes: `> Create your theme > Block Element Modifier`
-- Use PostCSS > PostCSS custom properties
-	- https://github.com/postcss/postcss-custom-properties
 
 *Supported by: Chrome 49+, Edge 15+, Firefox 31+, Safari 9.1+*
 
@@ -1471,9 +1476,11 @@ Blokks implements [*sticky headers*](https://developer.mozilla.org/en-US/docs/We
 - [PostCSS plugin for Custom Properties](https://github.com/postcss/postcss-custom-properties)
 
 ### Promises
-Blokks uses [*Promises*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) extensively to handle so called async operations. What they are and what they do is beyond the scope of this page. If you want to know more, I recommend reading this [article about *Promises*](https://developers.google.com/web/fundamentals/getting-started/primers/promises).
+Blokks uses [*Promises*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) extensively to handle so called async operations. What they are and what they do is beyond the scope of this page. 
 
 What you should know is that they aren’t supported by Internet Explorer. Luckily, adding the [Promise polyfill](http://supported-browsers/polyfills) will fix this 🤘.
+
+If you want to know more about *Promises*, [this article](https://developers.google.com/web/fundamentals/getting-started/primers/promises) will bring you up to speed.
 
 *Supported by: Chrome 33+, Edge 12+, Firefox 29+, Safari 7.1+*
 

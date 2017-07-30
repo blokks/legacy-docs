@@ -67,6 +67,7 @@
     "postcss-short": "^4.1.0",
     "postcss-sorting": "^3.0.0",
     "precss": "^1.4.0",
+    "prettier": "^1.5.3",
     "require-dir": "^0.3.2",
     "require-globify": "^1.4.1",
     "run-sequence": "^1.2.2",

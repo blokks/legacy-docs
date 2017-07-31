@@ -481,14 +481,6 @@ Read more about *timescale* and how to use it.
 - [Browser support](http://browsersupport#customproperties)
 
 
-## Falling back
-Custom properties are great! However, Internet Explorer doesn’t understand them 🙁. So we need a fallback, if you want to support Internet Explorer (which btw. has less than a 3.5% market share, just saying 🙄).
-
-
-## data-attributes
-Using data attributes to style your embed.
-
-
 ## Add own fonts
 
 ### Use system fonts
@@ -722,6 +714,40 @@ For example, this will resize the close icon to `50px` of the [*Activity details
 
 **See also**
 - [SVG and CSS](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
+
+
+## data-attributes
+Using data attributes to style your embed.
+
+
+## Falling back
+Custom properties are great! However, Internet Explorer doesn’t support them. We need a fallback if your have visitors using Internet Explorer.
+
+Besides CSS variables, you can style your schedule with CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) takes some more time than with variables. But still easy to achieve. 
+
+For example, changing the `font-family`, `color` and `background-color` of a `.location`
+
+```
+.location {
+}
+```
+
+css inheritance
+
+inspector
+
+bem
+
+*Note: if you use CSS classes you don’t need to set CSS Custom Properties. All browsers, even older ones, support CSS classes.*
+
+*Note: Microsoft Edge support CSS Custom Properties and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.*
+
+**See also**
+- [Changing colors](http://design/changing-colors)
+- [Replacing fonts](http://design/replacing-fonts)
+- [Update row and column sizes](http://design/sizes)
+- [Block-Element-Modifier](http://configure/bem)
+- [Browser support](http://browser-support/custom-properties)
 
 
 ## All properties

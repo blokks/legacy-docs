@@ -569,7 +569,7 @@ You can see that the name of the font is set to `Liberation Sans`. This is the n
 ## Font properties
 By now your schedule should match the identity of your conference/festival a lot better. But you may have noticed that by changing `--blokks-default-font`, some of the `font-size` and `letter-spacing` properties are all messed up. Let’s fix this.🔧
 
-The bad news is, we cannot use custom properties to do this. We need to target the text with CSS selectors. The good news is, it’s quite simple: *Right click* the text you want to change and select *Inspect element*. This will open *Developer Tools* of your browser:
+The bad news is, we cannot use *Custom Properties* to do this. We need to target the text with CSS selectors. The good news is, it’s quite simple: *Right click* the text you want to change and select *Inspect*. This will open *Developer Tools* of your browser:
 
 ![Chrome Developer Tools](https://blokks.co/docs/images/devtools.png)
 
@@ -716,31 +716,45 @@ For example, this will resize the close icon to `50px` of the [*Activity details
 - [SVG and CSS](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
 
 
-## data-attributes
-Using data attributes to style your embed.
+## Using CSS classes
+*CSS Custom Properties* are great! However, Internet Explorer doesn’t support them. So we need a fallback if your visitors are using IE.
 
+Another option to style your schedule, which is supported by all browsers, is using CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) with CSS classes can be a bit tedious compared to *CSS Variables*. But still, easy to achieve.
 
-## Falling back
-Custom properties are great! However, Internet Explorer doesn’t support them. We need a fallback if your have visitors using Internet Explorer.
+*Note: You don’t need to set CSS Custom Properties, if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support classes.*
 
-Besides CSS variables, you can style your schedule with CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) takes some more time than with variables. But still easy to achieve. 
+*Note: On modern browsers, you can use CSS Custom Properties together with CSS classes. It’s impossible to have every property as CSS Variable.*
 
-For example, changing the `font-family`, `color` and `background-color` of a `.location`
+*Note: Microsoft Edge support CSS Custom Properties and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.*
+
+### Inspect element
+First, to style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. 
+
+For example, *right click* a stage title and select *Inspect* from the context menu. This will open the *Developer tools* showing the HTML structure of the embed with the title highlighted:
+
+__!!!!! FILMPJE OVER SELECTEREN VAN ELEMENTEN, ook die cursor optie tonen !!!!!!__
+
+As you can see the selected title has a class named `.blokks-location__title`. We can use that to style all stage titles at once. Let’s change the `font-family`, `font-size` and `color` of the title:
 
 ```
-.location {
+.blokks-location__title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: palevioletred;
 }
 ```
 
-css inheritance
+Looks great right? One thing you may have noticed is that only the selected stage titles are changed. Subtitles are still the same. Let’s update our example:
 
-inspector
+```
+.blokks-location__title,
+.blokks-location__subtitle {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: palevioletred;}
+```
 
-bem
-
-*Note: if you use CSS classes you don’t need to set CSS Custom Properties. All browsers, even older ones, support CSS classes.*
-
-*Note: Microsoft Edge support CSS Custom Properties and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.*
+*Boom!* The same goes for styling other elements as well. Select the element you want to change, grab its class name and update its properties. Of course, you can change every available CSS property.
 
 **See also**
 - [Changing colors](http://design/changing-colors)
@@ -751,13 +765,13 @@ bem
 
 
 ## All properties
-Besides colors, fonts and sizes, there are more *custom properties* for you to change. To get a list of all properties, *right click* anywhere on your page, open the *Developer tools* by clicking *Inspect element* and select the `<html>` tag:
+Besides colors, fonts and sizes, there are more *custom properties* for you to change. To get a list of all properties, *right click* anywhere on your page, open the *Developer tools* by clicking *Inspect* and select the `<html>` tag:
 
 ![Selecting the HTML tag](http://blokks.co/docs/images/allproperties)
 
 *Pro-tip: Changes made to custom properties are rendered live to screen while editting in the Developer tools. However, these changes are temporary and will be lost when refreshing or closing the window. So don’t forget to copy/paste them when you’re done.*
 
-!!!!! Filmpje over protip !!!!!
+**!!!!! Filmpje over protip !!!!!**
 
 
 ## Printable version
@@ -1017,17 +1031,29 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 ## Blokks styling
 Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
+### Blokks modifiers
 We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
 
 All components and modifiers are well documented with inline comments. You can use both SASS and [PostCSS](htp://configure/postcss) to compile them.
 
 <button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
+### Data-attributes
+Blokks 
+Using data attributes to style your embed.
+
+categories
+
+durations
+
+
+
 **See also**
 - [Structure](http://themes/structures) 
 - [Block, element, modifier](http://themes/bem)
 - [Template CSS](http://github.com/patrickpietens/blokks-template)
 - [PostCSS](htp://configure/postcss)
+
 
 
 ## Create your own layout

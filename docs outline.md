@@ -415,14 +415,14 @@ The syntax for *custom properties* is straightforward:
 ```
 <style media="screen">
 	:root {
-		--blokks-theme-color: palevioletred;
+		--blokks-theme-color: rebeccapurple;
 	}
 </style>
 ```
 
-In the above example `--blokks-theme-color` is a Blokks defined property with a value of `palevioletred`. You should note that all *custom properties* are prefixed with `--blokks`. Adding the above code in the `<head>` of your page will change the main color of the embed to `palevioletred`.
+In the above example `--blokks-theme-color` is a Blokks defined property with a value of `rebeccapurple`. You should note that all *custom properties* are prefixed with `--blokks`. Adding the above code in the `<head>` of your page will change the main color of the embed to `rebeccapurple`.
 
-![Theme color set to palevioletred](https://blokks.co/docs/images/palevioletred.png)
+![Theme color set to rebeccapurple](https://blokks.co/docs/images/rebeccapurple.png)
 
 *You should note that custom properties are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.*
 
@@ -723,11 +723,11 @@ Another option to style your schedule, which is supported by all browsers, is us
 
 *Note: You don’t need to set CSS Custom Properties, if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support classes.*
 
-*Note: On modern browsers, you can use CSS Custom Properties together with CSS classes. It’s impossible to have every property as CSS Variable.*
+*Note: On modern browsers, you can use CSS Custom Properties together with CSS classes. It’s impossible to have every property as CSS Variable. See [blokks-modifiers](http://configure/blokks#modifiers) and [data-attributes](http://configure/blokks#data-atributes) for more styling options.*
 
 *Note: Microsoft Edge support CSS Custom Properties and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.*
 
-### Inspect element
+### Inspect elements
 First, to style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. 
 
 For example, *right click* a stage title and select *Inspect* from the context menu. This will open the *Developer tools* showing the HTML structure of the embed with the title highlighted:
@@ -740,7 +740,7 @@ As you can see the selected title has a class named `.blokks-location__title`. W
 .blokks-location__title {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	color: palevioletred;
+	color: rebeccapurple;
 }
 ```
 
@@ -751,7 +751,7 @@ Looks great right? One thing you may have noticed is that only the selected stag
 .blokks-location__subtitle {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	color: palevioletred;}
+	color: rebeccapurple;}
 ```
 
 *Boom!* The same goes for styling other elements as well. Select the element you want to change, grab its class name and update its properties. Of course, you can change every available CSS property.
@@ -977,7 +977,7 @@ In other words, the most specific selector gets to assign its property values to
 ```
 <styles>
 	#main .header > h1 {
-		color: palevioletred;
+		color: rebeccapurple;
 	}
 	
 	.header h1.title {
@@ -987,7 +987,7 @@ In other words, the most specific selector gets to assign its property values to
 </styles>
 ```
 
-In this case `#main .header > h1` is more specific than `.header h1.title`. So the text in `<h1 class=“title”>` is shown in `Helvetica` and `palevioletred`. 
+In this case `#main .header > h1` is more specific than `.header h1.title`. So the text in `<h1 class=“title”>` is shown in `Helvetica` and `rebeccapurple`. 
  
 Although the example is easy to understand, you can imagine that specific selectors like this adds complexity which can lead to conflicts and unwanted styling. It gets complex very fast.
 
@@ -1032,13 +1032,19 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
 ### Blokks modifiers
+Blokks adds all kinds of modifiers to its class names. 
+
+
+
+
 We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
 
-All components and modifiers are well documented with inline comments. You can use both SASS and [PostCSS](htp://configure/postcss) to compile them.
+All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.
 
 <button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
 ### Data-attributes
+
 Blokks 
 Using data attributes to style your embed.
 
@@ -1055,9 +1061,8 @@ durations
 - [PostCSS](htp://configure/postcss)
 
 
-
 ## Create your own layout
-When starting a new template you can choose to [use on of our existing layouts](http://design/layouts). However, you can choose to implement your own. In that case set [the `data-layout` option](http://configure/layouts) in your embed code to `custom`.
+When starting a new template you can choose to [use on of our existing layouts](http://design/layouts). However, you can choose to implement your own. In that case set [the `data-layout` option](http://configure/layouts) in your embed code to `custom`. This will strip all layout properties from the schedule.
 
 **See also**
 - [Choose your layout](http://design/layouts)
@@ -1136,7 +1141,7 @@ Once visible you can change its colors, adding background images, setting font p
 		display: block;
 		width: 100px;
 		height: 50px;
-		background-color: palevioletred;
+		background-color: rebeccapurple;
 		content: “”;
 	}
 	

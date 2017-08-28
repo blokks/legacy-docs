@@ -1051,11 +1051,18 @@ Blokks uses
 adds all kinds of modifiers to its class names. 
 
 #### Responsive modifiers
+By default Blokks automatically calculates the size of an element and adds class names indicating the measured size. 
 
+For example, a class named `activity--small` is added to a [*activity component*](http://themes/structure#activity) when it becomes too small to display all its information. Use these modifiers to hide information so it fits the element
 
+Computing element sizes forces the browser to reflow. This is also known as *layout trashing* and can cause performance problems. 
+
+When creating your own theme it’s recommended to disable this feature by setting the [`responsive` option](http://configure/responsive). Instead use the `data-duration` property to determine the size of an element.
 
 **See also**
+- [On layout & web performance](http://kellegous.com/j/2013/01/26/layout-performance/)
 - [Responsive option](http://configure/responsive)
+- [Data-attibutes](http://configure/responsive)
 
 
 #### CSS Template

@@ -344,6 +344,8 @@ You can [print the schedule](http://embed/printing) including your favorites by 
 - [Print version](http://themes/print)
 - [Print options](http://configure/print)
 
+## Google Analytics
+
 
 ———
 
@@ -838,8 +840,8 @@ The schedule is built out of five main components (which in turn are split into 
 - [Hiding stuff](http://configure/hiding)
 - [Setting date selector](http://configure/dateselector)
 
-### Navigation
-Visitors of your event use the *navigation* component [to switch between dates](http://themes/structures###navigation), sign in with their account and [add events to their calendar](http://addcal).
+### Header
+Visitors of your event use the *header* component to, for example [switch between dates](http://themes/structures###navigation), sign in with their account and [add events to their calendar](http://addcal).
 
 #### Date selector
 The *date selector* component is visible when your event has multiple dates. Use this component to switch between those 🤓 
@@ -852,10 +854,22 @@ On desktop computers the *date selector* is shown as a *button bar*. On mobile d
 - [Setting date selector](http://configure/dateselector)
 - [Hiding components](http://configure/hiding-components)
 
+#### Category filter
+The *category filter* component shows all categories used by the schedule. Users can filter sessions or talks by selecting one or more categories. Sessions that do not match one of the selected categories are filtered out.
+
+*The component wil automatically hide when there is no category added to the schedule*
+
+**See also**
+- [Setting date selector](http://configure/dateselector)
+- [Hiding components](http://configure/hiding-components)
+
 #### Options
 *Options* lets users sign in to [add favorites](http://favorites) and [see where friends are going](http://friends), [print their schedule](http://configure/print) or import the schedule to their calendar.
 
 ![Controls on mobile and desktop](http://blokks.co/docs/images/controls)
+
+**See also**
+- [Hiding components](http://configure/hiding-components)
 
 #### Controls
 Users can scroll through [stages](http://themes/structure/locations) with the control buttons. The *controls* are visible on desktop when the [`data-layout` option is set to `columns`](http://design/layouts) and are always visible on mobile devices.
@@ -1032,11 +1046,19 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
 ### Blokks modifiers
-Blokks adds all kinds of modifiers to its class names. 
+Blokks uses 
+
+adds all kinds of modifiers to its class names. 
+
+#### Responsive modifiers
 
 
 
+**See also**
+- [Responsive option](http://configure/responsive)
 
+
+#### CSS Template
 We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
 
 All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.
@@ -1354,7 +1376,7 @@ The `data-time-scale` option sets the duration of one table cell.
 
 
 ## Local scroll
-By default Blokks uses page scrolling iftars it doesn’t fit your screen. In most cases this is desired. But, can be annoying if it’s, for example embedded on a one-page website.
+By default Blokks uses page scrolling if it doesn’t fit your screen. In most cases this is desired. But, can be annoying if it’s, for example embedded on a one-page website.
 
 By setting `data-local-scroll` to `true` scrolling is done within the embed, without conflicting with the page.
 
@@ -1394,7 +1416,7 @@ By setting `data-local-scroll` to `true` scrolling is done within the embed, wit
 
 
 ## Add your own copy
-
+Ik
 
 ## Testflight your embed
   - Dashboard

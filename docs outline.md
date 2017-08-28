@@ -1046,31 +1046,21 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
 ### Blokks modifiers
-Blokks uses 
-
-adds all kinds of modifiers to its class names. 
+Blokks adds modifiers indicating the state of its component. Use these modifiers to style your embed. You can download the [CSS template](http://blokks-styling#template) to get a full list of modifiers.
 
 #### Responsive modifiers
 By default Blokks automatically calculates the size of an element and adds class names indicating the measured size. 
 
-For example, a class named `activity--small` is added to a [*activity component*](http://themes/structure#activity) when it becomes too small to display all its information. Use these modifiers to hide information so it fits the element
+For example, a classnames `activity--small-size` (`120px` and smaller), `activity--smaller-size` (`50px` or smaller) and `activity--smallest-size` (`35px` or smaller) is added to an [*activity component*](http://themes/structure#activity) when it becomes too small to display all its information. 
 
-Computing element sizes forces the browser to reflow. This is also known as *layout trashing* and can cause performance problems. 
-
-When creating your own theme it’s recommended to disable this feature by setting the [`responsive` option](http://configure/responsive). Instead use the `data-duration` property to determine the size of an element.
+Computing element sizes forces the browser to reflow. This is also known as *layout trashing* and can cause performance problems. When creating your own theme you can also use the `data-duration` property to determine the size of an activity. Don’t forget to disable the [*responsive* option](http://configure/responsive)
 
 **See also**
 - [On layout & web performance](http://kellegous.com/j/2013/01/26/layout-performance/)
+- [Block, element, modifier](http://themes/bem)
+- [Template CSS](http://github.com/patrickpietens/blokks-template)
 - [Responsive option](http://configure/responsive)
 - [Data-attibutes](http://configure/responsive)
-
-
-#### CSS Template
-We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
-
-All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.
-
-<button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
 ### Data-attributes
 
@@ -1081,7 +1071,12 @@ categories
 
 durations
 
+### CSS Template
+We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
 
+All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.
+
+<button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
 
 **See also**
 - [Structure](http://themes/structures) 

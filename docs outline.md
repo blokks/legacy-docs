@@ -269,7 +269,7 @@ Embedding your schedule requires you to insert three small snippets.
 ### CSS
 The first one is a `<link>` to a template file and it’s placed in the `<head>` of your page:
 
-```
+```html
 <link href='https://blokks.co/templates/columns-1.0.0.css' rel='stylesheet'>
 ```
 
@@ -278,14 +278,14 @@ If you [created your own template](http://themes/intro) just replace `href` valu
 ### Container
 The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body>` and `</body>`:
 
-```
+```html
 <div id='blokks'></div>
 ```
 
 ### JavaScript
 Finally, add the following `<script>` just above the `</body>` of the page:
 
-```
+```html
 <script defer
 	src='https://static.blokks.co/schedule-1.0.0.js'
 	data-blokks-id=‘a34e542f’
@@ -347,12 +347,13 @@ Automatically your schedule is printed in landscape. You can change this by sett
 - [Print options](http://configure/print)
 
 ## Google Analytics
-Blokks automatically looks for Google Analytics on your page. If it was found it uses your existing code to track Blokks events.
+Blokks automatically looks for Google Analytics on your page. It uses your existing code to track Blokks events. Most websites already use Google Analytics. Which means you don’t have to do anything to make it work. It’s like magic ✨. 
 
-Visit [Google Analytics](https://analytics.google.com) for more information on how to install event tracking on your page.
+Visit the [Google Analytics website](https://analytics.google.com) for more information on how to install it on your website.
 
 **See also**
 - [Google Analytics](https://analytics.google.com)
+- [Disable tracking](http://configure/tracking)
 
 ———
 
@@ -381,7 +382,7 @@ On desktop our embed has two layout directions: the first direction is `columns`
 
 You can change the layout direction at any time by selecting the layout in [the design tab of our backend](http://gettingstarted/design) or by setting it manually with the [`data-layout` option](http://configure/options):
 
-```
+```html
 <script src=“”
 	data-blokks-id=“1”
 	data-layout=“rows"
@@ -421,7 +422,7 @@ You can change any color used in the embed. The prefered and easiest way to appl
 
 The syntax for *custom properties* is straightforward:
 
-```
+```html
 <style media="screen">
 	:root {
 		--blokks-theme-color: rebeccapurple;
@@ -495,7 +496,7 @@ Read more about *timescale* and how to use it.
 ### Use system fonts
 You can add your own fonts in the same way you [changed the colors](http://design/colors) and [sizes of your schedule](http://design/sizes). For example,  the following snippet will show `Helvetica Neue` instead of `Liberation Sans`, which is Blokks default font.
 
-```
+```html
 <style media="screen">    
 	:root {
 		--blokks-default-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -513,11 +514,13 @@ Luckily we can use fonts from [Google Font](https://fonts.google.com/), [Adobe T
 #### Google Font
 When using [Google Font](https://fonts.google.com/), copy the following snippet into the `<head>` of your HTML page as described on their website:
 
-```<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">```
+```html
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+```
 
 But instead of setting `font-family: "Roboto", sans-serif;` set the *custom property* instead: 
 
-```
+```css
 :root {
 	--blokks-default-font: "Roboto", sans-serif;
 }
@@ -526,14 +529,14 @@ But instead of setting `font-family: "Roboto", sans-serif;` set the *custom prop
 #### Adobe Typekit
 Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from [Google Font](https://fonts.google.com/). Again, copy the embed code as described on their website:
 
-```
+```html
 <script src="https://use.typekit.net/hjy6zgg.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 ```
 
 And instead of setting `font-family: "liberation-sans",sans-serif;` use our *custom property* instead: 
 
-```
+```css
 :root {
 	--blokks-default-font: "liberation-sans", sans-serif;
 }
@@ -544,7 +547,7 @@ Sometimes you already purchased and downloaded a font which you are using in you
 
 To use self-hosted fonts with Blokks we need a little bit of information about them. The `@font-face` CSS rule specifies the name of your font, its location and its font-weight. And looks something like this:
 
-```
+```css
 @font-face {
 	font-family: “Liberation Sans”;
 	src: url(“liberation-sans.woff”) format('woff’),
@@ -555,7 +558,7 @@ To use self-hosted fonts with Blokks we need a little bit of information about t
 
 You can see that the name of the font is set to `Liberation Sans`. This is the name that would be referenced in our custom property:
 
-```
+```css
 :root {
 	--blokks-default-font: “Liberation Sans", sans-serif;
 }
@@ -584,7 +587,7 @@ The bad news is, we cannot use *Custom Properties* to do this. We need to target
 
 Grab the `classname` of the element which you selected (in our case this is `.blokks-location__title`) and paste it together with your styling in the `<head>` of your page. For example, let’s make it `bold`, `underlined` and `italic`. And make the `font-size` bigger:
 
-```
+```html
 <style>
 	.blokks-location__title {
 		font-size: 18px;
@@ -599,7 +602,7 @@ Like custom properties all CSS classnames begin with `blokks-` to avoid naming c
 
 Also, you should note that the order in which CSS rules are stated determines which ones take precedence: *”CSS rules that appear later in the code override earlier rules if both have the same specificity.”* Basically this means that you should add the `<style>` tag after the BLOKKS import:
 
-```
+```html
 <link href='https://templates.blokks.co/columns.css' rel='stylesheet' media=‘screen’>
 ```
 
@@ -712,7 +715,7 @@ Replacing icons may cause them to be too big or too small. Like [changing the fo
 
 For example, this will resize the close icon to `50px` of the [*Activity details* component](http://themes/structure#activity-details):
 
-```
+```html
 <style>
 	.blokks-activity-details__close-button svg {
 		width: 50px;
@@ -745,7 +748,7 @@ __!!!!! FILMPJE OVER SELECTEREN VAN ELEMENTEN, ook die cursor optie tonen !!!!!!
 
 As you can see the selected title has a class named `.blokks-location__title`. We can use that to style all stage titles at once. Let’s change the `font-family`, `font-size` and `color` of the title:
 
-```
+```css
 .blokks-location__title {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -813,7 +816,7 @@ In those cases, you want to show a `preloader` to let your users know that it ma
 
 For example: 
 
-```
+```html
 <div id=‘blokks’>
 	<span>Loading…</span>
 	<svg><use xlink:href=“assets.svg#preloader”></use></svg>
@@ -967,7 +970,7 @@ Now that you’re familiar with [the structure of the schedule](https://themes/s
 
 *BEM* provides a way to arrange your CSS classes into modules or components. Basically it follows this pattern:
 
-```
+```css
 <style>
 	.block {
 	}
@@ -995,7 +998,7 @@ If multiple CSS selectors are targeting the same HTML element and are trying to 
 
 In other words, the most specific selector gets to assign its property values to the target element: 
 
-```
+```html
 <styles>
 	#main .header > h1 {
 		color: rebeccapurple;
@@ -1031,7 +1034,7 @@ In general the `!important` rule is bad practice and should be avoided at all ti
 
 CSS `type selectors` match elements by node name. A `type selector` for a particular element selects all elements of that type. For example, this selector underlines all `<p>` tags:
 
-```
+```html
 <style>
 	p {
 		text-decoration: underline;
@@ -1240,7 +1243,9 @@ Without further ado…
 ## Layout
 We talked [about layouts](http://themes/layout) before - out of the box *Blokks* supports `columns`, `rows` and `custom` layouts. 
 
-*Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.*
+Some options, like `data-layout` injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t conflict with your website or Blokks styles. 
+
+It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. You probably won’t even notice it’s there.
 
 ### Property details
 | Options | Values | Default |
@@ -1281,7 +1286,7 @@ Enables keyboard navigation. Users can press `left` and `right` to switch *locat
 ## Auto scrolling
 When enabled, the [time indicator](http://themes/structure#time-indicator) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
 
-*Sometimes this feature can be cumbersome though. For example, when your schedule is embedded on a one-page website. In that case you simply don’t want to auto scroll the page.*
+Sometimes this feature can be cumbersome though. For example, when your schedule is embedded on a one-page website. In that case you simply don’t want to auto scroll the page.
 
 ### Property details
 | Options | Values | Default |
@@ -1289,9 +1294,8 @@ When enabled, the [time indicator](http://themes/structure#time-indicator) is au
 | `data-auto-scroll` | `true` `false` | `true`|
 
 ### Example
-```
-<script defer
-	src=‘…’
+```html
+<script src=‘…’ async
 	data-blokks-id=‘…’
 	data-auto-scroll=‘false’>
 </script>
@@ -1304,9 +1308,9 @@ When enabled, the [time indicator](http://themes/structure#time-indicator) is au
 
 
 ## Auto update
-If `data-auto-update` is enabled, the schedule updates after the user returns to your page and every 5 minutes of inactivity.
+If `data-auto-update` is enabled, the schedule updates after the user returns to your page and every 5 minutes of inactivity. When signed in, favorites are updated as well.
 
-_Auto updating_ makes sure that the schedule is always in sync, whether it’s shown on desktop, mobile or on a big screen.
+*Auto updating* makes sure that your schedule and favorites are always in sync, whether it’s shown on desktop, mobile or on a big screen.
 
 ### Property details
 | Options | Values | Default |
@@ -1314,40 +1318,18 @@ _Auto updating_ makes sure that the schedule is always in sync, whether it’s s
 | `data-auto-update` | `true` `false` | `true`|
 
 ### Example
-```
-<script defer
-	src=‘…’
+```html
+<script	src=‘…’ async
 	data-blokks-id=‘…’
 	data-auto-update=‘false’>
 </script>
 ```
 
 
-## Date Selector
-By default the [__Date Selector__](http://themes/date-selector) is shown on as a __buttonbar__ on desktop computers, and as a __dropdown__ menu on mobile devices. Set the `data-date-selector` option to override this behavior.
-
-### Property details
-| Options | Values | Default |
-|---------|--------|---------|
-| `data-date-selector` | `auto` `buttons` `dropdown` | `auto` |
-
-### Example
-```
-<script defer
-	src=‘…’
-	data-blokks-id=‘…’
-	data-date-selector=‘dropdown’>
-</script>
-```
-
-**See also**
-- [Date Selector component](http://theme/structure#dashboard)
-
-
 ## Hiding elements
-You can hide elements and disable features by setting its `data-hide-…` option.
+You can hide elements and disable features by setting one of the `data-hide-…` options.
 
-*Although you can hide elements by setting the CSS `display: none` property, it’s better not to render them at all by using one of the `data-hide-…` options.*
+Although element can be hidden by setting the CSS `display: none` property, it’s better not to render them at all by using one of the `data-hide-…` options.
 
 ### List of options
 | Options | Descriptions |
@@ -1361,17 +1343,12 @@ You can hide elements and disable features by setting its `data-hide-…` option
 | `data-hide-print` |  |
 
 ### Example
-```
-<script defer
-	src=‘…’
+```html
+<script	src=‘…’ async
 	data-blokks-id=‘…’
 	data-hide-controls=‘true’
-	data-hide-dashboard=‘true’
 	data-hide-export=‘true’
-	data-hide-favorites=‘true’
 	data-hide-filter=‘true’
-	data-hide-friends=‘true’
-	data-hide-images=‘true’
 	data-hide-print=‘true’>
 </script>
 ```
@@ -1385,11 +1362,11 @@ You can hide elements and disable features by setting its `data-hide-…` option
   
   
 ## Favorites
-To enable *favorites*, you have to choose a social provider first. This is the social network visitors use to sign in. Set the `data-social-provider` to either `facebook`, `twitter` or `linkedin`.
+To enable *favorites*, you have to choose a social provider first. This is the social network visitors use to sign in and add favorites. Set the `data-social-provider` to either `facebook`, `twitter` or `linkedin`.
 
 By default, users see what their friends and colleagues have favorited. To disable this feature set the `data-friends` option to `false`.
 
-*Note that LinkedIn doesn’t allow us to see your connections. Therefor friends are disabled when setting `data-social-provider` to `linkedin`. Even when `data-friends` is enabled.* 
+*Note that LinkedIn doesn’t allow us to see your connections. Therefor friends are automatically disabled when setting `data-social-provider` to `linkedin`. Even when `data-friends` is enabled.* 
 
 ### Property details
 | Options | Values | Default |
@@ -1399,9 +1376,8 @@ By default, users see what their friends and colleagues have favorited. To disab
 | `data-social-provider` | `facebook` `twitter` `linkedin` | `facebook` |
 
 ### Example
-```
-<script defer
-	src=‘…’
+```html
+<script	src=‘…’ async
 	data-blokks-id=‘…’
 	data-hide-favorites=‘false’
 	data-social-provider=‘linkedin’>
@@ -1413,16 +1389,85 @@ By default, users see what their friends and colleagues have favorited. To disab
 - [Options](http://themes/structure#options)
 
 
+## Date Selector
+By default the [*date selector*](http://themes/date-selector) is displayed as a *buttonbar* on desktop computers and switch to a  *dropdown* menu on mobile devices. Set the `data-date-selector` option to override this behavior.
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-date-selector` | `auto` `buttons` `dropdown` | `auto` |
+
+### Example
+```html
+<script	src=‘…’ async
+	data-blokks-id=‘…’
+	data-date-selector=‘dropdown’>
+</script>
+```
+
+**See also**
+- [Date selector component](http://theme/structure#date-selector)
+
+
+## Auto layout
+An [Activity](http://structure/activities) is automatically positioned using its start time and resized using its duration.
+
+However, sometimes you don’t want this. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout` option.
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-auto-layout` | `true` `false` | `true` |
+
+### Example
+```html
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-auto-layout=‘false’>
+</script>
+```
+
+**See also**
+- [Activity component](http://structure/activity)
+
+
+## Auto measure size
+Blokks adds [CSS modifiers](http://themes/modifiers#size-modifiers) indicating the size of an [activity component](http://structure/activity). Unfortunately, this isn’t done by magic. Matter of fact, computing the size of an HTML element is pretty intensive. 
+
+Although this option is enabled by default, we recommend to set it to `false` whenever you can.
+
+### Property details
+| Options | Values | Default |
+|---------|--------|---------|
+| `data-auto-measure-size` | `true` `false` | `true` |
+
+### Example
+```html
+<script defer
+	src=‘…’
+	data-blokks-id=‘…’
+	data-auto-measure-size=‘false’>
+</script>
+```
+
+**See also**
+- [On layout & web performance](http://kellegous.com/j/2013/01/26/layout-performance/)
+- [Activity component](http://structure/activity)
+- [Block, Element, Modifier](http://themes/bem)
+- [Size modifiers](http://themes/modifiers#size-modifiers)
+
+
 ## Time scaling
 The `data-time-scale` option sets the duration of one table cell.
 
 
-## Local scroll
+## Local scrolling
 By default Blokks uses page scrolling if it doesn’t fit your screen. In most cases this is desired. But, can be annoying if it’s, for example embedded on a one-page website.
 
 By setting `data-local-scroll` to `true` scrolling is done within the embed, without conflicting with the page.
 
-*Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. This is the case when `data-local-scroll` is enabled.*
+*Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. Which is the case when `data-local-scroll` is enabled.*
 
 **See also**
 - [Supported browsers](http://supported-browsers/known-issues#sticky)
@@ -1433,8 +1478,8 @@ By setting `data-local-scroll` to `true` scrolling is done within the embed, wit
 | `data-local-scroll` | `true` `false` | `false` |
 
 ### Example
-```
-<script defer
+```html
+<script	src=‘…’ async
 	src=‘…’
 	data-blokks-id=‘…’
 	data-local-scroll=‘true’>
@@ -1446,10 +1491,55 @@ By setting `data-local-scroll` to `true` scrolling is done within the embed, wit
 - [Browser support](http://configure/browser-support)
 
 
-## Print options
-	- Orientation
-	- disable print
-	- preventDefaultPrint
+## Add your own copy
+
+
+### Example
+```javascript
+window.blokks = window.blokks || {};
+window.blokks.locale = {
+    close: "Close",
+    continue: "Let's go",
+
+    dashboard: {
+        title: "What's happening now?",
+    },
+
+    favorites: {
+        addFavorite: "Add to your favorites",
+        connect: "Sign in with :1",
+        removeFavorite: "Remove from favorites",
+        signin: "Save your favourites",
+        signinAndFavorite: "Add to your favorites with :1",
+        signout: "Sign out :1",
+    },
+
+    filter: {
+        allCategories: "All categories",
+    },
+
+    notifications: {
+        login: {
+            title: "Personalize your schedule",
+            description: "Our schedule provider Blokks allows you to sign in with your :1 account to save your favorite acts, keep track of what you want to see and where your friends are going.",
+        },
+
+        favorites: {
+            title: "All done!",
+            description: "You are signed in and can save your favorite acts. **Pro tip:** Double click acts to save them to your favorites directly.",
+            footer: "Remember, you can access your favorites on all your devices.",
+        },
+    },
+
+    options: {
+        calendar: "Add to calendar",
+        connect: "Sign in with :1",
+        continue: "Let's go",
+        print: "Print schedule",
+    },
+};
+```
+
 
 ## Set date format
 
@@ -1457,8 +1547,11 @@ By setting `data-local-scroll` to `true` scrolling is done within the embed, wit
 - https://momentjs.com/docs/#/displaying/
 
 
-## Add your own copy
-Ik
+## Print options
+	- Orientation
+	- disable print
+	- preventDefaultPrint
+
 
 ## Testflight your embed
   - Dashboard
@@ -1467,16 +1560,11 @@ Ik
   - Time indicator
   - Note: Don’t forget to disable testflight on production
 
-## Auto calculate size of acts
-  - Adds modifiers describing the size of the act
-  - Note: Disable this feature for faster rendering
-
 ## Caching
   - Why is caching enabled
   - Override cache with `?preview` querystring
   - Using CDN to deliver assets
 
-## Events
 
 ## Offline support
 As you probably know internet connections can be flaky during events. Too many people try to access the internet at one place/
@@ -1665,6 +1753,11 @@ Instead, you have to add them manually:
 - [es6-promise](https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js)
 - [svg4everybody](https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js)
 - [matchMedia](https://raw.githubusercontent.com/paulirish/matchMedia.js/master/matchMedia.js)
+
+
+## Using compatibility patches
+
+### List of compatibility patches
 
 
 ———

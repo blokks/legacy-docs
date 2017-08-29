@@ -340,12 +340,19 @@ On mobile, the `Add to calendar` button will automatically open your users calen
 ## Print schedule
 You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting `CTRL+P` on Windows or `Command+P` on OSX.
 
+Automatically your schedule is printed in landscape. You can change this by setting the [*data-print-orientation*](http://configure/print-orientation) option.
+
 **See also**
 - [Print version](http://themes/print)
 - [Print options](http://configure/print)
 
 ## Google Analytics
+Blokks automatically looks for Google Analytics on your page. If it was found it uses your existing code to track Blokks events.
 
+Visit [Google Analytics](https://analytics.google.com) for more information on how to install event tracking on your page.
+
+**See also**
+- [Google Analytics](https://analytics.google.com)
 
 ———
 

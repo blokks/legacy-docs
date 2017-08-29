@@ -1046,14 +1046,16 @@ Although type selectors adds just little bit of specificity it can add unwanted 
 Now that we understand [the structure](http://themes/structures) and are familiar with [the naming convention](http://themes/bem) of Blokks, it’s time to bring everything together:
 
 ### Blokks modifiers
-Blokks adds modifiers indicating the state of its component. Use these modifiers to style your embed. You can download the [CSS template](http://blokks-styling#template) to get a full list of modifiers.
+Blokks adds modifiers indicating the state of its component. For example, modifiers are added when an [*activity component*](http://structure) are favorited, delayed or is an headliner. Use these modifiers to style your embed. 
 
-#### Responsive modifiers
-By default Blokks automatically calculates the size of an element and adds class names indicating the measured size. 
+Download the [CSS template](http://blokks-styling#template) to get a full list of modifiers used by Blokks.
 
-For example, a classnames `activity--small-size` (`120px` and smaller), `activity--smaller-size` (`50px` or smaller) and `activity--smallest-size` (`35px` or smaller) is added to an [*activity component*](http://themes/structure#activity) when it becomes too small to display all its information. 
+#### Size modifiers
+By default Blokks automatically calculates the size of a [*activity component*](http://structure) and adds class names indicating its measured size. Class names like `activity--small-size` (`120px` and smaller), `activity--smaller-size` (`50px` or smaller) and `activity--smallest-size` (`35px` or smaller) are added when the component becomes too small to display all its information. 
 
-Computing element sizes forces the browser to reflow. This is also known as *layout trashing* and can cause performance problems. When creating your own theme you can also use the `data-duration` property to determine the size of an activity. Don’t forget to disable the [*responsive* option](http://configure/responsive)
+Computing element sizes forces the browser to *reflow*. This is also known as *layout trashing* and can cause performance problems when you add a lot of activities. In that case you, we recommend to disable *auto measuring* by setting the [`data-auto-measure-size`](http://configure/measuring-size) to `false`.
+
+As an alternative, use the `data-duration` property as an to determine the size of an activity. 
 
 **See also**
 - [On layout & web performance](http://kellegous.com/j/2013/01/26/layout-performance/)
@@ -1063,13 +1065,44 @@ Computing element sizes forces the browser to reflow. This is also known as *lay
 - [Data-attibutes](http://configure/responsive)
 
 ### Data-attributes
+Sometimes modifiers are insufficient to reflect the state of its component. In those case Blokks uses data-attributes instead. For example, [*location*](http://structure) and [*activity components*](http://structure) add their categories as a data-attribute.
 
-Blokks 
-Using data attributes to style your embed.
+Because data-attributes are plain HTML attributes, you can use the attribute selectors in CSS to change styles according to the data:
 
-categories
+```css
+/* Targets all activities that span 1 hour */
+.blokks-activity[data-duration='3600’] {
+}
 
-durations
+/* Targets delayed activities */
+.blokks-activity[data-delay] {
+}
+
+/* Targets activities containing “keynote” category */
+.blokks-activity[data-category*=‘keynote’] {
+}
+```
+
+You can use the following data-attributes to style you location component:
+
+| Name | Description |
+|---------|--------|
+| `data-slug` | `columns` `rows` `custom` |
+| `data-categories` | `columns` `rows` `custom` |
+| `data-delay` | `columns` `rows` `custom` |
+
+And the ones for activities are:
+
+| Name | Description |
+|---------|--------|
+| `data-slug` | `columns` `rows` `custom` |
+| `data-categories` | `columns` `rows` `custom` |
+| `data-delay` | `columns` `rows` `custom` |
+| `data-duration` | `columns` `rows` `custom` |
+| `data-starts-at` | `columns` `rows` `custom` |
+
+**See also**
+- [How to Use HTML5 Data Attributes](https://www.sitepoint.com/use-html5-data-attributes/)
 
 ### CSS Template
 We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. They don’t have any styling, but are simply a starting point to add your own styles.
@@ -1098,7 +1131,7 @@ The *animation* property can be used to animate any CSS properties such as `colo
 
 Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
 
-```
+```css
 .element {
 	animation: present-element 300ms ease-out-back;
 	transform: translate3d(0, 100px, 0);
@@ -1118,7 +1151,7 @@ The [*activity details* component](http://themes/structure#activity-details) and
 
 To replace the animation with another one you only need to update the start value of the `transform` property. For example, make it bounce into screen:
 
-```
+```css
 .element {
 	transform: scale3d(0.9, 0.9, 1);
 }
@@ -1148,7 +1181,7 @@ With *pseudo-elements* you can extend the structure of the schedule with CSS. *P
 
 Adding `:before` and `:after` is basically the same as:
 
-```
+```html
 <div>
 	<span>:before</span> 
 	  This the main content. 
@@ -1160,7 +1193,7 @@ Without the `content` property *pseudo-elements* won’t be rendered. To make th
 
 Once visible you can change its colors, adding background images, setting font properties, specify dimensions etc.
 
-```
+```css
 	.blokks-selector:before {
 		display: block;
 		width: 100px;
@@ -1208,7 +1241,7 @@ We talked [about layouts](http://themes/layout) before - out of the box *Blokks*
 | `data-layout` | `columns` `rows` `custom` | `columns`|
 
 ### Example:
-```
+```html
 <script defer
 	src=‘…’
 	data-blokks-id=‘…’
@@ -1229,7 +1262,7 @@ Enables keyboard navigation. Users can press `left` and `right` to switch *locat
 | `data-accessibility` | `true` `false` | `true` |
 
 ### Example
-```
+```html
 <script defer
 	src=‘…’
 	data-blokks-id=‘…’

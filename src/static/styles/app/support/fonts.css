@@ -2,6 +2,7 @@
     font-family: 'liberationmono';
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
     src: url('https://static.blokks.co/liberation-mono-regular.woff') format('woff');
 }
 
@@ -9,6 +10,7 @@
     font-family: 'liberationsans';
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
     src: url('https://static.blokks.co/liberation-sans-regular.woff') format('woff');
 }
 

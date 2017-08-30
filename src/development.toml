@@ -10,16 +10,46 @@ author              = "@BlokksHQ"
 version             = "1.0.0"
 
 [[menu.main]]
+identifier = "introduction"
+name = "Introduction"
+weight = 1
+
+[[menu.main]]
+identifier = "getting-started"
+name = "Getting started"
+weight = 2
+
+[[menu.main]]
 identifier = "manage-your-schedule"
 name = "Manage your schedule"
-weight = 1
+weight = 3
 
 [[menu.main]]
 identifier = "embed-your-schedule"
 name = "Embed your schedule"
-weight = 2
+weight = 4
 
 [[menu.main]]
 identifier = "design-your-schedule"
 name = "Design your schedule"
-weight = 3
+weight = 5
+
+[[menu.main]]
+identifier = "create-templates"
+name = "Create templates"
+weight = 6
+
+[[menu.main]]
+identifier = "configure-your-schedule"
+name = "Configure your schedule"
+weight = 7
+
+[[menu.main]]
+identifier = "supported-browsers"
+name = "Supported browsers"
+weight = 8
+
+[[menu.main]]
+identifier = "settings"
+name = "Settings"
+weight = 8

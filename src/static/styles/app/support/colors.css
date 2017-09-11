@@ -1,9 +1,10 @@
 :root {
-    --background-color: #282B2F;
-    --code-background-color: #2e3136;
+    --background-color: #282b2f;
+    --code-background-color: #34383d;
 
     --default-title-color: #fff;
     --default-text-color: #abb1bc;
+    --dimmed-text-color: #676c72;
     --default-link-color: #fff;
     --selection-text-color: #fff;
     --emphasized-text-color: #fff;

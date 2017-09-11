@@ -1,68 +1,20 @@
 @font-face {
-    font-family: 'Liberation Mono';
+    font-family: 'Blokks Mono';
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationMono-Regular.woff') format('woff');
+    src: url('https://static.blokks.co/fonts/BlokksMono-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Liberation Mono';
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationMono-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationMono-BoldItalic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Mono';
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationMono-Italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Sans';
+    font-family: 'Blokks Sans';
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationSans-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Sans';
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationSans-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Sans';
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationSans-BoldItalic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Liberation Sans';
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-    src: url('https://static.blokks.co/fonts/LiberationSans-Italic.woff') format('woff');
+    src: url('https://static.blokks.co/fonts/BlokksSans-Regular.woff') format('woff');
 }
 
 :root {
-    --liberation-sans: 'Liberation Sans', sans-serif;
-    --liberation-mono: 'Liberation Mono', monospace;
+    --blokks-sans: 'Blokks Sans', sans-serif;
+    --blokks-mono: 'Blokks Mono', monospace;
 }

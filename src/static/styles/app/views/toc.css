@@ -7,7 +7,7 @@
     }
 
     @media (--default) {
-        position: fixed 218px * * *;
+        position: fixed 224px * * *;
     }
 
     &__toggler {

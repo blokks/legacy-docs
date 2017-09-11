@@ -1753,6 +1753,7 @@ Instead, you have to add them manually:
 - [es6-promise](https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js)
 - [svg4everybody](https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js)
 - [matchMedia](https://raw.githubusercontent.com/paulirish/matchMedia.js/master/matchMedia.js)
+- [IntersectionObserver polyfill](https://github.com/w3c/IntersectionObserver/tree/gh-pages/polyfill)
 
 
 ## Using compatibility patches

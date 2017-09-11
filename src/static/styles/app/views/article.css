@@ -24,17 +24,17 @@
     }
 
     h1 {
-        margin: 30px 0;
+        margin: 35px 0;
         font-size: 3.4rem;
     }
 
     h2 {
-        margin: 50px 0 10px;
+        margin: 50px 0 25px;
         font-size: 1.8rem;
     }
 
     h3, h4 {
-        margin: 20px 0 5px;
+        margin: 20px 0 0;
         font-size: 1.5rem;
         letter-spacing: 0.5px;
         line-height: 1.6;
@@ -45,13 +45,25 @@
         margin: 10px 0 20px;
     }
 
+    p > em {
+        color: var(--dimmed-text-color);
+        font-style: normal;
+    }
+
+    p > strong {
+        color: var(--emphasized-text-color);
+        font-weight: 400;
+    }
+
     a {
         color: var(--default-link-color);
+        border-bottom: 1px solid var(--default-text-color);
         text-decoration: none;
     }
 
     a:hover {
-        color: var(--blue);
+        color: var(--green);
+        border-bottom: 1px solid var(--green);
     }
 
     img {
@@ -170,9 +182,24 @@
         }
     }
 
-    code,
-    kbd,
-    span.ui-input {
+    span.input,
+    span.label,
+    span.feature,
+    span.ui {
+        @mixin article-code;
+        padding: 4px 7px 5px;
+        border-radius: 3px;
+
+        background: var(--code-background-color);
+        white-space: pre-wrap;
+    }
+
+    span.input {
+        background-color: color(var(--green) alpha(10%));
+        color: var(--green);
+    }
+
+    code {
         @mixin article-code;
         display: inline-block;
         margin: 10px 0;
@@ -185,6 +212,7 @@
     code[class*='language']:before {
         @mixin article-code-language-identifier;
         display: block;
+        user-pointer: none;
     }
 
     code.language-html:before {
@@ -199,11 +227,8 @@
         content: 'CSS:';
     }
 
-    p > code {
-        margin: 0;
-        font-size: 1.3rem;
-        background-color: color(var(--green) alpha(10%));
-        color: var(--green);
+    code.language-md:before {
+        content: 'Markdown:';
     }
 
     pre > code {
@@ -211,21 +236,9 @@
         padding: 25px 30px;
     }
 
-    kbd {
-        margin: 0;
-        font-size: 1.3rem;
-    }
-
-    span.ui-input {
-        margin: 0;
-        font-size: 1.3rem;
-        background-color: color(var(--green) alpha(10%));
-        color: var(--green);
-    }
-
     h3 + p,
     h4 + p {
-        margin-top: 5px;
+        margin-top: 0;
     }
 
     p + ul,

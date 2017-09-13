@@ -5,15 +5,13 @@
 }
 
 @define-mixin article-body-text {
-    @mixin font var(--blokks-sans), var(--default-text-color), 1.5rem;
+    @mixin font var(--blokks-sans), var(--default-text-color), 1.5rem/1.75;
     @mixin antialiased;
-    line-height: 1.6;
 }
 
 @define-mixin article-list {
-    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem;
+    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem/1.75;
     @mixin antialiased;
-    line-height: 1.6;
 }
 
 @define-mixin article-thead {
@@ -24,17 +22,16 @@
 }
 
 @define-mixin article-tbody {
-    @mixin font var(--blokks-mono), var(--emphasized-text-color), 1.4rem;
+    @mixin font var(--blokks-mono), var(--emphasized-text-color), 1.4rem/1.5;
     @mixin antialiased;
     text-align: left;
-    line-height: 1.5;
 }
 
 @define-mixin article-code {
-    @mixin font var(--blokks-mono), white, 1.4rem;
+    @mixin font var(--blokks-mono), white, 1.4rem/1.6;
     @mixin antialiased;
-    line-height: 1.6;
     font-style: normal;
+    font-weight: 400;
 }
 
 @define-mixin article-code-language-identifier {

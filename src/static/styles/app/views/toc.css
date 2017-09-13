@@ -1,13 +1,18 @@
 .table-of-contents {
     width: 100%;
-    max-width: 240px;
+    max-width: 300px;
+    padding: 224px 0;
+        position: absolute 0 * * *;
+
+    &.fixed {
+        // position: fixed * * 224px *;
+    }
+
+    &:not(.fixed) {
+    }
 
     @media (--smallest), (--small) {
         margin-top: 90px;
-    }
-
-    @media (--default) {
-        position: fixed 224px * * *;
     }
 
     &__toggler {

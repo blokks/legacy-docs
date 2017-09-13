@@ -27,12 +27,14 @@
 			{{ partial "header.html" . }}
         	{{ partial "navigation.html" . }}
 
-			<article class='docs__article article'>
-	        	{{ block "content" . }}
-				{{ end }}
-			</article>
+			<div class='docs__container'>
+				<article class='docs__article article'>
+					{{ block "content" . }}
+					{{ end }}
+				</article>
 
-			{{ partial "footer.html" . }}
+				{{ partial "footer.html" . }}
+			</div>
 		</main>
 
 		{{ partial "decorations.html" . }}

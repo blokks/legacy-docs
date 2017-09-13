@@ -14,7 +14,8 @@ body {
     overflow-x: hidden;
 }
 
-main {
+.docs {
+    position: relative;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -27,6 +28,10 @@ main {
         display: flex;
         flex-direction: column;
         max-width: 1000px;
+    }
+
+    &__container {
+        align-self: flex-end;
     }
 }
 

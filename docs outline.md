@@ -1787,7 +1787,7 @@ After first signing up to Blokks, you’ll be on a free account.
 
 With a free account, you’ll have access to all of Blokks’ features: you can add your schedule data, embed your schedule and customize it fully. But, *your schedule will only be visible to you and your team members*.
 
-[Upgrade your account]((https://blokks.co/manage/upgrades) once you’re ready to go live and share your schedule with your visitors.
+[Upgrade your account](https://blokks.co/manage/upgrades) once you’re ready to go live and share your schedule with your visitors.
 
 ![Upgrading your account](https://blokks.co/docs/images/image.png)
 

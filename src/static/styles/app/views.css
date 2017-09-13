@@ -26,12 +26,8 @@ body {
 
     @media (--default) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         max-width: 1000px;
-    }
-
-    &__container {
-        align-self: flex-end;
     }
 }
 

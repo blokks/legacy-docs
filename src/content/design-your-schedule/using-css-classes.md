@@ -22,9 +22,7 @@ Another option to style your schedule, which is supported by all browsers, is us
 <span class='note'>Microsoft Edge support *CSS variables* and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.</span>
 
 ## Inspect elements
-First, to style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*.
-
-For example, *right + click* a stage title and select *Inspect* from the context menu. This will open the *Developer Tools* showing the HTML structure of the embed with the title highlighted:
+First, to style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. For example, *right + click* a stage title and select *Inspect* from the context menu. This will open the *Developer Tools* showing the HTML structure of the embed with the title highlighted:
 
 ![Image: Inspect elements](http://inspect.gif)
 

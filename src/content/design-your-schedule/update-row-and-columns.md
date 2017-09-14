@@ -2,7 +2,7 @@
 date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Update row and column sizes"
+title           = "Update row & column sizes"
 description     = ""
 keywords        = ["blokks", "design", "embed", "template", "layout", "sizes", "row", "columns"]
 weight          = 405

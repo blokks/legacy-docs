@@ -69,6 +69,15 @@
         background-color: var(--default-stroke-color);
     }
 
+    cite {
+        color: var(--emphasized-text-color);
+        font-style: normal;
+    }
+
+    span.note {
+        color: var(--dimmed-text-color);
+    }
+
     ul, ol {
         @mixin clearfix;
         @mixin article-list;
@@ -110,10 +119,6 @@
         @mixin article-tbody;
         vertical-align: top;
         border-bottom: 1px solid var(--default-stroke-color);
-    }
-
-    span.note {
-        color: var(--dimmed-text-color);
     }
 
     th:first-child {

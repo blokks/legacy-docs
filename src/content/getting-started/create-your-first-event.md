@@ -22,7 +22,7 @@ The next step is adding stages or areas for your event. If you need more stages 
 ## Your team
 In many cases, more than one person will be responsible for updating your event timetable. Or more than one developer might want to work on your timetable. You can invite multiple people to your team. They will receive an email with their own login information and gain full access to your schedule.
 
-You can [add and remove team members](http://settings/team) at a later time. If you’re on a free plan, only team members can see your embedded schedule. [Read more about our plans](http://plans).
+You can [add and remove team members]({{< relref "team-members.md" >}}) at a later time. If you’re on a free plan, only team members can see your embedded schedule. [Read more about our plans](http://plans).
 
 ## All done!
 After adding this information, your schedule has been set up and you’re ready to [dive in!]({{< relref "manage-your-days.md" >}})

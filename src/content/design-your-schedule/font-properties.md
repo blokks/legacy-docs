@@ -11,13 +11,41 @@ weight          = 407
 parent          = "design-your-schedule"
 +++
 
-By now your schedule should match the identity of your conference/festival a lot better. But you may have noticed that by changing `--blokks-default-font`, some of the `font-size` and `letter-spacing` properties are all messed up. Let’s fix this.🔧
+By now your schedule should match the identity of your conference or festival a lot better. But you may have noticed that by changing `--blokks-default-font`, some properties, like for example `font-size`, are messed up. Let’s fix this.🔧
 
-The bad news is, we cannot use *CSS variables* to do this. We need to target the text with CSS selectors. The good news is, it’s quite simple: *Right click* the text you want to change and select *Inspect*. This will open *Developer Tools* of your browser:
+## Font scaling
+Blokks uses `em` units to define its `font-sizes`. This means that all sizes are relative to its parent element, in our case the *embed root*. So, to change all `font-sizes` at once you can simply set the `--blokks-font-scale` variable:
 
-![Image: Chrome Developer Tools](https://blokks.co/docs/images/devtools.png)
+```css
+:root {
+  /* This scales all fonts by 1.5 */
+  --blokks-font-scale: 150%; 
 
-Grab the `classname` of the element which you selected (in our case this is `.blokks-location__title`) and paste it together with your styling in the `<head>` of your page. For example, let’s make it `bold`, `underlined` and `italic`. And make the `font-size` bigger:
+  /* You can also use other units like px and pt*/
+  --blokks-font-scale: 32px; 
+  --blokks-font-scale: 16pt; 
+}
+```
+
+Alternatively, you set the `font-size` property on the *embed root* directly:
+
+```css
+.blokks {
+  /* Scaling using percentages */
+  font-size: 150%;
+
+  /* Or using absolute numbers */
+  font-size: 32px;
+  font-size: 16pt;
+}
+```
+
+<span class='note'>Sometimes the result of using the `--blokks-font-scale` variable may differ from what you expect. This is caused when using relative scaling in combination with the [cascading nature of CSS](http://blokks/css). To fix this use absolute values for scaling, like `px` or `pt`.</span>
+
+## Other properties
+Font properties inherit its values from parent elements. So setting `letter-spacing: 1px;` on the `embed root` will automatically set the `letter-spacing` on all text elements in the embed. 
+ 
+If you want to target individual elements we need to [target the text with CSS selectors]({{< relref "using-css-classes.md#inspect-elements" >}}). Grab the `classname` of the element which you selected (in our case this is `.blokks-location__title`) and paste it together with your styling in the `<head>` of your page. For example, let’s make it `bold`, `underlined` and `italic`. And make the `font-size` bigger:
 
 ```css
 .blokks-location__title {
@@ -28,15 +56,24 @@ Grab the `classname` of the element which you selected (in our case this is `.bl
 }
 ```
 
-Like *CSS variables* all CSS classnames begin with **blokks-** to avoid naming conflicts. But sometimes some of your existing website’s styling is accidentally used by the embed. Read more about this and [how to solve it](http://themes/bem).
+<span class='note'>Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website’s styling is accidentally used by the embed. Read more about this and [how to solve it](http://themes/bem).</span>
 
-Also, you should note that the order in which CSS rules are stated determines which ones take precedence: <cite>"CSS rules that appear later in the code override earlier rules if both have the same specificity."</cite> Basically this means that you should add the `<style>` tag after the Blokks import:
+<span class='note'>Also, you should note that the order in which CSS rules are stated determines which ones take precedence: <cite>"CSS rules that appear later in the code override earlier rules if both have the same specificity."</cite> Basically this means that you should add the `<style>` tag after the Blokks import:</span>
 
 ```html
-<link href='https://templates.blokks.co/columns.css' rel='stylesheet' media=‘screen’>
+<link href='columns.css' rel='stylesheet' media=‘screen’>
+<style>
+  .blokks-location__title {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+  }
+</style>
 ```
 
 ## See also
+- [The Power of em Units in CSS](https://www.sitepoint.com/power-em-units-css/)
 - [Structure](http://themes/structure)
 - [Block Element Modifier](http://themes/bem)
 - [Conflicting styles](http://themes/conflicts)

@@ -5,7 +5,7 @@ author          = "@niekdekker"
 title           = "Your account"
 description     = "If you have any questions after reading the docs, don’t hesitate to let us know."
 keywords        = ["blokks", "settings", "account"]
-weight          = 702
+weight          = 701
 
 [menu.main]
 parent          = "settings"

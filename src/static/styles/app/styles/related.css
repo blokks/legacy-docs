@@ -1,0 +1,14 @@
+@define-mixin related-title {
+    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem;
+    @mixin antialiased;
+    font-weight: 400;
+    text-align: left;
+}
+
+@define-mixin related-link {
+    @mixin font var(--blokks-mono), var(--related-content-text-color), 1.4rem;
+    @mixin antialiased;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}

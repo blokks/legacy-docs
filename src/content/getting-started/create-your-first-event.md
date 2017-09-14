@@ -5,7 +5,7 @@ author          = "@niekdekker"
 title           = "Create your first event"
 description     = "Let's start working on your first event. To set everything up, we need to know some basic info."
 keywords        = ["blokks", "getting started", "your first account", "dates", "times", "onboarding", "stages", "locations", "team", "teammembers"]
-weight          = 102
+weight          = 103
 
 [menu.main]
 parent          = "getting-started"

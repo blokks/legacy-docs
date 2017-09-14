@@ -9,6 +9,14 @@ weight          = 702
 
 [menu.main]
 parent          = "settings"
+
+[[related]]
+title = "Upgrade your account"
+url = "http://settings/upgrade"
+
+[[related]]
+title = "Trial bar"
+url = "http://embed/trial"
 +++
 
 In the *Team* tab, you’ll find all the teams you’re currently a part of. You can invite new members by clicking the *Invite member* button. Simply add their email and hit send. Your new team member will then receive an email with their login credentials. 
@@ -16,8 +24,3 @@ In the *Team* tab, you’ll find all the teams you’re currently a part of. You
 To remove a member from your team, hover over their name and click the *close* button that appears on the right. 
 
 <span class='note'>Note: While on a free account your schedule is only visible to the members of your team. However, you can add as many members as you wish: editors, developers, promoters, volunteers, pets, you name it.</span>
-
-## See also
-- [Upgrade your account](http://settings/upgrade)
-- [Trial bar](http://embed/trial)
-- [CORS](http://configure/cors)

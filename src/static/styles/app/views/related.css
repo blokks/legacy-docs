@@ -1,0 +1,25 @@
+.related {
+	margin-top: 60px;
+
+	&__title {
+        @mixin related-title;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--default-stroke-color);
+	}
+
+	&__articles {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__link {
+		@mixin related-link;
+		display: inline-block;
+		padding: 6px 0;
+	}
+
+	&__link:hover {
+        color: var(--emphasized-text-color);
+	}
+}

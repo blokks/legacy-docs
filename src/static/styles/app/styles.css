@@ -1,3 +1,4 @@
-@import 'styles/article';
-@import 'styles/footer';
 @import 'styles/toc';
+@import 'styles/article';
+@import 'styles/related';
+@import 'styles/footer';

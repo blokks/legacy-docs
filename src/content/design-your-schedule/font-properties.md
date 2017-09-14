@@ -9,6 +9,38 @@ weight          = 407
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Design your schedule: Change colors"
+url = "change-colors.md"
+
+[[related]]
+title = "Design your schedule: Add own fonts"
+url = "add-own-fonts.md"
+
+[[related]]
+title = "Structure"
+url = "http://themes/structure"
+
+[[related]]
+title = "Block Element Modifier"
+url = "http://themes/bem"
+
+[[related]]
+title = "Conflicting styles"
+url = "http://themes/conflicts"
+
+[[related]]
+title = "!important"
+url = "http://themes/avoindimportant"
+
+[[related]]
+title = "Font shorthand"
+url = "https://developer.mozilla.org/en-US/docs/Web/CSS/font"
+
+[[related]]
+title = "The Power of em Units in CSS"
+url = "https://www.sitepoint.com/power-em-units-css/"
 +++
 
 By now your schedule should match the identity of your conference or festival a lot better. But you may have noticed that by changing `--blokks-default-font`, some properties, like for example `font-size`, are messed up. Let’s fix this.🔧
@@ -71,13 +103,3 @@ If you want to target individual elements we need to [target the text with CSS s
   }
 </style>
 ```
-
-## See also
-- [The Power of em Units in CSS](https://www.sitepoint.com/power-em-units-css/)
-- [Structure](http://themes/structure)
-- [Block Element Modifier](http://themes/bem)
-- [Conflicting styles](http://themes/conflicts)
-- [!important](http://themes/avoindimportant)
-- [Change colors](http://design/colors)
-- [Use fonts](http://design/fonts)
-- [Font shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/font)

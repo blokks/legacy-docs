@@ -9,10 +9,34 @@ weight          = 406
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Design your schedule: Change colors"
+url = "change-colors.md"
+
+[[related]]
+title = "Create templates: Create your own template"
+url = "http://themes/"
+
+[[related]]
+title = "Configure your schedule: Browser support"
+url = "http://browsersupport#customproperties"
+
+[[related]]
+title = "MDN: @font-face"
+url = "https://developer.mozilla.org/nl/docs/Web/CSS/@font-face"
+
+[[related]]
+title = "Google Fonts"
+url = "https://fonts.google.com/"
+
+[[related]]
+title = "Adobe Typekit"
+url = "https://typekit.com/"
 +++
 
 ## Use system fonts
-You can add your own fonts in the same way you [changed the colors]({{< relref "change-colors.md" >}}) and [sizes of your schedule]({{< relref "update-row-and-columns.md" >}}). For example, the following snippet will show **Helvetica Neue** instead of **Blokks Sans**, which is Blokks default font.
+You can add your own fonts in the same way you [changed the colors]({{< relref "change-colors.md" >}}) and [sizes of your schedule]({{< relref "update-rows-and-columns.md" >}}). For example, the following snippet will show **Helvetica Neue** instead of **Blokks Sans**, which is Blokks default font.
 
 ```css
 :root {
@@ -79,12 +103,3 @@ You can see that the name of the font is set to **BlokksSans-Regular**. This is 
   --blokks-default-font: "Blokks Sans", sans-serif;
 }
 ```
-
-## See also
-- [Change colors](http://design/colors)
-- [Create your own template](http://themes/)
-- [Working with CSS Variables in JavaScript](http://cssproperties)
-- [Browser support](http://browsersupport#customproperties)
-- [MDN: @font-face](https://developer.mozilla.org/nl/docs/Web/CSS/@font-face)
-- [Google Fonts](https://fonts.google.com/)
-- [Adobe Typekit](https://typekit.com/)

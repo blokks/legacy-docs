@@ -9,6 +9,34 @@ weight          = 403
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Create templates: Create your own layout"
+url = "http://themes/layout"
+
+[[related]]
+title = "Create templates: Dashboard"
+url = "http://themes/dashboard"
+
+[[related]]
+title = "Create templates: Date selector"
+url = "http://themes/dateselector"
+
+[[related]]
+title = "Configure your schedule: More configuration options"
+url = "http://configure"
+
+[[related]]
+title = "Configure your schedule: Setting default breakpoint"
+url = "http://theme/breakpoint"
+
+[[related]]
+title = "Browser support"
+url = "http://browsersupport"
+
+[[related]]
+title = "Using media queries"
+url = "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
 +++
 
 ## Desktop
@@ -41,12 +69,3 @@ For events with a lot of stages and acts the list can become long. Which can be 
 The dashboard is a summary of acts which are playing now and coming up next. Read more about the dashboard in [create templates](http://themes/structure#dashboard).
 
 <span class='note'>If you are [creating your own template](http://themes/intro) and don’t want to use the **columns** or **rows** layout, set the `data-layout` property to **custom**.</span>
-
-## See also:
-- [Browser support](http://browsersupport)
-- [Create your own layout](http://themes/layout)
-- [Dashboard](http://themes/dashboard)
-- [Date selector](http://themes/dateselector)
-- [More configuration options](http://configure)
-- [Setting default breakpoint](http://theme/breakpoint)
-- [Using media queryes](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)

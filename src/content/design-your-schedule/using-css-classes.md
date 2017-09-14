@@ -9,6 +9,26 @@ weight          = 409
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Design your schedule: Changing colors"
+url = "change-colors.md"
+
+[[related]]
+title = "Design your schedule: Replacing fonts"
+url = "add-own-fonts.md"
+
+[[related]]
+title = "Design your schedule: Update row and column sizes"
+url = "update-rows-and-columns.md"
+
+[[related]]
+title = "Create templates: Block-Element-Modifier"
+url = "http://configure/bem"
+
+[[related]]
+title = "Browser support"
+url = "http://browser-support/custom-properties"
 +++
 
 *CSS variables* are great! However, Internet Explorer doesn’t support them. So we need a fallback if your visitors are using IE.
@@ -48,10 +68,3 @@ Looks great right? One thing you may have noticed is that only the selected stag
 ```
 
 Boom! The same goes for styling other elements as well. Select the element you want to change, grab its class name and update its properties. Of course, you can change every available CSS property.
-
-## See also
-- [Changing colors](http://design/changing-colors)
-- [Replacing fonts](http://design/replacing-fonts)
-- [Update row and column sizes](http://design/sizes)
-- [Block-Element-Modifier](http://configure/bem)
-- [Browser support](http://browser-support/custom-properties)

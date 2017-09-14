@@ -10,11 +10,6 @@ author              = "@BlokksHQ"
 version             = "1.0.0"
 
 [[menu.main]]
-identifier = "introduction"
-name = "Introduction"
-weight = 1
-
-[[menu.main]]
 identifier = "getting-started"
 name = "Getting started"
 weight = 2

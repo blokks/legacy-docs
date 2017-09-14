@@ -2,6 +2,7 @@
 @import 'views/header';
 @import 'views/toc';
 @import 'views/article';
+@import 'views/related';
 @import 'views/footer';
 
 html {

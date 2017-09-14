@@ -1,0 +1,18 @@
+{{ if isset .Params "related" }}
+	{{ $currentPage := . }}
+
+	<aside class='article__related related'>
+		<h1 class='related__title'>See also</h1>
+		<ol class='related__articles'>	
+			{{ range .Params.related }}
+				<li>
+					{{ if hasPrefix .url "http" }}
+					    <a href='{{ .url }}' class='related__link'>{{ .title }}</a>
+					{{ else }}
+						<a href='{{ relref $currentPage .url }}' class='related__link'>{{ .title }}</a>
+					{{ end }}
+				</li>
+			{{ end }}
+		<ol>
+	</aside>
+{{ end }}

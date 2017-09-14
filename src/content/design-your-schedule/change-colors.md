@@ -9,6 +9,14 @@ weight          = 404
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Create templates: Structure of our embed"
+url = "http://structure"
+
+[[related]]
+title = "Configur your schedule: Browser support"
+url = "http://browsersupport#customproperties"
 +++
 
 You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use *CSS custom properties*, or *CSS variables*. *CSS variables* are [supported by all modern browsers](http://configure/browsersupport).
@@ -27,22 +35,26 @@ In the above example `--blokks-theme-color` is a Blokks defined property with a 
 
 Below you will find the complete list of colors which you can change with *CSS variables*:
 
-| Property | Description |
-|----------|-------------|
-| **--blokks-theme-color** | Lorem ipsum dolor sit amet, consectetur adipiscing elit. |
-| **--blokks-default-background-color** | Suspendisse ornare posuere tellus et posuere. Donec dignissim, nibh quis tincidunt sollicitudin. |
-| **--blokks-dark-background-color** | Suspendisse tellus nulla, interdum bibendum ultricies eu. |
-| **--blokks-default-text-color** | Quisque eget erat ligula. Fusce blandit nisi id lobortis mollis. |
-| **--blokks-light-text-color** | Pellentesque tincidunt mattis sagittis. |
-| **--blokks-dimmed-text-color** | Fusce volutpat quam et lacus pharetra pellentesque at et orci. |
-| **--blokks-stroke-color** | Duis ipsum tortor, interdum vel lorem eget. |
-| **--blokks-default-icon-color** | Aliquam vulputate justo lorem, a pellentesque metus porttitor id. |
-| **--blokks-light-icon-color** | Vivamus viverra erat id maximus blandit. |
-| **--blokks-selection-color** | Etiam dignissim ut lorem non vulputate. |
+| Background colors | Description |
+|-------------------|-------------|
+| `--blokks-theme-color` | The theme color is used for indicating favorites, hovers, highlighted text, titles etc. Default value is `#2e8cd2` |
+| `--blokks-default-background-color` | The default `background-color` used by the embed. Default value is `#fff` |
+| `--blokks-dashboard-background-color` | The `background-color` used for the [dashboard](http://blokks). Default value is `#33363b` |
+| `--blokks-time-indicator-background-color` | The `background-color` used for the [time indicator](http://plc). Default value is `#33363b` |
+| `--blokks-modal-background-color` | The `background-color` used for modals like the [activity details](http://blokks). Default value is `#fff` |
+| `--blokks-image-background-color` | The `background-color` used when a [poster image](http://blokks) is not yet loaded. Default value is `#33363b` |
+| `--blokks-dimmed-background-color` | The `background-color` used when an activity does not match the category selected with the [category filter](http://). Default value is `#abb1bc` |
+
+| Text colors | Description |
+|-------------|-------------|
+| `--blokks-default-text-color` | The default text `color`. This is used for displaying descriptions etc. Default value is `#33363b` |
+| `--blokks-light-text-color` | The light text `color` is used in the schedule. Default value is `#fff` |
+| `--blokks-dimmed-text-color` | Dimmed text `color` is used for metadata and when activities ended. Default value is `#989da8` |
+
+| Other colors | Description |
+|--------------|-------------|
+| `--blokks-stroke-color` | The color that is used for button borders. Default value is `#989da8` |
+| `--blokks-default-icon-color` | Default `fill` color used for [icons](http://icons). Default value is `#33363b` |
+| `--blokks-light-icon-color` | Light `fill` color used for [icons](http://icons) on darker backgrounds. Default value is `#abb1bc` |
 
 <span class='note'>You should note that *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
-
-## See also
-- [Structure of our embed](http://structure)
-- [Working with CSS Variables in JavaScript](http://cssproperties)
-- [Browser support](http://browsersupport#customproperties)

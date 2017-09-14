@@ -15,14 +15,14 @@
 }
 
 @define-mixin article-thead {
-    @mixin font var(--blokks-sans), var(--default-text-color), 1.5rem;
+    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem;
     @mixin antialiased;
     font-weight: 400;
     text-align: left;
 }
 
 @define-mixin article-tbody {
-    @mixin font var(--blokks-mono), var(--emphasized-text-color), 1.4rem/1.5;
+    @mixin font var(--blokks-mono), var(--default-text-color), 1.4rem/1.8;
     @mixin antialiased;
     text-align: left;
 }

@@ -9,12 +9,18 @@ weight          = 411
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Print"
+url = "http://embed/print"
+
+[[related]]
+title = "Print options"
+url = "http://configure/print"
+
+[[related]]
+title = "Structure"
+url = "http://themes/structure#navigation"
 +++
 
 You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting <kbd>CTRL + P</kbd> on Windows or <kbd>Command + P</kbd> on OSX. Unfortunately, it’s not possible to style the printed schedule.
-
-## See also
-- [Print](http://embed/print)
-- [Print options](http://configure/print)
-- [Structure](http://themes/structure#navigation)
-

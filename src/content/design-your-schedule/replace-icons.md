@@ -9,6 +9,58 @@ weight          = 408
 
 [menu.main]
 parent          = "design-your-schedule"
+
+[[related]]
+title = "Configure your embed"
+url = "http://configure/options#icon-set"
+
+[[related]]
+title = "Icon System with SVG Sprites"
+url = "https://css-tricks.com/svg-sprites-use-better-icon-fonts/"
+
+[[related]]
+title = "SVG symbol a Good Choice for Icons"
+url = "https://css-tricks.com/svg-symbol-good-choice-icons/"
+
+[[related]]
+title = "Inline SVG vs Icon Fonts"
+url = "https://css-tricks.com/icon-fonts-vs-svg/"
+
+[[related]]
+title = "SVG and CSS"
+url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
+
+[[related]]
+title = "Node.js"
+url = "https://nodejs.org/en"
+
+[[related]]
+title = "SVGO"
+url = "https://github.com/svg/svgo"
+
+[[related]]
+title = "SVGOMG"
+url = "https://jakearchibald.github.io/svgomg/"
+
+[[related]]
+title = "SVGO Sketch Plugin"
+url = "https://github.com/BohemianCoding/svgo-compressor"
+
+[[related]]
+title = "SVGO Illustrator Plugin"
+url = "https://github.com/davidderaedt/SVG-NOW"
+
+[[related]]
+title = "SVG-Sprite"
+url = "https://github.com/jkphl/svg-sprite"
+
+[[related]]
+title = "IcoMoon"
+url = "https://icomoon.io/app"
+
+[[related]]
+title = "PostCSS"
+url = "http://configure/postcss"
 +++
 
 All icons we use in our schedules are *SVG*. *SVG* files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since *SVG* files are *XML* files, they’re are highly compressible and featherlight to load. And last but not least, *SVG* files are completely styleable with CSS.
@@ -83,19 +135,3 @@ For example, this will resize the close icon to `50px` of the *Activity details*
   height: 50px;
 }
 ```
-
-## See also
-- [Icon System with SVG Sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
-- [SVG symbol a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/)
-- [Inline SVG vs Icon Fonts](https://css-tricks.com/icon-fonts-vs-svg/)
-- [SVG and CSS](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS)
-- [Node.js](https://nodejs.org/en)
-- [SVGO](https://github.com/svg/svgo)
-- [SVGOMG](https://jakearchibald.github.io/svgomg/)
-- [SVGO Sketch Plugin](https://github.com/BohemianCoding/svgo-compressor)
-- [SVGO Illustrator Plugin](https://github.com/davidderaedt/SVG-NOW)
-- [PostCSS](http://configure/postcss)
-- [Configure your embed](http://configure/options#icon-set)
-- [SVG-Sprite](https://github.com/jkphl/svg-sprite)
-- [IcoMoon](https://icomoon.io/app)
-- [PostCSS](http://configure/postcss)

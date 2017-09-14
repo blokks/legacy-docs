@@ -9,11 +9,14 @@ weight          = 305
 
 [menu.main]
 parent          = "embed-your-schedule"
+
+[[related]]
+title = "Printable version"
+url = "signing-up.md"
+
+[[related]]
+title = "Print options"
+url = "http://blokks.co"
 +++
 
 You can print the schedule including your favorites by clicking the *Print* button or hitting <kbd>CTRL + P</kbd> on Windows or <kbd>Command + P</kbd> on OSX. Your schedule is automatically printed in landscape. You can change this by setting the [data-print-orientation option](http://configure/print-orientation).
-
-## See also
-- [Print version](http://themes/print)
-- [Print options](http://configure/print)
-

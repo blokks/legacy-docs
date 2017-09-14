@@ -5,7 +5,7 @@ author          = "@niekdekker"
 title           = "Signing up"
 description     = "Creating a new Blokks account is easy. Simply go to blokks.co/signup and send us your name and email address."
 keywords        = ["blokks", "getting started", "signing up"]
-weight          = 101
+weight          = 102
 
 [menu.main]
 parent          = "getting-started"

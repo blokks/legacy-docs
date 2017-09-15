@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Font properties"
-description     = ""
+description     = "Adding your own font may cause some properties to mess up. Fix this by setting properties on the embed root."
 keywords        = ["blokks", "design", "embed", "template", "layout", "fonts", "typekit", "adobe", "google fonts"]
 weight          = 407
 

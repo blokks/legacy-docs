@@ -3,7 +3,7 @@ date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Manage your stages"
-description     = "Your conference or festival can be a single or multiple day event. The dates can be found at the top of your schedule."
+description     = "The columns shown in your schedule represent the stages or areas of your event."
 keywords        = ["blokks", "getting started", "dates", "times"]
 weight          = 202
 

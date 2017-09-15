@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Add own fonts"
-description     = ""
+description     = "You can add your own fonts in the same way you changed the colors and sizes of your schedule."
 keywords        = ["blokks", "design", "embed", "template", "layout", "fonts", "typekit", "adobe", "google fonts"]
 weight          = 406
 

@@ -3,7 +3,7 @@ date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Choose your layout"
-description     = ""
+description     = "On desktop our embed has two layout directions: columns and rows."
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 403
 

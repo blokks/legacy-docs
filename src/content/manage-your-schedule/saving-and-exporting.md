@@ -3,7 +3,7 @@ date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Saving & exporting"
-description     = ""
+description     = "When saving your schedule we only update the data that actually changed. So you can work simultaneously with other people on your schedule, without overwriting each others changes."
 keywords        = ["blokks", "getting started", "saving", "exporting"]
 weight          = 205
 

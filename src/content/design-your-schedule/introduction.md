@@ -3,7 +3,7 @@ date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Introduction"
-description     = ""
+description     = "It’s time to style and configure your schedule so it matches your conference’s identity and it embeds perfectly within your existing website or mobile app."
 keywords        = ["blokks", "design", "embed", "layout", "colors", "fonts", "icons"]
 weight          = 401
 

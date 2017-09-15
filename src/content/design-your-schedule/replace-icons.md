@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Replace icons"
-description     = ""
+description     = "To replace the default icons we need to create a new own icon set."
 keywords        = ["blokks", "design", "embed", "template", "icons", "svg"]
 weight          = 408
 
@@ -31,16 +31,20 @@ title = "SVG and CSS"
 url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
 
 [[related]]
-title = "Node.js"
+title = "Installing Node.js"
 url = "https://nodejs.org/en"
 
 [[related]]
-title = "SVGO"
+title = "Installing SVGO"
 url = "https://github.com/svg/svgo"
 
 [[related]]
-title = "SVGOMG"
+title = "Installing SVGOMG"
 url = "https://jakearchibald.github.io/svgomg/"
+
+[[related]]
+title = "Installing SVG-Sprite"
+url = "https://github.com/jkphl/svg-sprite"
 
 [[related]]
 title = "SVGO Sketch Plugin"
@@ -49,18 +53,6 @@ url = "https://github.com/BohemianCoding/svgo-compressor"
 [[related]]
 title = "SVGO Illustrator Plugin"
 url = "https://github.com/davidderaedt/SVG-NOW"
-
-[[related]]
-title = "SVG-Sprite"
-url = "https://github.com/jkphl/svg-sprite"
-
-[[related]]
-title = "IcoMoon"
-url = "https://icomoon.io/app"
-
-[[related]]
-title = "PostCSS"
-url = "http://configure/postcss"
 +++
 
 All icons we use in our schedules are *SVG*. *SVG* files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since *SVG* files are *XML* files, they’re are highly compressible and featherlight to load. And last but not least, *SVG* files are completely styleable with CSS.

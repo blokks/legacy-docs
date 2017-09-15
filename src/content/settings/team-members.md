@@ -1,11 +1,11 @@
 +++
-date            = "2016-10-20T11:31:19+02:00"
+date            = "2017-09-14T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Team members"
-description     = "If you have any questions after reading the docs, don’t hesitate to let us know."
+description     = "In the Team tab, you’ll find all the teams you’re currently a part of."
 keywords        = ["blokks", "settings", "team", "members"]
-weight          = 702
+weight          = 802
 
 [menu.main]
 parent          = "settings"

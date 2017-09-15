@@ -3,7 +3,7 @@ date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Change colors"
-description     = ""
+description     = "You can change any color used in the embed. The prefered and easiest way to apply your own styling is to use CSS variables"
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 404
 

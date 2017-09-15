@@ -47,4 +47,4 @@ weight = 8
 [[menu.main]]
 identifier = "settings"
 name = "Settings"
-weight = 8
+weight = 9

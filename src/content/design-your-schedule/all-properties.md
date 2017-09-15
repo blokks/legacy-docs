@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "All properties"
-description     = ""
+description     = "Besides colors fonts and sizes, there are more CSS variables for you to change."
 keywords        = ["blokks", "design", "embed", "template", "style", "class", "css"]
 weight          = 410
 

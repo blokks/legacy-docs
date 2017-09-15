@@ -3,8 +3,8 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Printable version"
-description     = "You can print the schedule including your favorites by clicking the print button or hitting CTRL + P or Command + P."
-keywords        = ["blokks", "design", "embed", "template", "print"]
+description     = "Your visitors can print the schedule, including their favorites."
+keywords        = ["blokks", "design", "embed", "template", "style", "class", "css"]
 weight          = 411
 
 [menu.main]
@@ -23,4 +23,6 @@ title = "Structure"
 url = "http://themes/structure#navigation"
 +++
 
-You can [print the schedule](http://embed/printing) including your favorites by clicking the [print button](http://themes/navigation#options) or hitting <kbd>CTRL + P</kbd> on Windows or <kbd>Command + P</kbd> on OSX. It’s not possible to style the printed schedule.
+Your visitors can [print the schedule](http://embed/printing), including their favorites by clicking the [print button](http://themes/navigation#options) or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd></span>
+
+The print version of the schedule has a standard layout and styling (which can't be adjusted). 

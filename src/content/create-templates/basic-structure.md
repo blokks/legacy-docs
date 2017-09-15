@@ -73,7 +73,7 @@ The *Options* component lets users sign in to [add favorites]({{< relref "favori
 ![Image: Controls on mobile and desktop](http://blokks.co/docs/images/controls)
 
 ## Controls
-Users can scroll through [stages]({{< relref "basic-structure.md#locations" >}}) with the control buttons. The *Controls* are visible on desktop when [`data-layout`]({{< relref "choose-your-layout.md" >}}) option is set to `columns`, and are always visible on mobile devices.
+Users can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when [`data-layout`]({{< relref "choose-your-layout.md" >}}) option is set to `columns`, and are always visible on mobile devices.
 
 ![Image: Controls on mobile and desktop](handheldttp://blokks.co/docs/images/controls)
 
@@ -82,7 +82,7 @@ Users can scroll through [stages]({{< relref "basic-structure.md#locations" >}})
 <span class='note'>It can happen that someone visits your schedule on a large display. So big, that your whole schedule fits his screen easily. In those cases hide controls with media queries and CSS instead of the [`data-hide-controls`](http://configure/hidding-elements) options.</span>
 
 ## Timetable
-A single day of your event is represented by the *Timetable* component, which consist out of a [*Dashboard*]({{< relref "basic-structure.md#dashboard" >}}), [*Locations*]({{< relref "basic-structure.md#locations" >}}), [*Activities*]({{< relref "basic-structure.md#activities" >}}) and a [*Time Indicator*]({{< relref "basic-structure.md#time-indicator" >}}) component.
+A single day of your event is represented by the *Timetable* component, which consist out of a [*Dashboard*]({{< relref "basic-structure.md#dashboard" >}}), [*Locations*]({{< relref "basic-structure.md#location" >}}), [*Activities*]({{< relref "basic-structure.md#activities" >}}) and a [*Time Indicator*]({{< relref "basic-structure.md#time-indicator" >}}) component.
 
 ![Image: Timetable on desktop](https://blokks.co/docs/images/dashboard.png)
 
@@ -97,20 +97,20 @@ On days of the event the *Dashboard* component is shown on mobile devices. The c
 
 ![Image: Blokks mobile dashboard](https://blokks.co/docs/images/dashboard.png)
 
-## Locations
-The *Location* component represents a single stage of your event. Basically it’s a list of [*Activities*](http://themes/activity) sorted by time.
+## Location
+The *Location* component represents a single stage of your event. Basically it’s a list of [*Activities*]({{< relref "basic-structure.md#activity" >}}) sorted by time.
 
 ![Image: Blokks locations](https://blokks.co/docs/images/dashboard.png)
 
-## Activities
+## Activity
 Speakers, talks, artists and performances are represented by the *Activity* component. Its position and its size describe the start and duration of the activity and it automatically calculated by the embed.
 
 ![Image: Blokks activities](https://blokks.co/docs/images/dashboard.png)
 
-Selecting an *activity* will show the [*activity details*](http://themes/activitydetails) component:
+Selecting an *Activity* will show the [*Activity Details*](http://themes/activitydetails) component:
 
 ## Activity details
-The *Activity Details* component is a modal presented when an [*Activity*](http://themes/activity) is selected.  It shows all [information]({{< relref "manage-your-acts.md" >}}) about the selected speaker, talk, artist or performance. This includes titles, subtitles, times, descriptions, photos, links and embeds.
+The *Activity Details* component is a modal presented when an [*Activity*]({{< relref "basic-structure.md#activity" >}}) is selected.  It shows all [information]({{< relref "manage-your-acts.md" >}}) about the selected speaker, talk, artist or performance. This includes titles, subtitles, times, descriptions, photos, links and embeds.
 
 ![Image: Blokks activity details](https://blokks.co/docs/images/details.png)
 

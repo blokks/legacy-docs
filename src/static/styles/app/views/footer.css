@@ -4,7 +4,6 @@
 
     position: relative;
     margin-top: 60px;
-    max-width: 660px;
 
     @media (--smallest), (--small) {
         size: 100% 80px;
@@ -33,7 +32,7 @@
     &__link--previous:before,
     &__link--next:after {
         display: block;
-        size: 20px 17px;
+        size: 20px 12px;
         content: '';
         transition: transform 200ms cubic-bezier(0.22, 0.61, 0.36, 1);
 
@@ -42,7 +41,7 @@
     }
 
     &__link--previous:before {
-        margin-right: 10px;
+        margin-right: 15px;
         background-image: inline('images/arrow-previous.png');
         background-size: size('images/arrow-previous.png', 2);
     }
@@ -52,7 +51,7 @@
     }
 
     &__link--next:after {
-        margin-left: 10px;
+        margin-left: 15px;
         background-image: inline('images/arrow-next.png');
         background-size: size('images/arrow-next.png', 2);
     }

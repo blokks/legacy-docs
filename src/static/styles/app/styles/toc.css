@@ -4,17 +4,12 @@
 }
 
 @define-mixin navigation-section {
-    @mixin font var(--blokks-sans), var(--default-text-color), 1.5rem;
+    @mixin font var(--blokks-sans), var(--default-text-color), 1.4rem;
     @mixin antialiased;
     font-weight: 400;
 }
 
 @define-mixin navigation-page {
-    @mixin font var(--blokks-mono), var(--default-title-color), 1.4rem;
-    @mixin antialiased;
-}
-
-@define-mixin navigation-new-label {
-    @mixin font var(--blokks-sans), var(--green), 1.3rem;
+    @mixin font var(--blokks-mono), var(--default-title-color), 1.3rem;
     @mixin antialiased;
 }

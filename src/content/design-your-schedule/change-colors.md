@@ -31,9 +31,11 @@ The syntax for *CSS variables* is straightforward:
 
 In the above example `--blokks-theme-color` is a Blokks defined property with a value of `rebeccapurple`. You should note that all *CSS variables* are prefixed with **--blokks**. Adding the above code in the `<head>` of your page will change the main color of the embed to `rebeccapurple`.
 
+<span class='note'>You should note that *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
+
 ![Image: Changing theme color using CSS variables](https://blokks.co/docs/images/rebeccapurple.png)
 
-Below you will find the complete list of colors which you can change with *CSS variables*:
+Below you will find the complete list of colors which you can change with *CSS variables.*
 
 | Background colors | Description |
 |-------------------|-------------|
@@ -56,5 +58,3 @@ Below you will find the complete list of colors which you can change with *CSS v
 | `--blokks-stroke-color` | The color that is used for button borders. Default value is `#989da8` |
 | `--blokks-default-icon-color` | Default `fill` color used for [icons](http://icons). Default value is `#33363b` |
 | `--blokks-light-icon-color` | Light `fill` color used for [icons](http://icons) on darker backgrounds. Default value is `#abb1bc` |
-
-<span class='note'>You should note that *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>

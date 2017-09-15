@@ -224,15 +224,18 @@
 
     pre > code {
         display: block;
-        padding: 25px 30px;
+        padding: 15px 20px;
     }
 
     kbd,
     em {
-        @mixin article-code;
+        @mixin article-inline-code;
         white-space: nowrap;
 
-        padding: 4px 7px 5px;
+        display: inline;
+        margin: 0;
+        padding: 5px 8px 5px;
+
         border-radius: 3px;
         background: var(--code-background-color);
     }
@@ -240,12 +243,12 @@
     p code,
     table code,
     strong {
-        @mixin article-code;
+        @mixin article-inline-code;
         color: var(--green);
 
         display: inline;
         margin: 0;
-        padding: 4px 7px 5px;
+        padding: 5px 8px 5px;
 
         border-radius: 3px;
         background-color: color(var(--green) alpha(10%));

@@ -1,5 +1,5 @@
 @define-mixin footer-link {
-    @mixin font var(--blokks-mono), var(--blue), 1.4rem;
+    @mixin font var(--blokks-mono), var(--blue), 1.3rem;
     @mixin antialiased;
     text-decoration: none;
 }

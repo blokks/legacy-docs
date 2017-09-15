@@ -5,26 +5,13 @@
 }
 
 @define-mixin article-body-text {
-    @mixin font var(--blokks-sans), var(--default-text-color), 1.5rem/1.75;
+    @mixin font var(--blokks-sans), var(--default-text-color), 1.6rem/1.6;
     @mixin antialiased;
 }
 
 @define-mixin article-list {
-    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem/1.75;
+    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.6rem/1.6;
     @mixin antialiased;
-}
-
-@define-mixin article-thead {
-    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.5rem;
-    @mixin antialiased;
-    font-weight: 400;
-    text-align: left;
-}
-
-@define-mixin article-tbody {
-    @mixin font var(--blokks-mono), var(--default-text-color), 1.4rem/1.8;
-    @mixin antialiased;
-    text-align: left;
 }
 
 @define-mixin article-code {
@@ -38,4 +25,24 @@
     @mixin font var(--blokks-mono), color(white alpha(20%)), 1.4rem;
     @mixin antialiased;
     font-weight: 400;
+}
+
+@define-mixin article-inline-code {
+    @mixin font var(--blokks-mono), white, 1.3rem;
+    @mixin antialiased;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@define-mixin article-thead {
+    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.4rem;
+    @mixin antialiased;
+    font-weight: 400;
+    text-align: left;
+}
+
+@define-mixin article-tbody {
+    @mixin font var(--blokks-mono), var(--default-text-color), 1.3rem/2;
+    @mixin antialiased;
+    text-align: left;
 }

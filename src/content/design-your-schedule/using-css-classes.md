@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Using CSS classes"
-description     = ""
+description     = "CSS variables are great! However, Internet Explorer does not support them yet. So we need a fallback if your visitors are using IE."
 keywords        = ["blokks", "design", "embed", "template", "style", "class", "css"]
 weight          = 409
 
@@ -31,13 +31,13 @@ title = "Browser support"
 url = "http://browser-support/custom-properties"
 +++
 
-*CSS variables* are great! However, Internet Explorer doesn’t support them. So we need a fallback if your visitors are using IE.
+*CSS variables* are great! However, Internet Explorer does not support them yet. So we need a fallback if your visitors are using IE.
 
-Another option to style your schedule, which is supported by all browsers, is using CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) with CSS classes can be a bit tedious compared to *CSS Variables*. But still, easy to achieve.
+Another option to style your schedule, which is supported by all browsers, is using CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) with CSS classes can be a bit tedious compared to *CSS Variables*. But still, relatively easy to achieve.
 
-<span class='note'>Note: You don’t need to set *CSS variables*, if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support classes.</span>
+<span class='note'>Note: You don’t need to set *CSS variables* if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support classes.</span>
 
-<span class='note'>On modern browsers, you can use *CSS variables* together with CSS classes. It’s impossible to have every property as *CSS variable*. See [*blokks-modifiers*](http://configure/blokks#modifiers) and [*data-attributes*](http://configure/blokks#data-atributes) for more styling options.</span>
+<span class='note'>On modern browsers, you can use *CSS variables* combined with CSS classes. It’s impossible to have every property as *CSS variable*. See [*blokks-modifiers*](http://configure/blokks#modifiers) and [*data-attributes*](http://configure/blokks#data-atributes) for more styling options.</span>
 
 <span class='note'>Microsoft Edge support *CSS variables* and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.</span>
 

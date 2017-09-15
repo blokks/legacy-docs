@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Update row & column sizes"
-description     = ""
+description     = "You can use CSS variables to update the size of rows and columns of your schedule."
 keywords        = ["blokks", "design", "embed", "template", "layout", "sizes", "row", "columns"]
 weight          = 405
 
@@ -19,7 +19,7 @@ title = "Configure your schedule: Browser support"
 url = "http://browsersupport#customproperties"
 +++
 
-Depending on [the chosen layout]({{< relref "choose-your-layout.md" >}}), you can use *CSS variables* to update the size of *rows* and *columns* of your schedule. These *CSS variables* are:
+Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use *CSS variables* to update the size of *rows* and *columns* of your schedule. These *CSS variables* are:
 
 | Column properties | Description |
 |-------------------|-------------|
@@ -36,4 +36,4 @@ Depending on [the chosen layout]({{< relref "choose-your-layout.md" >}}), you ca
 | **--blokks-time-captions-height** | Sets the height of the timecaptions represented the top bar. Default value is `30px` |
 
 ## Timescale
-Sometimes changing the *width* or *height* alone doesn’t work. Some acts are too small while others are too big. This is where the `data-timescale` option comes in. Basically, the *timescale* sets the duration of a single timeslot. [Read more about timescale and how to use it.](http://configure/options#timescale)
+Sometimes changing the *width* or *height* alone doesn’t work. Some acts are too small while others are too big. This is where the `data-timescale` option comes in. Basically, the *timescale* sets the duration of a single timeslot. [Read more](http://configure/options#timescale) about timescale and how to use it.

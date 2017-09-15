@@ -27,11 +27,11 @@ Sometimes you want to highlight a band or speaker. By marking it as a *headliner
 Each act can have one or multiple *categories*. These *categories* can optionally be shown in your timetable. Additionally, you can use these *categories* to [customize the design of your timetable](http://themes/modififers).
 
 ## Description
-The *description* will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Usually this is short biography of the artist or speaker. Or a summary his talk. A *description* can be as long as you prefer, but we recommend a maximum of 500 characters.
+The *description* will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Usually this is short biography of the artist or a summary of the talk. A *description* can be as long as you prefer, but we recommend a maximum of 500 characters.
 
 <span class='note'>Note: this is not a hard limit, you can go with as many characters as you need.</span>
 
-*Descriptions* support basic [Markdown](https://daringfireball.net/projects/markdown/). Markdown is a way to style text on the web. Markdown is just regular text with a few non-alphabetic characters thrown in, like **#** or **\***. Formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown.
+*Descriptions* support basic [Markdown](https://daringfireball.net/projects/markdown/). Markdown is a way to style text on the web. Markdown is just regular text with a few non-alphabetic characters thrown in, like **#** or **\***. Formatting words as bold or italic, adding images, and creating lists are just a few of the things you can do with Markdown.
 
 Here’s a quick overview of Markdown syntax that you can use in the *descriptions*:
 
@@ -64,17 +64,17 @@ Format: ![Alt Text](url)
 ```
 
 ## Images
-You can add a single *image* to each of your acts by dropping an image file on the drop area or add one by clicking that same area. This *image* will be your acts main visual and will be shown in the timetable embed.
+You can add a single *image* to each of your acts by dropping an image file on the drop area or by clicking that same area. This *image* will be your acts main visual and will be shown in the timetable embed.
 
 <span class='note'>Images that are added to your act cannot be larger than 2MB. Images are resized and saved as JPG files by Blokks to optimize loading times.</span>
 
 ## Links
 You can add multiple *links* to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the *Add one more link* button.
 
-Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link or manually a custom label by selecting *Other…*.
+Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link or manually add a custom label by selecting *Other…*.
 
 ## Embeds
-In some cases, you might want to add a Youtube video, a Spotify track or another piece of media content to an act. Just copy and paste its embed code. We support many different embeds. If you’re trying to add an embed code and are running into problems, [we’ll help you out](http://introduction/support).
+In some cases, you might want to add a Youtube video, a Spotify track or another piece of media content to an act. Just copy and paste its embed code. We support many different embeds. If you’re trying to add an embed code and are running into problems, let us know and [we’ll help you out](http://introduction/support).
 
 <span class='note'>You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.</span>
 
@@ -82,7 +82,7 @@ In some cases, you might want to add a Youtube video, a Spotify track or another
 In some cases, it can be useful to show an act in your schedule without allowing your visitors to select it. For example, when an act is still being teased to your visitors.
 
 ## Published, unpublished and canceled
-Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed at all. This is useful when your schedule is live and you want to add new acts without showing them to your visitors.
+Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your visitors.
 
 Acts marked as **canceled** are still visible but can have custom styling in your timetable embed.
 

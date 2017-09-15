@@ -33,15 +33,15 @@
     }
 
     h3, h4 {
-        margin: 20px 0 5px;
+        margin: 30px 0 15px;
+        letter-spacing: 0px;
         font-size: 1.7rem;
-        letter-spacing: 0.5px;
         line-height: 1.75;
     }
 
     p {
         @mixin article-body-text;
-        margin: 10px 0 20px;
+        margin: 20px 0 20px;
     }
 
     img {
@@ -200,9 +200,10 @@
         @mixin article-code;
         white-space: pre-wrap;
 
-        display: inline-block;
+        display: block;
         margin: 10px 0;
-        padding: 5px 7px 3px;
+        padding: 16px 20px;
+
         background: var(--code-background-color);
     }
 
@@ -233,22 +234,16 @@
         content: 'Console:';
     }
 
-    pre > code {
-        display: block;
-        padding: 15px 20px;
-    }
-
     kbd,
     em,
     strong,
     p code,
     table code {
         @mixin article-inline-code;
-
         display: inline;
         margin: 0;
         padding: 6px 8px 5px;
-        border-radius: 3px;
+        border-radius: 2px;
 
         @media (--smallest), (--small) {
             white-space: pre-wrap;

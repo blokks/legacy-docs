@@ -9,6 +9,22 @@ weight          = 204
 
 [menu.main]
 parent          = "manage-your-schedule"
+
+[[related]]
+title = "Blokks modifiers"
+url = "http://themes/modifiers"
+
+[[related]]
+title = "Hiding stuff"
+url = "http://configure/options"
+
+[[related]]
+title = "Markdown"
+url = "https://daringfireball.net/projects/markdown/"
+
+[[related]]
+title = "Markdown cheatsheet"
+url = "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
 +++
 
 After [adding an act]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
@@ -85,9 +101,3 @@ In some cases, it can be useful to show an act in your schedule without allowing
 Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed at all. This is useful when your schedule is live and you want to add new acts without showing them to your visitors.
 
 Acts marked as **canceled** are still visible but can have custom styling in your timetable embed.
-
-## See also
-- [Blokks modifiers](http://themes/modifiers)
-- [Hiding stuff](http://configure/options)
-- [Markdown](https://daringfireball.net/projects/markdown/)
-- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

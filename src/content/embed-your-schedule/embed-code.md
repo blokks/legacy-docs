@@ -9,6 +9,22 @@ weight          = 302
 
 [menu.main]
 parent          = "embed-your-schedule"
+
+[[related]]
+title = "Create your own template"
+url = "http://themes/intro"
+
+[[related]]
+title = "Adding preloader"
+url = "http://themes/structure#preloader"
+
+[[related]]
+title = "Schedule options"
+url = "http://configure/options"
+
+[[related]]
+title = "Caching"
+url = "http://configure/Caching"
 +++
 
 Embedding your schedule requires you to insert three small snippets:
@@ -42,9 +58,3 @@ The `src` `data-blokks-id` `data-layout` attributes are required. All other attr
 All files are hosted on our servers and [delivered to your visitors using our CDN](http://configure/caching). However it’s possible to download all required files and host them on your own server.
 
 [<button>Download files</button>](http://downloadlink)
-
-## See also
-- [Create your own template](http://themes/intro)
-- [Adding preloader](http://themes/structure#preloader)
-- [Schedule options](http://configure/options)
-- [Caching](http://configure/Caching)

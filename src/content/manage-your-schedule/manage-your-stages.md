@@ -9,6 +9,10 @@ weight          = 202
 
 [menu.main]
 parent          = "manage-your-schedule"
+
+[[related]]
+title = "Create templates"
+url = "http://temnplates/"
 +++
 
 The columns shown in your schedule represent the stages or areas of your event.
@@ -42,6 +46,3 @@ Therefor it’s possible to add delays to stages. Delays are automatically added
 Your visitors will see the updated times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts.
 
 <span class='note'>Note: times shown in the backend will still be the initially set times.</span>
-
-## See also
-- [Create templates](http://temnplates/)

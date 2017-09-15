@@ -11,23 +11,23 @@ weight          = 701
 parent          = "supported-browsers"
 
 [[related]]
-title = "Download Google Chrome"
+title = "Download: Google Chrome"
 url = "https://www.google.com/chrome/browser/desktop/index.html"
 
 [[related]]
-title = "Download Edge"
+title = "Download: Edge"
 url = "https://www.microsoft.com/nl-nl/windows/microsoft-edge"
 
 [[related]]
-title = "Download Internet Explorer"
+title = "Download: Internet Explorer"
 url = "https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads"
 
 [[related]]
-title = "Download Firefox"
+title = "Download: Firefox"
 url = "https://www.mozilla.org/en-US/firefox/new/"
 
 [[related]]
-title = "Download Safari"
+title = "Download: Safari"
 url = "https://www.apple.com/safari/"
 +++
 

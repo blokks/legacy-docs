@@ -46,18 +46,19 @@
         background-size: size('images/arrow-previous.png', 2);
     }
 
-    &__link--previous:hover:before {
-        transform: translateX(-5px);
-    }
-
     &__link--next:after {
         margin-left: 15px;
         background-image: inline('images/arrow-next.png');
         background-size: size('images/arrow-next.png', 2);
     }
 
+    &__link:hover {
+        color:  var(--emphasized-text-color);
+    }
+    
+    &__link--previous:hover:before,
     &__link--next:hover:after {
-        transform: translateX(5px);
+        
     }
 
     @media (--smallest) {

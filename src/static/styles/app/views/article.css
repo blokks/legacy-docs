@@ -44,17 +44,6 @@
         margin: 10px 0 20px;
     }
 
-    a {
-        color: var(--default-link-color);
-        border-bottom: 1px solid var(--default-text-color);
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: var(--blue);
-        border-bottom: 1px solid var(--blue);
-    }
-
     img {
         margin: 6px 0;
         size: 100% auto;
@@ -74,8 +63,21 @@
         font-style: normal;
     }
 
+    a {
+        color: var(--emphasized-text-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--blue);
+    }
+
     span.note {
-        color: var(--dimmed-text-color);
+        @mixin article-note;
+    }
+
+    span.note a {
+        color: var(--default-text-color);
     }
 
     ul, ol {
@@ -186,39 +188,40 @@
         }
     }
 
-    code {
+    pre > code {
         @mixin article-code;
+        white-space: pre-wrap;
+
         display: inline-block;
         margin: 10px 0;
         padding: 5px 7px 3px;
-
         background: var(--code-background-color);
-        white-space: pre-wrap;
     }
 
-    code[class*='language']:before {
+    pre > code[class*='language']:before {
         @mixin article-code-language-identifier;
         display: block;
         user-pointer: none;
+        user-select: none;
     }
 
-    code.language-html:before {
+    pre > code.language-html:before {
         content: 'HTML:';
     }
 
-    code.language-JavaScript:before {
+    pre > code.language-JavaScript:before {
         content: 'JS:';
     }
 
-    code.language-css:before {
+    pre > code.language-css:before {
         content: 'CSS:';
     }
 
-    code.language-md:before {
+    pre > code.language-md:before {
         content: 'Markdown:';
     }
 
-    code.language-cli:before {
+    pre > code.language-cli:before {
         content: 'Console:';
     }
 
@@ -228,30 +231,16 @@
     }
 
     kbd,
-    em {
-        @mixin article-inline-code;
-        white-space: nowrap;
-
-        display: inline;
-        margin: 0;
-        padding: 5px 8px 5px;
-
-        border-radius: 3px;
-        background: var(--code-background-color);
-    }
-
+    em,
+    strong,
     p code,
-    table code,
-    strong {
+    table code {
         @mixin article-inline-code;
-        color: var(--green);
 
         display: inline;
         margin: 0;
-        padding: 5px 8px 5px;
-
+        padding: 6px 8px 5px;
         border-radius: 3px;
-        background-color: color(var(--green) alpha(10%));
 
         @media (--smallest), (--small) {
             white-space: pre-wrap;
@@ -260,6 +249,18 @@
         @media (--default) {
             white-space: nowrap;
         }
+    }
+
+    kbd,
+    em {
+        background: var(--code-background-color);
+    }
+
+    p code,
+    table code,
+    strong {
+        color: var(--green);
+        background-color: color(var(--green) alpha(10%));
     }
 
     h3 + p,

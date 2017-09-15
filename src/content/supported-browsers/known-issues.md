@@ -79,8 +79,3 @@ If you want to know more about *Promises*, [this article](https://developers.goo
 There is a [polyfill available]({{< relref "using-polyfills.md#matchmedia" >}}) if you need to support Internet Explorer 9 and lower.
 
 <span class='note'>Supported by: by Chrome 9+, Edge 12+, IE10+, Firefox 6+, Safari 5.1+</span>
-
----
-
-## Cross Domain Resource Sharing
-Dat ene Chrome issue wat Niek had: `Menu → Settings → Show Advanced Settings... → Privacy: Content Settings`

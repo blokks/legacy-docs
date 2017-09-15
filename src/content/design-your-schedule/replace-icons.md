@@ -2,8 +2,8 @@
 date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Replace icons"
-description     = ""
+title           = "Icons"
+description     = "Replacing the default Blokks icons."
 keywords        = ["blokks", "design", "embed", "template", "icons", "svg"]
 weight          = 408
 
@@ -63,7 +63,7 @@ title = "PostCSS"
 url = "http://configure/postcss"
 +++
 
-All icons we use in our schedules are *SVG*. SVG files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since SVG files are *XML* files, they’re are highly compressible and featherlight to load. And last but not least, SVG files are completely styleable with CSS.
+All icons used in the schedule are *SVG*. SVG files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since SVG files are *XML* files, they’re are highly compressible and featherlight to load. And last but not least, SVG files are completely styleable with CSS.
 
 To replace the default Blokks icons we need to create a new icon set. An icon set contains the following files:
 

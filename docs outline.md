@@ -1187,7 +1187,7 @@ So let yourself go.
 - [PostCSS](http://configure/postcss)
 
 ## Pseudo-elements
-With *pseudo-elements* you can extend the structure of the schedule with CSS. *Pseudo-elements* will add extra elements *before* and *after* the element’s content. These elements are visible to the user and are styleable with CSS. 
+Using *pseudo-elements* you can extend the structure of the schedule with CSS. *Pseudo-elements* will add extra elements *before* and *after* the element’s content. These elements are visible to the user and are styleable with CSS. 
 
 Adding `:before` and `:after` is basically the same as:
 

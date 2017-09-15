@@ -15,44 +15,28 @@ title = "Configure your embed"
 url = "http://configure/options#icon-set"
 
 [[related]]
-title = "Icon System with SVG Sprites"
-url = "https://css-tricks.com/svg-sprites-use-better-icon-fonts/"
-
-[[related]]
-title = "SVG symbol a Good Choice for Icons"
-url = "https://css-tricks.com/svg-symbol-good-choice-icons/"
-
-[[related]]
-title = "Inline SVG vs Icon Fonts"
-url = "https://css-tricks.com/icon-fonts-vs-svg/"
-
-[[related]]
-title = "SVG and CSS"
-url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
-
-[[related]]
-title = "Installing Node.js"
-url = "https://nodejs.org/en"
-
-[[related]]
-title = "Installing SVGO"
-url = "https://github.com/svg/svgo"
-
-[[related]]
-title = "Installing SVGOMG"
-url = "https://jakearchibald.github.io/svgomg/"
-
-[[related]]
-title = "Installing SVG-Sprite"
-url = "https://github.com/jkphl/svg-sprite"
-
-[[related]]
-title = "SVGO Sketch Plugin"
+title = "Github: SVGO Sketch Plugin"
 url = "https://github.com/BohemianCoding/svgo-compressor"
 
 [[related]]
-title = "SVGO Illustrator Plugin"
+title = "Github: SVGO Illustrator Plugin"
 url = "https://github.com/davidderaedt/SVG-NOW"
+
+[[related]]
+title = "MDN: SVG and CSS"
+url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
+
+[[related]]
+title = "CSS-Tricks: Icon System with SVG Sprites"
+url = "https://css-tricks.com/svg-sprites-use-better-icon-fonts/"
+
+[[related]]
+title = "CSS-Tricks: SVG symbol a Good Choice for Icons"
+url = "https://css-tricks.com/svg-symbol-good-choice-icons/"
+
+[[related]]
+title = "CSS-Tricks: Inline SVG vs Icon Fonts"
+url = "https://css-tricks.com/icon-fonts-vs-svg/"
 +++
 
 All icons we use in our schedules are *SVG*. *SVG* files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since *SVG* files are *XML* files, they’re are highly compressible and featherlight to load. And last but not least, *SVG* files are completely styleable with CSS.

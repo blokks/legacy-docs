@@ -11,11 +11,11 @@ weight          = 407
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Design your schedule: Change colors"
+title = "Change colors"
 url = "change-colors.md"
 
 [[related]]
-title = "Design your schedule: Add own fonts"
+title = "Add own fonts"
 url = "add-own-fonts.md"
 
 [[related]]
@@ -35,11 +35,11 @@ title = "!important"
 url = "http://themes/avoindimportant"
 
 [[related]]
-title = "Font shorthand"
+title = "MDN: Font shorthand"
 url = "https://developer.mozilla.org/en-US/docs/Web/CSS/font"
 
 [[related]]
-title = "The Power of em Units in CSS"
+title = "Sitepoint: The Power of em Units in CSS"
 url = "https://www.sitepoint.com/power-em-units-css/"
 +++
 

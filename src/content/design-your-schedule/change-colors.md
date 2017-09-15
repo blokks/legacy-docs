@@ -11,11 +11,11 @@ weight          = 404
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Create templates: Structure of our embed"
+title = "Structure of our embed"
 url = "http://structure"
 
 [[related]]
-title = "Configur your schedule: Browser support"
+title = "Browser support"
 url = "http://browsersupport#customproperties"
 +++
 

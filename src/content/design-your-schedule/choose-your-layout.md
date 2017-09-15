@@ -11,23 +11,23 @@ weight          = 403
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Create templates: Create your own layout"
+title = "Create your own layout"
 url = "http://themes/layout"
 
 [[related]]
-title = "Create templates: Dashboard"
+title = "Dashboard"
 url = "http://themes/dashboard"
 
 [[related]]
-title = "Create templates: Date selector"
+title = "Date selector"
 url = "http://themes/dateselector"
 
 [[related]]
-title = "Configure your schedule: More configuration options"
+title = "More configuration options"
 url = "http://configure"
 
 [[related]]
-title = "Configure your schedule: Setting default breakpoint"
+title = "Setting default breakpoint"
 url = "http://theme/breakpoint"
 
 [[related]]
@@ -36,7 +36,7 @@ url = "http://browsersupport"
 
 [[related]]
 title = "Using media queries"
-url = "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+url = "MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
 +++
 
 ## Desktop

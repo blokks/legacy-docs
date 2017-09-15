@@ -11,15 +11,15 @@ weight          = 406
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Design your schedule: Change colors"
+title = "Change colors"
 url = "change-colors.md"
 
 [[related]]
-title = "Create templates: Create your own template"
+title = "Create your own template"
 url = "http://themes/"
 
 [[related]]
-title = "Configure your schedule: Browser support"
+title = "Browser support"
 url = "http://browsersupport#customproperties"
 
 [[related]]

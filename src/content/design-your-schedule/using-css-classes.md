@@ -11,24 +11,24 @@ weight          = 409
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Design your schedule: Changing colors"
+title = "Changing colors"
 url = "change-colors.md"
 
 [[related]]
-title = "Design your schedule: Replacing fonts"
+title = "Replacing fonts"
 url = "add-own-fonts.md"
 
 [[related]]
-title = "Design your schedule: Update row and column sizes"
+title = "Update row and column sizes"
 url = "update-rows-and-columns.md"
 
 [[related]]
-title = "Create templates: Block-Element-Modifier"
+title = "Block-Element-Modifier"
 url = "http://configure/bem"
 
 [[related]]
 title = "Browser support"
-url = "http://browser-support/custom-properties"
+url = "known-issues.md#css-variables"
 +++
 
 *CSS variables* are great! However, Internet Explorer doesn’t support them. So we need a fallback if your visitors are using IE.

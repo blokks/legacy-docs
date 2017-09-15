@@ -33,10 +33,10 @@
     }
 
     h3, h4 {
-        margin: 20px 0 0;
-        font-size: 1.5rem;
+        margin: 20px 0 5px;
+        font-size: 1.7rem;
         letter-spacing: 0.5px;
-        line-height: 1.6;
+        line-height: 1.75;
     }
 
     p {
@@ -58,11 +58,6 @@
         background-color: var(--default-stroke-color);
     }
 
-    cite {
-        color: var(--emphasized-text-color);
-        font-style: normal;
-    }
-
     a {
         color: var(--emphasized-text-color);
         text-decoration: none;
@@ -72,10 +67,23 @@
         color: var(--blue);
     }
 
+    cite {
+        color: var(--emphasized-text-color);
+        font-style: normal;
+    }
+
+    blockquote {
+        margin: 10px 0 20px;
+        padding: 0 0 0 20px;
+        border-left: 1px solid var(--dimmed-text-color);
+    }
+
+    blockquote p,
     span.note {
         @mixin article-note;
     }
 
+    blockquote p a,
     span.note a {
         color: var(--default-text-color);
     }

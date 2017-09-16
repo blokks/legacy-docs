@@ -7,7 +7,8 @@
     <div class='table-of-contents__content'>
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-                <h1 class='table-of-contents__section'>{{ .Name }}</h1>
+            <div class='table-of-contents__section{{if $currentPage.HasMenuCurrent "main" . }} table-of-contents__section--active{{end}}'>
+                <h1 class='table-of-contents__section-title'>{{ .Name }}</h1>
                 <ul class='table-of-contents__pages'>
                     {{ range .Children }}
                         <li class='table-of-contents__page'>
@@ -17,6 +18,7 @@
                         </li>
                     {{ end }}
                 </ul>
+            </div>
             {{ end }}
         {{ end }}
     </div>

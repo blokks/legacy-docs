@@ -15,10 +15,8 @@
 
     &__link {
         @mixin footer-link;
-        flex: none;
-
         display: flex;
-        flex-direction: row;
+        flex: none;
     }
 
     &__link:hover {
@@ -30,7 +28,8 @@
     }
 
     &__link svg {
-        size: 21px 13px;
+        position: relative 0 * * *;
+        size: 19px 11px;
         fill: currentcolor;
     }
 
@@ -41,7 +40,6 @@
     &__link--next svg {
         margin-left: 15px;
     }
-
     
     @media (--smallest) {
         &__link-label--desktop {

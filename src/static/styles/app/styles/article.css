@@ -5,13 +5,29 @@
 }
 
 @define-mixin article-body-text {
-    @mixin font var(--blokks-sans), var(--default-text-color), 1.6rem/1.75;
+    @mixin font var(--blokks-sans), var(--default-text-color);
     @mixin antialiased;
+
+    @media (--smallest), (--small) {
+        font-size: 1.5rem/1.75;
+    }
+
+    @media (--default) {
+        font-size: 1.6rem/1.75;
+    }
 }
 
 @define-mixin article-list {
-    @mixin font var(--blokks-sans), var(--emphasized-text-color), 1.6rem/1.75;
+    @mixin font var(--blokks-sans), var(--emphasized-text-color);
     @mixin antialiased;
+
+    @media (--smallest), (--small) {
+        font-size: 1.5rem/1.75;
+    }
+
+    @media (--default) {
+        font-size: 1.6rem/1.75;
+    }
 }
 
 @define-mixin article-code {
@@ -36,8 +52,16 @@
 }
 
 @define-mixin article-note {
-    @mixin font var(--blokks-sans), var(--dimmed-text-color), 1.6rem/1.6;
+    @mixin font var(--blokks-sans), var(--dimmed-text-color);
     @mixin antialiased;
+
+    @media (--smallest), (--small) {
+        font-size: 1.5rem/1.75;
+    }
+
+    @media (--default) {
+        font-size: 1.6rem/1.75;
+    }
 }
 
 @define-mixin article-thead {

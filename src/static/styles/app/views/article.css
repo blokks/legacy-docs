@@ -1,11 +1,10 @@
 .article {
-
     @media (--smallest), (--small) {
-        margin-top: 45px;
+        margin-top: 15px;
     }
 
     @media (--default) {
-        margin-top: 146px;
+        margin-top: 145px;
     }
 
     & > :first-child {

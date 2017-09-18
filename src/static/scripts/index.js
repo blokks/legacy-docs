@@ -2,6 +2,8 @@ import Clipboard from 'clipboard';
 import Url from 'url';
 import { highlightBlock } from 'highlight.js';
 
+var navigationHeight = 0;
+
 // Code blocks
 (() => {
 	const codeBlocks = document.querySelectorAll('pre code');
@@ -32,13 +34,6 @@ import { highlightBlock } from 'highlight.js';
 	let currentSelected = document.querySelector(`.${ACTIVE}`);
 
 	const toggleTitle = title => {
-		// if (title.classList.contains(ACTIVE)) {
-		// 	title.classList.remove(ACTIVE);
-		// 	currentSelected = null;
-
-		// 	return;
-		// }
-
 		if (currentSelected) {
 			currentSelected.classList.remove(ACTIVE);
 		}
@@ -58,6 +53,19 @@ import { highlightBlock } from 'highlight.js';
 	});	
 
 	Array.from(articles).forEach(article => {
-		article.style.height = `${article.childElementCount * HEIGHT}px`;
+		const height = article.childElementCount * HEIGHT;
+		article.style.height = `${height}px`;
+
+		navigationHeight += height + 16 + 35;
 	});
+})();
+
+(() => {
+	const ACTIVE = 'table-of-contents__toggle-button--selected';
+
+	const toggleButton = document.getElementById('toggleButton');
+	const menuContent = document.getElementById('menuContent');
+
+	menuContent.style.maxHeight = `${navigationHeight}px`;
+	toggleButton.addEventListener('click', () => toggleButton.classList.toggle(ACTIVE));
 })();

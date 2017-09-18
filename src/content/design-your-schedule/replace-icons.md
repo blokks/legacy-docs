@@ -100,6 +100,9 @@ And that’s all there is to it!
 
 <span class='note'>[IcoMoon](https://icomoon.io/app) is a web-based interface that does a great job of producing SVG spritesheets. You can simply drag & drop your SVGs and export them as a single spritesheet.</span>
 
+## Replacing icons
+TODO: Stukje over hoe icons vervangen moeten worden
+
 ## Styling SVGs
 Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size.
 

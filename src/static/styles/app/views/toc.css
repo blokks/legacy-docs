@@ -2,26 +2,18 @@
     width: 100%;
     max-width: 300px;            
 
-    @media (--smallest), (--small) {
-        margin-top: 90px;
-    }
-
     @media (--default) {
         position: sticky 75px * * *;
-        margin: 225px 0 0 0;
+        margin: 226px 0 0 0;
     }
 
     &__content {
         margin: 0;
         overflow: hidden;
-        transition:
-            margin 400ms cubic-bezier(0.22, 0.61, 0.36, 1),
-            max-height 400ms cubic-bezier(0.22, 0.61, 0.36, 1),
-            opacity 300ms linear;
+        transition: max-height 400ms;
 
         @media (--smallest), (--small) {
-            opacity: 0;
-            max-height: 0;
+            margin: 20px 0 0 0;
         }
     }
 
@@ -29,6 +21,10 @@
         @mixin navigation-section;
         margin: 0 0 10px 0;
         cursor: pointer;
+
+        @media (--smallest), (--small) {
+            margin-top: 20px;
+        }
     }
 
     &__title:not(:first-of-type) {
@@ -36,10 +32,14 @@
     }
 
     &__title svg {
-        margin: 3px 0 0 7px;
+        position: relative 1px * * 7px;
         size: 11px;
         fill:  currentcolor;
         transition: transform 250ms;
+
+        @media (--smallest), (--small) {
+            display: none;
+        }        
     }
 
     &__title--selected svg {
@@ -55,7 +55,9 @@
     }
 
     &__title:not(&__title--selected) + &__articles {
-        height: 0 !important;
+        @media (--default) {
+            height: 0 !important;
+        }
     }
 
     &__article {
@@ -80,30 +82,44 @@
         color: var(--blue);
     }
 
-    &__toggler {
-        display: none;
-    }
+    &__toggle-button {
+        @mixin navigation-toggle-button;        
 
-    &__toggler-label {
-        @mixin navigation-toggle-button;
         position: relative;
+        display: flex;
         cursor: pointer;
+
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
 
         @media (--default) {
             display: none;
         }
     }
 
-    &__toggler:checked ~ &__toggler-label:before {
+    &__toggle-button:hover {
+        color: var(--emphasized-text-color);
+    }
+
+    &__toggle-button svg {
+        position: relative 1px * * 10px;
+        size: 13px;
+        fill: currentcolor;
+        transition: transform 200ms;
+    }
+
+    &__toggle-button--selected svg {
         transform: rotate(45deg);
     }
 
-    &__toggler:checked ~ &__content {
-        opacity: 1;
+    &__toggle-button:not(&__toggle-button--selected) + &__content {
+
 
         @media (--smallest), (--small) {
-            margin: 20px 0 0 0;
-            max-height: 1700px;
+            max-height: 0 !important; 
         }
     }
 }

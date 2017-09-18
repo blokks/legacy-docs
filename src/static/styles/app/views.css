@@ -16,16 +16,17 @@ body {
 }
 
 .docs {
-    position:  relative;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
 
-    @media (--small) {
+    @media (--smallest), (--small) {
         max-width: 660px;
+        padding: 80px 20px 0;
     }
 
     @media (--default) {
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: flex-start;

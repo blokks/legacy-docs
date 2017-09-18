@@ -1,14 +1,12 @@
 {{ $currentPage := . }}
 
 <nav id='toc' class='docs__table-of-contents table-of-contents'>
-    <input id='toggleButton' type='checkbox' class='table-of-contents__toggler'>
-
-    <label for='toggleButton' class='table-of-contents__toggler-label'>
+    <button id='toggleButton' class='table-of-contents__toggle-button'>
         <span>Table of contents</span>
         <svg><use href="images/sprite.svg#plus-icon"></use></svg>
-    </label>
+    </button>
 
-    <div class='table-of-contents__content'>
+    <div id='menuContent' class='table-of-contents__content'>
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
             <h1 class='table-of-contents__title{{if $currentPage.HasMenuCurrent "main" . }} table-of-contents__title--selected{{end}}'>

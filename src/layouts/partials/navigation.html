@@ -2,23 +2,27 @@
 
 <nav id='toc' class='docs__table-of-contents table-of-contents'>
     <input id='toggleButton' type='checkbox' class='table-of-contents__toggler'>
-    <label for='toggleButton' class='table-of-contents__toggler-label'>Table of contents</label>
+
+    <label for='toggleButton' class='table-of-contents__toggler-label'>
+        <span>Table of contents</span>
+        <svg><use href="images/sprite.svg#plus-icon"></use></svg>
+    </label>
 
     <div class='table-of-contents__content'>
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-            <div class='table-of-contents__section{{if $currentPage.HasMenuCurrent "main" . }} table-of-contents__section--active{{end}}'>
-                <h1 class='table-of-contents__section-title'>{{ .Name }}</h1>
-                <ul class='table-of-contents__pages'>
-                    {{ range .Children }}
-                        <li class='table-of-contents__page'>
-                            <a href='{{ .URL }}' class='table-of-contents__link {{ if $currentPage.IsMenuCurrent "main" . }}table-of-contents__link--selected{{ end }}'>
-                                {{ .Name }}
-                            </a>
-                        </li>
-                    {{ end }}
-                </ul>
-            </div>
+            <h1 class='table-of-contents__title{{if $currentPage.HasMenuCurrent "main" . }} table-of-contents__title--selected{{end}}'>
+                <span>{{ .Name }}</span>
+                <svg><use href="images/sprite.svg#plus-icon"></use></svg>
+            </h1>
+
+            <ul class='table-of-contents__articles'>
+                {{ range .Children }}
+                    <li class='table-of-contents__article'>
+                        <a href='{{ .URL }}' class='table-of-contents__article-link {{ if $currentPage.IsMenuCurrent "main" . }}table-of-contents__article-link--selected{{ end }}'>{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
             {{ end }}
         {{ end }}
     </div>

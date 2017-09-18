@@ -1,6 +1,7 @@
 <footer class='docs__footer footer'>
     {{ if .Prev }}
         <a href='{{ .Prev.URL }}' class='footer__link footer__link--previous'>
+            <svg><use href="images/sprite.svg#arrow-previous"></use></svg>
             <span class='footer__link-label footer__link-label--mobile'>Previous</span>
             <span class='footer__link-label footer__link-label--desktop'>{{ .Prev.Title }}</span>
         </a>
@@ -10,6 +11,7 @@
         <a href='{{ .Next.URL }}' class='footer__link footer__link--next'>
             <span class='footer__link-label footer__link-label--mobile'>Next</span>
             <span class='footer__link-label footer__link-label--desktop'>{{ .Next.Title }}</span>
+            <svg><use href="images/sprite.svg#arrow-next"></use></svg>
         </a>
     {{ end }}
 </footer>

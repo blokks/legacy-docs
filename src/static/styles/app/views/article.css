@@ -1,6 +1,4 @@
 .article {
-    width: 100%;
-    max-width: 660px;
 
     @media (--smallest), (--small) {
         margin-top: 45px;

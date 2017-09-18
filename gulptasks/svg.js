@@ -32,8 +32,8 @@ gulp.task('svg', () => {
         },
     };
 
-    const source = ['./src/static-source/images/**/*.svg'];
-    const destination = './src/static-compiled/images';
+    const source = ['./src/static/images/**/*.svg'];
+    const destination = './src/.static/images';
 
     return gulp.src(source)
         .pipe(svgmin(minifyOptions)).on('error', errors)

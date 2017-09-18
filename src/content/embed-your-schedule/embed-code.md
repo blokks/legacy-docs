@@ -36,12 +36,16 @@ The first one is a `<link>` to a template file and it’s placed in the `<head>`
 <link href='https://themes.blokks.co/default/1.0.0/columns.css' rel='stylesheet'>
 ```
 
+---
+
 ## Container
 The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body></body>`:
 
 ```html
 <div blokks-container></div>
 ```
+
+---
 
 ## JavaScript
 Finally, add the following `<script>` just above the `</body>` of the page:

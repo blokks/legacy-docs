@@ -24,8 +24,12 @@ You can add stages by simply clicking the *+ Add new stage* button. New stages a
 
 <span class='note'>Note: [Adding an extra day]({{< relref "manage-your-days.md#adding-days" >}}) will duplicate the stages of that day. To save you extra work, make sure you’ve created all stages before adding new dates.</span>
 
+---
+
 ## Ordering stages
 Changing the order of your stages is done by clicking the stage title and dragging them to the prefered position.
+
+---
 
 ## Updating stages
 Right-click a stage or press the *•••* button to bring up the various options for that stage.

@@ -15,5 +15,7 @@ When saving your schedule we only update the data that actually changed. You can
 
 When you accidentally close Blokks before your changes are saved, Blokks will show a popup reminding you to save your data before leaving.
 
+---
+
 ## Exporting your data
 It’s possible to export all the schedule data to an Excel format. You can download this file by clicking the *Export* button on the top right.

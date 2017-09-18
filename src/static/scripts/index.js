@@ -1,4 +1,5 @@
 import Clipboard from 'clipboard';
+import Url from 'url';
 import { highlightBlock } from 'highlight.js';
 
 // Code blocks
@@ -7,6 +8,17 @@ import { highlightBlock } from 'highlight.js';
 	Array.from(codeBlocks).forEach(block => highlightBlock(block));
 
 	new Clipboard(codeBlocks, { target: trigger => trigger });
+})();
+
+// Add links to subtitles
+(() => {
+	const subtitles = document.querySelectorAll('h2, h3, h4');
+	Array.from(subtitles).forEach(subtitle => {
+		const currentHref = window.location.href.replace(window.location.hash, '');
+		subtitle.addEventListener('click', event => {
+			window.history.pushState(null, null, `${currentHref}#${subtitle.id}`);
+		});
+	});
 })();
 
 // Navigation

@@ -1,5 +1,4 @@
 .table-of-contents {
-    position: sticky 0 * * *;
     width: 100%;
     max-width: 300px;            
 
@@ -8,7 +7,8 @@
     }
 
     @media (--default) {
-        padding: 225px 0;
+        position: sticky 75px * * *;
+        margin: 225px 0 0 0;
     }
 
     &__content {

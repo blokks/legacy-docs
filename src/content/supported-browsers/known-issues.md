@@ -42,8 +42,6 @@ url = "http://caniuse.com/#search=matchmedia"
 
 <span class='note'>Supported by: *Chrome 49+* *Edge 12+* *Internet Explorer 10+* *Firefox 31+* *Safari 6.1+*</span>
 
----
-
 ## Sticky headers
 `Position: sticky` is a CSS property which allow elements to stick to the viewport edge as you scroll past them.
 
@@ -53,8 +51,6 @@ Blokks implements [*sticky headers*](https://developer.mozilla.org/en-US/docs/We
 
 <span class='note'>Supported by: *Chrome 58+* *Edge 16+* *Firefox32+* *Safari 7+*</span>
 
----
-
 ## CSS Variables
 Blokks is highly customizable through *CSS Variables*. It doesn’t require *Less*, *Sass*, or any preprocessing at all. With *CSS variables* it’s quite easy to, for example, [change colors]({{< relref "change-colors.md" >}}) and [add own fonts]({{< relref "add-own-fonts.md" >}}).
 
@@ -62,16 +58,12 @@ Blokks is highly customizable through *CSS Variables*. It doesn’t require *Les
 
 <span class='note'>Supported by: *Chrome 49+* *Edge 15+* *Firefox 31+* *Safari 9.1+*</span>
 
----
-
 ## Promises
 Blokks uses [*Promises*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) extensively to handle so called async operations. What they are and what they do is beyond the scope of this page. What you should know is that they aren’t supported by Internet Explorer. Luckily, adding the [Promise polyfill]({{< relref "using-polyfills.md#promises" >}}) will fix this 🤘.
 
 If you want to know more about *Promises*, [this article](https://developers.google.com/web/fundamentals/getting-started/primers/promises) will bring you up to speed.
 
 <span class='note'>Supported by: *Chrome 33+* *Edge 12+* *Firefox 29+* *Safari 7.1+*</span>
-
----
 
 ## MatchMedia
 [*MatchMedia*](https://developer.mozilla.org/nl/docs/Web/API/Window/matchMedia) is an API for finding out whether or not a media query applies to the document. Blokks uses *MatchMedia* to change layout when switching between mobile and desktop. 

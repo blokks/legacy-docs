@@ -27,7 +27,11 @@
 
     h2 {
         margin: 50px 0 25px;
-        font-size: 1.8rem;
+        font-size: 2.0rem;
+
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--default-stroke-color);
+        cursor: pointer;
     }
 
     h3, h4 {
@@ -35,6 +39,7 @@
         letter-spacing: 0px;
         font-size: 1.7rem;
         line-height: 1.75;
+        cursor: pointer;
     }
 
     p {

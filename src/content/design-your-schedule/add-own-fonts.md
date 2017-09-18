@@ -46,8 +46,6 @@ Changing the font used in your schedule works the same way as [changing colors](
 
 The embed will try to load **Helvetica Neue** first. If it wasn’t found it skips to next one. And so on. Finally falling back to system fonts. Using system fonts boosts performance because your browser doesn't have to download any font files. However, the number of available system fonts is limited.
 
----
-
 ## Import external fonts
 Luckily we can import fonts from [Google Fonts](https://fonts.google.com/), [Adobe Typekit](https://typekit.com/) and other type foundries. Together they offer hundreds of great fonts to choose from.
 
@@ -84,8 +82,6 @@ And again, use our CSS variable to add the font:
   --blokks-default-font: 'liberation-sans', sans-serif;
 }
 ```
-
----
 
 ## Self-hosted fonts
 If you have have already purchased and downloaded a font and are using it for your website or app, you are self-hosting your fonts.

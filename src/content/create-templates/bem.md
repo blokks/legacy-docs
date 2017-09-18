@@ -55,8 +55,6 @@ BEM provides a way to arrange your CSS classes into modules or components. Basic
 
 Although BEM may look weird at first with all its *_\_*, *-\-* and long classnames. You should trust us, it's worth it. Visit [the official BEM website](http://getbem.com/naming/) if you want learn more.
 
-- - -
-
 ## CSS Specificity
 If multiple CSS selectors are targeting the same HTML element and are trying to assign the same property, the selector with the highest CSS specificity value will “win”. In other words, the most specific selector gets to assign its property values to the target element: 
 
@@ -78,8 +76,6 @@ Although the example is easy to understand, you can imagine that more specific s
 BEM reduces style conflicts by keeping specificity to a minimum. With BEM, specificity is determined only by the order of the CSS rules. Rules which are defined later have higher precedence over those defined earlier. 
 
 So add your `<style>` or `<link>` tag after the Blokks import and you’re good to go. That’s it ✌️ 
-
-- - -
 
 ## CSS Scoping
 In addition to [reducing specificity]({{< relref "bem.md#css-specificity">}}), BEM provides a scope by using unique CSS classes per element. Together with prefixing classes with `.blokks` it avoids conflicts with your existing classnames.

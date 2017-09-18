@@ -56,8 +56,6 @@ To replace the default Blokks icons we need to create a new icon set. An icon se
 
 <span class='note'>You should note that the embed uses the CSS `fill` property to style icons. Convert all shapes to fills when creating your own icons. Also, fill colors set in tools like Sketch or Adobe Illustrator are overriden by CSS.</span>
 
----
-
 ## Optimizing SVGs
 SVG files, especially when exported from tools like Sketch or Adobe Illustrator contain a lot of information that can be safely removed or converted without affecting rendering result. Optimizing and compressing your SVGs is simply done with a command-line tool called *SVGO*. SVGO requires you to have [Node.js](https://nodejs.org/en/) installed on your computer.
 
@@ -78,8 +76,6 @@ This command will use the default SVGO settings to compress and override all fil
 ![Image: Optimizing SVGs](http://images/optimizing-svgs.gif)
 
 <span class='note'>[SVGOMG](https://jakearchibald.github.io/svgomg/) is a webbased interface which allows you to drag & drop your SVG files and get an optimized version. There are also SVGO plugins for both Sketch and Adobe Illustrator.</span>
-
----
 
 ## Create spritesheets
 *Spritesheets* combine multiple images into a single file. A website using spritesheets loads faster because it has to load just one, instead of multiple images. To create a spritesheet we use another command-line tool named *svg-sprite*. Again, [Node.js](ttps://nodejs.org/en) is required for this.
@@ -103,8 +99,6 @@ And that’s all there is to it!
 ![Image: Create spritesheets](http://images/optimizing-svgs.gif)
 
 <span class='note'>[IcoMoon](https://icomoon.io/app) is a web-based interface that does a great job of producing SVG spritesheets. You can simply drag & drop your SVGs and export them as a single spritesheet.</span>
-
----
 
 ## Styling SVGs
 Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size.

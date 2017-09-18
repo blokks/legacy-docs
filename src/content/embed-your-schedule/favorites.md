@@ -25,10 +25,14 @@ url = "http://theme/structure"
 
 Your visitors are able to save their favorite acts and see where their friends are going by connecting with their **Facebook**, **Twitter** or **LinkedIn** account. You can use the social provider of your choice by choosing one in the embed tab or by [setting it manually](http://configure/socialprovider).
 
+---
+
 ## Adding favorites
 Once connected, visitor can click the *Add to favorites* button to favorite that act. Alternatively, they can double click acts to add favorites straight from the schedule.
 
 ![Image: Adding favorites](https://blokks.co/docs/images/image.gif)
+
+---
 
 ## Friends activity
 If some of your visitors' friends are attending the same event, they will popup in several places on your schedule. This will show your visitors which speaker, band or performance their friends will be going to. 

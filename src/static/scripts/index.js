@@ -54,7 +54,7 @@ var navigationHeight = 0;
 
 	Array.from(articles).forEach(article => {
 		const height = article.childElementCount * HEIGHT;
-		article.style.height = `${height}px`;
+		article.style.maxHeight = `${height}px`;
 
 		navigationHeight += height + 16 + 35;
 	});

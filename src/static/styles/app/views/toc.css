@@ -50,13 +50,13 @@
         margin: 10px 0 20px 0;
         padding: 0 0 0 21px;
         list-style: none;
-        transition: height 250ms;
+        transition: max-height 250ms;
         overflow: hidden;
     }
 
     &__title:not(&__title--selected) + &__articles {
         @media (--default) {
-            height: 0 !important;
+            max-height: 0 !important;
         }
     }
 

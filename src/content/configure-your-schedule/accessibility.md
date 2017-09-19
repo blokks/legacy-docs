@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Accessibility"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "accessibility"]
-weight          = 606
+weight          = 607
 
 [menu.main]
 parent          = "configure-your-schedule"
@@ -21,7 +21,6 @@ Enables keyboard navigation. Users can press <kbd>left</kbd> and <kbd>right</kbd
 
 ```html
 <script	defer src='[path-to-embed]'
-  data-blokks-id='[your-blokks-id]'
   data-accessibility='false'>
 </script>
 ```

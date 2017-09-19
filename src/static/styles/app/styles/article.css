@@ -72,7 +72,13 @@
 }
 
 @define-mixin article-tbody {
-    @mixin font var(--blokks-mono), var(--default-text-color), 1.3rem/2;
+    @mixin font var(--blokks-mono), var(--default-text-color), 1.3rem/2.1;
     @mixin antialiased;
     text-align: left;
+}
+
+@define-mixin button {
+    @mixin font var(--blokks-mono), var(--blue), 1.3rem;
+    @mixin antialiased;
+    text-decoration: none;
 }

@@ -2,10 +2,10 @@
 date            = "2017-09-19T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Local scrolling"
+title           = "Local scroll"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "local", "scroll"]
-weight          = 612
+weight          = 613
 
 [menu.main]
 parent          = "configure-your-schedule"
@@ -24,7 +24,6 @@ By setting `data-local-scroll` to `true` scrolling is done within the embed, wit
 ### Example
 ```html
 <script	defer src='[path-to-embed]'
-  data-blokks-id='[your-blokks-id]'
   data-local-scroll=‘true’>
 </script>
 ```

@@ -1,10 +1,10 @@
 .table-of-contents {
     width: 100%;
-    max-width: 300px;            
+    max-width: 300px;
 
     @media (--default) {
         position: sticky 75px * * *;
-        margin: 226px 0 0 0;
+        margin: 226px 0;
     }
 
     &__content {

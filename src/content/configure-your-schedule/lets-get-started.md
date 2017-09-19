@@ -11,8 +11,8 @@ weight          = 601
 parent          = "configure-your-schedule"
 +++
 
-Until now we only talked about [styling templates]({{< relref "introduction.md" >}}) and [designing new ones]({{< relref "getting-started.md" >}}). But there is so much more we can do. For example, by simply adding options to the embed code we can [change copy]({{< relref "update-copy.md" >}}), [enable offline support]({{< relref "offline.md" >}}) and [disable certain features]({{< relref "hiding-elements.md" >}}).
+Until now we only talked about [styling templates]({{< relref "introduction.md" >}}) and [designing new ones]({{< relref "getting-started.md" >}}). But there is so much more we can do. For example, by simply adding options to the embed code we can [change copy]({{< relref "update-copy.md" >}}), [enable offline support]({{< relref "offline.md" >}}) and [hide features]({{< relref "hide-elements.md" >}}).
 
-Because these chapters are developer oriented, we will talk about nerdy things like [browser support]({{< relref "which-browsers-are-supported.md" >}}), [service workers]({{< relref "offline.md" >}}) and [caching]({{< relref "caching.md" >}}). Don’t be afraid though, there’s useful info in here for designers too!
+Because most these chapters are developer oriented, we will talk about nerdy things like [browser support]({{< relref "which-browsers-are-supported.md" >}}), [service workers]({{< relref "offline.md" >}}) and [caching]({{< relref "caching.md" >}}) as well. Don’t be afraid though, there’s useful info for designers too!
 
-Without further ado… 
+Without further ado... 

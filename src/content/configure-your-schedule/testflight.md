@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Testflight"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "testflight", "debug"]
-weight          = 616
+weight          = 617
 
 [menu.main]
 parent          = "configure-your-schedule"

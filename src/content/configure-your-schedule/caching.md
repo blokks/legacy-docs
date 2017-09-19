@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Caching"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "cache", "server", "browser"]
-weight          = 614
+weight          = 615
 
 [menu.main]
 parent          = "configure-your-schedule"

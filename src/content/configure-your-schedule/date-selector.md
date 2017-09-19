@@ -5,10 +5,14 @@ author          = "@patrickpietens"
 title           = "Date selector"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "date", "trashing"]
-weight          = 605
+weight          = 606
 
 [menu.main]
 parent          = "configure-your-schedule"
+
+[[related]]
+title = "Date selector"
+url = "http://theme/structure#date-selector"
 +++
 
 By default the [*date selector*]({{< relref "basic-structure.md#date-selector" >}}) is displayed as a *buttonbar* on desktop computers and switch to a *dropdown* menu on mobile devices. Set the `data-date-selector` option to override this default behavior.
@@ -21,7 +25,6 @@ By default the [*date selector*]({{< relref "basic-structure.md#date-selector" >
 
 ```html
 <script	defer src='[path-to-embed]'
-  data-blokks-id='[your-blokks-id]'
   data-date-selector='dropdown'>
 </script>
 ```

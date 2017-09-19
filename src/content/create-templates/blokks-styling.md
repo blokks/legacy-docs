@@ -89,4 +89,4 @@ And the ones for *Activities* are:
 ## CSS Template
 We created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. The files don’t contain styling, but are simply a starting point to add your own styles. All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.
 
-<button>[Download the template](http://github.com/patrickpietens/blokks-template)</button>
+[<button>Download the template <svg><use href="images/sprite.svg#arrow-next"></use></svg></button>](http://github.com/patrickpietens/blokks-template)

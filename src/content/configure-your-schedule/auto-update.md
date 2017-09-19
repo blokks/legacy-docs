@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Auto update"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "update"]
-weight          = 613
+weight          = 614
 
 [menu.main]
 parent          = "configure-your-schedule"
@@ -22,7 +22,6 @@ If `data-auto-update` is enabled, the schedule updates after the user returns to
 
 ```html
 <script	defer src='[path-to-embed]'
-  data-blokks-id='[your-blokks-id]'
   data-auto-update='false'>
 </script>
 ```

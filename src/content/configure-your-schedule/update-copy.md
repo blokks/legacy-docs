@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Update copy"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "copy"]
-weight          = 607
+weight          = 608
 
 [menu.main]
 parent          = "configure-your-schedule"

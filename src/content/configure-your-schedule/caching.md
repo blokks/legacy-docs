@@ -10,3 +10,7 @@ weight          = 615
 [menu.main]
 parent          = "configure-your-schedule"
 +++
+
+  - Why is caching enabled
+  - Override cache with `?preview` querystring
+  - Using CDN to deliver assets

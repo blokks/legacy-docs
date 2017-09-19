@@ -10,3 +10,7 @@ weight          = 608
 [menu.main]
 parent          = "configure-your-schedule"
 +++
+
+	- Orientation
+	- disable print
+	- preventDefaultPrint

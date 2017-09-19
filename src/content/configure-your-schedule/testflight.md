@@ -10,3 +10,9 @@ weight          = 617
 [menu.main]
 parent          = "configure-your-schedule"
 +++
+
+  - Dashboard
+    - Note: More information about the dashboard:
+      `Design your schedule > dashboard`
+  - Time indicator
+  - Note: Don’t forget to disable testflight on production

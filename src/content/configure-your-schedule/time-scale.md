@@ -10,3 +10,5 @@ weight          = 609
 [menu.main]
 parent          = "configure-your-schedule"
 +++
+
+The `data-time-scale` option sets the duration of one table cell.

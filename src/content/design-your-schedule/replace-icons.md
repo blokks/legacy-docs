@@ -92,21 +92,23 @@ After installing svg-sprite, run:
 svg-sprite --symbol --svg-xmldecl=false --shape-transform='' --symbol-dest='.' --symbol-sprite='icon-set.svg' --symbol-example=false path/to/folder/with/svg/files/*.svg
 ```
 
-This will merge all the SVGs into one file named **icon-set.svg**. There's just one thing left to do: add the new icon set to your embed by setting the `data-icon-set` to `path/to/icon-set.png`. Make sure to replace **path/to/folder/with/svg/files/\*.svg**` with the directory containing your SVG files.
-
-And that’s all there is to it!
-
-![Image: Create spritesheets](http://images/optimizing-svgs.gif)
+This will merge all the SVGs into one file named **icon-set.svg**. 
 
 <span class='note'>[IcoMoon](https://icomoon.io/app) is a web-based interface that does a great job of producing SVG spritesheets. You can simply drag & drop your SVGs and export them as a single spritesheet.</span>
 
-## Replacing icons
-TODO: Stukje over hoe icons vervangen moeten worden
+![Image: Create spritesheets](http://images/optimizing-svgs.gif)
+
+## Link icons
+There's just one thing left to do: tell the embed to use our new iconset. Simply add a link pointing to the iconset to the `<head>` of your page, like so:
+
+```html
+<link href='http://yourserver.com/icons.svg' blokks-icons>
+```
+
+Make sure you replace `http://yourserver.com/icons.svg` with the location of your iconset. And that’s all there is to it!
 
 ## Styling SVGs
-Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size.
-
-For example, here's how you can resize the close icon to `50px` of the *Activity details* component:
+Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size. For example, here's how you can resize the close icon to `50px` of the *Activity details* component:
 
 ```css
 .blokks-activity-details__close-button .svg-icon {

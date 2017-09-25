@@ -2,7 +2,7 @@
 date            = "2017-09-19T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Position activities"
+title           = "Layout activities"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed"]
 weight          = 610
@@ -15,7 +15,7 @@ title = "Activity"
 url = "basic-structure.md#activity"
 +++
 
-An [*Activity*]({{< relref "basic-structure.md#actvity" >}}) is automatically positioned using its start time and resized using its duration. However, sometimes you don’t want this. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout` option.
+An [*Activity*]({{< relref "basic-structure.md#actvity" >}}) is automatically positioned using its start time. And automatically resized using its duration. However, there are situations were this isn't desired. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout`.
 
 | Option | Values | Default value |
 |--------|--------|---------------|
@@ -25,6 +25,7 @@ An [*Activity*]({{< relref "basic-structure.md#actvity" >}}) is automatically po
 
 ```html
 <script	defer src='schedule.js'
+  data-blokks-id='[schedule-id]'
   data-position-activities='false'>
 </script>
 ```

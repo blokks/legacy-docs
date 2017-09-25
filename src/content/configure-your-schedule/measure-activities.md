@@ -11,9 +11,7 @@ weight          = 611
 parent          = "configure-your-schedule"
 +++
 
-Blokks adds [CSS modifiers](http://themes/modifiers#size-modifiers) indicating the size of an [Activity]({{< relref "basic-structure.md#activity" >}}). Unfortunately, this isn’t done by magic. Matter of fact, computing the size of an HTML element is pretty intensive. 
-
-<span class='note'>Although this option is enabled by default, we recommend to set it to `false` whenever you can.</span>
+Blokks adds [CSS modifiers](http://themes/modifiers#size-modifiers) indicating the size of an [*Activity*]({{< relref "basic-structure.md#activity" >}}). Unfortunately, this isn’t done by magic. Matter of fact, computing the size of an element is a pretty intensive task for the browser. Although this option is enabled by default, we recommend to set it to `false` whenever possible.
 
 | Options | Values | Default |
 |---------|--------|---------|

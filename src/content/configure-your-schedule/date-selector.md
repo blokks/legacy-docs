@@ -25,6 +25,7 @@ By default the [*Date selector*]({{< relref "basic-structure.md#date-selector" >
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-date-selector='dropdown'>
 </script>
 ```

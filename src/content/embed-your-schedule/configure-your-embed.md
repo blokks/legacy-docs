@@ -11,16 +11,16 @@ weight          = 301
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Design"
-url = "http://design/"
+title = "Design your schedule"
+url = "introduction.md"
 
 [[related]]
-title = "Options"
-url = "http://configure/options"
+title = "Configure your schedule"
+url = "lets-get-started.md"
 +++
 
-Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app. Here you’ll find various settings that will allow you to customize both the design and functionality of your embed. All options are described in [the configure section](http://configure/options).
+Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app. On this page you’ll find various settings that will allow you to customize both design and functionality of your embed. All options are described in [the configure section of this website]({{< relref "lets-get-started.md" >}}).
 
-After adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy the updated code after you changed any of your settings.
+<span class='note'>Note: after adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy the updated code after you changed any of your settings.</span>
 
 ![Image: Configure your embed](http://embed);

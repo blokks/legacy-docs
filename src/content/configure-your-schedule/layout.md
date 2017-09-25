@@ -15,15 +15,13 @@ title = "Choose your layout"
 url = "choose-your-layout.md"
 
 [[related]]
-title = "Block, Element, Modifier"
-url = "bem.md"
-
-[[related]]
 title = "Flexbox"
 url = "known-issues.md#flexbox"
 +++
 
-We talked [about layouts]({{< relref "choose-your-layout.md" >}}) before - out of the box Blokks supports `columns`, `rows` and `custom` layouts. Blokks uses CSS [Flexbox]({{< relref "known-issues.md#flexbox" >}}) for its layouts. It injects an extra `<style>` to the `<head>` of your document. The styling is minimal and won’t [conflict with your website]({{< relref "bem.md" >}}). It’s added after the schedule is loaded, so it doesn’t effect your initial pageload. 
+We mentioned [layouts]({{< relref "choose-your-layout.md" >}}) before: out of the box Blokks supports `columns`, `rows` and `custom` layouts. Depending on your choice, elements are styled by using [CSS Flexbox]({{< relref "known-issues.md#flexbox" >}}). 
+
+These styles are injected to the `<head>` of your document. The styling is minimal and won’t [conflict with your website]({{< relref "bem.md" >}}). Also, it’s added after the schedule is loaded, so it doesn’t effect your initial pageload. 
 
 You probably won’t even notice it’s there 👌
 

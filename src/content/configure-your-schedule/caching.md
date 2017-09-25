@@ -14,3 +14,5 @@ parent          = "configure-your-schedule"
   - Why is caching enabled
   - Override cache with `?preview` querystring
   - Using CDN to deliver assets
+  server cache
+  browser cache

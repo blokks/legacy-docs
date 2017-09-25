@@ -30,13 +30,13 @@ name = "Design your schedule"
 weight = 5
 
 [[menu.main]]
-identifier = "create-templates"
-name = "Create templates"
+identifier = "configure-your-schedule"
+name = "Configure your schedule"
 weight = 6
 
 [[menu.main]]
-identifier = "configure-your-schedule"
-name = "Configure your schedule"
+identifier = "create-templates"
+name = "Create templates"
 weight = 7
 
 [[menu.main]]

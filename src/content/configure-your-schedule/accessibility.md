@@ -11,7 +11,7 @@ weight          = 607
 parent          = "configure-your-schedule"
 +++
 
-This enables keyboard navigation. Users can press <kbd>TAB</kbd> through the activities and hit <kbd>SPACE</kbd> or <kbd>ENTER</kbd> to select one. Pressing <kbd>L</kbd> will favorite the selected activity. 
+This enables keyboard navigation. Users can press <kbd>TAB</kbd> through the activities and hit <kbd>SPACE</kbd> or <kbd>ENTER</kbd> to select one. Pressing <kbd>L</kbd> will favorite the selected activity. Hitting <kbd>CMD + P</kbd> or <kbd>CTRL + P</kbd> will [print your schedule.]({{< relref "print.md" >}})
 
 | Option | Values | Default value |
 |--------|--------|---------------|

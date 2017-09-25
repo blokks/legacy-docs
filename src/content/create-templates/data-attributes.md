@@ -38,24 +38,30 @@ Because data-attributes are plain HTML attributes, you can use the attribute sel
 }
 
 /* Targets activities containing “keynote” category */
-.blokks-activity[data-category*=‘keynote’] {
+.blokks-activity[data-category*="keynote"] {
+}
+
+/* Targets activities containing one or more categories */
+.blokks-activity[data-category*=" "] {
 }
 ```
 
-You can use the following `data-attributes` to style you *Location* components:
+### Location attributes
+You can use the following `data-attributes` to style you [*Location*]({{< relref "basic-structure.md#location" >}}) components:
 
-| Data attribute  | Values |
+| Data attribute  | Description |
 |-----------------|--------|
-| `data-slug` | `columns` `rows` `custom` |
-| `data-categories` | `columns` `rows` `custom` |
-| `data-delay` | `columns` `rows` `custom` |
+| `data-slug` | Unique string identifying the [*Location*]({{< relref "basic-structure.md#location" >}}). Use this attribute to target a single [*Location*]({{< relref "basic-structure.md#location" >}}). |
+| `data-categories` | List of [*Location*]({{< relref "basic-structure.md#location" >}}) categories separated by spaces. Use this attribute to style [*Locations*]({{< relref "basic-structure.md#location" >}}) belonging to one or more categories. |
+| `data-delay` | Number representing the delay in milliseconds. Use this attribute to target delayed [*Locations*]({{< relref "basic-structure.md#location" >}}).  |
 
-And the ones for *Activities* are:
+### Activity attributes
+And the ones for [*Activities*]({{< relref "basic-structure.md#activity" >}}) are:
 
 | Data attribute | Values |
 |----------------|--------|
-| `data-slug` | `columns` `rows` `custom` |
-| `data-categories` | `columns` `rows` `custom` |
-| `data-delay` | `columns` `rows` `custom` |
-| `data-duration` | `columns` `rows` `custom` |
-| `data-starts-at` | `columns` `rows` `custom` |
+| `data-slug` | Unique string identifying the [*Activity*]({{< relref "basic-structure.md#activity" >}}). Use this attribute to target a single [*Activity*]({{< relref "basic-structure.md#activity" >}}). |
+| `data-categories` | List of [*Activity*]({{< relref "basic-structure.md#activity" >}}) categories separated by spaces. Use this attribute to style [*Activities*]({{< relref "basic-structure.md#activity" >}}) belonging to one or more categories. |
+| `data-delay` | Number representing the delay in milliseconds. Use this attribute to style delayed [*Activities*]({{< relref "basic-structure.md#activity" >}}). |
+| `data-duration` | Number representing the duration of the [*Activity*]({{< relref "basic-structure.md#activity" >}}) in milliseconds |
+| `data-starts-at` | Timestamp representing the start time of the [*Activity*]({{< relref "basic-structure.md#activity" >}}) |

@@ -20,6 +20,7 @@ By default Blokks uses page scrolling if it doesn’t fit your screen. In most c
 | `data-local-scroll` | `true` `false` | `false` |
 
 ### Example
+
 ```html
 <script	defer src='[path-to-embed]'
   data-blokks-id='[schedule-id]'

@@ -15,7 +15,7 @@ title = "Date selector"
 url = "http://theme/structure#date-selector"
 +++
 
-By default the [*date selector*]({{< relref "basic-structure.md#date-selector" >}}) is displayed as a *buttonbar* on desktop computers and switch to a *dropdown* menu on mobile devices. Set the `data-date-selector` option to override this default behavior.
+By default the [*Date selector*]({{< relref "basic-structure.md#date-selector" >}}) is displayed as a *buttonbar* on desktop computers and switches to a *dropdown* menu on mobile devices. Set the `data-date-selector` option to override this default behavior.
 
 | Option | Values | Default value |
 |--------|--------|---------------|

@@ -33,6 +33,7 @@ You probably won’t even notice it’s there 👌
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-layout='columns'>
 </script>
 ```

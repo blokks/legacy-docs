@@ -35,6 +35,7 @@ You can hide elements and disable features by setting one of the `data-hide-...`
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-hide-controls='true'
   data-hide-dashboard='true'
   data-hide-export='true'

@@ -11,7 +11,7 @@ weight          = 607
 parent          = "configure-your-schedule"
 +++
 
-Enables keyboard navigation. Users can press <kbd>left</kbd> and <kbd>right</kbd> to switch [*locations*]({{< relref "basic-structure.md#location" >}}), <kbd>tab</kbd> through the activities and hit <kbd>space</kbd> to select one. Pressing <kbd>L</kbd>  will favorite the selected activity. 
+This enables keyboard navigation. Users can press <kbd>TAB</kbd> through the activities and hit <kbd>SPACE</kbd> or <kbd>ENTER</kbd> to select one. Pressing <kbd>L</kbd> will favorite the selected activity. 
 
 | Option | Values | Default value |
 |--------|--------|---------------|
@@ -21,6 +21,7 @@ Enables keyboard navigation. Users can press <kbd>left</kbd> and <kbd>right</kbd
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-accessibility='false'>
 </script>
 ```

@@ -33,7 +33,7 @@ Embedding your schedule requires you to insert three small code snippets:
 The first one is a `<link>` to a template file and it’s placed in the `<head>` of your page. If you've [created your own template](http://themes/intro) just replace the `href` value with a link to your own CSS file.
 
 ```html
-<link href='https://themes.blokks.co/default/1.0.0/columns.css' rel='stylesheet'>
+<link href='https://themes.blokks.co/...' rel='stylesheet'>
 ```
 
 ## Container

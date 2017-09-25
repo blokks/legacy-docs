@@ -23,6 +23,4 @@ title = "Structure"
 url = "http://themes/structure#navigation"
 +++
 
-Your visitors can [print the schedule](http://embed/printing), including their favorites by clicking the [print button](http://themes/navigation#options) or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd></span>
-
-The print version of the schedule has a standard layout and styling (which can't be adjusted). 
+Your visitors can [print their schedule](http://embed/printing), including their favorites by clicking the [print button](http://themes/navigation#options) or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd></span>. The print version of the schedule has standard layout and styling. 

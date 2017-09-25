@@ -25,38 +25,36 @@ The syntax for CSS variables is pretty straightforward:
 
 ```css
 :root {
-  --blokks-theme-color: purple;
+  --blokks-theme-color: rebeccapurple;
 }
 ```
 
-In the above example `--blokks-theme-color` is a Blokks defined property with a value of `purple`. You should note that all CSS variables are prefixed with **\-\-blokks**. Adding the above code to your page will change the main color of the embed to `purple`.
+In the above example `--blokks-theme-color` is a Blokks defined property with a value of `rebeccapurple`. Adding the above code to your page will change the main color of the embed to `rebeccapurple`.
 
-<span class='note'>You should note that *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
+<span class='note'>Note: all CSS variables are prefixed with **\-\-blokks**. Also, *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
 
 ![Image: Changing theme color using CSS variables](https://blokks.co/docs/images/rebeccapurple.png)
 
 Below you will find the complete list of colors which you can change with *CSS variables.*
 
-| Background colors | Description |
-|-------------------|-------------|
+| Background color | Description |
+|------------------|-------------|
 | `--blokks-theme-color` | The theme color is used for favorites, hovers, highlighted text and titles. The default value is `#2e8cd2` |
 | `--blokks-default-background-color` | The `background-color` used by the embed. The default value is `#fff` |
-| `--blokks-dashboard-background-color` | The `background-color` used for the [dashboard](http://blokks). The default value is `#33363b` |
-| `--blokks-time-indicator-background-color` | The `background-color` used for the [time indicator](http://plc). The default value is `#33363b` |
-| `--blokks-modal-background-color` | The `background-color` used for modals like the [activity details](http://blokks). The default value is `#fff` |
-| `--blokks-image-background-color` | The `background-color` used when a [poster image](http://blokks) is not yet loaded. The default value is `#33363b` |
-| `--blokks-dimmed-background-color` | The `background-color` used when an activity does not match the category selected with the [category filter](http://). The default value is `#abb1bc` |
+| `--blokks-dashboard-background-color` | The `background-color` used for the [*Dashboard*](http://blokks). The default value is `#33363b` |
+| `--blokks-time-indicator-background-color` | The `background-color` used for the [*Time Indicator*](http://plc). The default value is `#33363b` |
+| `--blokks-modal-background-color` | The `background-color` used for modals like the [*Activity Details*](http://blokks). The default value is `#fff` |
+| `--blokks-image-background-color` | The `background-color` used when a [*Poster Image*](http://blokks) is not yet loaded. The default value is `#33363b` |
+| `--blokks-dimmed-background-color` | The `background-color` used when an activity does not match the category selected with the [*Category Filter*](http://). The default value is `#abb1bc` |
 
-| Text colors | Description |
-|-------------|-------------|
+| Text color | Description |
+|------------|-------------|
 | `--blokks-default-text-color` | The default text `color`. The default value is `#33363b` |
 | `--blokks-light-text-color` | The light text `color` is used in the schedule. The default value is `#fff` |
 | `--blokks-dimmed-text-color` | Dimmed text `color` is used for metadata and when activities have ended. The default value is `#989da8` |
 
-| Other colors | Description |
-|--------------|-------------|
+| Misc color | Description |
+|------------|-------------|
 | `--blokks-stroke-color` | The color that is used for button borders. The default value is `#989da8` |
 | `--blokks-default-icon-color` | Default `fill` color used for [icons](http://icons). The default value is `#33363b` |
 | `--blokks-light-icon-color` | Light `fill` color used for [icons](http://icons) on darker backgrounds. The default value is `#abb1bc` |
-
-<span class='note'>You should note that CSS variables are case sensitive. For example, `--blokks-theme-color` and `--Blokks-Theme-Color` are different variables.</span>

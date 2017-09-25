@@ -43,7 +43,7 @@ title = "Sitepoint: The Power of em Units in CSS"
 url = "https://www.sitepoint.com/power-em-units-css/"
 +++
 
-After you've [added your fonts](#), your schedule should match the identity of your conference or festival a lot better. But you may have noticed that by changing `--blokks-default-font` some properties, for example `font-size`, need some adjusting.
+After you've [added your fonts]({{< relref "add-own-fonts.md" >}}), your schedule should match the identity of your conference or festival a lot better. But you may have noticed that by changing `--blokks-default-font` some properties, for example `font-size`, need some adjusting.
 
 ## Font scaling
 Blokks uses `em` units to define its font sizes. This means that all sizes are relative to its parent element, in our case the *embed root*. So, to change all `font-sizes` at once you can simply set the `--blokks-font-scale` variable:
@@ -88,12 +88,17 @@ If you want to target individual elements we need to [target the text with CSS s
 }
 ```
 
-<span class='note'>Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. Read more on how to solve this [here](http://themes/bem).</span>
+<span class='note'>Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. [Read more on how to solve this here.](http://themes/bem)</span>
 
-<span class='note'>Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity." Basically this means that you should add the `<style>` tag after the Blokks import. For example:</span>
+<span class='note'>Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity."</span>
+
+<span class='note'>Basically this means that you should add the `<style>` tag after the Blokks import. For example:</span>
 
 ```html
-<link href='columns.css' rel='stylesheet' media=‘screen’>
+<!-- Link to the Blokks theme -->
+<link href='schedule.css' rel='stylesheet' media=‘screen’>
+
+<!-- Add your own styling -->
 <style>
   .blokks-location__title {
     font-size: 2em;
@@ -102,4 +107,7 @@ If you want to target individual elements we need to [target the text with CSS s
     text-decoration: underline;
   }
 </style>
+
+<!-- Or link to your own stylesheet -->
+<link href='custom.css' rel='stylesheet' media=‘screen’>
 ```

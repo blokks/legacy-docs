@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Animations"
 description     = "The schedule is split into smaller, independent pieces called components."
 keywords        = ["blokks", "templates", "themes", "structure", "layout"]
-weight          = 507
+weight          = 508
 
 [menu.main]
 parent          = "create-templates"

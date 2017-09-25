@@ -24,8 +24,8 @@ Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use 
 | Column properties | Description |
 |-------------------|-------------|
 | **--blokks-table-header-height** | Sets the height of the location title. The default value is `auto` |
-| **--blokks-table-cell-height** | Sets the height of a single timeslot. The default value is `100px` |
-| **--blokks-table-column-width** | Sets the width of a single location. The default value is `265px` |
+| **--blokks-table-cell-height** | Sets the height of a single timeslot/tablecell. The default value is `100px` |
+| **--blokks-table-column-width** | Sets the width of a single [*Location*]({{< relref "basic-structure.md#location" >}}). The default value is `265px` |
 | **--blokks-time-captions-width** | Sets the width of the sidebar represented by the sidebar. The default value is `60px` 
 
 | Row properties | Description |
@@ -36,4 +36,4 @@ Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use 
 | **--blokks-time-captions-height** | Sets the height of the time captions represented the top bar. The default value is `30px` |
 
 ## Timescale
-Sometimes changing the width or height of elements is not sufficient. Some acts are too small while others are too big. This is where the `data-timescale` option comes in. Basically, the *timescale* sets the duration of a single timeslot. [Read more](http://configure/options#timescale) about timescale and how to use it.
+Sometimes changing the width or height of elements is not sufficient. Some acts are too small while others are too big. This is where the [`data-timescale`]({{< relref "time-scale.md" >}}) option comes in. Basically, the timescale option sets the duration of a single timeslot/tablecell. [Read more about timescale and how to use it]({{< relref "time-scale.md" >}}).

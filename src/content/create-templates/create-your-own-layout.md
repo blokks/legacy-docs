@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Create your own layout"
 description     = "The schedule is split into smaller, independent pieces called components."
 keywords        = ["blokks", "templates", "themes", "structure", "layout"]
-weight          = 506
+weight          = 509
 
 [menu.main]
 parent          = "create-templates"

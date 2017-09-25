@@ -40,7 +40,7 @@ url = "MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using
 +++
 
 ## Desktop
-On desktop, the embed has two layouts: the first direction being the **column layout** where stages are arranged horizontally. This is the default direction of the embed. The second is the **row layout** where stages are stacked vertically.
+On desktop, the embed has two layouts: the first direction being the *column* layout where stages are arranged horizontally. This is the default direction of the embed. The second is the *row layout* where stages are stacked vertically.
 
 ![Image: Row vs. column layout](https://blokks.co/docs/images/rowsandcolumns.gif)
 
@@ -48,7 +48,6 @@ You can change the layout direction at any time by switching the layout in the [
 
 ```html
 <script defer src='https://themes.blokks.co/...'
-  data-blokks-id='1'
   data-layout='rows'>
 </script>
 ```
@@ -60,12 +59,10 @@ On mobile devices your schedule is automatically shown in a list view. However, 
 
 ![Image: Portrait vs. landscape mode](https://blokks.co/docs/images/animation.gif)
 
-The default breakpoint for switching between mobile and desktop view is **480px** or **16em**. This works best for support on all devices. If needed, you [change this value](http://configure/breakpoints).
+The default breakpoint for switching between mobile and desktop view is **480px** or **16em**. This works best on all devices. If needed, you can [change this value](http://configure/breakpoints).
 
-For events with a lot of stages and acts this list can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the [*dashboard*](http://design/dashboard):
+For events with a lot of stages and acts this list can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the [*dashboard*](http://design/dashboard). The dashboard is a summary of acts that are playing now and coming up next. Read more about the dashboard in [this section](http://themes/structure#dashboard).
 
 ![Image: Mobile dashboard](http://dashboard.png)
-
-The dashboard is a summary of acts that are playing now and coming up next. Read more about the dashboard in [this section](http://themes/structure#dashboard).
 
 <span class='note'>If you are [creating your own template](http://themes/intro) and don’t want to use the column or row layout, set the `data-layout` property to **custom**.</span>

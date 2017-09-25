@@ -5,10 +5,15 @@ author          = "@patrickpietens"
 title           = "Pseudo elements"
 description     = "The schedule is split into smaller, independent pieces called components."
 keywords        = ["blokks", "templates", "themes", "structure", "layout"]
-weight          = 508
+weight          = 507
 
 [menu.main]
 parent          = "create-templates"
+
+[[related]]
+title = "Data attributes"
+url = "data-attributes.md"
+
 
 [[related]]
 title = "Browser support"

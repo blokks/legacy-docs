@@ -102,10 +102,10 @@ This will merge all the SVGs into one file named **icon-set.svg**.
 There's just one thing left to do: tell the embed to use our new iconset. Simply add a link pointing to the iconset to the `<head>` of your page, like so:
 
 ```html
-<link href='http://yourserver.com/icons.svg' blokks-icons>
+<link href='icons.svg' blokks-icons>
 ```
 
-Make sure you replace `http://yourserver.com/icons.svg` with the location of your iconset. And that’s all there is to it!
+Make sure you replace `icons.svg` with the location of your iconset. And that’s all there is to it!
 
 ## Styling SVGs
 Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size. For example, here's how you can resize the close icon to `50px` of the *Activity details* component:

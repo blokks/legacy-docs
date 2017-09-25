@@ -36,7 +36,7 @@ url = "https://typekit.com/"
 +++
 
 ## System fonts
-Changing the font used in your schedule works the same way as [changing colors]({{< relref "change-colors.md" >}}), by using *CSS custom properties*, or *CSS variables*. For example, the following snippet will demonstrate how to use **Helvetica Neue** instead of **Blokks Sans**, which is Blokks' default font.
+Changing the font used in your schedule works the same way as [changing colors]({{< relref "change-colors.md" >}}), by using *CSS variables*. For example, the following snippet will demonstrate how to use **Helvetica Neue** instead of **Blokks Sans**, which is Blokks' default font.
 
 ```css
 :root {
@@ -53,6 +53,7 @@ Luckily we can import fonts from [Google Fonts](https://fonts.google.com/), [Ado
 When using [Google Fonts](https://fonts.google.com/), paste the following snippet into the **\<head\>** of your HTML page. In this example, we're importing **Roboto** as our font.
 
 ```html
+<!-- Add this to the head of your page -->
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 ```
 
@@ -70,6 +71,7 @@ To use this font in your schedule, simply change the value of this *CSS variable
 Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from using Google Fonts. To start, paste the following snippet into the **\<head\>** of your HTML page.
 
 ```html
+<!-- Add this to the head of your page -->
 <script src='https://use.typekit.net/hjy6zgg.js'></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 ```

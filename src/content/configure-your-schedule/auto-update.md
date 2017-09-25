@@ -11,8 +11,7 @@ weight          = 614
 parent          = "configure-your-schedule"
 +++
 
-If `data-auto-update` is enabled, the schedule updates after the user returns to your page and every 5 minutes of inactivity. When signed in, favorites are updated as well. Auto updating makes sure that your schedule and favorites are always in sync, whether it’s shown on desktop, mobile or on a big screen.
-
+If `data-auto-update` is enabled, the schedule updates after the user returns to your page and every 5 minutes of inactivity. When signed in, [favorites]({{< relref "favorites.md" >}}) are updated as well. This makes sure that your schedule and favorites are always in sync, whether it’s shown on desktop, mobile or on a big screen.
 
 | Option | Values | Default value |
 |--------|--------|---------------|

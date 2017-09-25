@@ -21,6 +21,7 @@ If `data-auto-update` is enabled, the schedule updates after the user returns to
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-auto-update='false'>
 </script>
 ```

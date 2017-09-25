@@ -11,4 +11,17 @@ weight          = 609
 parent          = "configure-your-schedule"
 +++
 
-The `data-time-scale` option sets the duration of one table cell.
+The `data-time-scale` option sets the duration of a single table cell. You can use this together with [CSS variables]({{< relref "update-rows-and-columns.md" >}}) to change the height and width of [*Activities*]({{< relref "basic-structure.md#activity" >}}). The `data-time-scale` is set in seconds, so that a value of `3600` equals an hour. `1800` Seconds equals half an hour etc.
+
+| Option | Values | Default value |
+|--------|--------|---------------|
+| `data-time-scale` | `integer` | `1800`|
+
+### Example
+
+```html
+<script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
+  data-time-scale='900'>
+</script>
+```

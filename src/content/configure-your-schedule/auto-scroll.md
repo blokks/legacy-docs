@@ -31,6 +31,7 @@ When enabled, the [*time indicator*]({{< relref "basic-structure.md#time-indicat
 
 ```html
 <script	defer src='[path-to-embed]'
+  data-blokks-id='[schedule-id]'
   data-auto-scroll='false'>
 </script>
 ```

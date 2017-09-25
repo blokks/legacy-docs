@@ -26,6 +26,6 @@ An [*Activity*]({{< relref "basic-structure.md#actvity" >}}) is automatically po
 ```html
 <script	defer src='schedule.js'
   data-blokks-id='[schedule-id]'
-  data-position-activities='false'>
+  data-layout-activities='false'>
 </script>
 ```

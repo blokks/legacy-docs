@@ -19,7 +19,7 @@ title = "Configure your schedule: Browser support"
 url = "http://browsersupport#customproperties"
 +++
 
-Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use *CSS variables* to adjust the size of rows and columns of your schedule. These CSS variables are:
+Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use *CSS variables* to update the size of rows and columns of your schedule. These CSS variables are:
 
 | Column properties | Description |
 |-------------------|-------------|

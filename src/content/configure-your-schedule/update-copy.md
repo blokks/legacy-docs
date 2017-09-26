@@ -6,6 +6,7 @@ title           = "Update copy"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "copy"]
 weight          = 608
+draft			= true
 
 [menu.main]
 parent          = "configure-your-schedule"

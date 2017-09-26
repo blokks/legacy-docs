@@ -6,6 +6,7 @@ title           = "Offline"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "offline", "service workers"]
 weight          = 616
+drafte 			= true
 
 [menu.main]
 parent          = "configure-your-schedule"

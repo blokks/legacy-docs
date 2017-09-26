@@ -15,7 +15,7 @@ title = 'Hide elements'
 url = 'hide-elements.md'
 +++
 
-Some of your visitors are oldschool and prefer a printed version over 
+Some of your visitors prefer a printed version of the schedule. Blokks comes with a default print theme which cannot be styled. You can however set the print orientation to `landscape` or `portrait` mode. By default Blokks captures the <kbd>CMD + P</kbd> or <kbd>CTRL + P</kbd> keys.
 
 | Option | Values | Default value |
 |--------|--------|---------------|

@@ -15,7 +15,7 @@ The `data-time-scale` option sets the duration of a single table cell. You can u
 
 | Option | Values | Default value |
 |--------|--------|---------------|
-| `data-time-scale` | `integer` | `1800`|
+| `data-time-scale` | *integer* | `1800`|
 
 ### Example
 

@@ -19,28 +19,28 @@ You can change the way dates are displayed by setting `data-date-format`. It tak
 
 | Day of the week |   |
 |-----------------|---|
-| `dd` | Su Mo ... Fr Sa |
-| `ddd`	| Sun Mon ... Fri Sat |
-| `dddd` | Sunday Monday ... Friday Saturday |
+| *dd* | Su Mo ... Fr Sa |
+| *ddd*	| Sun Mon ... Fri Sat |
+| *dddd* | Sunday Monday ... Friday Saturday |
 
 | Day of the month |   |
 |------------------|---|
-| `D` | 1 2 ... 30 31 |
-| `Do` | 1st 2nd ... 30th 31st |
-| `DD` | 01 02 ... 30 31 |
+| *D* | 1 2 ... 30 31 |
+| *Do* | 1st 2nd ... 30th 31st |
+| *DD* | 01 02 ... 30 31 |
 
 | Month |   |
 |-------|---|
-| `M` | 1 2 ... 11 12 |
-| `Mo` | 1st 2nd ... 11th 12th |
-| `MM` | 01 02 ... 11 12 |
-| `MMM` | Jan Feb ... Nov Dec |
-| `MMMM` | January February ... November December |
+| *M* | 1 2 ... 11 12 |
+| *Mo* | 1st 2nd ... 11th 12th |
+| *MM* | 01 02 ... 11 12 |
+| *MMM* | Jan Feb ... Nov Dec |
+| *MMMM* | January February ... November December |
 
 | Year |   |
 |------|---|
-| `YY` | 70 71 ... 29 30 |
-| `YYYY` | 1970 1971 ... 2029 2030 |
+| *YY* | 70 71 ... 29 30 |
+| *YYYY* | 1970 1971 ... 2029 2030 |
 
 ### Example
 

@@ -25,15 +25,19 @@ These styles are injected to the `<head>` of your document. The styling is minim
 
 You probably won’t even notice it’s there 👌
 
+<span class='note'>Note: Blokks automatically switches to a mobile view when viewed on a smaller devices. The breakpoint is `30em` or `480px`. You can change this value by setting `data-breakpoint`.</span>
+
 | Option | Values | Default value |
 |--------|--------|---------------|
-| `data-layout` | `columns` `rows` `custom` | `columns`|
+| `data-breakpoint` | *string* | `30em` |
+| `data-layout` | `columns` `rows` `custom` | `columns` |
 
 ### Example
 
 ```html
 <script	defer src='[path-to-embed]'
   data-blokks-id='[schedule-id]'
+  data-breakpoint='20em'
   data-layout='columns'>
 </script>
 ```

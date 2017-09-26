@@ -20,8 +20,10 @@ A complete list of options you can use:
 | `data-auto-measure-size` | `true` `false` | `true` |
 | `data-auto-scroll` | `true` `false` | `true`|
 | `data-auto-update` | `true` `false` | `true`|
-| `data-date-format` | `string` | `DD MMMM`|
+| `data-breakpoint` | *string* | `30em`|
+| `data-date-format` | *string* | `DD MMMM`|
 | `data-date-selector` | `auto` `buttons` `dropdown` | `auto` |
+| `data-disable-tracking` | `true` `false` | `true`|
 | `data-hide-controls` | `true` `false` | `false` |
 | `data-hide-dashboard` | `true` `false` | `false` |
 | `data-hide-export` | `true` `false` | `false` |
@@ -34,7 +36,8 @@ A complete list of options you can use:
 | `data-local-scroll` | `true` `false` | `false` |
 | `data-prevent-default-print` | `true` `false` | `false` |
 | `data-print-orientation` | `landscape` `portrait` | `portrait` |
+| `data-render-empty-timeslots` | `true` `false` | `true` |
 | `data-social-provider` | `facebook` `twitter` `linkedin` | `facebook` |
 | `data-testflight` | `true` `false` | `false` |
-| `data-time-format` | `string` | `HH:mm`|
-| `data-time-scale` | `integer` | `1800`|
+| `data-time-format` | *string* | `HH:mm`|
+| `data-time-scale` | *integer* | `1800`|

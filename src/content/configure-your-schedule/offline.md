@@ -5,8 +5,8 @@ author          = "@patrickpietens"
 title           = "Offline"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "offline", "service workers"]
-weight          = 616
-drafte 			= true
+weight          = 617
+draft 			= true
 
 [menu.main]
 parent          = "configure-your-schedule"

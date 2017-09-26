@@ -120,11 +120,11 @@
         width: 100%;
         border-spacing: 0;
         border-collapse: separate;
-        table-layout: fixed;
     }
 
     th {
         @mixin article-thead;
+        white-space: nowrap;
         border-bottom: 1px solid var(--default-stroke-color);
     }
 
@@ -138,64 +138,32 @@
     }
 
     th:first-child {
-        @media (--smallest), (--small) {
-            padding: 10px 10px 10px 0;
-        }
-
-        @media (--default) {
-            padding: 10px 20px 10px 0;
-        }
+        padding: 10px 10px 10px 0;
     }
 
-
     th:last-child {
-        @media (--smallest), (--small) {
-            padding: 10px 0 10px 10px;
-        }
-
-        @media (--default) {
-            padding: 10px 0 10px 20px;
-        }
+        padding: 10px 0 10px 10px;
     }
 
     th:not(:first-child):not(:last-child) {
-        @media (--smallest), (--small) {
-            padding: 10px;
-        }
-
-        @media (--default) {
-            padding: 10px 20px;
-        }
+        padding: 10px;
     }
 
     td:first-child {
-        @media (--smallest), (--small) {
-            padding: 13px 10px 13px 0;
-        }
+        padding: 10px 10px 10px 0;
+        white-space: nowrap;
+    }
 
-        @media (--default) {
-            padding: 13px 10px 13px 0;
-        }
+    td:not(:first-child) {
+       width: 100%;
     }
 
     td:last-child {
-        @media (--smallest), (--small) {
-            padding: 13px 0 13px 10px;
-        }
-
-        @media (--default) {
-            padding: 13px 0 13px 20px;
-        }
+        padding: 10px 0 10px 10px;
     }
 
     td:not(:first-child):not(:last-child) {
-        @media (--smallest), (--small) {
-            padding: 13px 10px;
-        }
-
-        @media (--default) {
-            padding: 13px 10px;
-        }
+        padding: 10px;
     }
 
     pre > code {
@@ -310,4 +278,14 @@
     pre + p {
         margin: 35px 0 20px;
     }
+}
+
+#date-format {
+    th:first-child {
+        width: 130px;
+    }
+
+    td:last-child {
+        width: auto;
+    }    
 }

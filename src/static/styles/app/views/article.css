@@ -280,7 +280,8 @@
     }
 }
 
-#date-format {
+#date-format,
+#time-format {
     th:first-child {
         width: 130px;
     }

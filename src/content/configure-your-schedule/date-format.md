@@ -4,12 +4,18 @@ author          = "@patrickpietens"
 
 title           = "Date format"
 description     = ""
-keywords        = ["blokks", "configure", "schedule", "embed", "layout", "trashing"]
+keywords        = ["blokks", "configure", "schedule", "embed", "date", "format"]
 weight          = 609
 
 [menu.main]
 parent          = "configure-your-schedule"
+
+[[related]]
+title = "Time format"
+url = "time-format.md"
 +++
+
+You can change the way dates are displayed by setting `data-date-format`. It takes a string of tokens and replaces them with their corresponding values:
 
 | Day of the week |   |
 |-----------------|---|
@@ -41,7 +47,6 @@ parent          = "configure-your-schedule"
 ```html
 <script	defer src='[path-to-embed]'
   data-blokks-id='[schedule-id]'
-  data-date-format='Do MMM'
-  data-date-time='H:m a'>
+  data-date-format='Do MMM'>
 </script>
 ```

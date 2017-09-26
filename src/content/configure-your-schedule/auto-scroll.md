@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Auto scroll"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "scrolling"]
-weight          = 612
+weight          = 613
 
 [menu.main]
 parent          = "configure-your-schedule"

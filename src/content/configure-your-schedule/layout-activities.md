@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Layout activities"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed"]
-weight          = 610
+weight          = 611
 
 [menu.main]
 parent          = "configure-your-schedule"

@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Accessibility"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "accessibility"]
-weight          = 607
+weight          = 609
 
 [menu.main]
 parent          = "configure-your-schedule"

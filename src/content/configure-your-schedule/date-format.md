@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Date format"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "date", "format"]
-weight          = 609
+weight          = 607
 
 [menu.main]
 parent          = "configure-your-schedule"

@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Local scroll"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "local", "scroll"]
-weight          = 613
+weight          = 614
 
 [menu.main]
 parent          = "configure-your-schedule"

@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Measure activities"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "embed", "measure", "size"]
-weight          = 611
+weight          = 612
 
 [menu.main]
 parent          = "configure-your-schedule"

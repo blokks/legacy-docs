@@ -5,7 +5,7 @@ author          = "@patrickpietens"
 title           = "Time scale"
 description     = ""
 keywords        = ["blokks", "configure", "schedule", "time", "sclaing"]
-weight          = 609
+weight          = 610
 
 [menu.main]
 parent          = "configure-your-schedule"

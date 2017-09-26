@@ -19,7 +19,7 @@ title = "Hide time indicator"
 url = "hide-elements.md"
 +++
 
-When enabled, the [*time indicator*]({{< relref "basic-structure.md#time-indicator" >}}) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
+When enabled, the [time indicator]({{< relref "basic-structure.md#time-indicator" >}}) is automatically scrolled into view, showing speakers and bands that are now playing. This option works on desktop and only during days of the event.
 
 <span class='note'>Sometimes this feature can be cumbersome though. For example, when your schedule is embedded on a one-page website. In that case you simply don’t want to auto scroll the page.</span>
 

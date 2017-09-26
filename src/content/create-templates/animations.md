@@ -2,8 +2,8 @@
 date            = "2017-09-15T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Animations"
-description     = "The schedule is split into smaller, independent pieces called components."
+title           = "Animation"
+description     = "The animation property can be used to animate any CSS property such as color, background-color, width, height, etc."
 keywords        = ["blokks", "templates", "themes", "structure", "layout"]
 weight          = 507
 
@@ -31,7 +31,7 @@ title = "Chrome: Inspect animations"
 url = "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations"
 +++
 
-The `animation` property can be used to animate any CSS properties such as `color`, `background-color`, `width`, `height`, etc. Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
+The `animation` property can be used to animate any CSS property such as `color`, `background-color`, `width`, `height`, etc. Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
 
 ```css
 .element {
@@ -47,20 +47,20 @@ The `animation` property can be used to animate any CSS properties such as `colo
 ```
 
 ## Animating modals & alerts
-The [*Activity Details*]({{< relref "basic-structure.md#activity-details" >}}) components and all alerts use this technique to present themselves. To replace the animation with another one you only need to update the start value of the `transform` property. 
+The [Activity Details]({{< relref "basic-structure.md#activity-details" >}}) components and all alerts animate in when they appear. To replace the animation with another one, you only need to update the start value of the `transform` property. 
 
-For example, make it bounce into screen:
+For example, here's how to make the modal bounce onto the screen:
 
 ```css
 .element {
   transform: scale3d(0.9, 0.9, 1);
 }
 ```
-You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. [Read more about animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
+You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. 
+
+Find out [more about CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) in the MDN documentation.
 
 ![Image: Animating modals & alerts](http://animating-modals.gif)
 
 ## Animating other elements
-Modals and alerts are currently the only components which are presented with an animation. But this doesn’t mean that you are limited to those components. Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule with all kinds of animations. 
-
-So let yourself go.
+Modals and alerts are currently the only components that have animation. But this doesn’t mean that you are limited to just those components. Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule with all kinds of animations. Feel free to add animation to your schedule!

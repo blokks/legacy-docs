@@ -8,3 +8,6 @@ src/.layouts
 
 node_modules/*
 !node_modules/app
+package-lock.json
+*.json
+package-lock.json

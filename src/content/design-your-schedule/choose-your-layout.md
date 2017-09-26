@@ -2,7 +2,7 @@
 date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Choose your layout"
+title           = "Layout"
 description     = "On desktop, the embed has two layouts: a column layout and a row layout. On mobile, the schedule is shown in a list view."
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 403
@@ -27,12 +27,8 @@ title = "More configuration options"
 url = "http://configure"
 
 [[related]]
-title = "Setting default breakpoint"
+title = "Setting the default breakpoint"
 url = "http://theme/breakpoint"
-
-[[related]]
-title = "Browser support"
-url = "http://browsersupport"
 
 [[related]]
 title = "Using media queries"
@@ -44,7 +40,7 @@ On desktop, the embed has two layouts: the first direction being the **column la
 
 ![Image: Row vs. column layout](https://blokks.co/docs/images/rowsandcolumns.gif)
 
-You can change the layout direction at any time by switching the layout in the [*embed tab*]({{< relref "configure-your-embed.md" >}}) of our backend or by setting it manually with the **data-layout** option:
+You can change the layout direction at any time by switching the layout in the [embed tab]({{< relref "configure-your-embed.md" >}}) of our backend or by setting it manually with the **data-layout** option:
 
 ```html
 <script defer src='https://themes.blokks.co/...'
@@ -62,10 +58,10 @@ On mobile devices your schedule is automatically shown in a list view. However, 
 
 The default breakpoint for switching between mobile and desktop view is **480px** or **16em**. This works best for support on all devices. If needed, you [change this value](http://configure/breakpoints).
 
-For events with a lot of stages and acts this list can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the [*dashboard*](http://design/dashboard):
+For events with a lot of stages and acts this list can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the [dashboard](http://design/dashboard):
 
 ![Image: Mobile dashboard](http://dashboard.png)
 
 The dashboard is a summary of acts that are playing now and coming up next. Read more about the dashboard in [this section](http://themes/structure#dashboard).
 
-<span class='note'>If you are [creating your own template](http://themes/intro) and don’t want to use the column or row layout, set the `data-layout` property to **custom**.</span>
+<span class='note'>Note: If you are [creating your own template](http://themes/intro) and don’t want to use the column or row layout, set the `data-layout` property to **custom**.</span>

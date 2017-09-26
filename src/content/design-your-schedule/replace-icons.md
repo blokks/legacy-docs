@@ -11,8 +11,8 @@ weight          = 408
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Configure your embed"
-url = "http://configure/options#icon-set"
+title = "MDN: SVG and CSS"
+url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
 
 [[related]]
 title = "Github: SVGO Sketch Plugin"
@@ -21,10 +21,6 @@ url = "https://github.com/BohemianCoding/svgo-compressor"
 [[related]]
 title = "Github: SVGO Illustrator Plugin"
 url = "https://github.com/davidderaedt/SVG-NOW"
-
-[[related]]
-title = "MDN: SVG and CSS"
-url = "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS"
 
 [[related]]
 title = "CSS-Tricks: Icon System with SVG Sprites"
@@ -104,9 +100,9 @@ And that’s all there is to it!
 TODO: Stukje over hoe icons vervangen moeten worden
 
 ## Styling SVGs
-Replacing icons can cause them to be too big or too small. Similar to [changing the fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and change its size.
+Replacing icons can cause them to be too big or too small. Similar to [changing fonts](http://design/fonts), we can fix this by selecting the icon in the *Developers Tools* and changing its size.
 
-For example, here's how you can resize the close icon to `50px` of the *Activity details* component:
+For example, here's how you can resize the close icon from the *Activity details* component to `50px`:
 
 ```css
 .blokks-activity-details__close-button .svg-icon {

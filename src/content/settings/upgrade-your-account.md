@@ -15,10 +15,6 @@ title = "Team members"
 url = "http://settings/team"
 
 [[related]]
-title = "Cache"
-url = "http://configure/cache"
-
-[[related]]
 title = "Trial bar"
 url = "http://embed/trial"
 +++

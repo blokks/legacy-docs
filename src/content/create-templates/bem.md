@@ -3,7 +3,7 @@ date            = "2017-09-15T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Block, Element, Modifier"
-description     = "The schedule is split into smaller, independent pieces called components."
+description     = "Blokks uses a simple naming convention for CSS classes, called Block, Element, Modifier, or simply BEM."
 keywords        = ["blokks", "templates", "themes", "structure", "naming conventions", "bem", "conflicts"]
 weight          = 504
 
@@ -35,9 +35,9 @@ title = "Github: PostCSS plugin implementing BEM as at-rules"
 url = "https://github.com/kezzbracey/postcss-bem"
 +++
 
-Now that you’re familiar with [the structure of the schedule]({{< relref "basic-structure.md" >}}) we can have a look at the clasnames of its elements. Blokks uses a simple naming convention thought up by the guys at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
+Now that you’re familiar with the [structure of the timetable embed]({{< relref "basic-structure.md" >}}), we can have a look at the class names of its elements. Blokks uses a simple naming convention, invented by the guys at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
 
-BEM provides a way to arrange your CSS classes into modules or components. Basically it follows this pattern:
+BEM provides a way to arrange your CSS classes into modules or components. Basically, it follows this pattern:
 
 ```css
   /* Represents the higher level of an abstraction or component. */
@@ -53,10 +53,10 @@ BEM provides a way to arrange your CSS classes into modules or components. Basic
   }
 ```
 
-Although BEM may look weird at first with all its *_\_*, *-\-* and long classnames. You should trust us, it's worth it. Visit [the official BEM website](http://getbem.com/naming/) if you want learn more.
+Although BEM may look weird at first, with all its *_\_*, *-\-* and long classnames, it's worth it. Visit [the official BEM website](http://getbem.com/naming/) if you want learn more.
 
 ## CSS Specificity
-If multiple CSS selectors are targeting the same HTML element and are trying to assign the same property, the selector with the highest CSS specificity value will “win”. In other words, the most specific selector gets to assign its property values to the target element: 
+If multiple CSS selectors are targeting the same HTML element and are trying to assign the same property, the selector with the highest CSS specificity value will 'win'. In other words, the most specific selector gets to assign its property values to the target element: 
 
 ```css
 #main .header > h1 {
@@ -71,20 +71,18 @@ If multiple CSS selectors are targeting the same HTML element and are trying to 
 
 In this case `#main .header > h1` is more specific than `.header h1.title`. So the text in `<h1 class=“title”>` is shown in `Helvetica` and `rebeccapurple`. 
  
-Although the example is easy to understand, you can imagine that more specific selectors like this adds complexity which can lead to conflicts and unwanted styling. 
+Although the example is easy to understand, you can imagine that more specific selectors can add complexity which can lead to conflicts and unwanted styling. 
 
-BEM reduces style conflicts by keeping specificity to a minimum. With BEM, specificity is determined only by the order of the CSS rules. Rules which are defined later have higher precedence over those defined earlier. 
-
-So add your `<style>` or `<link>` tag after the Blokks import and you’re good to go. That’s it ✌️ 
+This is where BEM comes in. BEM reduces style conflicts by keeping specificity to a minimum. With BEM, specificity is determined only by the order of the CSS rules. Rules which are defined later, have higher precedence over those defined earlier. So make sure to add your `<style>` or `<link>` tag after the Blokks import.
 
 ## CSS Scoping
-In addition to [reducing specificity]({{< relref "bem.md#css-specificity">}}), BEM provides a scope by using unique CSS classes per element. Together with prefixing classes with `.blokks` it avoids conflicts with your existing classnames.
+In addition to reducing specificity, BEM provides a scope by using unique CSS classes for each element. Together with prefixing classes with `.blokks`, it avoids conflicts with your existing classnames.
 
-Unfortunately there are two exceptions which still can cause conflicts with your website’s styling: the `!important` rule and *type selectors*.
+Unfortunately there are two exceptions that still could cause conflicts with your website’s styling: the `!important` rule and *type selectors*.
 
-In general the `!important` rule is bad practice and should be avoided at all time:
+In general, the `!important` rule is bad practice and should be avoided at all times:
 
-> When an important rule is used on a style declaration, this declaration overrides any other declarations. Although technically `!important` has nothing to do with specificity, it interacts directly with it. Using `!important`, however, is bad practice and should be avoided because it makes debugging more difficult by breaking the natural cascading in your stylesheets. Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception)
+> When an important rule is used on a style declaration, this declaration overrides any other declarations. Although technically !important has nothing to do with specificity, it interacts directly with it. Using !important however, is bad practice and should be avoided because it makes debugging more difficult by breaking the natural cascading in your stylesheets. Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception)
 
 CSS type selectors match elements by node name. A type selector for a particular element selects all elements of that type. For example, this selector underlines all `<p>` tags:
 
@@ -94,4 +92,4 @@ p {
 }
 ```
 
-Although type selectors adds just little bit of specificity it can add unwanted styling because of the cascading nature of CSS. It’s recommended to apply styles by unique CSS classes instead of your page structure.
+Although type selectors add just little bit of specificity, it can add unwanted styling because of the cascading nature of CSS. It’s recommended to apply styles by unique CSS classes instead of your page structure.

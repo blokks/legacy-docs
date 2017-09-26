@@ -3,7 +3,7 @@ date            = "2017-09-15T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Pseudo elements"
-description     = "The schedule is split into smaller, independent pieces called components."
+description     = "With pseudo-elements you can extend the structure of the schedule using only CSS."
 keywords        = ["blokks", "templates", "themes", "structure", "layout"]
 weight          = 508
 
@@ -19,9 +19,9 @@ title = "CSS-Tricks: A Whole Bunch of Amazing Stuff Pseudo Elements Can Do"
 url = "https://css-tricks.com/pseudo-element-roundup/"
 +++
 
-Using `pseudo-elements` you can extend the structure of the schedule with CSS. Pseudo-elements will add extra elements `:before` and `:after` the element’s content. These elements are visible to the user and are styleable with CSS. 
+With `pseudo-elements` you can extend the structure of the schedule using only CSS. Pseudo elements will add extra elements `:before` and `:after` the element’s content. These elements are visible to the user and styleable with CSS.
 
-Adding `:before` and `:after` is basically the same as:
+Adding `:before` and `:after` works basically the same as the following:
 
 ```html
 <div>
@@ -31,7 +31,7 @@ Adding `:before` and `:after` is basically the same as:
 </div>
 ```
 
-Without the `content` property pseudo-elements won’t be rendered. To make them visible just set the `content` property of the selector. Once visible you can change its `color`, adding `background-image`, setting font properties, specify dimensions etc.
+But, with pseudo elements, we'd only need some CSS to achieve the same result:
 
 ```css
 .blokks-selector:before {
@@ -50,4 +50,6 @@ Without the `content` property pseudo-elements won’t be rendered. To make them
 }
 ```
 
-<span class='note'>Pseudo-elements are inline-level elements by default. Don’t forget to change its `display` to ` block` or `inline-block` if you want to set its dimensions.</span>
+Without the `content` property pseudo-elements won’t be rendered. To make them visible just set the `content` property of the selector. Once visible you can change its `color`, add a `background-image`, set font properties, specify dimensions, etc.
+
+<span class='note'>Pseudo-elements are inline-level elements by default. Don’t forget to change their `display` to ` block` or `inline-block` if you want to set their dimensions.</span>

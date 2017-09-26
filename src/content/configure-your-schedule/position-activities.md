@@ -15,7 +15,7 @@ title = "Activity"
 url = "basic-structure.md#activity"
 +++
 
-An [*Activity*]({{< relref "basic-structure.md#actvity" >}}) is automatically positioned using its start time and resized using its duration. However, sometimes you don’t want this. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout` option.
+An [Activity]({{< relref "basic-structure.md#actvity" >}}) is automatically positioned using its start time and resized using its duration. However, sometimes you don’t want this. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout` option.
 
 | Option | Values | Default value |
 |--------|--------|---------------|

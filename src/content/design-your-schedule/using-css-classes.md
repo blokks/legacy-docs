@@ -31,18 +31,18 @@ title = "Browser support"
 url = "known-issues.md#css-variables"
 +++
 
-*CSS variables* are great! However, Internet Explorer does not support them yet. We need a fallback for when your visitors are using IE.
+*CSS variables* are great! However, Internet Explorer does not support them yet. A fallback for when your visitors are using IE, is using CSS classes.
 
-Another option to style your schedule, which is supported by all browsers, is using CSS classes. [Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) with CSS classes can be a bit tedious compared to CSS Variables. But still, relatively easy to achieve.
+[Changing colors](http://design/colors), [updating sizes](http://design/sizes) and [replacing fonts](http://design/) with CSS classes can be a bit tedious compared to when using CSS Variables. But still, relatively easy to achieve.
 
-<span class='note'>Note: You don’t need to set CSS variables if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support classes.</span>
+<span class='note'>Note: You don’t need to set CSS variables if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support CSS classes.</span>
 
-<span class='note'>On modern browsers, you can use CSS variables combined with CSS classes. It’s impossible to have every property as a CSS variable. See [*blokks-modifiers*](http://configure/blokks#modifiers) and [*data-attributes*](http://configure/blokks#data-atributes) for more styling options.</span>
+<span class='note'>On modern browsers, you can use CSS variables combined with CSS classes. This is useful, since it’s impossible to have every property as a CSS variable.</span>
 
 <span class='note'>Microsoft Edge support CSS variables and is the default browser on Windows 10, Windows Mobile, and Xbox One consoles, replacing Internet Explorer.</span>
 
 ## Inspect elements
-First, to style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. For example, right click a stage title and select *Inspect* from the context menu. This will open the Developer tools showing the HTML structure of the embed with the title highlighted:
+To style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. For example, right click a stage title and select *Inspect* from the context menu. This will open the Developer tools showing the HTML structure of the embed with the title highlighted:
 
 ![Image: Inspect elements](http://inspect.gif)
 
@@ -56,7 +56,7 @@ As you can see the selected title has a class named `.blokks-location__title`. W
 }
 ```
 
-Looks great right? One thing you may have noticed is that only the selected stage titles are changed. Subtitles are still the same. Let’s update our example:
+Looks great right? One thing you may have noticed is that only the selected stage titles have been changed. The subtitles are still the same. Let’s update our example:
 
 ```css
 .blokks-location__title,
@@ -67,4 +67,4 @@ Looks great right? One thing you may have noticed is that only the selected stag
 }
 ```
 
-Boom! The same goes for styling other elements as well. Select the element you want to change, grab its class name and update its properties. Of course, you can change every available CSS property.
+Boom! The same goes for styling other elements. Select the element you want to change, grab its class name and update its properties.

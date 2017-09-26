@@ -11,18 +11,6 @@ weight          = 407
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Change colors"
-url = "change-colors.md"
-
-[[related]]
-title = "Add own fonts"
-url = "add-own-fonts.md"
-
-[[related]]
-title = "Structure"
-url = "http://themes/structure"
-
-[[related]]
 title = "Block Element Modifier"
 url = "http://themes/bem"
 
@@ -31,7 +19,7 @@ title = "Conflicting styles"
 url = "http://themes/conflicts"
 
 [[related]]
-title = "!important"
+title = "Avoiding !important"
 url = "http://themes/avoidimportant"
 
 [[related]]
@@ -88,9 +76,9 @@ If you want to target individual elements we need to [target the text with CSS s
 }
 ```
 
-<span class='note'>Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. Read more on how to solve this [here](http://themes/bem).</span>
+Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. Read more on how to solve this [here](http://themes/bem).
 
-<span class='note'>Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity." Basically this means that you should add the `<style>` tag after the Blokks import. For example:</span>
+Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity." Basically this means that you should add the `<style>` tag after the Blokks import. For example:
 
 ```html
 <link href='columns.css' rel='stylesheet' media=‘screen’>

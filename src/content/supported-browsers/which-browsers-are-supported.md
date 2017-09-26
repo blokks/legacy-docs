@@ -2,8 +2,8 @@
 date            = "2017-09-15T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Which browsers are supported?"
-description     = "You can use Blokks with most modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers."
+title           = "Supported browsers"
+description     = "Blokks works on modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers."
 keywords        = ["blokks", "support", "browsers", "Chrome", "Edge", "Internet Explorer", "IE", "Firefox", "Safari"]
 weight          = 701
 
@@ -31,8 +31,8 @@ title = "Download: Safari"
 url = "https://www.apple.com/safari/"
 +++
 
-You can use Blokks with most modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers. Although browsers are automatically upgraded to future versions, you can download the most recent ones:
+Blokks works on modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers.
 
-We test Blokks in all supported browsers, and we'll fix bugs that affect those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but if it does, there may be [noticeable issues]({{< relref "known-issues.md" >}}). 
+We test Blokks in all supported browsers, and we'll fix bugs that affect those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but there may be [noticeable issues]({{< relref "known-issues.md" >}}). 
 
 <span class='note'>Please note that Blokks requires JavaScript and cookies to be enabled.</span>

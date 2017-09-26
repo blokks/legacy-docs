@@ -2,7 +2,7 @@
 date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Manage your days"
+title           = "Days"
 description     = "Your conference or festival can be a single or multiple day event. The dates can be found at the top of your schedule."
 keywords        = ["blokks", "getting started", "dates", "times"]
 weight          = 201
@@ -20,16 +20,12 @@ Adding extra days to your event is simple. Just hit the *+ Add day* button. Blok
 
 <span class='note'>Note: your current stages will also be copied to your newly added day.</span>
 
----
-
 ## Changing and removing days
 Right-clicking any date shows you the datepicker, allowing you to change the selected date. Click the *Remove* button right below the datepicker to delete that specific day. Removing days will also delete the acts added to that day.
 
 ![Image: Changing and removing days](https://blokks.co/docs/images/datepicker.gif)
 
 <span class='note'>Pro-tip: You can always undo any action by clicking the *Undo* button in the top right or by using the shortcut <kbd>CTRL + Z</kbd> or <kbd>CMD + Z</kbd>.</span>
-
----
 
 ## Adjusting your start and end time
 If you want your days to start earlier or end later, you can do so by clicking the *•••* button.

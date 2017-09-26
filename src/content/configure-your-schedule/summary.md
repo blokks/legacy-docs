@@ -21,6 +21,7 @@ A complete list of options you can use:
 | `data-auto-scroll` | `true` `false` | `true`|
 | `data-auto-update` | `true` `false` | `true`|
 | `data-breakpoint` | *string* | `30em`|
+| `data-capture-print` | `true` `false` | `false` |
 | `data-date-format` | *string* | `DD MMMM`|
 | `data-date-selector` | `auto` `buttons` `dropdown` | `auto` |
 | `data-disable-tracking` | `true` `false` | `true`|
@@ -34,7 +35,6 @@ A complete list of options you can use:
 | `data-hide-print` | `true` `false` | `false` |
 | `data-layout` | `columns` `rows` `custom` | `columns`|
 | `data-local-scroll` | `true` `false` | `false` |
-| `data-prevent-default-print` | `true` `false` | `false` |
 | `data-print-orientation` | `landscape` `portrait` | `portrait` |
 | `data-render-empty-timeslots` | `true` `false` | `true` |
 | `data-social-provider` | `facebook` `twitter` `linkedin` | `facebook` |

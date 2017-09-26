@@ -9,28 +9,25 @@ weight          = 609
 
 [menu.main]
 parent          = "configure-your-schedule"
+
+[[related]]
+title = 'Hide elements'
+url = 'hide-elements.md'
 +++
 
 Some of your visitors are oldschool and prefer a printed version over 
 
-
-	- Orientation
-	- disable print
-	- preventDefaultPrint
-
 | Option | Values | Default value |
 |--------|--------|---------------|
-| `data-hide-print` | `true` `false` | `false` |
 | `data-print-orientation` | `landscape` `portrait` | `portrait` |
-| `data-prevent-default-print` | `true` `false` | `false` |
+| `data-capture-print` | `true` `false` | `false` |
 
 ### Example
 
 ```html
 <script	defer src='[path-to-embed]'
   data-blokks-id='[schedule-id]'
-  data-hide-print='false'
   data-print-orientation='landscape'
-  data-prevent-default-print='linkedin'>
+  data-capture-print='false'>
 </script>
 ```

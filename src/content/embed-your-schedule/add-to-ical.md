@@ -9,17 +9,9 @@ weight          = 304
 
 [menu.main]
 parent          = "embed-your-schedule"
-
-[[related]]
-title = "Schedule options"
-url = "http://configure/options"
-
-[[related]]
-title = "Embed structure"
-url = "http://theme/structure#navigation"
 +++
 
-[When enabled](http://configure/options), an *Add to calendar* button will be visible at the top of your schedule. This button allows visitors to download and add event information to their calendar. The download includes two types of calendar entries:
+When enabled, an *Add to calendar* button will be visible at the top of your schedule. This button allows visitors to download and add event information to their calendar. The download includes two types of calendar entries:
 
 1. Entries for each of your event days.
 2. Entries for each of your visitors favorite acts.

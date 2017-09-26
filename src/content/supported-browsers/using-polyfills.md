@@ -27,9 +27,9 @@ title = "Polyfill: IntersectionObserver"
 url = "https://github.com/w3c/IntersectionObserver/tree/gh-pages/polyfill"
 +++
 
-A polyfill is a piece of code used to provide modern functionality to older browsers that do not natively support it. Polyfills are not bundled with the Blokks embed. Because it penalizes everyone, forever, by forcing them to download the polyfills regardless of whether they are necessary. 
+A polyfill is a piece of code used to provide modern functionality to older browsers that do not natively support it. Polyfills are not bundled with the Blokks embed, because it forces all users to download the polyfills regardless of whether they are necessary.
 
-Instead, you have to add them manually. For example, adding the *ES6 Promise* polyfill:
+Instead, you have to add them manually. For example, here's how you can add the *ES6 Promise* polyfill:
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
@@ -40,4 +40,4 @@ Instead, you have to add them manually. For example, adding the *ES6 Promise* po
 </script>
 ```
 
-<span class='note'>Important: When you use polyfills, make sure they are loaded before you initialize the Blokks embed! You can add one or more polyfills depending on your browser coverage.</span>
+<span class='note'>Important: When you use polyfills, make sure they are loaded before you initialize the Blokks embed. You can add one or more polyfills depending on your browser coverage.</span>

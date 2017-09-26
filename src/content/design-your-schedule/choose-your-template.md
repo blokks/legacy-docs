@@ -4,9 +4,9 @@ author          = "@patrickpietens"
 
 title           = "Choose your template"
 description     = ""
-draft           = true
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 402
+draft           = true
 
 [menu.main]
 parent          = "design-your-schedule"

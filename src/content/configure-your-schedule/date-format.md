@@ -41,7 +41,6 @@ You can change the way dates are displayed by setting `data-date-format`. It tak
 |------|---|
 | *YY* | 70 71 ... 29 30 |
 | *YYYY* | 1970 1971 ... 2029 2030 |
-
 ### Example
 
 ```html

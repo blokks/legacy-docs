@@ -11,12 +11,12 @@ weight          = 303
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Social Provider"
-url = "social-provider.md"
+title = "Adding a social provider"
+url = "http://configure/socialprovider"
 
 [[related]]
-title = "Schedule options"
-url = "lets-get-started.md"
+title = "Configuring your schedule options"
+url = "http://configure/options"
 
 [[related]]
 title = "Accessibility"
@@ -31,6 +31,6 @@ Once connected, visitors can click the *Add to favorites* button to favorite tha
 ![Image: Adding favorites](https://blokks.co/docs/images/image.gif)
 
 ## Friends activity
-If some of your visitors' friends are attending the same event, they will popup in several places in your schedule. This will show your visitors which speaker, band or performance their friends are going to. 
+If some of your visitors' friends are attending the same event, they will popup in several places in your schedule. This will show your visitors which speaker, band or performance their friends will be going to.
 
 <span class='note'>Note: Unfortunately **LinkedIn** does not allow us to see your visitors' connections. Because of this, we can't show friend activity when using **LinkedIn** as your social provider.</span>

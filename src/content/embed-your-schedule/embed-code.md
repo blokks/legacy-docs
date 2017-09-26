@@ -37,6 +37,8 @@ The first one is a `<link>` to a stylesheet and is placed in the `<head>` of you
 <link href="columns.css" media="screen" rel="stylesheet">
 ```
 
+<span class='note'>Note: If you've [created your own template](http://themes/intro) just replace the `href` value with a link to your own CSS file.</span>
+
 ## Container
 The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body></body>`:
 
@@ -60,4 +62,4 @@ The `src` `data-blokks-id` `data-layout` attributes are required. All other attr
 
 All files are hosted on our servers and [delivered to your visitors using our CDN]({{< relref "caching.md" >}}). However, it’s possible to download all required files and host them on your own server.
 
-[<button>Download files</button>](http://downloadlink)
+[<button>Download files <svg><use href="images/sprite.svg#arrow-next"></use></svg></button>](http://downloadlink)

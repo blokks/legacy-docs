@@ -3,7 +3,7 @@ date            = "2017-09-15T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Getting started"
-description     = "Until now we only styled existing templates, which will do for most events. But sometimes you want to go a bit futher."
+description     = "For most events, the standard templates will do. But in some cases, you'll want to go a bit further and create your own template from scratch."
 keywords        = ["blokks", "templates", "themes", "structure", "naming conventions", "bem"]
 weight          = 501
 
@@ -11,6 +11,6 @@ weight          = 501
 parent          = "create-templates"
 +++
 
-Until now we only [styled existing templates]({{< relref "introduction.md" >}}), which will do for most events. But sometimes you want to go a bit futher. Therefor, it’s totally possible to create your own template from scratch.
+For most events, the [standard templates]({{< relref "introduction.md" >}}) will do. But in some cases, you'll want to go a bit further and create your own template from scratch.
 
-To do so, we need to know one or two things about [the structure of the schedule]({{< relref "basic-structure.md" >}}). And get familiar with Blokks’ used [naming conventions](http://). So, let’s go!
+To do so, we need to know one or two things about [the structure of the schedule]({{< relref "basic-structure.md" >}}) and get familiar with Blokks' [naming conventions](http://). So, let's get started with the [preloader](http://)!

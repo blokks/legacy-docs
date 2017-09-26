@@ -2,7 +2,7 @@
 date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Change colors"
+title           = "Colors"
 description     = "Change any color used in your embed."
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 404
@@ -11,7 +11,7 @@ weight          = 404
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Structure of our embed"
+title = "Embed structure"
 url = "http://structure"
 
 [[related]]

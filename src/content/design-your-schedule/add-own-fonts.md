@@ -2,21 +2,13 @@
 date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Adding fonts"
+title           = "Fonts"
 description     = "Changing fonts used in your schedule."
 keywords        = ["blokks", "design", "embed", "template", "layout", "fonts", "typekit", "adobe", "google fonts"]
 weight          = 406
 
 [menu.main]
 parent          = "design-your-schedule"
-
-[[related]]
-title = "Change colors"
-url = "change-colors.md"
-
-[[related]]
-title = "Create your own template"
-url = "http://themes/"
 
 [[related]]
 title = "Browser support"
@@ -44,7 +36,7 @@ Changing the font used in your schedule works the same way as [changing colors](
 }
 ```
 
-The embed will try to load **Helvetica Neue** first. If it wasn’t found it skips to next one. And so on. Finally falling back to system fonts. Using system fonts boosts performance because your browser doesn't have to download any font files. However, the number of available system fonts is limited.
+The embed will try to load **Helvetica Neue** first. If it wasn’t found, it skips to next one, and so on, eventually falling back to system fonts. Using system fonts boosts performance because your browser doesn't have to download any font files. However, the number of available system fonts is limited.
 
 ## Import external fonts
 Luckily we can import fonts from [Google Fonts](https://fonts.google.com/), [Adobe Typekit](https://typekit.com/) and other type foundries. Together they offer hundreds of great fonts to choose from.
@@ -65,7 +57,7 @@ To use this font in your schedule, simply change the value of this *CSS variable
 }
 ```
 
-<span class='note'>Note that [Google Fonts](https://fonts.google.com/) offer open source fonts which you are allowed to use on any website, whether it’s commercial or personal. Using fonts from other Type Foundries or self-hosted fonts sometimes require paid licenses. Sometimes even when a typeface is labeled as a “free download”. Make sure to check the license before using a font.</span>
+<span class='note'>Note that [Google Fonts](https://fonts.google.com/) offer open source fonts which you are allowed to use on any website, whether it’s commercial or personal. Using fonts from other Type Foundries or self-hosted fonts sometimes require paid licenses. In some cases, even when a typeface is labeled as a 'free download'. Make sure to check the license before using a font.</span>
 
 ### Adobe Typekit
 Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from using Google Fonts. To start, paste the following snippet into the **\<head\>** of your HTML page.
@@ -76,7 +68,6 @@ Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 ```
 
-And again, use our CSS variable to add the font:
 And again, use our CSS variable to add the font:
 
 ```css

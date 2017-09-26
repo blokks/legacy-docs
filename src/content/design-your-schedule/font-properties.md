@@ -11,18 +11,6 @@ weight          = 407
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Change colors"
-url = "change-colors.md"
-
-[[related]]
-title = "Add own fonts"
-url = "add-own-fonts.md"
-
-[[related]]
-title = "Structure"
-url = "http://themes/structure"
-
-[[related]]
 title = "Block Element Modifier"
 url = "http://themes/bem"
 
@@ -31,7 +19,7 @@ title = "Conflicting styles"
 url = "http://themes/conflicts"
 
 [[related]]
-title = "!important"
+title = "Avoiding !important"
 url = "http://themes/avoidimportant"
 
 [[related]]
@@ -51,11 +39,11 @@ Blokks uses `em` units to define its font sizes. This means that all sizes are r
 ```css
 :root {
   /* This scales all fonts by 1.5 */
-  --blokks-font-scale: 150%; 
+  --blokks-font-scale: 150%;
 
   /* You can also use other units like px and pt*/
-  --blokks-font-scale: 32px; 
-  --blokks-font-scale: 16pt; 
+  --blokks-font-scale: 32px;
+  --blokks-font-scale: 16pt;
 }
 ```
 
@@ -75,8 +63,8 @@ Alternatively, you can set the `font-size` property on the *embed root* directly
 <span class='note'>Sometimes the result of using the `--blokks-font-scale` variable may differ from what you expect. This is caused when using relative scaling in combination with the [cascading nature of CSS](http://blokks/css). To fix this, use absolute values for scaling, like `px` or `pt`.</span>
 
 ## Other properties
-Font properties inherit its values from parent elements. So setting `letter-spacing: 1px;` on the `embed root` will automatically set the `letter-spacing` on all text elements in the embed. 
- 
+Font properties inherit its values from parent elements. So setting `letter-spacing: 1px;` on the `embed root` will automatically set the `letter-spacing` on all text elements in the embed.
+
 If you want to target individual elements we need to [target the text with CSS selectors]({{< relref "using-css-classes.md#inspect-elements" >}}). Grab the class name of the element you've selected (in our case this is `.blokks-location__title`) and add it to the `CSS` of your page. For example, let’s make it bold, underlined and italic. Also, let's make the font size bigger:
 
 ```css
@@ -88,11 +76,9 @@ If you want to target individual elements we need to [target the text with CSS s
 }
 ```
 
-<span class='note'>Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. [Read more on how to solve this here.](http://themes/bem)</span>
+Like [CSS variables]({{< relref "change-colors.md" >}}) all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. [Read more on how to solve this.](http://themes/bem)
 
-<span class='note'>Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity."</span>
-
-<span class='note'>Basically this means that you should add the `<style>` tag after the Blokks import. For example:</span>
+Also, you should note that the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity." Basically this means that you should add the `<style>` tag after the Blokks import. For example:
 
 ```html
 <!-- Link to the Blokks theme -->

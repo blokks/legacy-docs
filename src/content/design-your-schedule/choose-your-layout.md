@@ -2,7 +2,7 @@
 date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Layout"
+title           = "Choose your layout"
 description     = "On desktop, the embed has two layouts: a column layout and a row layout. On mobile, the schedule is shown in a list view."
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 403

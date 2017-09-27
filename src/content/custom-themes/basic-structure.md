@@ -111,4 +111,4 @@ The *Time Indicator* is only visible during the event and shows, as the name sug
 <span class='note'>You can test the time indicator by setting the [`data-testflight` option](http://configure/options#testflight)</span>
 
 ## Trialbar
-TODO!!!!
+The *Trialbar* will remember you that you haven't [upgraded your account]({{< relref "upgrade-your-account.md" >}}) yet. And that your schedule will only be visibile to you and your teammates. The *Trialbar* disappears once you're on a paid plan.

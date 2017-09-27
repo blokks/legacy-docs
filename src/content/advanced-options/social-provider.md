@@ -11,12 +11,8 @@ weight          = 605
 parent          = "advanced-options"
 
 [[related]]
-title = "Favorites"
+title = "Embed your schedule: Favorites"
 url = "favorites.md"
-
-[[related]]
-title = "Options"
-url = "basic-structure.md#options"
 +++
 
 To enable [favorites]({{< relref "favorites.md" >}}), you have to [set your social provider]({{< relref "social-provider.md" >}}) first. This is the network visitors use to sign in and add favorites. Set the `data-social-provider` to either `facebook`, `twitter` or `linkedin`. 

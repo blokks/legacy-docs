@@ -11,7 +11,7 @@ weight          = 606
 parent          = "advanced-options"
 
 [[related]]
-title = "Date selector"
+title = "Basic structure: Date selector"
 url = "basic-structure.md#date-selector"
 +++
 

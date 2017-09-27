@@ -11,7 +11,11 @@ weight          = 609
 parent          = "advanced-options"
 
 [[related]]
-title = 'Hide elements'
+title = 'Embed your schedule: Print schedule'
+url = 'print-schedule.md'
+
+[[related]]
+title = 'Advanced options: Hide elements'
 url = 'hide-components.md'
 +++
 

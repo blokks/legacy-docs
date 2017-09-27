@@ -11,7 +11,7 @@ weight          = 604
 parent          = "advanced-options"
 
 [[related]]
-title = "Basic structure"
+title = "Custom themes: Basic structure"
 url = "basic-structure.md"
 +++
 

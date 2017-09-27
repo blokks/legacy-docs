@@ -11,7 +11,7 @@ weight          = 607
 parent          = "advanced-options"
 
 [[related]]
-title = "Date format"
+title = "Advanced options: Date format"
 url = "date-format.md"
 +++
 

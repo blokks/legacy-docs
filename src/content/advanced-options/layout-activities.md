@@ -11,7 +11,7 @@ weight          = 611
 parent          = "advanced-options"
 
 [[related]]
-title = "Activity"
+title = "Basic structure: Activity"
 url = "basic-structure.md#activity"
 +++
 

@@ -11,11 +11,11 @@ weight          = 613
 parent          = "advanced-options"
 
 [[related]]
-title = "Testflight"
+title = "Advanced options: Testflight"
 url = "testflight.md"
 
 [[related]]
-title = "Hide time indicator"
+title = "Advanced options: Hide components"
 url = "hide-components.md"
 +++
 

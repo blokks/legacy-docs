@@ -9,6 +9,10 @@ weight          = 610
 
 [menu.main]
 parent          = "advanced-options"
+
+[[related]]
+title = "Customize your embed: Row & column sizes"
+url = "update-rows-and-columns.md"
 +++
 
 The `data-time-scale` option sets the duration of a single table cell. You can use this together with [CSS variables]({{< relref "update-rows-and-columns.md" >}}) to change the height and width of [Activities]({{< relref "basic-structure.md#activity" >}}). The `data-time-scale` is set in seconds, so that a value of `3600` equals an hour. `1800` Seconds equals half an hour etc.

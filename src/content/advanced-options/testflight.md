@@ -9,6 +9,18 @@ weight          = 615
 
 [menu.main]
 parent          = "advanced-options"
+
+[[related]]
+title = "Basic structure: Dashboard"
+url = "basic-structure.md#dashboard"
+
+[[related]]
+title = "Basic structure: Time indicator"
+url = "basic-structure.md#time-indicator"
+
+[[related]]
+title = "Advanced options: caching"
+url = "caching.md"
 +++
 
 Some components, like the [Dashboard]({{< relref "basic-structure.md#dashboard" >}}) and [Time Indicator]({{< relref "basic-structure.md#time-indicator" >}}) are only visible during the day of your event. To make them visible set `data-testflight` to `true`. Setting `data-testflight` also disables caching.

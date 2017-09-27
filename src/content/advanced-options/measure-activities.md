@@ -9,6 +9,10 @@ weight          = 612
 
 [menu.main]
 parent          = "advanced-options"
+
+[[related]]
+title = "Basic structure: Activity"
+url = "basic-structure.md#activity"
 +++
 
 Blokks adds [CSS modifiers](bem.md) indicating the size of an [Activity]({{< relref "basic-structure.md#activity" >}}). Unfortunately, this isn’t done by magic. Matter of fact, computing the size of an element is a pretty intensive task for the browser. Although this option is enabled by default, we recommend to set it to `false` whenever possible.

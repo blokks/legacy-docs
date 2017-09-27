@@ -11,7 +11,7 @@ weight          = 607
 parent          = "advanced-options"
 
 [[related]]
-title = "Time format"
+title = "Advanced options: Time format"
 url = "time-format.md"
 +++
 

@@ -61,12 +61,14 @@
     }
 
     a {
-        color: var(--emphasized-text-color);
+        color: inherit;
         text-decoration: none;
+        border-bottom: 1px solid var(--default-stroke-color);
     }
 
     a:hover {
         color: var(--blue);
+        border-color: inherit;
     }
 
     cite {
@@ -85,10 +87,6 @@
         @mixin article-note;
     }
 
-    blockquote p a,
-    span.note a {
-        color: var(--default-text-color);
-    }
 
     ul, ol {
         @mixin clearfix;
@@ -107,12 +105,12 @@
         display: inline-block;
         margin-right: 25px;
         size: 4px;
-        background-color: white;
+        background-color: #abb1bc;
         content: '';
     }
 
     li:not(:first-child) {
-        margin-top: 12px;
+        margin-top: 10px;
     }
 
     table {
@@ -212,7 +210,7 @@
         @mixin article-inline-code;
         display: inline;
         margin: 0;
-        padding: 6px 8px 5px;
+        padding: 5px 6px 4px;
         border-radius: 2px;
 
         @media (--smallest), (--small) {
@@ -269,14 +267,14 @@
     p + ol,
     p + table,
     p + pre {
-        margin: 35px 0 10px;
+        margin: 20px 0 10px;
     }
 
     ul + p,
     ol + p,
     table + p,
     pre + p {
-        margin: 35px 0 20px;
+        margin: 20px 0 10px;
     }
 }
 
@@ -288,5 +286,5 @@
 
     td:last-child {
         width: auto;
-    }    
+    }
 }

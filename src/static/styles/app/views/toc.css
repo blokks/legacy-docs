@@ -39,7 +39,7 @@
 
         @media (--smallest), (--small) {
             display: none;
-        }        
+        }
     }
 
     &__title--selected svg {
@@ -75,7 +75,6 @@
 
     &__article-link--selected {
         color: var(--blue);
-        border-bottom: 1px solid;
     }
 
     &__article-link:hover {
@@ -83,7 +82,7 @@
     }
 
     &__toggle-button {
-        @mixin navigation-toggle-button;        
+        @mixin navigation-toggle-button;
 
         position: relative;
         display: flex;
@@ -119,7 +118,7 @@
 
 
         @media (--smallest), (--small) {
-            max-height: 0 !important; 
+            max-height: 0 !important;
         }
     }
 }

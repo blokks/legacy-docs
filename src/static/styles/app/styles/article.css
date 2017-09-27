@@ -18,7 +18,7 @@
 }
 
 @define-mixin article-list {
-    @mixin font var(--blokks-sans), var(--emphasized-text-color);
+    @mixin font var(--blokks-sans), var(--default-text-color);
     @mixin antialiased;
 
     @media (--smallest), (--small) {

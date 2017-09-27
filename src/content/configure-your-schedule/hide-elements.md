@@ -11,10 +11,6 @@ weight          = 604
 parent          = "configure-your-schedule"
 
 [[related]]
-title = "Favorites"
-url = "favorites.md"
-
-[[related]]
 title = "Basic structure"
 url = "basic-structure.md"
 +++

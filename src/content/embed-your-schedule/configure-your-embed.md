@@ -2,7 +2,8 @@
 date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
-title           = "Configure your embed"
+title           = "Configure embed"
+extendedtitle	= "Configure your embed"
 description     = "Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app."
 keywords        = ["blokks", "configure", "embed", "embedding", "embed code"]
 weight          = 301
@@ -11,8 +12,8 @@ weight          = 301
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Configure your schedule: Hiding elements"
-url = "hide-elements.md"
+title = "Advanced options: Hiding components"
+url = "hide-components.md"
 +++
 
 Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app. On this page you’ll find various settings that will allow you to customize both design and functionality of your embed.

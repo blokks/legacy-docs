@@ -13,7 +13,7 @@
     }
 
     @media (--default) {
-        font-size: 1.6rem/1.7;
+        font-size: 1.5rem/1.7;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 
     @media (--default) {
-        font-size: 1.6rem/1.7;
+        font-size: 1.5rem/1.7;
     }
 }
 
@@ -52,16 +52,7 @@
 }
 
 @define-mixin article-note {
-    @mixin font var(--blokks-sans), var(--dimmed-text-color);
-    @mixin antialiased;
-
-    @media (--smallest), (--small) {
-        font-size: 1.5rem/1.7;
-    }
-
-    @media (--default) {
-        font-size: 1.6rem/1.7;
-    }
+    color: var(--dimmed-text-color);
 }
 
 @define-mixin article-thead {

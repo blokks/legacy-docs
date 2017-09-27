@@ -11,19 +11,11 @@ weight          = 204
 parent          = "manage-your-schedule"
 
 [[related]]
-title = "Blokks modifiers"
-url = "http://themes/modifiers"
-
-[[related]]
-title = "Hiding elements"
-url = "http://configure/options"
-
-[[related]]
-title = "Markdown"
+title = "Daring Fireball: Markdown"
 url = "https://daringfireball.net/projects/markdown/"
 
 [[related]]
-title = "Markdown cheatsheet"
+title = "Github: Markdown cheatsheet"
 url = "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
 +++
 

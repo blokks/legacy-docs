@@ -11,7 +11,7 @@ weight          = 306
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Configure your schedule: Disable tracking"
+title = "Advanced options: tracking"
 url = "tracking.md"
 +++
 

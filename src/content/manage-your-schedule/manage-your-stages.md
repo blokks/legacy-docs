@@ -2,7 +2,7 @@
 date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Stages"
+title           = "Manage stages"
 extendedtitle   = "Manage your stages"
 description     = "The columns shown in your schedule represent the stages or areas of your event."
 keywords        = ["blokks", "getting started", "dates", "times"]

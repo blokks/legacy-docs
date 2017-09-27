@@ -11,10 +11,10 @@ weight          = 305
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Configure your schedule: Print options"
+title = "Avanced options: Print options"
 url = "print.md"
 +++
 
-Visitors can print the schedule including their favorites by clicking the *Print* button or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd>. The schedule is automatically printed in landscape. [You can change the layout]({{< relref "print.md" >}}) this by setting `data-print-orientation`. [Hiding the print button]({{< relref "hide-elements.md" >}}) is done by setting `data-hide-print`.
+Visitors can print the schedule including their favorites by clicking the *Print* button or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd>. The schedule is automatically printed in landscape. [You can change the layout]({{< relref "print.md" >}}) this by setting `data-print-orientation`. [Hiding the print button]({{< relref "hide-components.md" >}}) is done by setting `data-hide-print`.
 
 <span class='note'>Note: the print version of the schedule has standard layout and styling.</span>

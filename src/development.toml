@@ -25,26 +25,26 @@ name = "Embed your schedule"
 weight = 4
 
 [[menu.main]]
-identifier = "design-your-schedule"
-name = "Design your schedule"
+identifier = "customize-your-embed"
+name = "Customize your embed"
 weight = 5
 
 [[menu.main]]
-identifier = "configure-your-schedule"
-name = "Configure your schedule"
+identifier = "advanced-options"
+name = "Advanced options"
 weight = 6
 
 [[menu.main]]
-identifier = "create-templates"
-name = "Create templates"
+identifier = "custom-themes"
+name = "Custom themes"
 weight = 7
 
 [[menu.main]]
-identifier = "supported-browsers"
-name = "Supported browsers"
+identifier = "browsers-devices"
+name = "Browsers & Devices"
 weight = 8
 
 [[menu.main]]
-identifier = "settings"
-name = "Settings"
+identifier = "account-settings"
+name = "Account settings"
 weight = 9

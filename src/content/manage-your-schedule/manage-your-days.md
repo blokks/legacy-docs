@@ -3,6 +3,7 @@ date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Days"
+extendedtitle   = "Manage your days"
 description     = "Your conference or festival can be a single or multiple day event. The dates can be found at the top of your schedule."
 keywords        = ["blokks", "getting started", "dates", "times"]
 weight          = 201

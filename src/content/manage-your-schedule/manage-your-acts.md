@@ -3,6 +3,7 @@ date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Acts"
+extendedtitle   = "Manage your acts"
 description     = "Adding acts to your event is probably the most important part of building your schedule."
 keywords        = ["blokks", "getting started", "acts", "bands", "speakers", "activities", "artists"]
 weight          = 203

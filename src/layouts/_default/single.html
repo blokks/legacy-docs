@@ -1,4 +1,9 @@
 {{ define "content" }}
-	<h1>{{ .Title }}</h1>
+	{{ if isset .Params "extendedtitle" }}
+		<h1>{{ .Params.extendedtitle }}</h1>
+	{{ else }}
+		<h1>{{ .Title }}</h1>
+	{{ end }}
+
 	{{ .Content }}
 {{ end }}

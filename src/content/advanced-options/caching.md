@@ -9,24 +9,19 @@ weight          = 616
 
 [menu.main]
 parent          = "advanced-options"
+
+[[related]]
+title = "Manage your schedule: Saving & exporting"
+url = "save-export.md"
+
+[[related]]
+title = "Advanced options: Testflight"
+url = "testflight.md"
 +++
 
-  - Why is caching enabled
-  - Override cache with `?preview` querystring
-  - Using CDN to deliver assets
-  - testflight
-  server cache
-  browser cache
-
-| Option | Values | Default value |
-|--------|--------|---------------|
-| `data-caching` | `false` `true` | `true` |
-
-### Example
-
-```html
-<script	defer src='[path-to-embed]'
-  data-blokks-id='[schedule-id]'
-  data-date-caching='false'>
-</script>
-```
+- Why is caching enabled
+- server cache
+	- 15 flushed every minutes
+- browser cache
+- Override cache with `?preview` querystring
+- Using CDN to deliver assets

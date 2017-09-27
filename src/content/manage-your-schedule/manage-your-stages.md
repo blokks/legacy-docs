@@ -12,7 +12,7 @@ weight          = 202
 parent          = "manage-your-schedule"
 +++
 
-The columns shown in your schedule represent the stages or areas of your event.
+The columns shown in your schedule represent the stages or areas of your event. 
 
 ## Adding stages
 You can add stages by simply clicking the *+ Add new stage* button. New stages are added only to your currently selected day.

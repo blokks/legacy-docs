@@ -32,9 +32,9 @@
     }
 
     &__title svg {
-        position: relative 1px * * 7px;
+        position: relative 0px * * 7px;
         size: 11px;
-        fill:  currentcolor;
+        fill: currentcolor;
         transition: transform 250ms;
 
         @media (--smallest), (--small) {
@@ -42,8 +42,16 @@
         }
     }
 
+    &__title:not(&__title--selected) svg {
+        visibility: hidden; 
+    }
+
     &__title--selected svg {
         transform: rotate(45deg);
+    }
+
+    &__title:hover svg {
+        visibility: visible; 
     }
 
     &__articles {

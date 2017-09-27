@@ -2,8 +2,8 @@
 date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Saving & exporting"
-extendedtitle   = "Saving & exporting your schedule"
+title           = "Save & export"
+extendedtitle   = "Saving & exporting"
 description     = "Saving your schedule and exporting your data."
 keywords        = ["blokks", "getting started", "saving", "exporting"]
 weight          = 205

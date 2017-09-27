@@ -3,6 +3,7 @@ date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Welcome"
+extendedtitle	= "Welcome to Blokks"
 description     = "Here, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers."
 keywords        = ["blokks", "introduction", "welcome"]
 weight          = 101

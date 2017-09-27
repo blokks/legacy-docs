@@ -19,13 +19,13 @@ You can hide elements and disable features by setting one of the `data-hide-...`
 
 | Option | Description |
 |---------|--------------|
-| `data-hide-controls` | Hides the [Controls]({{< relref "basic-structure.md#controls" >}}) when set to `true` |
-| `data-hide-dashboard` | Hides the [Dashboard]({{< relref "basic-structure.md#dashboard" >}}) when set to `true` |
-| `data-hide-export` | Hides the Export to iCal button when set to `true` |
-| `data-hide-favorites` | Hides all [favorite related features]({{< relref "favorites.md" >}}) when set to `true` |
-| `data-hide-filter` | Hides the [Category filter]({{< relref "basic-structure.md#category-filter" >}}) when set to `true` |
+| `data-hide-controls` | Hides the *Controls* when set to `true` |
+| `data-hide-dashboard` | Hides the *Dashboard* when set to `true` |
+| `data-hide-export` | Hides the *Export to iCal* button when set to `true` |
+| `data-hide-favorites` | Hides all favorite related features when set to `true` |
+| `data-hide-filter` | Hides the *Category filter* when set to `true` |
 | `data-hide-images` | Doesn't load and display images when set to `true` |
-| `data-hide-print` | Hide the print button when set to `true` |
+| `data-hide-print` | Hide the *print* button when set to `true`. Hiding the print button also disables keyboard shortcuts. |
 
 ### Example
 

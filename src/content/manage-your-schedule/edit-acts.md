@@ -2,7 +2,8 @@
 date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Editing acts"
+title           = "Edit acts"
+extendedtitle	= "Edit your acts"
 description     = "After adding an act or selecting an existing one, a modal window is shown where you can add or edit its information."
 keywords        = ["blokks", "getting started", "acts", "bands", "speakers", "activities", "artists"]
 weight          = 204

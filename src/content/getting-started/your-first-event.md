@@ -2,7 +2,8 @@
 date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Creating your first event"
+title           = "Your first event"
+extendedtitle	= "Create your first event"
 description     = "Let's start working on your first event. To set everything up, we need to know some basic info."
 keywords        = ["blokks", "getting started", "your first account", "dates", "times", "onboarding", "stages", "locations", "team", "teammembers"]
 weight          = 103

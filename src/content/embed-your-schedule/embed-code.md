@@ -51,6 +51,6 @@ Finally, add the following `<script>` just above the `</body>` of the page:
 
 The `src` and `data-blokks-id` attributes are required. All other attributes are optional. You can [configure your schedule]({{< relref "advanced-options.md" >}}) any way you want by adding or removing options.
 
-<span class='note'>All files are hosted on our servers and [delivered to your visitors using our CDN]({{< relref "caching.md" >}}). However, it’s possible to download all required files and host them on your own server:</span>
+<span class='note'>All files are hosted on our servers and [delivered to your users using our CDN]({{< relref "caching.md" >}}). However, it’s possible to download all required files and host them on your own server:</span>
 
 <button>[Download files <svg><use href="images/sprite.svg#arrow-next"></use></svg>](http://downloadlink)</button>

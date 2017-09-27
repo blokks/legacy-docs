@@ -12,7 +12,7 @@ parent          = "customize-your-embed"
 
 [[related]]
 title = "Create templates: Create your own layout"
-url = "create-your-own-layout.md"
+url = "create-layout.md"
 
 [[related]]
 title = "Basic structure: Dashboard"
@@ -40,7 +40,7 @@ You can change the layout direction at any time by switching the layout in the [
 A good example of the column layout is the schedule that [The Next Web](https://blokks.co/schedules/tnw2017) built. An example of the row layout was implemented by [De Correspondent](https://decorrespondent.nl/evenementen/7/festival-der-vooruitgang/programma).
 
 ## Mobile
-On mobile devices your schedule is automatically shown in a list view. However, visitors can switch back to the full schedule by rotating their device to *landscape mode*. The default breakpoint for switching between mobile and desktop view is **30em** or **480px**. This works best on all devices. If needed, you can [change this value](http://configure/breakpoints).
+On mobile devices your schedule is automatically shown in a list view. However, users can switch back to the full schedule by rotating their device to *landscape mode*. The default breakpoint for switching between mobile and desktop view is **30em** or **480px**. This works best on all devices. If needed, you can [change this value](http://configure/breakpoints).
 
 ![Image: Portrait vs. landscape mode](https://blokks.co/docs/images/animation.gif)
 

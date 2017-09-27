@@ -11,24 +11,20 @@ weight          = 508
 parent          = "custom-themes"
 
 [[related]]
-title = "Activity details"
+title = "Basic structure: Activity details"
 url = "basic-structure.md#activity-details"
-
-[[related]]
-title = "Easing functions"
-url = "http://easings.net/"
 
 [[related]]
 title = "MDN: Using CSS animations"
 url = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
 
 [[related]]
-title = "Chrome: Easing editor"
-url = "https://developers.google.com/web/updates/2015/05/the-easing-editor"
+title = "Chrome Developers: Inspect animations"
+url = "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations"
 
 [[related]]
-title = "Chrome: Inspect animations"
-url = "https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations"
+title = "Chrome Developers: Easing editor"
+url = "https://developers.google.com/web/updates/2015/05/the-easing-editor"
 +++
 
 The `animation` property can be used to animate any CSS property such as `color`, `background-color`, `width`, `height`, etc. Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
@@ -47,7 +43,7 @@ The `animation` property can be used to animate any CSS property such as `color`
 ```
 
 ## Animating modals & alerts
-The [Activity Details]({{< relref "basic-structure.md#activity-details" >}}) components and all alerts animate in when they appear. To replace the animation with another one, you only need to update the start value of the `transform` property. 
+The *Activity Details* components and all alerts animate in when they appear. To replace the animation with another one, you only need to update the start value of the `transform` property. 
 
 For example, here's how to make the modal bounce onto the screen:
 
@@ -56,9 +52,7 @@ For example, here's how to make the modal bounce onto the screen:
   transform: scale3d(0.9, 0.9, 1);
 }
 ```
-You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. 
-
-Find out [more about CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) in the MDN documentation.
+You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. Find out [more about CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
 
 ![Image: Animating modals & alerts](http://animating-modals.gif)
 

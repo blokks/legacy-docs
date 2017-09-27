@@ -75,7 +75,7 @@ You can add a single *image* to each of your acts by dropping an image file on t
 <span class='note'>Note: Images that are added to your act cannot be larger than 2MB. Images are resized and saved as JPG files by Blokks to optimize loading times.</span>
 
 ## Links
-You can add multiple *links* to each of your acts. This will allow visitors to discover more information about your act. Additional links can be added by pressing the *Add one more link* button.
+You can add multiple *links* to each of your acts. This will allow users to discover more information about your act. Additional links can be added by pressing the *Add one more link* button.
 
 Instead of showing a full URL in your timetable embed for each link, you can show a label that describes that link. These are labels like *Youtube*, *Facebook* or *Twitter*. It's also possible to add a custom label by selecting *Other…*.
 
@@ -85,9 +85,9 @@ In some cases, you might want to add a Youtube video, a Spotify track or another
 <span class='note'>You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.</span>
 
 ## Disable user interaction
-In some cases, it can be useful to show an act in your schedule without allowing your visitors to select it. For example, when an act is still being teased to your visitors. Check this box to disable user interaction for that act. 
+In some cases, it can be useful to show an act in your schedule without allowing your users to select it. For example, when an act is still being teased to your users. Check this box to disable user interaction for that act. 
 
 ## Published, unpublished and canceled
-Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your visitors yet.
+Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your users yet.
 
 Acts marked as **canceled** are still visible but can have custom styling in your timetable embed.

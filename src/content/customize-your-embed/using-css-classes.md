@@ -3,7 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Using CSS classes"
-description     = "CSS variables are great! However, Internet Explorer does not support them yet. So we need a fallback if your visitors are using IE."
+description     = "CSS variables are great! However, Internet Explorer does not support them yet. So we need a fallback if your users are using IE."
 keywords        = ["blokks", "design", "embed", "template", "style", "class", "css"]
 weight          = 410
 
@@ -15,7 +15,7 @@ title = "Known issues: CSS variables"
 url = "known-issues.md#customproperties"
 +++
 
-*CSS variables* are great! However, Internet Explorer does not support them yet. A fallback for when your visitors are using IE, is using CSS classes. [Changing colors]({{< relref "change-colors.md" >}}), [updating sizes]({{< relref "update-rows-and-columns.md" >}}) and [replacing fonts]({{< relref "add-own-fonts.md" >}}) with CSS classes can be a bit tedious compared to when using CSS Variables. But still, relatively easy to achieve.
+*CSS variables* are great! However, Internet Explorer does not support them yet. A fallback for when your users are using IE, is using CSS classes. [Changing colors]({{< relref "change-colors.md" >}}), [updating sizes]({{< relref "update-rows-and-columns.md" >}}) and [replacing fonts]({{< relref "add-own-fonts.md" >}}) with CSS classes can be a bit tedious compared to when using CSS Variables. But still, relatively easy to achieve.
 
 <span class='note'>Note: You don’t need to set CSS variables if you use CSS classes as a fallback for IE. All browsers, legacy and modern ones, support CSS classes.</span>
 

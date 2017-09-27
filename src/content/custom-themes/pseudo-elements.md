@@ -11,12 +11,11 @@ weight          = 507
 parent          = "custom-themes"
 
 [[related]]
-title = "Data attributes"
+title = "Custom themes: Data attributes"
 url = "data-attributes.md"
 
-
 [[related]]
-title = "Browser support"
+title = "Browsers & devices: Known issues"
 url = "known-issues.md"
 
 [[related]]
@@ -24,7 +23,7 @@ title = "CSS-Tricks: A Whole Bunch of Amazing Stuff Pseudo Elements Can Do"
 url = "https://css-tricks.com/pseudo-element-roundup/"
 +++
 
-With `pseudo-elements` you can extend the structure of the schedule using only CSS. Pseudo elements will add extra elements `:before` and `:after` the element’s content. These elements are visible to the user and styleable with CSS.
+With *pseudo-elements* you can extend the structure of the schedule using only CSS. Pseudo elements will add extra elements `:before` and `:after` the element’s content. These elements are visible to the user and styleable with CSS.
 
 Adding `:before` and `:after` works basically the same as the following:
 
@@ -36,7 +35,7 @@ Adding `:before` and `:after` works basically the same as the following:
 </div>
 ```
 
-But, with pseudo elements, we'd only need some CSS to achieve the same result:
+But, with *pseudo-elements*, we'd only need some CSS to achieve the same result:
 
 ```css
 .blokks-selector:before {
@@ -55,6 +54,6 @@ But, with pseudo elements, we'd only need some CSS to achieve the same result:
 }
 ```
 
-Without the `content` property pseudo-elements won’t be rendered. To make them visible just set the `content` property of the selector. Once visible you can change its `color`, add a `background-image`, set font properties, specify dimensions, etc.
+Without the `content` property *pseudo-elements* won’t be rendered. To make them visible just set the `content` property. Once visible you can change its `color`, add a `background-image`, set font properties, specify dimensions, etc.
 
-<span class='note'>Pseudo-elements are inline-level elements by default. Don’t forget to change their `display` to ` block` or `inline-block` if you want to set their dimensions.</span>
+<span class='note'>*Pseudo-elements* are inline-level elements by default. Don’t forget to change their `display` to ` block` or `inline-block` if you want to set their dimensions.</span>

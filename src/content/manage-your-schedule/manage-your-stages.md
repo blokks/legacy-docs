@@ -40,6 +40,6 @@ Live events can be pretty hectic and get messy at times. Speakers or artists can
 
 To better deal with this, it’s possible to add delays to stages. Delays are automatically added to all acts of the delayed stage. For example, adding a delay of **15 minutes** pushes the start end times of all acts by 15 minutes.
 
-Your visitors will see the updated times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts.
+Your users will see the updated times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts.
 
 <span class='note'>Note: times shown in the backend will still be the initially set times.</span>

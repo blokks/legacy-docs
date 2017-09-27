@@ -9,11 +9,11 @@
     @mixin antialiased;
 
     @media (--smallest), (--small) {
-        font-size: 1.5rem/1.7;
+        font-size: 1.5rem/1.75;
     }
 
     @media (--default) {
-        font-size: 1.5rem/1.7;
+        font-size: 1.5rem/1.75;
     }
 }
 
@@ -22,16 +22,16 @@
     @mixin antialiased;
 
     @media (--smallest), (--small) {
-        font-size: 1.5rem/1.7;
+        font-size: 1.5rem/1.75;
     }
 
     @media (--default) {
-        font-size: 1.5rem/1.7;
+        font-size: 1.5rem/1.75;
     }
 }
 
 @define-mixin article-code {
-    @mixin font var(--blokks-mono), white, 1.3rem/1.6;
+    @mixin font var(--blokks-mono), white, 1.3rem/1.75;
     @mixin antialiased;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +63,7 @@
 }
 
 @define-mixin article-tbody {
-    @mixin font var(--blokks-mono), var(--default-text-color), 1.3rem/2.1;
+    @mixin font var(--blokks-mono), var(--default-text-color), 1.3rem/2;
     @mixin antialiased;
     text-align: left;
 }

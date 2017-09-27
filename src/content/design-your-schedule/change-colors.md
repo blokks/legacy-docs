@@ -3,6 +3,7 @@ date            = "2017-09-12T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Colors"
+extendedtitle   = "Change colors"
 description     = "Change any color used in your embed."
 keywords        = ["blokks", "design", "embed", "template", "layout", "colors", "fonts", "icons"]
 weight          = 404
@@ -11,12 +12,12 @@ weight          = 404
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Embed structure"
-url = "http://structure"
+title = "Design your schedule: Using CSS classes"
+url = "using-css-classes.md"
 
 [[related]]
-title = "Browser support"
-url = "http://browsersupport#customproperties"
+title = "Known issues: CSS variables"
+url = "known-issues.md#customproperties"
 +++
 
 You can change any color used in the embed. The preferred and easiest way to apply your own styling is to use *CSS custom properties*, or *CSS variables*. CSS variables are [supported by all modern browsers](http://configure/browsersupport).
@@ -31,21 +32,21 @@ The syntax for CSS variables is pretty straightforward:
 
 In the above example `--blokks-theme-color` is a Blokks defined property with a value of `rebeccapurple`. Adding the above code to your page will change the main color of the embed to `rebeccapurple`.
 
-<span class='note'>Note: all CSS variables are prefixed with **\-\-blokks**. Also, *CSS variables* are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
+<span class='note'>Note: all CSS variables are prefixed with **\-\-blokks**. Also, CSS variables are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
 
 ![Image: Changing theme color using CSS variables](https://blokks.co/docs/images/rebeccapurple.png)
 
-Below you will find the complete list of colors which you can change with *CSS variables.*
+Below you will find the complete list of colors which you can change with CSS variables.
 
 | Background color | Description |
 |------------------|-------------|
 | `--blokks-theme-color` | The theme color is used for favorites, hovers, highlighted text and titles. The default value is `#2e8cd2` |
 | `--blokks-default-background-color` | The `background-color` used by the embed. The default value is `#fff` |
-| `--blokks-dashboard-background-color` | The `background-color` used for the [*Dashboard*](http://blokks). The default value is `#33363b` |
-| `--blokks-time-indicator-background-color` | The `background-color` used for the [*Time Indicator*](http://plc). The default value is `#33363b` |
-| `--blokks-modal-background-color` | The `background-color` used for modals like the [*Activity Details*](http://blokks). The default value is `#fff` |
-| `--blokks-image-background-color` | The `background-color` used when a [*Poster Image*](http://blokks) is not yet loaded. The default value is `#33363b` |
-| `--blokks-dimmed-background-color` | The `background-color` used when an activity does not match the category selected with the [*Category Filter*](http://). The default value is `#abb1bc` |
+| `--blokks-dashboard-background-color` | The `background-color` used for the *Dashboard*. The default value is `#33363b` |
+| `--blokks-time-indicator-background-color` | The `background-color` used for the *Time Indicator*. The default value is `#33363b` |
+| `--blokks-modal-background-color` | The `background-color` used for modals like the *Activity Details*. The default value is `#fff` |
+| `--blokks-image-background-color` | The `background-color` used when a *Poster Image* is not yet loaded. The default value is `#33363b` |
+| `--blokks-dimmed-background-color` | The `background-color` used when an activity does not match the category selected with the *Category Filter*. The default value is `#abb1bc` |
 
 | Text color | Description |
 |------------|-------------|

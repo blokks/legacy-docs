@@ -11,14 +11,10 @@ weight          = 306
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Google Analytics"
-url = "https://analytics.google.com"
-
-[[related]]
-title = "Disable tracking"
+title = "Configure your schedule: Disable tracking"
 url = "tracking.md"
 +++
 
-Blokks automatically looks for Google Analytics on your website. It uses your existing code to track Blokks events. Since most websites already use Google Analytics, you don’t have to do anything to make it work. It’s like magic!
+Blokks automatically looks for [Google Analytics](https://analytics.google.com/analytics/web/) on your website. It uses your existing code to track Blokks events. Since most websites already use Google Analytics, you don’t have to do anything to make it work. It’s like magic! ✨
 
 Visit the [Google Analytics website](https://analytics.google.com) for more information on how to install it on your website.

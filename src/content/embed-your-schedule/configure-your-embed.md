@@ -11,12 +11,8 @@ weight          = 301
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Design your schedule"
-url = "introduction.md"
-
-[[related]]
-title = "Configure your schedule"
-url = "lets-get-started.md"
+title = "Configure your schedule: Hiding elements"
+url = "hide-elements.md"
 +++
 
 Head over to the embed page when you’re ready to start implementing your schedule on your website or mobile app. On this page you’ll find various settings that will allow you to customize both design and functionality of your embed.

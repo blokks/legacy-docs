@@ -11,20 +11,16 @@ weight          = 302
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Create templates"
+title = "Create templates: Getting started"
 url = "getting-started.md"
 
 [[related]]
-title = "Adding preloader"
+title = "Basic structure: Adding preloader"
 url = "preloader.md"
 
 [[related]]
-title = "Configure your schedule"
+title = "Configure your schedule: Lets get started"
 url = "lets-get-started.md"
-
-[[related]]
-title = "Caching"
-url = "caching.md"
 +++
 
 Embedding your schedule requires you to insert three small code snippets:
@@ -33,17 +29,13 @@ Embedding your schedule requires you to insert three small code snippets:
 The first one is a `<link>` to a stylesheet and is placed in the `<head>` of your page. If you [created your own template]({{< relref "getting-started.md" >}}) just replace the `href` value with a link to your own CSS file.
 
 ```html
-<!-- Add this to the <head> of your page -->
 <link href="columns.css" media="screen" rel="stylesheet">
 ```
 
-<span class='note'>Note: If you've [created your own template](http://themes/intro) just replace the `href` value with a link to your own CSS file.</span>
-
 ## Container
-The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body></body>`:
+The second piece of code is even simpler. It’s the `<div>` container in which the schedule is embedded. You can add the container anywhere on your page as long as it is between `<body>` `</body>`:
 
 ```html
-<!-- Add this anywhere in the <body> -->
 <div blokks-container></div>
 ```
 
@@ -51,15 +43,14 @@ The second piece of code is even simpler. It’s the `<div>` container in which 
 Finally, add the following `<script>` just above the `</body>` of the page:
 
 ```html
-<!-- Add this just above the </body> of your page -->
 <script defer src="main.js"
   data-blokks-id="a34e542f"
   data-layout="columns">
 </script>
 ```
 
-The `src` `data-blokks-id` `data-layout` attributes are required. All other attributes are optional. You can [configure your schedule]({{< relref "lets-get-started.md" >}}) any way you want by adding or removing other options.
+The `src` and `data-blokks-id` attributes are required. All other attributes are optional. You can [configure your schedule]({{< relref "lets-get-started.md" >}}) any way you want by adding or removing options.
 
-All files are hosted on our servers and [delivered to your visitors using our CDN]({{< relref "caching.md" >}}). However, it’s possible to download all required files and host them on your own server.
+<span class='note'>All files are hosted on our servers and [delivered to your visitors using our CDN]({{< relref "caching.md" >}}). However, it’s possible to download all required files and host them on your own server:</span>
 
-[<button>Download files <svg><use href="images/sprite.svg#arrow-next"></use></svg></button>](http://downloadlink)
+<button>[Download files <svg><use href="images/sprite.svg#arrow-next"></use></svg>](http://downloadlink)</button>

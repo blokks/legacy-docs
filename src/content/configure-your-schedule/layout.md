@@ -11,12 +11,16 @@ weight          = 603
 parent          = "configure-your-schedule"
 
 [[related]]
-title = "Choose your layout"
+title = "Design your schedule: Choose your layout"
 url = "choose-your-layout.md"
 
 [[related]]
-title = "Flexbox"
+title = "Known issues: Flexbox"
 url = "known-issues.md#flexbox"
+
+[[related]]
+title = "MDN: Using media queries"
+url = "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
 +++
 
 We mentioned [layouts]({{< relref "choose-your-layout.md" >}}) before: out of the box Blokks supports `columns`, `rows` and `custom` layouts. Depending on your choice, elements are styled using [CSS Flexbox]({{< relref "known-issues.md#flexbox" >}}).

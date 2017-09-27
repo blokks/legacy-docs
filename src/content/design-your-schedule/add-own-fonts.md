@@ -3,6 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Fonts"
+extendedtitle   = "Add your own fonts"
 description     = "Changing fonts used in your schedule."
 keywords        = ["blokks", "design", "embed", "template", "layout", "fonts", "typekit", "adobe", "google fonts"]
 weight          = 406
@@ -11,12 +12,8 @@ weight          = 406
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Browser support"
-url = "http://browsersupport#customproperties"
-
-[[related]]
-title = "MDN: @font-face"
-url = "https://developer.mozilla.org/nl/docs/Web/CSS/@font-face"
+title = "Known issues: CSS variables"
+url = "known-issues.md#customproperties"
 
 [[related]]
 title = "Google Fonts"
@@ -25,6 +22,10 @@ url = "https://fonts.google.com/"
 [[related]]
 title = "Adobe Typekit"
 url = "https://typekit.com/"
+
+[[related]]
+title = "MDN: @font-face"
+url = "https://developer.mozilla.org/nl/docs/Web/CSS/@font-face"
 +++
 
 ## System fonts
@@ -42,14 +43,13 @@ The embed will try to load **Helvetica Neue** first. If it wasn’t found, it sk
 Luckily we can import fonts from [Google Fonts](https://fonts.google.com/), [Adobe Typekit](https://typekit.com/) and other type foundries. Together they offer hundreds of great fonts to choose from.
 
 ### Google Fonts
-When using [Google Fonts](https://fonts.google.com/), paste the following snippet into the **\<head\>** of your HTML page. In this example, we're importing **Roboto** as our font.
+When using [Google Fonts](https://fonts.google.com/), paste the following snippet into the **\<head\>** of your HTML page. In this example, we chose **Roboto** as our new font:
 
 ```html
-<!-- Add this to the head of your page -->
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 ```
 
-To use this font in your schedule, simply change the value of this *CSS variable*:
+To use this font in your schedule, simply change the value of this CSS variable:
 
 ```css
 :root {
@@ -63,12 +63,11 @@ To use this font in your schedule, simply change the value of this *CSS variable
 Using [Adobe Typekit](https://typekit.com/) fonts differs just a little bit from using Google Fonts. To start, paste the following snippet into the **\<head\>** of your HTML page.
 
 ```html
-<!-- Add this to the head of your page -->
 <script src='https://use.typekit.net/hjy6zgg.js'></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 ```
 
-And again, use our CSS variable to add the font:
+And again, use our CSS variable to set the font:
 
 ```css
 :root {

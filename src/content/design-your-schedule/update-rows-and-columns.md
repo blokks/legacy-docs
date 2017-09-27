@@ -11,19 +11,23 @@ weight          = 405
 parent          = "design-your-schedule"
 
 [[related]]
-title = "Configure your schedule: Set the timescale of the embed"
-url = "http://configure/timescale"
+title = "Design your schedule: Choose your layout"
+url = "choose-your-layout.md"
 
 [[related]]
-title = "Configure your schedule: Browser support"
-url = "http://browsersupport#customproperties"
+title = "Configure your schedule: Set the timescale of the embed"
+url = "time-scale.md"
+
+[[related]]
+title = "Known issues: CSS variables"
+url = "known-issues.md#customproperties"
 +++
 
 Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use *CSS variables* to update the size of rows and columns of your schedule. These CSS variables are:
 
 | Column properties | Description |
 |-------------------|-------------|
-| **--blokks-table-header-height** | Sets the height of the [Location]({{< relref "basic-structure.md#location" >}}) header. The default value is `auto` |
+| **--blokks-table-header-height** | Sets the height of the *Location* header. The default value is `auto` |
 | **--blokks-table-cell-height** | Sets the height of a single timeslot/tablecell. The default value is `100px` |
 | **--blokks-table-column-width** | Sets the width of a single *Location*. The default value is `265px` |
 | **--blokks-time-captions-width** | Sets the width of the sidebar represented by the sidebar. The default value is `60px`
@@ -36,4 +40,4 @@ Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use 
 | **--blokks-time-captions-height** | Sets the height of the time captions represented the top bar. The default value is `30px`. |
 
 ## Timescale
-Sometimes changing the width or height of elements is not sufficient. Some acts are too small while others are too big. This is where the [`data-timescale`]({{< relref "time-scale.md" >}}) option comes in. Basically, the timescale option sets the duration of a single timeslot/tablecell. [Read more about timescale and how to use it]({{< relref "time-scale.md" >}}).
+Sometimes changing the width or height of elements is not sufficient. Some acts are too small while others are too big. This is where `data-timescale` comes in. Basically, [the timescale option]({{< relref "time-scale.md" >}}) sets the duration of a single timeslot.

@@ -3,6 +3,7 @@ date            = "2017-09-13T11:31:19+02:00"
 author          = "@patrickpietens"
 
 title           = "Icons"
+extendedtitle   = "Replace icons"
 description     = "Replacing the default Blokks icons."
 keywords        = ["blokks", "design", "embed", "template", "icons", "svg"]
 weight          = 408

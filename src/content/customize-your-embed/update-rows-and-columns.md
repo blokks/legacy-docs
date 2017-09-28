@@ -44,4 +44,4 @@ Depending on [your layout]({{< relref "choose-your-layout.md" >}}), you can use 
 | **--blokks-time-captions-height** | Sets the height of the time captions represented the top bar. The default value is `30px`. |
 
 ## Timescale
-Sometimes changing the width or height of elements is not sufficient. Some acts are too small while others are too big. This is where `data-timescale` comes in. Basically, [the timescale option]({{< relref "time-scale.md" >}}) sets the duration of a single timeslot.
+Sometimes changing the width or height of elements is not sufficient. Some [Activities]({{< relref "basic-structure.md#activity" >}}) are too small while others are too big. This is where `data-timescale` comes in. Basically, [the timescale option]({{< relref "time-scale.md" >}}) sets the duration of a single timeslot.

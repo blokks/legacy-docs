@@ -20,7 +20,7 @@ title = "Github: Markdown cheatsheet"
 url = "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
 +++
 
-After [adding an act]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
+After [adding an act (speakers/talks/artists)]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
 
 ![Image: Editing acts](https://blokks.co/docs/images/image.png)
 

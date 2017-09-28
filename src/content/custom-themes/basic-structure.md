@@ -74,7 +74,7 @@ A single day of your event is represented by the *Timetable* component, which co
 
 ![Image: Timetable on desktop](https://blokks.co/docs/images/dashboard.png)
 
-If one of your schedule's dates is the same as today’s date, it's automatically selected. Also, the Time Indicator will then be visible and scrolled into view. That way, speakers or acts that are currently performing will be shown when the schedule is opened. You can [disable this]({{< relref "auto-scroll.md" >}}) by setting `data-autoscroll`.
+If one of your schedule's dates is the same as today’s date, it's automatically selected. Also, the Time Indicator will then be visible and scrolled into view. That way, acts (speakers/talks/artists) that are currently performing will be shown when the schedule is opened. You can [disable this]({{< relref "auto-scroll.md" >}}) by setting `data-autoscroll`.
 
 <span class='note'>Some components, for example, the *Dashboard* and *Time Indicator*, are only visible during the event and difficult to test or style. However, you can [enable them]({{< relref "testflight.md" >}}) anytime by setting `data-testflight`.</span>
 
@@ -91,7 +91,7 @@ The *Location* component represents a single stage of your event. Basically, it�
 ![Image: Blokks locations](https://blokks.co/docs/images/dashboard.png)
 
 ## Activity
-Speakers, talks, acts, artists and performances are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
+Acts (speakers/talks/artists) are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
 
 ![Image: Blokks activities](https://blokks.co/docs/images/dashboard.png)
 

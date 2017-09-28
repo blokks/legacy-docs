@@ -43,7 +43,7 @@ By default Blokks automatically calculates the size of an *Activity* and adds cl
 
 Computing element sizes forces the browser to reflow. This is also known as layout trashing and can cause performance problems when you add a lot of activities. If this is the case, we recommend disabling auto measuring by setting the [`data-auto-measure-size`](http://configure/measuring-size) to `false`.
 
-<span class='note'>As an alternative, you can use the `data-duration` property to determine the size of an activity.</span>
+<span class='note'>As an alternative, you can use the `data-duration` property to determine the size of an *Activity*.</span>
 
 ## CSS Template
 We've created a [CSS template](http://github.com/patrickpietens/blokks-template) containing separate files for all components with their elements and modifiers. The files don’t contain styling, but are simply a starting point to add your own styles. All components and modifiers are well documented with inline comments. You can use [SASS](http://sass-lang.com/) or [PostCSS](http://postcss.org/) to compile them.

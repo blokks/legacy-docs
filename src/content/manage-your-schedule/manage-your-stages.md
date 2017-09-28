@@ -38,7 +38,7 @@ You can add one or more categories to stages. By itself, these categories have n
 ### Delays
 Live events can be pretty hectic and get messy at times. Speakers or artists can be delayed for various reasons, causing your schedule to get out of sync.
 
-To better deal with this, it’s possible to add delays to stages. Delays are automatically added to all acts of the delayed stage. For example, adding a delay of **15 minutes** pushes the start end times of all acts by 15 minutes.
+To better deal with this, it’s possible to add delays to stages. Delays are automatically added to all acts (speakers/talks/artists) of the delayed stage. For example, adding a delay of **15 minutes** pushes the start end times of all acts by 15 minutes.
 
 Your users will see the updated times in their schedule, making sure they won’t be waiting around or be late to see their favorite acts.
 

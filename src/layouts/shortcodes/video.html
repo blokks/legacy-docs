@@ -1,0 +1,14 @@
+{{ $width := int (.Get "width") }}
+{{ $height := int (.Get "height") }}
+
+<div title='{{ .Get "title" }}' class='video video--{{ if gt $width $height }}landscape{{ else }}portrait{{ end }}'>
+
+	{{ $height := mul $height 100 }}
+	{{ $aspectRatio := div $height $width }}
+
+	<div class='video__container' style='position: relative; padding-bottom: {{ $aspectRatio }}%'>
+	    <video autoplay loop muted playsinline class='video__player lazy-video lazyloaded' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%'>
+	        <source src='{{ .Get "src" }}' type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+	    </video>
+	</div>
+</div>

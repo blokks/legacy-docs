@@ -17,14 +17,14 @@ The columns shown in your schedule represent the stages or areas of your event.
 ## Adding stages
 You can add stages by simply clicking the *+ Add new stage* button. New stages are added only to your currently selected day.
 
-![Adding stages](images/manage-your-stages-adding-a-new-stage.gif)
+{{< video src="videos/manage-your-stages-adding-a-new-stage.mp4" width="1678" height="1264" title="Adding stages" >}}
 
 <span class='note'>Note: [Adding an extra day]({{< relref "manage-your-days.md#adding-days" >}}) will duplicate the stages of that day. To save you extra work, make sure you’ve created all stages before adding new dates.</span>
 
 ## Ordering stages
 Changing the order of your stages is done by clicking the stage title and dragging them to the prefered position.
 
-![Editing stages](images/manage-your-stages-editing-stages.gif)
+{{< video src="videos/manage-your-stages-editing-stages.mp4" width="1678" height="1264" title="Editing stages" >}}
 
 ## Updating stages
 Right-click a stage or press the *•••* button to bring up the various options for that stage.

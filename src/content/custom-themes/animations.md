@@ -54,7 +54,7 @@ For example, here's how to make the modal bounce onto the screen:
 ```
 You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. Find out [more about CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
 
-![Animating modals & alerts](images/animation-animating-modals.gif)
+{{< video src="videos/animation-animating-modals.mp4" width="1628" height="1072" title="Animating modals & alerts" >}}
 
 ## Animating other elements
 Modals and alerts are currently the only components that have animation. But this doesn’t mean that you are limited to just those components. Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule with all kinds of animations. Feel free to add animation to your schedule!

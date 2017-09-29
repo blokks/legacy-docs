@@ -41,7 +41,7 @@ url = "upgrade-your-account.md"
 
 The timetable embed is split into smaller, independent pieces called components, which in turn are split into even smaller components. Each component has [a unique CSS class]({{< relref "bem.md" >}}), which makes is easy to style them separately. 
 
-![Basic structure](images/custom-themes-basic-structure-desktop.gif)
+{{< video src="videos/custom-themes-basic-structure-desktop.mp4" width="1678" height="1264" title="Basic structure" >}}
 
 The main components are:
 

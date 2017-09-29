@@ -22,8 +22,7 @@ Adding extra days to your event is simple. Just hit the *+ Add day* button. Blok
 ## Changing and removing days
 Right-clicking any date shows you the datepicker, allowing you to change the selected date. Click the *Remove* button right below the datepicker to delete that specific day. Removing days will also delete the acts (speakers/talks/artists) added to that day.
 
-![Changing and removing days](images/manage-your-days-dates.gif)
-
+{{< video src="videos/manage-your-days-dates.mp4" width="1678" height="1264" title="Changing and removing days">}}
 
 <span class='note'>Pro-tip: You can always undo any action by clicking the *Undo* button in the top right or by using the shortcut <kbd>CTRL + Z</kbd> or <kbd>CMD + Z</kbd>.</span>
 
@@ -32,6 +31,6 @@ If you want your days to start earlier or end later, you can do so by clicking t
 
 Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the hours you’re about to remove.
 
-![Adjusting your start and end time](images/manage-your-days-changing-start-end-times.gif)
+{{< video src="videos/manage-your-days-changing-start-end-times.mp4" width="1678" height="1264" title="Adjusting your start and end time">}}
 
 <span class='note'>You can always take a step back by clicking the *Undo* button in the top right or by hitting <kbd>CTRL + Z</kbd> or <kbd>CMD + Z</kbd>.</span>

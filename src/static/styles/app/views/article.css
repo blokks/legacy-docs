@@ -46,10 +46,12 @@
         margin: 20px 0 20px;
     }
 
+    .video,
     img {
         margin: 6px 0;
         size: 100% auto;
-        border-radius: 3px;
+        border-radius: 5px;
+        overflow: hidden;
         color: yellow;
     }
 
@@ -284,6 +286,12 @@
     table + p,
     pre + p {
         margin: 20px 0 10px;
+    }
+
+    @media (--small), (--default) {
+        .video--portrait {
+            width: 50%;
+        }
     }
 }
 

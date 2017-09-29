@@ -26,7 +26,7 @@ url = "layout.md"
 ## Desktop
 On desktop, the embed has two layouts: the first direction being the *column* layout where stages are arranged horizontally. This is the default direction of the embed. The second is the *row* layout where stages are stacked vertically.
 
-![Row vs. column layout](images/choose-your-layout-row-vs-column.gif)
+{{< video src="videos/choose-your-layout-row-vs-column.mp4" width="1160" height="504" title="Row vs. column layout" >}}
 
 You can change the layout direction at any time by switching the layout in the [embed tab]({{< relref "configure-your-embed.md" >}}) of our backend or by [setting it manually]({{< relref "layout.md" >}}) with the `data-layout` option:
 
@@ -42,7 +42,7 @@ A good example of the column layout is the schedule that [The Next Web](https://
 ## Mobile
 On mobile devices your schedule is automatically shown in a list view. However, users can switch back to the full schedule by rotating their device to *landscape mode*. The default breakpoint for switching between mobile and desktop view is **30em** or **480px**. This works best on all devices. If needed, you can [change this value](http://configure/breakpoints).
 
-![Mobile layout](images/choose-your-layout-mobile.gif)
+{{< video src="videos/choose-your-layout-mobile.mp4" width="764" height="1096" title="Mobile layout" >}}
 
 For events with a lot of stages and acts (speakers/talks/artists) the list view can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the *Dashboard*. The *Dashboard* is a summary of acts that are playing now and coming up next. [Find out more about the Dashboard]({{< relref "basic-structure.md#dashboard" >}})
 

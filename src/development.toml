@@ -40,8 +40,8 @@ name = "Custom themes"
 weight = 7
 
 [[menu.main]]
-identifier = "browsers-devices"
-name = "Browsers & Devices"
+identifier = "compatibility"
+name = "Compatibility"
 weight = 8
 
 [[menu.main]]

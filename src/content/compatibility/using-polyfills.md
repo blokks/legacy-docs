@@ -8,7 +8,7 @@ keywords        = ["blokks", "support", "browsers", "Chrome", "Edge", "Internet 
 weight          = 703
 
 [menu.main]
-parent          = "browsers-devices"
+parent          = "compatibility"
 
 [[related]]
 title = "Known issues"

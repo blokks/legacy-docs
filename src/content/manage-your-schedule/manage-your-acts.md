@@ -12,7 +12,7 @@ weight          = 203
 parent          = "manage-your-schedule"
 +++
 
-Adding acts to your event is probably the most important part of building your schedule.
+Adding acts (speakers/talks/artists) to your event is probably the most important part of building your schedule.
 
 ## Adding acts
 To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add and [edit all your info]({{< relref "edit-acts.md" >}}) in one place.

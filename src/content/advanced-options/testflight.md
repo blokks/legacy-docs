@@ -23,7 +23,7 @@ title = "Advanced options: caching"
 url = "caching.md"
 +++
 
-Some components, like the [Dashboard]({{< relref "basic-structure.md#dashboard" >}}) and [Time Indicator]({{< relref "basic-structure.md#time-indicator" >}}) are only visible during the day of your event. To make them visible set `data-testflight` to `true`. Setting `data-testflight` also disables caching.
+Some components, like the *Dashboard* and *Time Indicator* are only visible during the day of your event. To make them visible set `data-testflight` to `true`. Setting `data-testflight` also disables caching.
 
 <span class='note'>Important: Don’t forget to disable testflight on your production.</span>
 

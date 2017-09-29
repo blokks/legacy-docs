@@ -24,7 +24,7 @@ Your users are able to save their favorite acts and see where their friends are 
 ## Adding favorites
 Once connected, users can click the *Add to favorites* button to favorite that act. Alternatively, they can double click acts or press the <kbd>L</kbd> key to add favorites straight from the schedule. [You can disable favorites]({{ relref "hide-components.md" }}) by setting `data-hide-favorites` in your embed code.
 
-![Image: Adding favorites](https://blokks.co/docs/images/image.gif)
+![Adding favorites](images/adding-favorites.gif)
 
 ## Friends activity
 If some of your users' friends are attending the same event, they will popup in several places in your schedule. This will show your users which speaker, band or performance their friends will be going to. [Disable this feature]({{< relref "hide-components.md" >}}) by setting `data-hide-friends`.

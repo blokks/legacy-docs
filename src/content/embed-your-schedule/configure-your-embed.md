@@ -20,4 +20,4 @@ Head over to the embed page when you’re ready to start implementing your sched
 
 <span class='note'>Note: after adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy the updated code after you changed any of your settings.</span>
 
-![Image: Configure your embed](http://embed)
+![Configure your embed](images/configure-your-embed.gif)

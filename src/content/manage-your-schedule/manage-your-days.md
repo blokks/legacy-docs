@@ -17,14 +17,13 @@ Your conference or festival can be a single or multiple day event. The dates can
 ## Adding days
 Adding extra days to your event is simple. Just hit the *+ Add day* button. Blokks will automatically pick the date that follows the last one.
 
-![Image: Adding days](https://blokks.co/docs/images/adding-days.gif)
-
 <span class='note'>Note: your current stages will also be copied to your newly added day.</span>
 
 ## Changing and removing days
 Right-clicking any date shows you the datepicker, allowing you to change the selected date. Click the *Remove* button right below the datepicker to delete that specific day. Removing days will also delete the acts added to that day.
 
-![Image: Changing and removing days](https://blokks.co/docs/images/datepicker.gif)
+![Changing and removing days](images/manage-your-days-dates.gif)
+
 
 <span class='note'>Pro-tip: You can always undo any action by clicking the *Undo* button in the top right or by using the shortcut <kbd>CTRL + Z</kbd> or <kbd>CMD + Z</kbd>.</span>
 
@@ -33,6 +32,6 @@ If you want your days to start earlier or end later, you can do so by clicking t
 
 Changing the the start or end time of the day may remove acts from your schedule. Make sure that you don’t have any active acts during the hours you’re about to remove.
 
-![Adjusting your start and end time](https://blokks.co/docs/images/manage-times.gif)
+![Adjusting your start and end time](images/manage-your-days-changing-start-end-times.gif)
 
 <span class='note'>You can always take a step back by clicking the *Undo* button in the top right or by hitting <kbd>CTRL + Z</kbd> or <kbd>CMD + Z</kbd>.</span>

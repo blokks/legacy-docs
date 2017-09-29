@@ -23,7 +23,7 @@ After first signing up to Blokks, you’ll be on a free account. With a free acc
 
 [Upgrade your account](https://blokks.co/manage/upgrades) once you’re ready to go live and share your schedule with your visitors.
 
-![Image: Upgrading your account](https://blokks.co/docs/images/image.png)
+![Upgrading your account](images/account-settings-upgrading.gif)
 
 Upgrading is quite simple. Just add your payment information, optionally add a coupon code, and you’re good to go! After processing your payment data, your schedule will be upgraded and visible to the public.
 

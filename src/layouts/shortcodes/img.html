@@ -1,0 +1,4 @@
+{{ $width := int (.Get "width") }}
+{{ $height := int (.Get "height") }}
+
+<img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' class='image image--{{ if gt $width $height }}landscape{{ else }}portrait{{ end }}'>

@@ -50,9 +50,9 @@
     img {
         margin: 6px 0;
         size: 100% auto;
-        border-radius: 5px;
+        background-color: var(--placeholder-background-color);
+        border-radius: 3px;
         overflow: hidden;
-        color: yellow;
     }
 
     hr {
@@ -289,8 +289,9 @@
     }
 
     @media (--small), (--default) {
+        .image--portrait,
         .video--portrait {
-            width: 50%;
+            width: 60%;
         }
     }
 }

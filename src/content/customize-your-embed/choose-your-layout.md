@@ -46,6 +46,6 @@ On mobile devices your schedule is automatically shown in a list view. However, 
 
 For events with a lot of stages and acts (speakers/talks/artists) the list view can become quite long. Therefore, during the day or days of your event the mobile version of the embed will show the *Dashboard*. The *Dashboard* is a summary of acts that are playing now and coming up next. [Find out more about the Dashboard]({{< relref "basic-structure.md#dashboard" >}})
 
-![Image: Mobile dashboard](images/customize-your-embed-choose-your-layout-dashboard.jpg)
+{{< img src="images/customize-your-embed-choose-your-layout-dashboard.jpg" width="768" height="1362" alt="Image: Mobile dashboard" >}}
 
 <span class='note'>Note: If you are [creating your own theme]({{< relref "custom-themes.md" >}}) and don’t want to use the *column* or *row* layout, set the `data-layout` property to `custom`.</span>

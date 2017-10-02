@@ -83,7 +83,7 @@ During the event, the *Dashboard* component is shown on mobile devices. The comp
 
 <span class='note'>You can [disable the Dashboard]({{< relref "hide-components.md" >}}) by setting `data-hide-dashboard` to `true`.</span>
 
-![Image: Mobile dashboard](images/customize-your-embed-choose-your-layout-dashboard.jpg)
+{{< img src="images/customize-your-embed-choose-your-layout-dashboard.jpg" width="768" height="1362" alt="Image: Mobile dashboard" >}}
 
 ## Location
 The *Location* component represents a single stage of your event. Basically, it’s a list of [Activities]({{< relref "basic-structure.md#activity" >}}), sorted by time.

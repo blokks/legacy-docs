@@ -14,7 +14,7 @@ parent          = "getting-started"
 
 Follow the link in your email to start working on your first event. To set everything up, we need to know some basic info. We’ll take you through a series of pages and ask things like your event name, what kind of event you’re organising, dates, times etc.
 
-![Create your first event](filmpje)
+{{< video src="videos/getting-started-your-first-event.mp4" width="1784" height="1502" title="Creating your first event" >}}
 
 ## Dates & times
 Choose the date of your event by selecting it in the calendar. You can select multiple dates if necessary. You can also set a start and end time for your event. If you’re not yet sure about the date or time for your event, no worries, you can easily [change those later]({{< relref "manage-your-days.md" >}}).

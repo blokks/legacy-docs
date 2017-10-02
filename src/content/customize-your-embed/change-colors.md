@@ -34,7 +34,7 @@ In the above example `--blokks-theme-color` is a Blokks defined property with a 
 
 <span class='note'>Note: all CSS variables are prefixed with **\-\-blokks**. Also, CSS variables are case sensitive, so `--blokks-theme-color` and `--Blokks-Theme-Color` are different.</span>
 
-![Image: Changing theme color using CSS variables](https://blokks.co/docs/images/rebeccapurple.png)
+{{< video src="videos/customize-your-embed-all-css-variables.mp4" width="1794" height="1158" title="Showing all properties using the Inspector" >}}
 
 Below you will find the complete list of colors which you can change with CSS variables.
 

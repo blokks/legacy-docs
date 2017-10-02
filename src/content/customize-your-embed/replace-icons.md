@@ -45,10 +45,8 @@ To replace the default Blokks icons we need to create a new icon set. An icon se
 
 | filename | description |
 |----------|-------------|
-| **arrow-down-icon.svg** | Down arrow used in the *Controls* component |
 | **arrow-left-icon.svg** | Left arrow used in the *Controls* component |
 | **arrow-right-icon.svg** | Right arrow used in the *Controls* component |
-| **arrow-up-icon.svg** | Up arrow used in the *Controls* component |
 | **close-icon.svg** | The symbol used in the close button of the *Activity Details* component |
 | **dropdown-icon.svg** | Symbol used when the *Date Selector* is a dropdown menu |
 | **favorite-icon.svg** | Symbol used to indicate the favorite action |

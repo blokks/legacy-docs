@@ -61,7 +61,7 @@ The *Options* component lets users sign in to [add favorites]({{< relref "favori
 ![Options on desktop](images/custom-themes-basic-structure-desktop-03.jpg)
 
 ## Controls
-Users can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when [`data-layout`]({{< relref "choose-your-layout.md" >}}) option is set to `columns`. They're always visible on mobile devices.
+Users can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when [`data-layout`]({{< relref "choose-your-layout.md" >}}) option is set to `columns`.
 
 ![Controls on desktop](images/custom-themes-basic-structure-desktop-04.jpg)
 

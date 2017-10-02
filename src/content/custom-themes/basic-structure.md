@@ -41,7 +41,7 @@ url = "upgrade-your-account.md"
 
 The timetable embed is split into smaller, independent pieces called components, which in turn are split into even smaller components. Each component has [a unique CSS class]({{< relref "bem.md" >}}), which makes is easy to style them separately. 
 
-{{< video src="videos/custom-themes-basic-structure-desktop.mp4" width="1678" height="1264" title="Basic structure" >}}
+{{< video src="videos/custom-themes-basic-structure.mp4" width="1172" height="658" title="Basic structure" >}}
 
 The main components are:
 
@@ -83,7 +83,7 @@ During the event, the *Dashboard* component is shown on mobile devices. The comp
 
 <span class='note'>You can [disable the Dashboard]({{< relref "hide-components.md" >}}) by setting `data-hide-dashboard` to `true`.</span>
 
-![Image: Blokks mobile dashboard](https://blokks.co/docs/images/dashboard.png)
+![Image: Mobile dashboard](images/customize-your-embed-choose-your-layout-dashboard.jpg)
 
 ## Location
 The *Location* component represents a single stage of your event. Basically, itâ€™s a list of [Activities]({{< relref "basic-structure.md#activity" >}}), sorted by time.
@@ -93,24 +93,24 @@ The *Location* component represents a single stage of your event. Basically, itâ
 ## Activity
 Acts (speakers/talks/artists) are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
 
-![Activity on desktop](images/custom-themes-basic-structure-desktop-07.jpg)
+![Activity](images/custom-themes-basic-structure-desktop-07.jpg)
 
 Selecting an *Activity* will show the *Activity Details* component:
 
 ## Activity details
 The *Activity Details* component is a modal presented when an *Activity* is selected. It shows all [information]({{< relref "manage-your-acts.md" >}}) about the selected act or talk. This includes titles, subtitles, times, descriptions, photos, links and embeds.
 
-![Activity details on desktop](images/custom-themes-basic-structure-desktop-09.jpg)
+![Activity details](images/custom-themes-basic-structure-desktop-09.jpg)
 
 ## Notifications & Alerts
 *Notifications* and *Alerts* are small modals used to show instructions when a visitor wants to sign in, or to display an an error when something went wrong.
 
-![Alerts on desktop](images/custom-themes-basic-structure-desktop-10.jpg)
+![Alerts](images/custom-themes-basic-structure-desktop-10.jpg)
 
 ## Time indicator
 The *Time Indicator* is only visible during the event and shows, as the name suggest, the current time. 
 
-![Time indicator on desktop](images/custom-themes-basic-structure-desktop-?.jpg)
+![Time indicator](images/custom-themes-basic-structure-desktop-11.jpg)
 
 <span class='note'>You can test the time indicator by setting the [`data-testflight` option](http://configure/options#testflight)</span>
 

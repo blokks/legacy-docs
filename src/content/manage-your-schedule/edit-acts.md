@@ -22,7 +22,7 @@ url = "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
 
 After [adding an act (speakers/talks/artists)]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
 
-![Modal](images/edit-acts-modal.jpg)
+![Modal](images/manage-your-schedule-edit-acts-modal.jpg)
 
 ## Titles and subtitles
 The *title* of an act is required and can be anything you want. Most common titles are speakers names, title of their talks etc. If your event is a conference, you can also add a *subtitle*. This can be left blank if you don’t need it.

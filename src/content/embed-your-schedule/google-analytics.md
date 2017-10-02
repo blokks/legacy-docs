@@ -15,6 +15,6 @@ title = "Advanced options: tracking"
 url = "tracking.md"
 +++
 
-Blokks automatically looks for [Google Analytics](https://analytics.google.com/analytics/web/) on your website. It uses your existing code to track Blokks events. Since most websites already use Google Analytics, you don’t have to do anything to make it work. It’s like magic! ✨
+Blokks automatically looks for [Google Analytics](https://analytics.google.com/analytics/web/) on your website. It uses your existing code to track Blokks events. Since most websites already use Google Analytics, you don’t have to do anything to make it work. It’s like magic!
 
 Visit the [Google Analytics website](https://analytics.google.com) for more information on how to install it on your website.

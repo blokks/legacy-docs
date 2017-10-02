@@ -35,23 +35,23 @@ Besides colors, fonts and sizes, there are more *CSS variables* for you to chang
 --blokks-time-captions-width      | 60px
 --blokks-table-column-width       | 265px -->
 
-| CSS Variables                   | Description           |
-|---------------------------------|-----------------------|
---blokks-default-font             | Default font
---blokks-secondary-font           | Secondary font
---blokks-theme-color              | Main color, also used for titles, date selector, favorites, hover states, etc.
---blokks-default-background-color | Main background color
---blokks-dark-background-color    | Dark background color used for activities, etc.
---blokks-default-text-color       | Default text color
---blokks-light-text-color         | Light text color used for text shown in activities
---blokks-dimmed-text-color        | Dimmed text color used for buttons, times, etc.
---blokks-stroke-color             | The stroke color
---blokks-table-header-border      | Border styling for the schedule header
---blokks-table-cell-border        | Border styling for each cell
---blokks-table-header-height      | The height of the header
---blokks-table-cell-height        | The height of each cell
---blokks-time-captions-width      | The width of the labels shown on the left of the schedule
---blokks-table-column-width       | The width of each column
+| CSS Variables                     | Description           |
+|-----------------------------------|-----------------------|
+`--blokks-default-font`             | Default font
+`--blokks-secondary-font`           | Secondary font
+`--blokks-theme-color`              | Main color, also used for titles, date selector, favorites, hover states, etc.
+`--blokks-default-background-color` | Main background color
+`--blokks-dark-background-color`    | Dark background color used for activities, etc.
+`--blokks-default-text-color`       | Default text color
+`--blokks-light-text-color`         | Light text color used for text shown in activities
+`--blokks-dimmed-text-color`        | Dimmed text color used for buttons, times, etc.
+`--blokks-stroke-color`             | The stroke color
+`--blokks-table-header-border`      | Border styling for the schedule header
+`--blokks-table-cell-border`        | Border styling for each cell
+`--blokks-table-header-height`      | The height of the header
+`--blokks-table-cell-height`        | The height of each cell
+`--blokks-time-captions-width`      | The width of the labels shown on the left of the schedule
+`--blokks-table-column-width`       | The width of each column
 
 
 

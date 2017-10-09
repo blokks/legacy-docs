@@ -22,7 +22,7 @@ url = "accessibility.md"
 Your visitors are able to save their favorite acts (speakers, talks or artists) <!-- and see where their friends are going --> by connecting with their Facebook, Twitter or LinkedIn account. You can choose your social network on the [embed tab]({{< relref "configure-your-embed.md" >}}) or [set it manually]({{< relref "social-provider.md" >}}).
 
 ## Adding favorites
-Once connected, visitor can click the *Add to favorites* button to favorite that act. Alternatively, they can double click acts or press the <kbd>L</kbd> key to add favorites straight from the schedule. [You can disable favorites]({{ relref "hide-components.md" }}) by setting `data-hide-favorites` in your embed code.
+Once connected, visitor can click the *Add to favorites* button to favorite that act. Alternatively, they can double click acts to add favorites straight from the schedule. [You can disable favorites]({{ relref "hide-components.md" }}) by setting `data-hide-favorites` in your embed code.
 
 {{< video src="videos/adding-favorites.mp4" width="1338" height="1364" title="Adding favorites" >}}
 

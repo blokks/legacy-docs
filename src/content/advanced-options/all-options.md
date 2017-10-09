@@ -12,7 +12,7 @@ weight          = 618
 parent          = "advanced-options"
 +++
 
-A complete list of options which you can use:
+A complete list of advanced options for your embed:
 
 | Option | Values | Default value |
 |--------|--------|---------------|

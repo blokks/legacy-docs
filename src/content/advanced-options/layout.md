@@ -23,11 +23,14 @@ title = "MDN: Using media queries"
 url = "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
 +++
 
-We mentioned [layouts]({{< relref "choose-your-layout.md" >}}) before: out of the box Blokks supports `columns`, `rows` and `custom` layouts. Depending on your choice, elements are styled using [CSS Flexbox]({{< relref "known-issues.md#flexbox" >}}).
+We have mentioned [layouts]({{< relref "choose-your-layout.md" >}}) before: Blokks supports `columns`, `rows` and `custom` layouts.
 
-These styles are injected to the `<head>` of your document. The styling is minimal and won’t [conflict with your website]({{< relref "bem.md" >}}). Also, it’s added after the schedule is loaded, so it doesn’t effect your initial pageload.
+Each layout has different styles that are injected to the `<head>` of your document. The styling is minimal and won’t [conflict with your website]({{< relref "bem.md" >}}). Also, styles are added after the schedule is loaded, so it doesn’t effect your initial pageload.
 
-<span class='note'>Note: Blokks automatically switches to a mobile view when viewed on a smaller devices. The breakpoint is `30em` or `480px`. You can change this value by setting `data-breakpoint`.</span>
+Using a `custom` layout is useful when you want to [create your own theme]({{< relref "create-layout.md" >}}). Setting the `data-layout` to `custom` will strip all layout properties from the schedule, giving you a clean slate. 
+
+
+<span class='note'>Note: Blokks automatically switches to a mobile layout when viewed on smaller devices. The breakpoint is `30em` or `480px`. You can change this value by setting `data-breakpoint`.</span>
 
 | Option | Values | Default value |
 |--------|--------|---------------|

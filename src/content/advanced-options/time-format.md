@@ -15,7 +15,7 @@ title = "Advanced options: Date format"
 url = "date-format.md"
 +++
 
-Like [`data-date-format`]({{< relref "date-format.md" >}}) you can change how times are displayed.:
+Similar to changing the [Date format]({{< relref "date-format.md" >}}) you can change the way times are displayed by setting `data-date-time`. It takes a string of tokens and replaces them with their corresponding values:
 
 | Hours |   |
 |-------|---|

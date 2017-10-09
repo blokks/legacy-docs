@@ -15,17 +15,17 @@ title = "Custom themes: Basic structure"
 url = "basic-structure.md"
 +++
 
-You can hide elements and disable features by setting one of the `data-hide-...` options. Although element can be hidden by setting the CSS `display: none` property, it’s better not to render them at all by using `data-hide-...` option.
+You can hide elements and disable features by setting one of the `data-hide-...` options. Although elements can be hidden by setting the CSS `display: none` property, it’s better not to render them at all by using the `data-hide-...` option.
 
 | Option | Description |
 |---------|--------------|
-| `data-hide-controls` | Hides the *Controls* when set to `true` |
-| `data-hide-dashboard` | Hides the *Dashboard* when set to `true` |
-| `data-hide-export` | Hides the *Export to iCal* button when set to `true` |
-| `data-hide-favorites` | Hides all favorite related features when set to `true` |
-| `data-hide-filter` | Hides the *Category filter* when set to `true` |
-| `data-hide-images` | Doesn't load and display images when set to `true` |
-| `data-hide-print` | Hide the *print* button when set to `true`. Hiding the print button also disables keyboard shortcuts. |
+| `data-hide-controls` | Hides the *Controls* when set to `true`. |
+| `data-hide-dashboard` | Hides the *Dashboard* when set to `true`. |
+| `data-hide-export` | Hides the *Export to iCal* button when set to `true`. |
+| `data-hide-favorites` | Hides all favorite-related features when set to `true`. |
+| `data-hide-filter` | Hides the *Category filter* when set to `true`. |
+| `data-hide-images` | Doesn't load and display images when set to `true`. |
+| `data-hide-print` | Hides the *print* button when set to `true`. Hiding the print button also disables keyboard shortcuts. |
 
 ### Example
 

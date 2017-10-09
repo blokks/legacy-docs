@@ -15,7 +15,9 @@ title = "Basic structure: Activity"
 url = "basic-structure.md#activity"
 +++
 
-Blokks adds [CSS modifiers](bem.md) indicating the size of an *Activity*. Unfortunately, this isn’t done by magic. Matter of fact, computing the size of an element is a pretty intensive task for the browser. Although this option is enabled by default, we recommend to set it to `false` whenever possible.
+Blokks adds [CSS modifiers](bem.md) to indicate the size of each *Activity*. This is useful for determining, for example, if the activity is large enough to show a subtitle. Or, if an activity title should be truncated if the activity is too small to show the full title. 
+
+Unfortunately, computing the size of an element is a pretty intensive task for a browser. Although this option is enabled by default, we recommend to set it to `false` whenever possible.
 
 | Options | Values | Default value |
 |---------|--------|---------------|

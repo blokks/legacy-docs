@@ -19,9 +19,11 @@ title = "Advanced options: Hide components"
 url = "hide-components.md"
 +++
 
-When enabled, the *Time indicator* is automatically scrolled into view, showing speakers and bands that are currently playing. This option works on desktop and only during days of the event.
+When enabled, the *Time indicator* is automatically scrolled into view when a visitor opens the schedule during the days of your event. This allows your visitors to quickly see which acts (speakers, talks or artists) are currently performing.
 
-<span class='note'>Sometimes this feature can be cumbersome though. For example, when your schedule is embedded on a one-page website and you don't want the whole page to scroll. In those cases you want to disable the `data-auto-scroll` feature.</span>
+There are cases where you might want to disable this `data-auto-scroll` feature. For example, when your schedule is embedded on a one-page website and you don't want the whole page to scroll.
+
+<span class='note'>Note: This feature only works on desktop.</span>
 
 | Option | Values | Default value |
 |--------|--------|---------------|

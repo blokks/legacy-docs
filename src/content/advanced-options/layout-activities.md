@@ -15,7 +15,11 @@ title = "Basic structure: Activity"
 url = "basic-structure.md#activity"
 +++
 
-An *Activity* is automatically positioned using its start time. And automatically resized using its duration. However, there are situations were this isn't desired. For example, in a single column layout positioning and resizing doesn’t make sense. In those cases disable `data-auto-layout`.
+Each *Activity* is automatically positioned based on its start and end time. However, there are situations were this isn't needed. For example, for events that only have one stage, you might want each act to have the same size and be positioned directly underneath each other. 
+
+To do this, disable `data-auto-layout`.
+
+<span class="note">Note: this only works if your event has one stage.</span>
 
 | Option | Values | Default value |
 |--------|--------|---------------|

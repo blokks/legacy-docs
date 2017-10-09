@@ -23,7 +23,7 @@ title = "Advanced options: caching"
 url = "caching.md"
 +++
 
-Some components, like the *Dashboard* and *Time Indicator* are only visible during the day of your event. To make them visible set `data-testflight` to `true`. Setting `data-testflight` also disables caching.
+Some components, like the *Dashboard* and *Time Indicator* are only visible during the days of your event. To enable these for testing purposes, set `data-testflight` to `true`. Setting `data-testflight` also disables caching.
 
 <span class='note'>Important: Don’t forget to disable testflight on your production.</span>
 

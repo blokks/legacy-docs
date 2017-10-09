@@ -12,6 +12,6 @@ weight          = 601
 parent          = "advanced-options"
 +++
 
-Until now we talked about designing your schedule by [changing its colors]({{< relref "change-colors.md" >}}), [fonts]({{< relref "add-own-fonts.md" >}}) and [replacing icons]({{< relref "replace-icons.md" >}}). But there is more we can do. For example, by adding extra options to the embed code we can [show or hide components]({{< relref "hide-components.md" >}}) and [set date formats]({{< relref "date-format.md" >}}).
+Until now, we've talked about customizing your schedule by [changing its colors]({{< relref "change-colors.md" >}}), [fonts]({{< relref "add-own-fonts.md" >}}) and [icons]({{< relref "replace-icons.md" >}}). But there is more that you can do. For example, by adding extra options to the embed code we can [show or hide components]({{< relref "hide-components.md" >}}) and [set date formats]({{< relref "date-format.md" >}}).
 
-Most these chapters are developer oriented. We will talk nerdy things like [browser support]({{< relref "supported-browsers.md" >}}) and [caching]({{< relref "caching.md" >}}). Which can be daunting for designers. Don’t be afraid though, there is useful info for everyone!
+Most of these chapters are developer oriented. We will talk nerdy things like [browser support]({{< relref "supported-browsers.md" >}}) and [caching]({{< relref "caching.md" >}}). Which can be daunting. But don’t be afraid, there is useful information for everyone!

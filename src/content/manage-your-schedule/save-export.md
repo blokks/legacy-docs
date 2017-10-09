@@ -20,7 +20,7 @@ When saving your schedule we only update the data that actually changed. You can
 
 When you accidentally close Blokks before your changes were saved, Blokks will show a popup reminding you to save your data before leaving.
 
-<span class='note'>Note: [It may take some minutes for your changes to become visible]({{< relref "caching.md" >}}).</span>
+<span class='note'>Note: [It may take some minutes]({{< relref "caching.md" >}}) for your changes to become visible.</span>
 
 ## Exporting your data
-It’s possible to export all the schedule data to an Excel format. You can download this file by clicking the *Export* button on the top right. The layout of the Excel file is fixed and cannot be customized.
+It’s possible to export all your schedule data to an Excel file. You can download this file by clicking the *Export* button on the top right. The layout of the file is fixed and cannot be customized.

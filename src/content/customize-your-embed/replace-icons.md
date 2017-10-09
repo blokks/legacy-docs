@@ -39,7 +39,7 @@ title = "CSS-Tricks: Inline SVG vs Icon Fonts"
 url = "https://css-tricks.com/icon-fonts-vs-svg/"
 +++
 
-All icons used in the schedule are SVG. SVG files are vector based, which means your icons will look stellar on all devices and resolutions. Secondly, since SVG is XML, they’re are highly compressible and featherlight to load. And last but not least, SVG files are completely styleable with CSS.
+All icons used in the schedule are SVG. SVG files are vector based, which means your icons will look great on all devices and resolutions. Secondly, since SVG is XML, they’re are highly compressible and featherlight to load. And last but not least, SVG files are completely styleable with CSS.
 
 To replace the default Blokks icons we need to create a new icon set. An icon set contains the following files:
 
@@ -71,9 +71,9 @@ svgo -f path/to/folder/with/svg/files
 
 This command will use the default *SVGO* settings to compress and override all files in the **path/to/folder/with/svg/files** folder. Make sure your replace this with the directory containing your svg files.
 
-![Image: Optimizing SVGs](http://images/optimizing-svgs.gif)
+<!-- ![Image: Optimizing SVGs](http://images/optimizing-svgs.gif) -->
 
-<span class='note'>[SVGOMG](https://jakearchibald.github.io/svgomg/) is a webbased interface which allows you to drag & drop your SVG files and get an optimized version. There are also *SVGO* plugins for both [Sketch](https://github.com/BohemianCoding/svgo-compressor) and [Adobe Illustrator](https://github.com/davidderaedt/SVG-NOW).</span>
+<span class='note'>Note: [SVGOMG](https://jakearchibald.github.io/svgomg/) is a webbased interface that allows you to drag & drop your SVG files and get an optimized version. There are also *SVGO* plugins for both [Sketch](https://github.com/BohemianCoding/svgo-compressor) and [Adobe Illustrator](https://github.com/davidderaedt/SVG-NOW).</span>
 
 ## Create spritesheets
 Spritesheets combine multiple images into a single file. A website using spritesheets loads faster because it has to load just one, instead of multiple images. To create a spritesheet we use another command-line tool named [svg-sprite](https://github.com/jkphl/svg-sprite). Again, [Node.js](https://nodejs.org/en) is required for this.
@@ -92,18 +92,18 @@ svg-sprite --symbol --svg-xmldecl=false --shape-transform='' --symbol-dest='.' -
 
 This will merge all the SVGs into one file named `icon-set.svg`. 
 
-<span class='note'>[IcoMoon](https://icomoon.io/app) is a web-based interface that does a great job of producing SVG spritesheets. You can simply drag & drop your SVGs and export them as a single spritesheet.</span>
+<span class='note'>Note: [IcoMoon](https://icomoon.io/app) is a web-based interface that does a great job of producing SVG spritesheets. You can simply drag & drop your SVGs and export them as a single spritesheet.</span>
 
-![Image: Create spritesheets](http://images/optimizing-svgs.gif)
+<!-- ![Image: Create spritesheets](http://images/optimizing-svgs.gif) -->
 
 ## Link icons
-There's just one thing left to do: tell the embed to use our new iconset. Simply add a link pointing to the iconset to the `<head>` of your page, like so:
+There's just one thing left to do: have the embed use the new iconset. Simply add a link pointing to the iconset to the `<head>` of your page, like so:
 
 ```html
 <link href='icons.svg' blokks-icons>
 ```
 
-Make sure you replace `icons.svg` with the location of your iconset. And that’s all there is to it!
+Make sure you replace `icons.svg` with the location of your iconset. That’s all there is to it!
 
 ## Styling SVGs
 Replacing icons can cause them to be too big or too small. Similar to [changing fonts]({{< relref "customize-your-embed/add-own-fonts.md" >}}), we can fix this by selecting the icon in the *Developers Tools* and change its size. For example, here's how you can resize the close icon to `50px` of the *Activity details* component:

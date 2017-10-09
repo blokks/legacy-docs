@@ -3,7 +3,7 @@ date            = "2016-10-20T11:31:19+02:00"
 author          = "@niekdekker"
 
 title           = "Welcome"
-extendedtitle	= "Welcome to Blokks"
+extendedtitle	= "Welcome!"
 description     = "Here, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers."
 keywords        = ["blokks", "introduction", "welcome"]
 weight          = 101
@@ -12,7 +12,7 @@ weight          = 101
 parent          = "getting-started"
 +++
 
-We’re glad you made it here. Here, we’ll explain everything there is to know about Blokks. From creating your first schedule, to advanced customization for developers. 
+We’re glad you made it here. Here, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers. 
 
 <!-- Before you get started, we advise you to have a look at these two tutorial videos, as they will explain the basics behind Blokks: -->
 

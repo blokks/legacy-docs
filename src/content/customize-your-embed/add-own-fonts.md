@@ -29,7 +29,7 @@ url = "https://developer.mozilla.org/nl/docs/Web/CSS/@font-face"
 +++
 
 ## System fonts
-Changing the font used in your schedule works the same way as [changing colors]({{< relref "change-colors.md" >}}), by using *CSS variables*. For example, the following snippet will demonstrate how to use **Helvetica Neue** instead of **Blokks Sans**, which is Blokks' default font.
+Changing the font used in your schedule works the same way as [changing colors]({{< relref "change-colors.md" >}}): by using *CSS variables*. For example, the following snippet will demonstrate how to use **Helvetica Neue** instead of **Blokks Sans**, which is Blokks' default font.
 
 ```css
 :root {

@@ -11,7 +11,7 @@ weight          = 306
 parent          = "embed-your-schedule"
 
 [[related]]
-title = "Advanced options: tracking"
+title = "Advanced options: Tracking"
 url = "tracking.md"
 +++
 

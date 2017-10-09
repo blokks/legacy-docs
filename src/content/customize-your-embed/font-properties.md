@@ -23,10 +23,10 @@ title = "MDN: Font shorthand"
 url = "https://developer.mozilla.org/en-US/docs/Web/CSS/font"
 +++
 
-After you've [added your fonts]({{< relref "add-own-fonts.md" >}}), you may have noticed that by changing `--blokks-default-font` some properties, for example `font-size`, need some adjusting.
+After you've [added your fonts]({{< relref "add-own-fonts.md" >}}), you may have noticed that after changing `--blokks-default-font`, some properties, for example `font-size`, need adjusting.
 
 ## Font scaling
-Blokks uses `em` units to define its font sizes. This means that all sizes are relative to its parent element, which is in our case the embed root. So, to change all `font-sizes` at once you can simply set the `--blokks-font-scale` variable:
+Blokks uses `em` units to define its font sizes. This means that all sizes are relative to its parent element, which in our case is the embed root. So, to change all `font-sizes` at once you can simply set the `--blokks-font-scale` variable:
 
 ```css
 :root {
@@ -68,7 +68,7 @@ If you want to target individual elements we need to [target the text with CSS s
 }
 ```
 
-Like *CSS variables* all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. [Read more on how to solve this.]({{< relref "bem.md" >}})
+Like *CSS variables* all CSS classnames start with **.blokks-** to avoid naming conflicts. But sometimes some of your existing website's styling will accidentally be used by the embed. [Read more here]({{< relref "bem.md" >}}) on how to solve this.
 
 <span class='note'>Note: the order in which CSS rules are stated determines which ones take precedence: "CSS rules that appear later in the code override earlier rules if both have the same specificity." Basically this means that you should add the `<style>` tag after the Blokks import. For example:</span>
 

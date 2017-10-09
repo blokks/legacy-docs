@@ -2,8 +2,8 @@
 date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Edit acts"
-extendedtitle	= "Edit your acts"
+title           = "Editing acts"
+extendedtitle	= "Editing your acts"
 description     = "After adding an act or selecting an existing one, a modal window is shown where you can add or edit its information."
 keywords        = ["blokks", "getting started", "acts", "bands", "speakers", "activities", "artists"]
 weight          = 204
@@ -20,21 +20,21 @@ title = "Github: Markdown cheatsheet"
 url = "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
 +++
 
-After [adding an act (speakers/talks/artists)]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
+After [adding an act]({{< relref "manage-your-acts.md#adding-acts" >}}) or selecting an existing one, a modal window is shown where you can add or edit its information.
 
 ![Modal](images/manage-your-schedule-edit-acts-modal.jpg)
 
 ## Titles and subtitles
-The *title* of an act is required and can be anything you want. Most common titles are speakers names, title of their talks etc. If your event is a conference, you can also add a *subtitle*. This can be left blank if you don’t need it.
+The *title* of an act is required and can be anything you want. If your event is a conference, you can also add a *subtitle*. This can be left blank if you don't need it.
 
 ## Headliners
-Sometimes you want to highlight a band or speaker. By marking it as a *headliner* you can do so. This enables you to have special acts really pop out on your schedule.
+Sometimes you want to highlight an act. By marking it as a *headliner* you can do so. This enables you to have special acts really pop out on your schedule.
 
 ## Categories
 Each act can have one or multiple *categories*. These categories can optionally be shown in your timetable. Additionally, you can use these categories to [customize the design of your timetable](http://themes/modififers).
 
 ## Description
-The *description* will be the main bit of text shown when a visitor clicks on of your acts in your schedule. Usually this is short biography of the artist or a summary of the talk. The description can be as long as you prefer, but we recommend a maximum of 500 characters.
+The *description* will be the main bit of text shown when a visitor clicks on one of your acts in your schedule. Usually this is short biography of the artist or a summary of the talk. The description can be as long as you prefer, but we recommend a maximum of 500 characters.
 
 <span class='note'>Note: this is not a hard limit, you can go with as many characters as you need.</span>
 
@@ -71,9 +71,9 @@ Format: ![Alt Text](url)
 ```
 
 ## Images
-You can add a single *image* to each of your acts by dropping an image file on the drop area or by clicking that same area. This *image* will be your acts main visual and will be shown in the timetable embed.
+You can add a single *image* to each of your acts by dropping an image file on the drop area or by clicking that same area. This *image* will be the main visual of your act and will be shown in the timetable embed.
 
-<span class='note'>Note: Images that are added to your act cannot be larger than 2MB. Images are resized and saved as JPG files by Blokks to optimize loading times.</span>
+<span class='note'>Note: Images that are added to your act cannot be larger than 2MB. Images are automatically resized and saved as JPG files to optimize loading times.</span>
 
 ## Links
 You can add multiple *links* to each of your acts. This will allow users to discover more information about your act. Additional links can be added by pressing the *Add one more link* button.
@@ -86,7 +86,7 @@ In some cases, you might want to add a Youtube video, a Spotify track or another
 <span class='note'>You can add multiple embeds, but we recommended only adding one. This helps your schedule load faster.</span>
 
 ## Disable user interaction
-In some cases, it can be useful to show an act in your schedule without allowing your users to select it. For example, when an act is still being teased to your users. Check this box to disable user interaction for that act. 
+In some cases, it can be useful to show an act in your schedule without allowing your users to select it. For example, when an act is still being teased. Check this box to disable user interaction for that act. 
 
 ## Published, unpublished and canceled
 Initially, all acts are marked as **published**. When you change an act to **unpublished**, it won’t be visible in your timetable embed. This is useful when your schedule is live and you want to add new acts without showing them to your users yet.

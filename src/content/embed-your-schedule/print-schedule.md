@@ -15,6 +15,6 @@ title = "Avanced options: Print options"
 url = "print.md"
 +++
 
-Users can print the schedule including their favorites by clicking the *Print* button or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd>. The schedule is automatically printed in landscape. [You can change the layout]({{< relref "print.md" >}}) this by setting `data-print-orientation`. [Hiding the print button]({{< relref "hide-components.md" >}}) is done by setting `data-hide-print`.
+Users can print the schedule including their favorites by clicking the *Print* button or by hitting <kbd>CTRL + P</kbd> or <kbd>CMD + P</kbd>. The schedule is automatically printed in a landscape layout. [You can change the layout]({{< relref "print.md" >}}) by setting `data-print-orientation`. [Hiding the print button]({{< relref "hide-components.md" >}}) is done by setting `data-hide-print`.
 
-<span class='note'>Note: the print version of the schedule has standard layout and styling.</span>
+<span class='note'>Note: the print version of the schedule has a standard layout and styling.</span>

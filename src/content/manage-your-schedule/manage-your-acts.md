@@ -2,8 +2,8 @@
 date            = "2017-09-11T11:31:19+02:00"
 author          = "@niekdekker"
 
-title           = "Manage acts"
-extendedtitle   = "Manage your acts"
+title           = "Acts"
+extendedtitle   = "Managing your acts"
 description     = "Adding acts to your event is probably the most important part of building your schedule."
 keywords        = ["blokks", "getting started", "acts", "bands", "speakers", "activities", "artists"]
 weight          = 203
@@ -12,7 +12,7 @@ weight          = 203
 parent          = "manage-your-schedule"
 +++
 
-Adding acts (speakers/talks/artists) to your event is probably the most important part of building your schedule.
+Adding acts (speakers, talks or artists) to your event is probably the most important part of building your schedule.
 
 ## Adding acts
 To add an act, simply click on an empty slot in your timetable. This will bring up a screen where you can add and [edit all your info]({{< relref "edit-acts.md" >}}) in one place.

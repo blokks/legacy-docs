@@ -4,7 +4,7 @@ author          = "@patrickpietens"
 
 title           = "Animation"
 description     = "The animation property can be used to animate any CSS property such as color, background-color, width, height, etc."
-keywords        = ["blokks", "templates", "themes", "structure", "layout"]
+keywords        = ["blokks", "themes", "structure", "layout"]
 weight          = 508
 
 [menu.main]
@@ -27,7 +27,7 @@ title = "Chrome Developers: Easing editor"
 url = "https://developers.google.com/web/updates/2015/05/the-easing-editor"
 +++
 
-The `animation` property can be used to animate any CSS property such as `color`, `background-color`, `width`, `height`, etc. Each animation needs to be defined with the `@keyframes` at-rule which is then called with the `animation` property, like so:
+The `animation` property can be used to animate any CSS property such as `color`, `background-color`, `width`, `height`, etc. Each animation needs to be defined with the `@keyframes` at-rule, which is then called with the `animation` property, like so:
 
 ```css
 .element {
@@ -52,7 +52,9 @@ For example, here's how to make the modal bounce onto the screen:
   transform: scale3d(0.9, 0.9, 1);
 }
 ```
-You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. Find out [more about CSS animation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).
+You can configure your `animation` by setting its sub-properties. This lets you tweak the timing, duration, and other details of how the animation sequence should progress. 
+
+<span class='note'>Note: If you want to learn more about CSS animations, visit the [Mozilla documentation on CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).</span>
 
 {{< video src="videos/animation-animating-modals.mp4" width="1628" height="1072" title="Animating modals & alerts" >}}
 

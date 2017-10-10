@@ -4,7 +4,7 @@ author          = "@patrickpietens"
 
 title           = "Pseudo elements"
 description     = "With pseudo-elements you can extend the structure of the schedule using only CSS."
-keywords        = ["blokks", "templates", "themes", "structure", "layout"]
+keywords        = ["blokks", "themes", "structure", "layout"]
 weight          = 507
 
 [menu.main]
@@ -23,15 +23,15 @@ title = "CSS-Tricks: A Whole Bunch of Amazing Stuff Pseudo Elements Can Do"
 url = "https://css-tricks.com/pseudo-element-roundup/"
 +++
 
-With *pseudo-elements* you can extend the structure of the schedule using only CSS. Pseudo elements will add extra elements `:before` and `:after` the element’s content. These elements are visible to the user and styleable with CSS.
+With *pseudo-elements* you can extend the structure of the schedule using only CSS. Pseudo elements will add extra elements `:before` and `:after` the element’s content. These pseudo elements are visible to the user and styleable with CSS.
 
-Adding `:before` and `:after` works basically the same as the following:
+Adding `:before` and `:after` works the same as the following:
 
 ```html
 <div>
-  <span>Before pseudo-element</span> 
+  <span><!-- Before pseudo-element --></span> 
   This the main content. 
-  <span>After pseudo-element</span>
+  <span><!-- After pseudo-element --></span>
 </div>
 ```
 

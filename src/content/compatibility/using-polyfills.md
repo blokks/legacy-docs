@@ -19,7 +19,7 @@ title = "Polyfill: ES6-style Promises"
 url = "https://github.com/stefanpenner/es6-promise"
 
 [[related]]
-title = "Polyfill: matchMedia"
+title = "Polyfill: MatchMedia"
 url = "https://github.com/paulirish/matchMedia.js/"
 
 [[related]]

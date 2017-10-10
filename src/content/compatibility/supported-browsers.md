@@ -29,6 +29,6 @@ url = "https://www.apple.com/safari/"
 
 Blokks works on modern browsers like Chrome, Edge, Internet Explorer, Firefox and Safari. We support the two most recent versions of these browsers.
 
-We test Blokks in all supported browsers, and we'll fix bugs that affect those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but there may be [noticeable issues]({{< relref "known-issues.md" >}}).
+We test Blokks in all supported browsers, and we'll fix bugs that occur in those. If you use Blokks on an older or unsupported browser, it doesn't necessarily mean that Blokks won't work, but there may be [noticeable issues]({{< relref "known-issues.md" >}}).
 
-<span class='note'>Please note that Blokks requires JavaScript and cookies to be enabled.</span>
+<span class='note'>Note: Blokks requires JavaScript and cookies to be enabled.</span>

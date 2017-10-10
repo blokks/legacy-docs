@@ -4,7 +4,7 @@ author          = "@patrickpietens"
 
 title           = "Block, Element, Modifier"
 description     = "Blokks uses a simple naming convention for CSS classes, called Block, Element, Modifier, or simply BEM."
-keywords        = ["blokks", "templates", "themes", "structure", "naming conventions", "bem", "conflicts"]
+keywords        = ["blokks", "themes", "structure", "naming conventions", "bem", "conflicts"]
 weight          = 504
 
 [menu.main]
@@ -35,7 +35,7 @@ title = "Github: PostCSS plugin implementing BEM as at-rules"
 url = "https://github.com/kezzbracey/postcss-bem"
 +++
 
-Now that you’re familiar with the [structure of the timetable embed]({{< relref "basic-structure.md" >}}), we can have a look at the class names of its elements. Blokks uses a simple naming convention, invented by the guys at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
+Now that you’re familiar with the [structure of the timetable embed]({{< relref "basic-structure.md" >}}), let's have a look at the class names of its elements. Blokks uses a simple naming convention, invented by the people at [Yandex](https://tech.yandex.com/bem/) called *Block, Element, Modifier*, or simply *BEM*. 
 
 BEM provides a way to arrange your CSS classes into modules or components. Basically, it follows this pattern:
 
@@ -71,7 +71,7 @@ If multiple CSS selectors are targeting the same HTML element and are trying to 
 
 In this case `#main .header > h1` is more specific than `.header h1.title`. So the text in `<h1 class=“title”>` is shown in `Helvetica` and `rebeccapurple`. 
  
-Although the example is easy to understand, you can imagine that more specific selectors can add complexity which can lead to conflicts and unwanted styling. 
+Although this example is easy to understand, you can imagine that more specific selectors can add complexity which can lead to conflicts and unwanted styling. 
 
 This is where BEM comes in. BEM reduces style conflicts by keeping specificity to a minimum. With BEM, specificity is determined only by the order of the CSS rules. Rules which are defined later, have higher precedence over those defined earlier. So make sure to add your `<style>` or `<link>` tag after the Blokks import.
 

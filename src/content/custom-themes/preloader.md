@@ -4,7 +4,7 @@ author          = "@patrickpietens"
 
 title           = "Preloader"
 description     = "Blokks loads your schedule as fast as possible. But during events with lots of attendees, the internet connection can be unreliable and slow. In those cases, you'll want to show a preloader to let your visitors know that loading the schedule may take longer than expected."
-keywords        = ["blokks", "templates", "themes", "structure", "naming conventions", "bem"]
+keywords        = ["blokks", "themes", "structure", "naming conventions", "bem"]
 weight          = 502
 
 [menu.main]
@@ -15,7 +15,7 @@ title = "Advanced options: Caching"
 url = "caching.md"
 +++
 
-Blokks loads your schedule as fast as possible. But during events with lots of attendees, the internet connection can be unreliable and slow. In those cases, you'll want to show a *Preloader* to let your users know that loading the schedule may take longer than expected. 
+Blokks loads your schedule as fast as possible. But during events with lots of attendees, their internet connection can be unreliable and slow. In those cases, you'll want to show a *Preloader* to let your users know that loading the schedule may take longer than expected. 
 
 To do this, simply add your preloader markup to the `<div blokks-container>` container. Here's an example:
 

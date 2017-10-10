@@ -43,7 +43,7 @@ url = "http://caniuse.com/#search=matchmedia"
 
 Blokks implements [sticky headers](https://developer.mozilla.org/en-US/docs/Web/CSS/position#Sticky_positioning) as a progressive enhancement. This means that if your browser does not support sticky headers, they simply won’t stick. No polyfill or fallback is required.
 
-<span class='note'>Please note that there are limitations to sticky headers. For example, they will not work inside elements with `overflow: scroll` or `auto`. Therefore, headers will not stick if [data-local-scroll](http://configure/local-scroll) is enabled.</span>
+<span class='note'>Please note that there are limitations to sticky headers. For example, they will not work inside elements with `overflow: scroll` or `auto`. Therefore, headers will not stick if [local scrolling](http://configure/local-scroll) is enabled.</span>
 
 <span class='note'>Supported by: *Chrome 58+* *Edge 16+* *Firefox32+* *Safari 7+*</span>
 
@@ -69,4 +69,4 @@ There is a [polyfill available]({{< relref "using-polyfills.md#matchmedia" >}}) 
 <span class='note'>Supported by: *Chrome 9+* *Edge 12+* *IE10+* *Firefox 6+* *Safari 5.1+*</span>
 
 ## Modals
-Support for `overflow: hidden;` on the `<body>` element is quite limited in *iOS* and *Android*. To that end, when you scroll past the top or bottom of a modal in either of those devices’ browsers, the `<body>` content will begin to scroll. See Chrome bug [#175502](https://bugs.chromium.org/p/chromium/issues/detail?id=175502) (fixed in Chrome v40) and WebKit bug [#153852](https://bugs.webkit.org/show_bug.cgi?id=153852).
+Support for `overflow: hidden;` on the `<body>` element is limited on *iOS* and *Android*. To that end, when you scroll past the top or bottom of a modal in either of those devices’ browsers, the `<body>` content will begin to scroll. See Chrome bug [#175502](https://bugs.chromium.org/p/chromium/issues/detail?id=175502) (fixed in Chrome v40) and WebKit bug [#153852](https://bugs.webkit.org/show_bug.cgi?id=153852).

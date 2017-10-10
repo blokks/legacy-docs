@@ -4,7 +4,7 @@ author          = "@patrickpietens"
 
 title           = "Basic structure"
 description     = "The timetable embed is split into smaller, independent pieces called components, which in turn are split into even smaller components."
-keywords        = ["blokks", "templates", "themes", "structure", "naming conventions", "bem"]
+keywords        = ["blokks", "themes", "structure", "naming conventions", "bem"]
 weight          = 503
 
 [menu.main]
@@ -39,33 +39,33 @@ title = "Account settings: Upgrade your account"
 url = "upgrade-your-account.md"
 +++
 
-The timetable embed is split into smaller, independent pieces called components, which in turn are split into even smaller components. Each component has [a unique CSS class]({{< relref "bem.md" >}}), which makes is easy to style them separately. 
+The timetable embed is split into smaller, independent pieces called components, which in turn are split into even smaller components. Each component has [a unique CSS class]({{< relref "bem.md" >}}), which makes it easy to style them separately. 
 
 {{< video src="videos/custom-themes-basic-structure.mp4" width="1172" height="658" title="Basic structure" >}}
 
 The main components are:
 
 ## Date selector
-The *Date Selector* component is visible when your event has multiple dates. Users will use this component to switch between dates. On desktop the Date Selector is shown as a *Button Bar*. On mobile, it switches to a *Dropdown* menu. [You can change this]({{< relref "date-selector.md" >}}) by setting the `date-selector-type` of the schedule.
+The *Date Selector* component is visible when your event has multiple dates. Visitors can use this component to switch between dates. On desktop the *Date Selector* is shown as a *Button Bar*. On mobile, it switches to a *Dropdown* menu. [You can change this]({{< relref "date-selector.md" >}}) by setting the `date-selector-type` of the schedule.
 
 ![Date selector on desktop](images/custom-themes-basic-structure-desktop-02.jpg)
 
 ## Category filter
-The *Category Filter* component shows all categories used by the schedule. Users can use this component to filter sessions or talks by selecting categories. Sessions that do not match the selected category are filtered out.
+The *Category Filter* component shows all categories used by the schedule. Visitors can use this component to filter acts (speakers, talks or artists) by selecting categories. Acts that do not match the selected category are filtered out.
 
-This component will be automatically hidden when there are no categories added to the schedule.
+This component will be automatically hidden when no categories have been added to the schedule.
 
 ## Options
-The *Options* component lets users sign in to [add favorites]({{< relref "favorites.md" >}}), [see where friends are going]({{< relref "favorites.md#friends-activity" >}}), [print their schedule]({{< relref "print.md" >}}) or add the schedule to their calendar.
+The *Options* component lets visitors sign in to [add favorites]({{< relref "favorites.md" >}}), <!-- [see where friends are going]({{< relref "favorites.md#friends-activity" >}}), -->[print their schedule]({{< relref "print.md" >}}) or [add the schedule to their calendar]({{< relref "add-to-ical.md" >}}).
 
 ![Options on desktop](images/custom-themes-basic-structure-desktop-03.jpg)
 
 ## Controls
-Users can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when [`data-layout`]({{< relref "choose-your-layout.md" >}}) option is set to `columns`.
+Visitors can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when the `data-layout` option is set to `columns`.
 
 ![Controls on desktop](images/custom-themes-basic-structure-desktop-04.jpg)
 
-In some cases it’s not necessary to show the controls. For example, when your event only has one or two stages. You can easily [hide the controls]({{< relref "hide-components.md" >}}) by setting the `data-hide-controls`.
+In some cases it’s not necessary to show the controls. For example, when your event only has one or two stages. You can easily [hide the controls]({{< relref "hide-components.md" >}}) by setting `data-hide-controls`.
 
 <span class='note'>Note: When the schedule is viewed on very large displays, the whole schedule might fit on a single screen. In those cases it's best to [hide the controls]({{< relref "hide-components.md" >}}) with media queries and CSS instead of setting `data-hide-controls`.</span>
 
@@ -74,12 +74,12 @@ A single day of your event is represented by the *Timetable* component, which co
 
 ![Options on desktop](images/custom-themes-basic-structure-desktop-05.jpg)
 
-If one of your schedule's dates is the same as today’s date, it's automatically selected. Also, the Time Indicator will then be visible and scrolled into view. That way, acts (speakers/talks/artists) that are currently performing will be shown when the schedule is opened. You can [disable this]({{< relref "auto-scroll.md" >}}) by setting `data-autoscroll`.
+If one of your schedule's dates is the same as today’s date, it's automatically selected. Also, the *Time Indicator* will then be visible and scrolled into view. That way, acts that are currently performing will be shown when the schedule is opened. You can [disable this]({{< relref "auto-scroll.md" >}}) by setting `data-autoscroll`.
 
-<span class='note'>Some components, for example, the *Dashboard* and *Time Indicator*, are only visible during the event and difficult to test or style. However, you can [enable them]({{< relref "testflight.md" >}}) anytime by setting `data-testflight`.</span>
+<span class='note'>Some components, like the *Dashboard* and *Time Indicator*, are only visible during the event and difficult to test. However, you can [enable them]({{< relref "testflight.md" >}}) at any time by setting `data-testflight`.</span>
 
 ## Dashboard
-During the event, the *Dashboard* component is shown on mobile devices. The component shows speakers or acts that are now active, and the ones that are coming up next.
+During the event, the *Dashboard* component is shown on mobile devices. The component shows acts that are now active, and acts that are coming up next.
 
 <span class='note'>You can [disable the Dashboard]({{< relref "hide-components.md" >}}) by setting `data-hide-dashboard` to `true`.</span>
 
@@ -91,7 +91,7 @@ The *Location* component represents a single stage of your event. Basically, it�
 ![Location on desktop](images/custom-themes-basic-structure-desktop-06.jpg)
 
 ## Activity
-Acts (speakers/talks/artists) are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
+Acts are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
 
 ![Activity](images/custom-themes-basic-structure-desktop-07.jpg)
 
@@ -108,13 +108,13 @@ The *Activity Details* component is a modal presented when an *Activity* is sele
 ![Alerts](images/custom-themes-basic-structure-desktop-10.jpg)
 
 ## Time indicator
-The *Time Indicator* is only visible during the event and shows, as the name suggest, the current time. 
+The *Time Indicator* is only visible during the event and shows, as the name suggests, the current time. 
 
 ![Time indicator](images/custom-themes-basic-structure-desktop-11.jpg)
 
-<span class='note'>You can test the time indicator by setting the [`data-testflight` option](http://configure/options#testflight)</span>
+<span class='note'>You can [test the time indicator]({{< relref "testflight.md" >}}) by setting the `data-testflight` option</span>
 
 ## Trial bar
-The *Trial bar* will remember you that you haven't [upgraded your account]({{< relref "upgrade-your-account.md" >}}) yet. And that your schedule will only be visibile to you and your teammates. The *Trial bar* disappears once you're on a paid plan.
+The *Trial bar* will remind you that you haven't [upgraded your account]({{< relref "upgrade-your-account.md" >}}) yet. And, that your schedule will only be visible to you and your teammates. The *Trial bar* will disappear once you've upgraded your account.
 
 ![Trial bar on desktop](images/custom-themes-basic-structure-desktop-08.jpg)

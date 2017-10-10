@@ -4,8 +4,8 @@ author          = "@patrickpietens"
 
 title           = "Create layout"
 extendedtitle	= "Create your own layout"
-description     = "When starting a new template you can choose to use one of our existing layouts or decide to create your own."
-keywords        = ["blokks", "templates", "themes", "structure", "layout"]
+description     = ""
+keywords        = ["blokks", "themes", "structure", "layout"]
 weight          = 509
 
 [menu.main]
@@ -20,4 +20,4 @@ title = "Advanced options: layout"
 url = "layout.md"
 +++
 
-When starting a new template you can choose to [use one of our existing layouts]({{< relref "choose-your-layout.md" >}}) or decide to create your own. In that case set the `data-layout` to `custom`. This will strip all layout properties from the schedule, giving you a clean slate.
+When starting a new theme you can choose to use [one of our existing layouts]({{< relref "choose-your-layout.md" >}}) or decide to create your own. In that case set the `data-layout` to `custom`. This will strip all layout properties from the schedule, giving you a clean slate.

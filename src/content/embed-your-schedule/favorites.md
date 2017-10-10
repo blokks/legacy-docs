@@ -24,7 +24,7 @@ Your visitors are able to save their favorite acts (speakers, talks or artists) 
 ## Adding favorites
 Once connected, visitor can click the *Add to favorites* button to favorite that act. Alternatively, they can double click acts to add favorites straight from the schedule. [You can disable favorites]({{ relref "hide-components.md" }}) by setting `data-hide-favorites` in your embed code.
 
-{{< video src="videos/adding-favorites.mp4" width="1338" height="1364" title="Adding favorites" >}}
+{{< video src="videos/adding-favorites.mp4" width="1330" height="1364" title="Adding favorites" >}}
 
 <!-- ## Friend activity
 If some of your visitors' friends are attending the same event, they will pop up in several places in your schedule. This will show your visitors which speaker, band or performance their friends will be going to. [Disable this feature]({{< relref "hide-components.md" >}}) by setting `data-hide-friends`.

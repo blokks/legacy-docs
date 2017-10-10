@@ -24,7 +24,7 @@ url = "known-issues.md#customproperties"
 ## Inspect elements
 To style an element with classes we have to know its class name. The simplest way to do this is by selecting an element using the *Developer tools*. For example, right click a stage title and select *Inspect* from the context menu. This will open the Developer tools showing the HTML structure of the embed with the title highlighted:
 
-{{< video src="videos/customize-your-embed-inspect-element.mp4" width="1778" height="1104" title="Inspect elements" >}}
+{{< video src="videos/customize-your-embed-inspect-element.mp4" width="1778" height="1114" title="Inspect elements" >}}
 
 As you can see the selected title has a class named `.blokks-location__title`. We can use that to style all stage titles at once. Let’s change the `font-family`, `font-size` and `color` of the title:
 

@@ -36,7 +36,7 @@ In the above example `--blokks-theme-color` is a Blokks defined property with a 
 
 To get a list of all properties, right click anywhere on your page, open the *Developer tools* by clicking *Inspect* and select the `<html>` tag:
 
-{{< video src="videos/customize-your-embed-all-css-variables.mp4" width="1794" height="1158" title="Showing all properties using the Inspector" >}}
+{{< video src="videos/customize-your-embed-all-css-variables.mp4" width="1794" height="1168" title="Showing all properties using the Inspector" >}}
 
 A complete list of colors that you can change with CSS variables:
 

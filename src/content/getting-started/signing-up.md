@@ -15,4 +15,4 @@ Creating a new Blokks account is easy. Simply go to [blokks.co/signup](https://b
 
 Your password is auto-generated to speed things up. You can [change your password]({{< relref "your-account.md" >}}) at any time.
 
-{{< video src="videos/getting-started-signing-up.mp4" width="1776" height="1308" title="Creating your Blokks account" >}}
+{{< video src="videos/getting-started-signing-up.mp4" width="1770" height="1278" title="Creating your Blokks account" >}}

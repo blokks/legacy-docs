@@ -26,7 +26,7 @@ url = "layout.md"
 ## Desktop
 On desktop, the embed has two layouts: the first direction being the *column* layout where stages are arranged horizontally. This is the default direction of the embed. The second is the *row* layout where stages are stacked vertically.
 
-{{< video src="videos/choose-your-layout-row-vs-column.mp4" width="1160" height="504" title="Row vs. column layout" >}}
+{{< video src="videos/choose-your-layout-row-vs-column.mp4" width="1160" height="520" title="Row vs. column layout" >}}
 
 You can change the layout direction at any time by switching the layout in the [embed tab]({{< relref "configure-your-embed.md" >}}) of our backend or by [setting it manually]({{< relref "layout.md" >}}) with the `data-layout` option:
 

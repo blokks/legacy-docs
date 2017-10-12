@@ -11,12 +11,9 @@ weight          = 614
 parent          = "advanced-options"
 +++
 
+By default, Blokks uses page scrolling if it doesn’t fit your screen. In most cases this is the best method. But, there are cases where you might want to have visitors scroll within the embed. To do so, set `data-local-scroll` to `true`.
 
-By default, Blokks uses standard page scrolling. In other words, when a visitor scrolls through your schedule, the entire page scrolls. 
-
-In most cases this is the best method. But, there are cases where you might want to have visitors scroll within the embed. To do so, set `data-local-scroll` to `true`.
-
-<span class='note'>Note: Setting `data-local-scroll` to `true` will disable sticky headers. This is because sticky headers will not work inside elements with `overflow: scroll` or `auto`, which is the case when this feature is enabled.</span>
+<span class='note'>Please note that by specification, sticky headers will not work inside elements with `overflow: scroll` or `auto`. Which is the case when `data-local-scroll` is enabled. So setting `data-local-scroll` to `true` will disable sticky headers automatically.</span>
 
 | Option | Values | Default values |
 |--------|--------|----------------|

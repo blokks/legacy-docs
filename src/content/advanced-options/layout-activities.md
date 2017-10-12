@@ -19,8 +19,6 @@ Each *Activity* is automatically positioned based on its start and end time. How
 
 To do this, disable `data-auto-layout`.
 
-<span class="note">Note: this only works if your event has one stage.</span>
-
 | Option | Values | Default value |
 |--------|--------|---------------|
 | `data-auto-layout` | `true` `false` | `true` |

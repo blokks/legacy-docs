@@ -11,7 +11,9 @@ weight          = 609
 parent          = "advanced-options"
 +++
 
-Visitors are also able to navigate and view your schedule using their keyboard. They can <kbd>TAB</kbd> through [activities]({{< relref "basic-structure.md#activity" >}}) and hit <kbd>SPACE</kbd> or <kbd>ENTER</kbd> to select one. Pressing <kbd>L</kbd> will favorite the selected activity. Hitting <kbd>CMD + P</kbd> or <kbd>CTRL + P</kbd> will [print your schedule]({{< relref "print.md" >}}). This feature is turned on by default and can be turned off by setting `data-accessibility`.
+Visitors are able to navigate and view your schedule using their keyboard. They can <kbd>TAB</kbd> through [activities]({{< relref "basic-structure.md#activity" >}}) and hit <kbd>SPACE</kbd> or <kbd>ENTER</kbd> to select one. Pressing <kbd>L</kbd> will favorite the selected activity. Hitting <kbd>CMD + P</kbd> or <kbd>CTRL + P</kbd> will [print your schedule]({{< relref "print.md" >}}). 
+
+This feature is turned on by default and can be turned off by setting `data-accessibility`.
 
 | Option | Values | Default value |
 |--------|--------|---------------|

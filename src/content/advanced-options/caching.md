@@ -28,7 +28,7 @@ We've spent a lot of time making Blokks as fast as possible and keeping load tim
 Next to this, Blokks also depends heavily on browser- and server caching to improve performance.
 
 ## Browser caching
-The browser cache is a temporary storage on your computer for files the browser has downloaded. The browser is smart enought to only download updated files, or files that have not been stored in the cache yet.
+The browser cache is a temporary storage on your computer for files the browser has downloaded. The browser is smart enough to only download updated files, or files that have not been stored in the cache yet.
 
 Blokks uses browser caching to loading static files like CSS, JavaScript, fonts and images. These assets are cached forever, only invalidating the cache when a file actually changes. This basically means that assets are only loaded once.
 

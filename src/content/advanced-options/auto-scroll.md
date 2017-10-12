@@ -23,7 +23,7 @@ When enabled, the *Time indicator* is automatically scrolled into view when a vi
 
 There are cases where you might want to disable this `data-auto-scroll` feature. For example, when your schedule is embedded on a one-page website and you don't want the whole page to scroll.
 
-<span class='note'>Note: This feature only works on desktop.</span>
+<span class='note'>Note: This feature is desktop only.</span>
 
 | Option | Values | Default value |
 |--------|--------|---------------|

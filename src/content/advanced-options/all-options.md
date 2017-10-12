@@ -17,8 +17,6 @@ A complete list of advanced options for your embed:
 | Option | Values | Default value |
 |--------|--------|---------------|
 | `data-accessibility` | `true` `false` | `true` |
-| `data-auto-layout` | `true` `false` | `true` |
-| `data-auto-measure-size` | `true` `false` | `true` |
 | `data-auto-scroll` | `true` `false` | `true`|
 | `data-auto-update` | `true` `false` | `true`|
 | `data-breakpoint` | *string* | `30em`|
@@ -35,7 +33,9 @@ A complete list of advanced options for your embed:
 | `data-hide-images` | `true` `false` | `false` |
 | `data-hide-print` | `true` `false` | `false` |
 | `data-layout` | `columns` `rows` `custom` | `columns`|
+| `data-layout-activities` | `true` `false` | `true` |
 | `data-local-scroll` | `true` `false` | `false` |
+| `data-measure-activities` | `true` `false` | `true` |
 | `data-print-orientation` | `landscape` `portrait` | `portrait` |
 | `data-render-empty-timeslots` | `true` `false` | `true` |
 | `data-social-provider` | `facebook` `twitter` `linkedin` | `facebook` |

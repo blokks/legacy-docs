@@ -16,8 +16,8 @@
     "build:development": "NODE_ENV=development gulp",
     "build:staging": "NODE_ENV=staging gulp",
     "build:production": "NODE_ENV=production gulp",
-    "publish:staging": "rsync -avzq --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/staging_public/docs",
-    "publish:production": "rsync -avzq --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/blokks_public/docs",
+    "publish:staging": "rsync -avzqp --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/staging_public/docs",
+    "publish:production": "rsync -avzqp --del --exclude '.DS_Store' --exclude '.htaccess' dist/ blokkshq@blokks.co:~/webapps/blokks_public/docs",
     "open:staging": "open https://staging.blokks.co/docs",
     "open:production": "open https://blokks.co/docs"
   },

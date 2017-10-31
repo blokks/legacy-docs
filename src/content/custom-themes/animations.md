@@ -56,7 +56,7 @@ You can configure your `animation` by setting its sub-properties. This lets you 
 
 <span class='note'>Note: If you want to learn more about CSS animations, visit the [Mozilla documentation on CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations).</span>
 
-{{< video src="videos/animation-animating-modals.mp4" width="1628" height="1072" title="Animating modals & alerts" >}}
+{{< video src="videos/animation-animating-modals.mp4" width="1122" height="606" title="Animating modals & alerts" >}}
 
 ## Animating other elements
 Modals and alerts are currently the only components that have animation. But this doesn’t mean that you are limited to just those components. Matter of fact, [Embassy of Dutch Creativity](https://blokks.co/schedules/embassy-of-dutch-creativity) spiced up their schedule with all kinds of animations. Feel free to add animation to your schedule!

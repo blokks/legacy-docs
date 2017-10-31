@@ -53,17 +53,19 @@ The *Date Selector* component is visible when your event has multiple dates. Vis
 ## Category filter
 The *Category Filter* component shows all categories used by the schedule. Visitors can use this component to filter acts (speakers, talks or artists) by selecting categories. Acts that do not match the selected category are filtered out.
 
+![Options on desktop](images/custom-themes-basic-structure-desktop-03.jpg)
+
 This component will be automatically hidden when no categories have been added to the schedule.
 
 ## Options
 The *Options* component lets visitors sign in to [add favorites]({{< relref "favorites.md" >}}), <!-- [see where friends are going]({{< relref "favorites.md#friends-activity" >}}), -->[print their schedule]({{< relref "print.md" >}}) or [add the schedule to their calendar]({{< relref "add-to-ical.md" >}}).
 
-![Options on desktop](images/custom-themes-basic-structure-desktop-03.jpg)
+![Options on desktop](images/custom-themes-basic-structure-desktop-04.jpg)
 
 ## Controls
 Visitors can scroll through [stages]({{< relref "basic-structure.md#location" >}}) with the control buttons. The *Controls* are visible on desktop when the `data-layout` option is set to `columns`.
 
-![Controls on desktop](images/custom-themes-basic-structure-desktop-04.jpg)
+![Controls on desktop](images/custom-themes-basic-structure-desktop-05.jpg)
 
 In some cases it’s not necessary to show the controls. For example, when your event only has one or two stages. You can easily [hide the controls]({{< relref "hide-components.md" >}}) by setting `data-hide-controls`.
 
@@ -72,7 +74,7 @@ In some cases it’s not necessary to show the controls. For example, when your 
 ## Timetable
 A single day of your event is represented by the *Timetable* component, which consist of a *Dashboard*, *Locations*, *Activities* and *Time Indicator* component.
 
-![Options on desktop](images/custom-themes-basic-structure-desktop-05.jpg)
+![Options on desktop](images/custom-themes-basic-structure-desktop-06.jpg)
 
 If one of your schedule's dates is the same as today’s date, it's automatically selected. Also, the *Time Indicator* will then be visible and scrolled into view. That way, acts that are currently performing will be shown when the schedule is opened. You can [disable this]({{< relref "auto-scroll.md" >}}) by setting `data-autoscroll`.
 
@@ -88,33 +90,33 @@ During the event, the *Dashboard* component is shown on mobile devices. The comp
 ## Location
 The *Location* component represents a single stage of your event. Basically, it’s a list of [Activities]({{< relref "basic-structure.md#activity" >}}), sorted by time.
 
-![Location on desktop](images/custom-themes-basic-structure-desktop-06.jpg)
+![Location on desktop](images/custom-themes-basic-structure-desktop-09.jpg)
 
 ## Activity
 Acts are represented by the *Activity* component. Its position and size show the start and duration of the activity and are automatically calculated by the embed.
 
-![Activity](images/custom-themes-basic-structure-desktop-07.jpg)
+![Activity](images/custom-themes-basic-structure-desktop-10.jpg)
 
 Selecting an *Activity* will show the *Activity Details* component:
 
 ## Activity details
 The *Activity Details* component is a modal presented when an *Activity* is selected. It shows all [information]({{< relref "manage-your-acts.md" >}}) about the selected act or talk. This includes titles, subtitles, times, descriptions, photos, links and embeds.
 
-![Activity details](images/custom-themes-basic-structure-desktop-09.jpg)
+![Activity details](images/custom-themes-basic-structure-desktop-12.jpg)
 
 ## Notifications & Alerts
 *Notifications* and *Alerts* are small modals used to show instructions when a visitor wants to sign in, or to display an an error when something went wrong.
 
-![Alerts](images/custom-themes-basic-structure-desktop-10.jpg)
+![Alerts](images/custom-themes-basic-structure-desktop-13.jpg)
 
 ## Time indicator
 The *Time Indicator* is only visible during the event and shows, as the name suggests, the current time. 
 
-![Time indicator](images/custom-themes-basic-structure-desktop-11.jpg)
+![Time indicator](images/custom-themes-basic-structure-desktop-08.jpg)
 
 <span class='note'>You can [test the time indicator]({{< relref "testflight.md" >}}) by setting the `data-testflight` option</span>
 
 ## Trial bar
 The *Trial bar* will remind you that you haven't [upgraded your account]({{< relref "upgrade-your-account.md" >}}) yet. And, that your schedule will only be visible to you and your teammates. The *Trial bar* will disappear once you've upgraded your account.
 
-![Trial bar on desktop](images/custom-themes-basic-structure-desktop-08.jpg)
+![Trial bar on desktop](images/custom-themes-basic-structure-desktop-11.jpg)

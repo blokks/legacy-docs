@@ -20,4 +20,4 @@ Head over to the embed page when you’re ready to start implementing your sched
 
 <span class='note'>Note: after adjusting the settings on the left, the embed code shown on the right will automatically update. So don’t forget to copy the updated code after you changed any of your settings.</span>
 
-{{< video src="videos/configure-your-embed.mp4" width="2274" height="1590" title="Configure your embed" >}}
+{{< video src="videos/configure-your-embed.mp4" width="2274" height="1600" title="Configure your embed" >}}

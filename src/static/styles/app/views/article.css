@@ -50,7 +50,6 @@
     img {
         margin: 6px 0;
         size: 100% auto;
-        background-color: var(--placeholder-background-color);
         border-radius: 3px;
         overflow: hidden;
     }

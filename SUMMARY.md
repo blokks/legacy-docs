@@ -7,8 +7,6 @@
 * [Account settings](account-settings-1/README.md)
   * [Your account](account-settings-1/your-account.md)
 
-## Managers
-
 ## Designers
 
 ## Developers

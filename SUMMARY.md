@@ -6,7 +6,7 @@
   * [Your first event](geting-started/your-first-event.md)
 * [Account settings](account-settings-1/README.md)
   * [Your account](account-settings-1/your-account.md)
-* [Manage your event](manage-your-schedule/README.md)
+* [Your event](manage-your-schedule/README.md)
   * [Manage your days](manage-your-schedule/manage-your-days.md)
 
 ## Designers

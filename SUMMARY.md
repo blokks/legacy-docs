@@ -6,7 +6,16 @@
 * [Geting started](geting-started/README.md)
   * [Signing up](geting-started/signing-up.md)
   * [Your first event](geting-started/your-first-event.md)
-* [API](api.md)
-* [FAQ](faq.md)
-* [Changelog](changelog.md)
+
+## Managers
+
+## Designers
+
+## Developers
+
+* [Advanced options](developers/advanced-options/README.md)
+  * [Accessibility](developers/advanced-options/accessibility.md)
+* [FAQ](developers/faq.md)
+* [API](developers/api.md)
+* [Changelog](developers/changelog.md)
 

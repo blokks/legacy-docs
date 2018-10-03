@@ -1,9 +1,3 @@
----
-description: >-
-  Let's start working on your first event. To set everything up, we need to know
-  some basic info.
----
-
 # Your first event
 
 Follow the link in your email to start working on your first event. To set everything up, we need to know some basic info. We’ll take you through a series of pages and ask things like your event name, what kind of event you’re organising, dates, times etc.

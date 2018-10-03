@@ -1,9 +1,3 @@
----
-description: >-
-  Here, we’ll explain everything there is to know about Blokks. From creating
-  your first schedule to advanced customization for developers.
----
-
 # Welcome
 
 We’re glad you made it here. Here, we’ll explain everything there is to know about Blokks. From creating your first schedule to advanced customization for developers.

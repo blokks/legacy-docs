@@ -1,9 +1,3 @@
----
-description: >-
-  Creating a new Blokks account is easy. Simply go to blokks.co/signup and enter
-  your name and email address.
----
-
 # Signing up
 
 Creating a new Blokks account is easy. Simply go to [blokks.co/signup](https://blokks.co/signup) and enter your name and email address. You’ll then receive your login information and instructions on how to [create your first event](your-first-event.md).

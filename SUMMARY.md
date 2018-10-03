@@ -14,6 +14,7 @@
 * [Advanced options](developers/advanced-options/README.md)
   * [Accessibility](developers/advanced-options/accessibility.md)
 * [FAQ](developers/faq.md)
-* [API](developers/api.md)
+* [API](developers/api/README.md)
+  * [Getting schedules](developers/api/getting-schedules.md)
 * [Changelog](developers/changelog.md)
 

@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Measure activities](measure-activities.md)
 * [Geting started](geting-started/README.md)
   * [Signing up](geting-started/signing-up.md)
   * [Your first event](geting-started/your-first-event.md)
@@ -40,6 +39,7 @@
   * [Layout](developers/advanced-options/layout.md)
   * [Layout acts](developers/advanced-options/layout-acts.md)
   * [Local scroll](developers/advanced-options/local-scroll.md)
+  * [Measure activities](developers/advanced-options/measure-activities.md)
   * [Print](developers/advanced-options/print.md)
   * [Social provider](developers/advanced-options/social-provider.md)
   * [Testflight](developers/advanced-options/testflight.md)

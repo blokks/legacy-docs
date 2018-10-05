@@ -10,6 +10,10 @@ Computing the size of an element is a pretty intensive task for your browser. Al
 | :--- | :--- | :--- |
 | `data-auto-measure-size` | `true` / `false` | `true` |
 
+### 
+
+### Code example
+
 ```markup
 <script defer 
     src='https://themes.blokks.co/default/2.2.0/main.js' 

@@ -64,7 +64,7 @@
 * [Offline support](developers/offline-support.md)
 * [Notifications](developers/notifications.md)
 * [Browser support](developers/browser-support.md)
-* [API](developers/api/README.md)
+* [API reference](developers/api/README.md)
   * [Getting schedules](developers/api/getting-schedules.md)
 
 ## Tutorials

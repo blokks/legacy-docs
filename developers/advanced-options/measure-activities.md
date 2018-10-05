@@ -6,11 +6,11 @@ Blokks adds [CSS modifiers](../../designers/custom-themes/naming-convention.md) 
 Computing the size of an element is a pretty intensive task for your browser. Although this option is enabled by default, we recommend to set it to `false` whenever possible. Read [Performance optimizations](../performance-optimization.md) for more information.
 {% endhint %}
 
+### Options
+
 | Options | Values | Default value |
 | :--- | :--- | :--- |
 | `data-auto-measure-size` | `true` / `false` | `true` |
-
-### 
 
 ### Code example
 
@@ -21,6 +21,4 @@ Computing the size of an element is a pretty intensive task for your browser. Al
     data-measure-activities='false'>
 </script>
 ```
-
-
 

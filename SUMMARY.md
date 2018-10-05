@@ -60,7 +60,7 @@
   * [Testflight](developers/advanced-options/testflight.md)
   * [Time format](developers/advanced-options/time-format.md)
   * [Timescale](developers/advanced-options/timescale.md)
-* [Performance optimization](developers/performance-optimization.md)
+* [Performance optimizations](developers/performance-optimization.md)
 * [Offline support](developers/offline-support.md)
 * [Notifications](developers/notifications.md)
 * [Browser support](developers/browser-support.md)

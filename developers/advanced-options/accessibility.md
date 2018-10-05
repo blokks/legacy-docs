@@ -4,15 +4,15 @@ Visitors are able to navigate and view your schedule using their keyboard. They 
 
 This feature is turned on by default and can be turned off by setting `data-accessibility`:
 
-| :Options | Values | Default value |
+| Options | Values | Default value |
 | :--- | :--- | :--- |
-| data-accessibility | `true` / `false` | `true` |
+| `data-accessibility` | `true` / `false` | `true` |
 
 ### Code example
 
 ```markup
 <script defer 
-    src='https://themes.blokks.co/default/2.1.5/main.js' 
+    src='https://themes.blokks.co/default/2.2.0/main.js' 
     data-blokks-id='6kga8pkdj432' 
     data-accessibility='false'>
 </script>

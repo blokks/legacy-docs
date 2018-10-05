@@ -1,2 +1,2 @@
-# Performance optimization
+# Performance optimizations
 

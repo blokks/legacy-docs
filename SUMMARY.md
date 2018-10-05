@@ -1,15 +1,15 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Geting started](geting-started/README.md)
+  * [Signing up](geting-started/signing-up.md)
+  * [Your first event](geting-started/your-first-event.md)
 * [Your schedule](your-schedule/README.md)
   * [Manage days](your-schedule/manage-days.md)
   * [Manage acts](your-schedule/manage-acts.md)
   * [Manage stages](your-schedule/manage-stages.md)
   * [Editing acts](your-schedule/editing-acts.md)
   * [Save & export](your-schedule/save-and-export.md)
-* [Geting started](geting-started/README.md)
-  * [Signing up](geting-started/signing-up.md)
-  * [Your first event](geting-started/your-first-event.md)
 * [FAQ](faq.md)
 * [Changelog](changelog.md)
 
@@ -44,7 +44,7 @@
 
 ## Developers
 
-* [Advanced options](developers/advanced-options/README.md)
+* [Embed options](developers/advanced-options/README.md)
   * [Accessibility](developers/advanced-options/accessibility.md)
   * [All options](developers/advanced-options/all-options.md)
   * [Autoscroll](developers/advanced-options/autoscroll.md)

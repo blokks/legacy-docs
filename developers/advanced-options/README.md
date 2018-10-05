@@ -1,4 +1,4 @@
-# Advanced options
+# Embed options
 
 Until now, we've talked about customizing your schedule by [changing its colors](../../designers/customize-your-embed/change-colors.md), [fonts](../../designers/customize-your-embed/use-your-own-fonts.md) and [icons](../../designers/customize-your-embed/replace-icons.md). But there is more that you can do. For example, by adding extra options to the embed code we can \[show or hide components\]\({{&lt; relref "hide-components.md" &gt;}}\) and [set date formats](date-format.md).  
   
